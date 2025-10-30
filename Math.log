@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  28 OCT 2025 01:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  30 OCT 2025 01:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1177,57 +1177,67 @@ LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <15.11995> not available
 LaTeX Font Warning: Font shape `OT1/cmss/bx/n' in size <21.60004> not available
 (Font)              size <20.74> substituted on input line 12.
 
-
-
-LaTeX Font Info:    Calculating math sizes for size <15> on input line 21.
+LaTeX Font Info:    Calculating math sizes for size <15> on input line 16.
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <10.49995> not available
-(Font)              size <10.95> substituted on input line 21.
+(Font)              size <10.95> substituted on input line 16.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <7.5> not available
-(Font)              size <7> substituted on input line 21.
+(Font)              size <7> substituted on input line 16.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <15> not available
-(Font)              size <14.4> substituted on input line 21.
+(Font)              size <14.4> substituted on input line 16.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <10.49995> not available
-(Font)              size <10.95> substituted on input line 21.
+(Font)              size <10.95> substituted on input line 16.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <7.5> not available
-(Font)              size <7> substituted on input line 21.
+(Font)              size <7> substituted on input line 16.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <15> not available
-(Font)              size <14.4> substituted on input line 21.
+(Font)              size <14.4> substituted on input line 16.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <10.49995> not available
-(Font)              size <10.95> substituted on input line 21.
+(Font)              size <10.95> substituted on input line 16.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <7.5> not available
-(Font)              size <7> substituted on input line 21.
+(Font)              size <7> substituted on input line 16.
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <15> not available
-(Font)              size <14.4> substituted on input line 21.
+(Font)              size <14.4> substituted on input line 16.
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <10.49995> not available
-(Font)              size <10.95> substituted on input line 21.
+(Font)              size <10.95> substituted on input line 16.
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <7.5> not available
-(Font)              size <7> substituted on input line 21.
+(Font)              size <7> substituted on input line 16.
+
+
 
 [1
 
 
-{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./Math.aux)
+{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <12.50015> not available
+(Font)              size <12> substituted on input line 39.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <12.50015> not available
+(Font)              size <12> substituted on input line 39.
+
+[2] (./Math.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2020/03/25>
@@ -1241,18 +1251,18 @@ Package rerunfilecheck Info: File `Math.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 39192 strings out of 473190
- 826875 string characters out of 5715801
- 1406175 words of memory out of 5000000
- 61782 multiletter control sequences out of 15000+600000
- 571578 words of font info for 99 fonts, out of 8000000 for 9000
+ 39242 strings out of 473190
+ 827911 string characters out of 5715801
+ 1415175 words of memory out of 5000000
+ 61805 multiletter control sequences out of 15000+600000
+ 572497 words of font info for 107 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 123i,20n,128p,10969b,523s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb>
-Output written on Math.pdf (1 page, 40915 bytes).
+ 123i,20n,128p,10969b,620s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on Math.pdf (2 pages, 89268 bytes).
 PDF statistics:
- 57 PDF objects out of 1000 (max. 8388607)
- 31 compressed objects within 1 object stream
- 4 named destinations out of 1000 (max. 500000)
- 22637 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 102 PDF objects out of 1000 (max. 8388607)
+ 65 compressed objects within 1 object stream
+ 18 named destinations out of 1000 (max. 500000)
+ 26733 words of extra memory for PDF output out of 29859 (max. 10000000)
 
