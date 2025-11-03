@@ -3,6 +3,8 @@
 \newcommand{\R}{\mathbb{R}}
 \newcommand{\N}{\mathbb{N}}
 \newcommand{\Q}{\mathbb{Q}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\F}{\mathbb{F}}
 \usepackage{relsize}
 \begin{document}
 \title{Math Daily Log}
@@ -39,7 +41,20 @@ When you interpret as operators on polynomials, everything becomes very concrete
 \item A lot of exercises on separable extensions from Aluffi chapter 7. 
 \item Formal power series $k[[x]]$ on math 250 lecture. 
 \end{enumerate}
-
-
+\section*{Nov. 1, 2025}
+\begin{enumerate}
+\item Cyclotomic polynomial is in $\Z[x]$ and it's always irreducible. Proof used Dirichlet's Theorem and the fact that finite fields are perfect. Too smart. 
+\item Finite Field of order $p^r$ is unique up to isomorphism, it's the splitting field of $x^{p^r}-x$. 
+\item $x^4+1$ is reducible in all finite field. But irreducible in $\Z[x]$. Proof use the fact that $x^4+1 \mid x^8-1\mid x^{p^2}-x$. So the root $\beta$ of $x^4+1$ in $F_{p^2}$ has degree of $1$ or $2$. Thus, it's minimal polynomial has degree of $1$ or $2$.
+\item Let $F=\F_q$, $x^{p^n}-x$ is the product of all the irreducible polynomial of dgeree $d$ for all $d\mid n$. 
+\item The automorphism $Aut_{\F_p}(\F_{p^d})\cong C_q$. The generator is Frobenius function $x\mapsto x^p$. 
+\end{enumerate}
+\section*{Nov. 2, 2025}
+\begin{enumerate}
+\item There are countably many jump discontinuities. 
+\item Set of Critical Value is zero set. 
+\item The automorphism $\phi\in Aut_k(k(x))$ must be $\phi: x\mapsto \frac{ax+b}{cx+d}$ where $ac-bd\not=0$. A surprising result but hard to prove. Is there a natural but easy way to see this?
+\item Review H104. 
+\end{enumerate}
 
 \end{document}
