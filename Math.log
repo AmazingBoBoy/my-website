@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  2 NOV 2025 23:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  4 NOV 2025 01:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1231,13 +1231,15 @@ LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <7.5> not available
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <12.50015> not available
-(Font)              size <12> substituted on input line 60.
+(Font)              size <12> substituted on input line 63.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <12.50015> not available
-(Font)              size <12> substituted on input line 60.
+(Font)              size <12> substituted on input line 63.
 
-[2] (./Math.aux)
+[2]
+
+[3] (./Math.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2020/03/25>
@@ -1251,18 +1253,18 @@ Package rerunfilecheck Info: File `Math.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 39263 strings out of 473190
- 828074 string characters out of 5715801
- 1415188 words of memory out of 5000000
+ 39269 strings out of 473190
+ 828121 string characters out of 5715801
+ 1415187 words of memory out of 5000000
  61805 multiletter control sequences out of 15000+600000
- 572644 words of font info for 110 fonts, out of 8000000 for 9000
+ 572693 words of font info for 111 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 123i,20n,128p,10969b,620s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 123i,20n,128p,10969b,680s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Math.pdf (2 pages, 115554 bytes).
+Output written on Math.pdf (3 pages, 117509 bytes).
 PDF statistics:
- 130 PDF objects out of 1000 (max. 8388607)
- 89 compressed objects within 1 object stream
- 33 named destinations out of 1000 (max. 500000)
+ 140 PDF objects out of 1000 (max. 8388607)
+ 98 compressed objects within 1 object stream
+ 37 named destinations out of 1000 (max. 500000)
  26733 words of extra memory for PDF output out of 29859 (max. 10000000)
 
