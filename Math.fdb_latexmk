@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1762931314.56944 "/Users/kaihuang/Documents/VS Code/my-website/Math.tex" "Math.pdf" "Math" 1762931317.54378 0
-  "/Users/kaihuang/Documents/VS Code/my-website/Math.tex" 1762931314.27365 7478 9b96fedc943716a13a538e0f0734d416 ""
+["pdflatex"] 1763286398.77036 "/Users/kaihuang/Documents/VS Code/my-website/Math.tex" "Math.pdf" "Math" 1763286400.55434 0
+  "/Users/kaihuang/Documents/VS Code/my-website/Math.tex" 1763286398.55811 10887 9bdb7d3de28cbc5467c743e267bce81c ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -21,7 +21,9 @@
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm" 1229303445 688 37338d6ab346c2f1466b29e195316aa4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/rsfs/rsfs7.tfm" 1229303445 692 1b6510779f0f05e9cbf03e0f6c8361e6 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/yhmath/yhcmex10.tfm" 1136768653 1684 af67583ad46e8b1511363fd580d94047 ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1248133631 32080 340ef9bf63678554ee606688e7b5339d ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb" 1248133631 32001 6aeea3afe875097b1eb0da29acd61e28 ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1248133631 30251 6afa5cb1d0204815a708a080681d4674 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1248133631 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb" 1248133631 36741 fa121aac0049305630cf160b86157ee4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1248133631 36281 c355509802a035cadc5f15869451dcee ""
@@ -242,10 +244,11 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1753427630 5467155 19efa205003f9ecad95fbbaa6ff24da1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1741450574 3345740 46b66fdb0378f7bf5921b5eabf1762b8 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "Math.aux" 1762931317.3905 264 654f6bb4cf0a2afa5cf749e9a6c49943 "pdflatex"
-  "Math.out" 1762931316.9571 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "Math.pre" 1762931315.65058 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "Math.tex" 1762931314.27365 7478 9b96fedc943716a13a538e0f0734d416 ""
+  "Math.aux" 1763286400.45733 6728 6c4c86311a03dd51ddd07abe85597f6b "pdflatex"
+  "Math.out" 1763286400.15441 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "Math.pre" 1763286399.39408 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "Math.tex" 1763286398.55811 10887 9bdb7d3de28cbc5467c743e267bce81c ""
+  "Math.toc" 1763286400.4593 1385 df60abc206b2990ee6f98b52dfe2d3b9 "pdflatex"
   "evan.sty" 1761638644.12541 29770 b9305cfa1e10857183abaea4b60464cc ""
   (generated)
   "Math.aux"
@@ -253,4 +256,5 @@
   "Math.out"
   "Math.pdf"
   "Math.pre"
+  "Math.toc"
   (rewritten before read)

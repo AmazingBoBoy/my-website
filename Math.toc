@@ -1,0 +1,20 @@
+\contentsline {section}{\nonumberline Acknowledgment}{3}{section*.3}%
+\contentsline {section}{\nonumberline Oct. 28, 2025}{4}{section*.5}%
+\contentsline {section}{\nonumberline Oct. 29, 2025}{4}{section*.12}%
+\contentsline {section}{\nonumberline Oct. 30, 2025}{4}{section*.21}%
+\contentsline {section}{\nonumberline Nov. 1, 2025}{5}{section*.26}%
+\contentsline {section}{\nonumberline Nov. 2, 2025}{5}{section*.33}%
+\contentsline {section}{\nonumberline Nov. 3, 2025}{5}{section*.39}%
+\contentsline {section}{\nonumberline Nov. 4, 2025}{6}{section*.43}%
+\contentsline {section}{\nonumberline Nov. 5, 2025}{6}{section*.49}%
+\contentsline {section}{\nonumberline Nov. 6, 2025}{6}{section*.53}%
+\contentsline {section}{\nonumberline Nov. 7, 2025}{6}{section*.58}%
+\contentsline {section}{\nonumberline Nov. 8, 2025}{7}{section*.63}%
+\contentsline {section}{\nonumberline Nov. 9, 2025}{7}{section*.66}%
+\contentsline {section}{\nonumberline Nov. 10, 2025}{7}{section*.69}%
+\contentsline {section}{\nonumberline Nov. 11, 2025}{7}{section*.73}%
+\contentsline {section}{\nonumberline Nov. 12, 2025}{7}{section*.77}%
+\contentsline {section}{\nonumberline Nov. 13, 2025}{8}{section*.81}%
+\contentsline {section}{\nonumberline Nov. 14, 2025}{8}{section*.84}%
+\contentsline {section}{\nonumberline Nov. 15, 2025}{8}{section*.89}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
