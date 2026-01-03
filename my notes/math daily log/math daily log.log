@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  16 NOV 2025 01:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  3 JAN 2026 00:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Users/kaihuang/Documents/VS Code/my-website/Math.tex"
-(/Users/kaihuang/Documents/VS Code/my-website/Math.tex
+**"/Users/kaihuang/Documents/VS Code/my-website/my notes/math daily log/math daily log.tex"
+(/Users/kaihuang/Documents/VS Code/my-website/my notes/math daily log/math daily log.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
 (/usr/local/texlive/2025/texmf-dist/tex/latex/koma-script/scrartcl.cls
@@ -259,7 +259,7 @@ Package: derivative 2024/02/08 v1.4 Nice and easy derivatives and differentials 
 \l__deriv_sort_max_int=\count290
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/asymptote/asymptote.sty
 Package: asymptote 2024/02/26 v1.38 Asymptote style file for LaTeX
- (./Math.pre)
+ (./math daily log.pre)
 \ASYbox=\box57
 \ASYdimen=\dimen151
 \c@asy=\count291
@@ -295,7 +295,7 @@ Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
 ) (/usr/local/texlive/2025/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 ))
-\openout4 = `Math.pre'.
+\openout4 = `"math daily log.pre"'.
 
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
@@ -1001,8 +1001,8 @@ Package scrlayer-scrpage Info: Makeing stand-alone element `pagehead' from
 (scrlayer-scrpage)             alias to `pageheadfoot' on input line 1106.
 )) (/usr/local/texlive/2025/texmf-dist/tex/latex/relsize/relsize.sty
 Package: relsize 2013/03/29 ver 4.1
-) (./Math.aux)
-\openout1 = `Math.aux'.
+) (./math daily log.aux)
+\openout1 = `"math daily log.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
 LaTeX Font Info:    ... okay on input line 10.
@@ -1051,9 +1051,9 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 Package hyperref Info: Link coloring ON on input line 10.
- (./Math.out) (./Math.out)
+ (./math daily log.out) (./math daily log.out)
 \@outlinefile=\write6
-\openout6 = `Math.out'.
+\openout6 = `"math daily log.out"'.
 
 Class scrartcl Info: loading recommended package `bookmark'.
 (scrartcl)           Using `bookmark' together with `hyperref' is recommended,
@@ -1229,9 +1229,9 @@ LaTeX Font Warning: Font shape `OT1/cmss/bx/n' in size <21.60004> not available
 (Font)              size <20.74> substituted on input line 18.
 
 Package tocbasic Info: character protrusion at toc deactivated on input line 18.
-(./Math.toc)
+(./math daily log.toc)
 \tf@toc=\write7
-\openout7 = `Math.toc'.
+\openout7 = `"math daily log.toc"'.
 
 
 
@@ -1273,7 +1273,7 @@ Package hyperref Info: bookmark level for unknown remark defaults to 0 on input 
 Package mdframed Info: Not enough space on this page on input line 148.
 
 
-[9] (./Math.aux)
+[9] (./math daily log.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2020/03/25>
@@ -1283,19 +1283,19 @@ L3 programming layer <2020/03/25>
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 6.23007pt have occurred.
 
-Package rerunfilecheck Info: File `Math.out' has not changed.
+Package rerunfilecheck Info: File `"math daily log".out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 39549 strings out of 473190
- 833404 string characters out of 5715801
- 1412187 words of memory out of 5000000
- 61979 multiletter control sequences out of 15000+600000
+ 39553 strings out of 473190
+ 833896 string characters out of 5715801
+ 1412253 words of memory out of 5000000
+ 61983 multiletter control sequences out of 15000+600000
  574208 words of font info for 131 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 123i,20n,128p,10969b,1216s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 123i,20n,128p,11003b,1216s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Math.pdf (9 pages, 159183 bytes).
+Output written on "math daily log.pdf" (9 pages, 159194 bytes).
 PDF statistics:
  328 PDF objects out of 1000 (max. 8388607)
  274 compressed objects within 3 object streams

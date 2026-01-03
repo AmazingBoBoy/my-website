@@ -1,9 +1,9 @@
-PWD /Users/kaihuang/Documents/VS Code/my-website
+PWD /Users/kaihuang/Documents/VS Code/my-website/my notes/how to solve
 INPUT /usr/local/texlive/2025/texmf.cnf
 INPUT /usr/local/texlive/2025/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/kaihuang/Documents/VS Code/my-website/Math.tex
-OUTPUT Math.log
+INPUT /Users/kaihuang/Documents/VS Code/my-website/my notes/how to solve/how to solve.tex
+OUTPUT how to solve.log
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/koma-script/scrartcl.cls
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/koma-script/scrartcl.cls
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/koma-script/scrkbase.sty
@@ -55,9 +55,9 @@ INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/asymptote/asymptote.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/asymptote/asymptote.sty
-INPUT ./Math.pre
-INPUT ./Math.pre
-INPUT Math.pre
+INPUT ./how to solve.pre
+INPUT ./how to solve.pre
+INPUT how to solve.pre
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/base/ifthen.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/base/ifthen.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/graphics/graphicx.sty
@@ -87,7 +87,7 @@ INPUT /usr/local/texlive/2025/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/generic/etexcmds/etexcmds.sty
-OUTPUT Math.pre
+OUTPUT how to solve.pre
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/xcolor/xcolor.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/xcolor/xcolor.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/graphics-cfg/color.cfg
@@ -300,7 +300,7 @@ INPUT /usr/local/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libr
 INPUT /usr/local/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryfadings.code.tex
 INPUT /usr/local/texlive/2025/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings.code.tex
 INPUT /usr/local/texlive/2025/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings.code.tex
-OUTPUT Math.pdf
+OUTPUT how to solve.pdf
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/thmtools/thmdef-mdframed.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/thmtools/thmdef-mdframed.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/thmtools/thmdef-mdframed.sty
@@ -390,10 +390,10 @@ INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/koma-script/scrlayer.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/koma-script/scrlayer.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/relsize/relsize.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/relsize/relsize.sty
-INPUT ./Math.aux
-INPUT ./Math.aux
-INPUT Math.aux
-OUTPUT Math.aux
+INPUT ./how to solve.aux
+INPUT ./how to solve.aux
+INPUT how to solve.aux
+OUTPUT how to solve.aux
 INPUT /usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -402,13 +402,13 @@ INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.st
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-INPUT ./Math.out
-INPUT ./Math.out
-INPUT Math.out
-INPUT Math.out
-INPUT ./Math.out
-INPUT ./Math.out
-OUTPUT Math.out
+INPUT ./how to solve.out
+INPUT ./how to solve.out
+INPUT how to solve.out
+INPUT how to solve.out
+INPUT ./how to solve.out
+INPUT ./how to solve.out
+OUTPUT how to solve.out
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/bookmark/bookmark.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/bookmark/bookmark.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/bookmark/bookmark.sty
@@ -480,26 +480,14 @@ INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/yhmath/yhcmex10.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/rsfs/rsfs7.tfm
 INPUT /usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
-INPUT ./Math.toc
-INPUT ./Math.toc
-INPUT Math.toc
-OUTPUT Math.toc
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT Math.aux
-INPUT ./Math.out
-INPUT ./Math.out
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+INPUT how to solve.aux
+INPUT ./how to solve.out
+INPUT ./how to solve.out
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb
