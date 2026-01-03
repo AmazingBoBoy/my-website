@@ -1,0 +1,9 @@
+\contentsline {section}{\nonumberline Acknowledgment}{1}{section*.2}%
+\contentsline {section}{\nonumberline Recommendations for readers}{1}{section*.10}%
+\contentsline {section}{\nonumberline Chapter 1: Preliminaries}{4}{section*.13}%
+\contentsline {subsection}{\nonumberline Exercise}{4}{subsection*.15}%
+\contentsline {subsection}{\nonumberline Exercise 2.5}{4}{subsection*.21}%
+\contentsline {subsection}{\nonumberline Exercise 4.4}{5}{subsection*.25}%
+\contentsline {subsection}{\nonumberline Exercise 5.9}{5}{subsection*.31}%
+\contentsline {section}{\nonumberline Chapter 2: Groups, first encounter}{6}{section*.37}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
