@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1767476683.24098 "/Users/kaihuang/Documents/VS Code/my-website/my notes/A Companion to Aluffi's Algebra Chapter 0/main text.tex" "main text.pdf" "main text" 1767476685.09222 0
-  "/Users/kaihuang/Documents/VS Code/my-website/my notes/A Companion to Aluffi's Algebra Chapter 0/main text.tex" 1767476681.0634 6626 3f2bb3d68952ccb742a33879ebbb357f ""
+["pdflatex"] 1767485153.52952 "/Users/kaihuang/Documents/VS Code/my-website/my notes/A Companion to Aluffi's Algebra Chapter 0/main text.tex" "main text.pdf" "main text" 1767485155.50751 0
+  "/Users/kaihuang/Documents/VS Code/my-website/my notes/A Companion to Aluffi's Algebra Chapter 0/main text.tex" 1767485153.29471 6837 3f1ede1fa924470feeb6a47a4e048ac0 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm1440.tfm" 1136768653 1536 3290a75021d32d016616fe527bc9884c ""
@@ -248,11 +248,11 @@
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1741450574 3345740 46b66fdb0378f7bf5921b5eabf1762b8 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
   "evan.sty" 1767435550.71535 32545 054745027b315fdc3d5fdc83a7b78e88 ""
-  "main text.aux" 1767476684.99817 6315 74ce21e96ec6ad59ef2815be9de40e51 "pdflatex"
-  "main text.out" 1767476684.5677 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "main text.pre" 1767476683.8452 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "main text.tex" 1767476681.0634 6626 3f2bb3d68952ccb742a33879ebbb357f ""
-  "main text.toc" 1767476684.99959 687 43dc166339e64cfdf98dafa83b91a6be "pdflatex"
+  "main text.aux" 1767485155.4111 6315 a8ee31b426a492c3c2b0a2c169a0ca4e "pdflatex"
+  "main text.out" 1767485154.94783 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main text.pre" 1767485154.17242 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main text.tex" 1767485153.29471 6837 3f1ede1fa924470feeb6a47a4e048ac0 ""
+  "main text.toc" 1767485155.41252 687 ba4340ad0d2bc12964777898450a315d "pdflatex"
   "pic1.png" 1767436309.4463 38192 a7804999f238b66c0c64c6e16a02df3c ""
   (generated)
   "main text.aux"

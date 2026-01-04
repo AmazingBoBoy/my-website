@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  3 JAN 2026 13:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  3 JAN 2026 16:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1235,30 +1235,33 @@ LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <7.5> not available
 (Font)              size <7> substituted on input line 23.
 
 
-LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <15> not available
-(Font)              size <14.4> substituted on input line 23.
+LaTeX Font Warning: Command \Large invalid in math mode on input line 23.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <21.60004> not available
+(Font)              size <20.74> substituted on input line 23.
 
 
 LaTeX Font Warning: Font shape `TS1/cmr/m/n' in size <15> not available
-(Font)              size <14.4> substituted on input line 36.
+(Font)              size <14.4> substituted on input line 37.
 
 
 
 [1
 
 
-{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <12.50015> not available
-(Font)              size <12> substituted on input line 41.
+(Font)              size <12> substituted on input line 42.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <12.50015> not available
-(Font)              size <12> substituted on input line 41.
+(Font)              size <12> substituted on input line 42.
 
-[2]
-Package tocbasic Info: character protrusion at toc deactivated on input line 42.
+[2{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+Package tocbasic Info: character protrusion at toc deactivated on input line 43.
  (./main text.toc)
 \tf@toc=\write7
 \openout7 = `"main text.toc"'.
@@ -1268,132 +1271,132 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 42.
 [3]
 
 LaTeX Font Warning: Font shape `OT1/cmss/bx/n' in size <17.99995> not available
-(Font)              size <17.28> substituted on input line 52.
+(Font)              size <17.28> substituted on input line 53.
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 53.
+(mdframed)              on input line 54.
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <13.68759> not available
-(Font)              size <14.4> substituted on input line 53.
+(Font)              size <14.4> substituted on input line 54.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <13.68759> not available
-(Font)              size <14.4> substituted on input line 53.
+(Font)              size <14.4> substituted on input line 54.
 
-Package hyperref Info: bookmark level for unknown discussion* defaults to 0 on input line 53.
+Package hyperref Info: bookmark level for unknown discussion* defaults to 0 on input line 54.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 55.
+(mdframed)              on input line 56.
 
 LaTeX Font Warning: Font shape `OT1/cmss/bx/n' in size <13.68759> not available
-(Font)              size <14.4> substituted on input line 55.
+(Font)              size <14.4> substituted on input line 56.
 
-Package hyperref Info: bookmark level for unknown abboy* defaults to 0 on input line 55.
+Package hyperref Info: bookmark level for unknown abboy* defaults to 0 on input line 56.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 56.
+ mdframed uses option nobreak mdframed on input line 57.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 58.
-Package hyperref Info: bookmark level for unknown arthur* defaults to 0 on input line 58.
+(mdframed)              on input line 59.
+Package hyperref Info: bookmark level for unknown arthur* defaults to 0 on input line 59.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 59.
+ mdframed uses option nobreak mdframed on input line 60.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 61.
-Package hyperref Info: bookmark level for unknown evie* defaults to 0 on input line 61.
+(mdframed)              on input line 62.
+Package hyperref Info: bookmark level for unknown evie* defaults to 0 on input line 62.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 62.
+ mdframed uses option nobreak mdframed on input line 63.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 66.
+(mdframed)              on input line 67.
 
 LaTeX Font Warning: Font shape `TS1/cmr/m/n' in size <13.68759> not available
-(Font)              size <14.4> substituted on input line 66.
+(Font)              size <14.4> substituted on input line 67.
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 68.
-LaTeX Font Info:    Calculating math sizes for size <13.68759> on input line 72.
+(mdframed)              on input line 69.
+LaTeX Font Info:    Calculating math sizes for size <13.68759> on input line 73.
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <9.58127> not available
-(Font)              size <10> substituted on input line 72.
+(Font)              size <10> substituted on input line 73.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <13.68759> not available
-(Font)              size <14.4> substituted on input line 72.
+(Font)              size <14.4> substituted on input line 73.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <9.58127> not available
-(Font)              size <10> substituted on input line 72.
+(Font)              size <10> substituted on input line 73.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <13.68759> not available
-(Font)              size <14.4> substituted on input line 72.
+(Font)              size <14.4> substituted on input line 73.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <9.58127> not available
-(Font)              size <10> substituted on input line 72.
+(Font)              size <10> substituted on input line 73.
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <13.68759> not available
-(Font)              size <14.4> substituted on input line 72.
+(Font)              size <14.4> substituted on input line 73.
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <9.58127> not available
-(Font)              size <10> substituted on input line 72.
+(Font)              size <10> substituted on input line 73.
 
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 75.
+ mdframed uses option nobreak mdframed on input line 76.
 
 
 [4]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 80.
+(mdframed)              on input line 81.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 82.
+(mdframed)              on input line 83.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 83.
+ mdframed uses option nobreak mdframed on input line 84.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 85.
+(mdframed)              on input line 86.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 86.
+ mdframed uses option nobreak mdframed on input line 87.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 88.
+(mdframed)              on input line 89.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 89.
+ mdframed uses option nobreak mdframed on input line 90.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 93.
+(mdframed)              on input line 94.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 95.
+(mdframed)              on input line 96.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 96.
+ mdframed uses option nobreak mdframed on input line 97.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 98.
+(mdframed)              on input line 99.
 
-Underfull \hbox (badness 10000) in paragraph at lines 98--100
+Underfull \hbox (badness 10000) in paragraph at lines 99--101
 
  []
 
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 102.
+ mdframed uses option nobreak mdframed on input line 103.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 104.
-<pic1.png, id=90, 596.98032pt x 87.32625pt>
+(mdframed)              on input line 105.
+<pic1.png, id=91, 596.98032pt x 87.32625pt>
 File: pic1.png Graphic file (type png)
 <use pic1.png>
-Package pdftex.def Info: pic1.png  used on input line 106.
+Package pdftex.def Info: pic1.png  used on input line 107.
 (pdftex.def)             Requested size: 358.19095pt x 52.39615pt.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 108.
+ mdframed uses option nobreak mdframed on input line 109.
 
 
 [5 <./pic1.png>]
@@ -1412,18 +1415,18 @@ Package rerunfilecheck Info: File `"main text".out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 39784 strings out of 473190
- 839218 string characters out of 5715801
+ 39790 strings out of 473190
+ 839291 string characters out of 5715801
  1427879 words of memory out of 5000000
- 62249 multiletter control sequences out of 15000+600000
- 581172 words of font info for 164 fonts, out of 8000000 for 9000
+ 62250 multiletter control sequences out of 15000+600000
+ 581290 words of font info for 166 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  123i,20n,128p,11025b,1606s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb>
-Output written on "main text.pdf" (6 pages, 147928 bytes).
+Output written on "main text.pdf" (6 pages, 148140 bytes).
 PDF statistics:
- 191 PDF objects out of 1000 (max. 8388607)
- 145 compressed objects within 2 object streams
- 44 named destinations out of 1000 (max. 500000)
+ 192 PDF objects out of 1000 (max. 8388607)
+ 146 compressed objects within 2 object streams
+ 45 named destinations out of 1000 (max. 500000)
  53426 words of extra memory for PDF output out of 61914 (max. 10000000)
 
