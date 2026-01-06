@@ -1,0 +1,44 @@
+\contentsline {section}{\nonumberline Acknowledgment}{1}{section*.2}%
+\contentsline {section}{\nonumberline Recommendations for readers}{2}{section*.11}%
+\contentsline {section}{\nonumberline Chapter 1: Preliminaries}{5}{section*.14}%
+\contentsline {subsection}{\nonumberline Exercise 2.5}{5}{subsection*.16}%
+\contentsline {subsection}{\nonumberline Exercise 3.9}{5}{subsection*.20}%
+\contentsline {subsection}{\nonumberline Exercise 4.4}{7}{subsection*.33}%
+\contentsline {subsection}{\nonumberline Exercise 5.9}{7}{subsection*.39}%
+\contentsline {section}{\nonumberline Chapter 2: Groups, first encounter}{8}{section*.45}%
+\contentsline {subsection}{\nonumberline Exercise}{8}{subsection*.47}%
+\contentsline {subsection}{\nonumberline Joke 1.1}{8}{subsection*.53}%
+\contentsline {subsection}{\nonumberline Exercise 2.12}{8}{subsection*.58}%
+\contentsline {subsection}{\nonumberline Exercise 2.15}{9}{subsection*.62}%
+\contentsline {subsection}{\nonumberline Exercise 3.3}{9}{subsection*.67}%
+\contentsline {subsection}{\nonumberline Exercise 3.5}{9}{subsection*.75}%
+\contentsline {subsection}{\nonumberline Exercise 4.4}{10}{subsection*.81}%
+\contentsline {subsection}{\nonumberline Exercise 4.12}{11}{subsection*.87}%
+\contentsline {subsection}{\nonumberline Exercise 4.13}{11}{subsection*.91}%
+\contentsline {subsection}{\nonumberline Exercise 4.15}{11}{subsection*.95}%
+\contentsline {subsection}{\nonumberline Exercise 5.4}{11}{subsection*.100}%
+\contentsline {subsection}{\nonumberline Exercise 5.6}{12}{subsection*.110}%
+\contentsline {subsection}{\nonumberline Exercise 6.7}{13}{subsection*.115}%
+\contentsline {subsection}{\nonumberline Exercise 6.9}{13}{subsection*.119}%
+\contentsline {subsection}{\nonumberline Exercise 6.11}{13}{subsection*.125}%
+\contentsline {subsection}{\nonumberline Exercise 7.7}{14}{subsection*.130}%
+\contentsline {subsection}{\nonumberline Exercise 7.11}{14}{subsection*.134}%
+\contentsline {subsection}{\nonumberline Exercise 8.1}{14}{subsection*.141}%
+\contentsline {subsection}{\nonumberline Exercise 8.3}{15}{subsection*.160}%
+\contentsline {subsection}{\nonumberline Exercise 8.6}{17}{subsection*.167}%
+\contentsline {subsection}{\nonumberline Exercise 8.8}{17}{subsection*.171}%
+\contentsline {subsection}{\nonumberline Exercise 8.9}{18}{subsection*.176}%
+\contentsline {subsection}{\nonumberline Exercise 8.10}{18}{subsection*.181}%
+\contentsline {subsection}{\nonumberline Exercise 8.14}{19}{subsection*.186}%
+\contentsline {subsection}{\nonumberline Exercise 8.17}{20}{subsection*.194}%
+\contentsline {subsection}{\nonumberline Exercise 9.4}{20}{subsection*.198}%
+\contentsline {subsection}{\nonumberline Exercise 9.9}{21}{subsection*.212}%
+\contentsline {subsection}{\nonumberline Exercise 9.10}{21}{subsection*.217}%
+\contentsline {subsection}{\nonumberline Exercise 9.13}{22}{subsection*.227}%
+\contentsline {subsection}{\nonumberline Exercise 9.14}{22}{subsection*.231}%
+\contentsline {subsection}{\nonumberline Exercise 9.16}{23}{subsection*.239}%
+\contentsline {subsection}{\nonumberline Exercise 9.17}{24}{subsection*.244}%
+\contentsline {subsection}{\nonumberline Exercise 10.1}{24}{subsection*.248}%
+\contentsline {subsection}{\nonumberline Exercise 10.5}{25}{subsection*.252}%
+\contentsline {subsection}{\nonumberline Exercise}{26}{subsection*.256}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
