@@ -5,6 +5,7 @@
 \newcommand{\Q}{\mathbb{Q}}
 \newcommand{\Z}{\mathbb{Z}}
 \newcommand{\F}{\mathbb{F}}
+\newcommand{\C}{\mathbb{C}}
 \usepackage{relsize}
 \setcounter{secnumdepth}{0}
 \begin{document}
@@ -24,8 +25,8 @@
     \item Thank Evan Chen for creating such a beautiful latex style. 
     \item English is not my first language. I apologize for any grammatical errors in this companion (in fact, a lot). Just ignore them. Not that deep. 
     \item This companion contains my personal notes, results I found beautiful and solutions to most of the challenging exercises. They may not be the best solutions or the most elegant ones. Please feel free to contact me if you have better solutions or suggestions. The discussions in chapter 1 and 2 are sort of meaningless and naive, but I included them for completion. 
-    \item Algebra Chapter 0 is not as difficult as Lang's Algebra. So this companion is not necessary. But I hope it can help some readers who are new to abstract algebra or new to college-level math. 
-    \item By the time I wrote this companion, I am a first year undergraduate student. There may be some mistakes in this companion. Please feel free to contact me if you find any mistakes or have any suggestions. 
+    \item Algebra Chapter 0 is not as difficult as Lang's Algebra. So this companion is not necessary. But I hope it can provide a little help to the readers who are new to abstract algebra or new to college-level math. Readers with more experience may not find this companion useful.
+    \item By the time I wrote this companion, I was a high school student. I yapped too much, and I am sorry if that bothers you. There may be some mistakes in this companion. Please feel free to contact me if you find any mistakes or have any suggestions. 
     \begin{center}
         My website: https://amazingboboy.github.io/my-website/.
         \\
@@ -43,13 +44,14 @@
 \tableofcontents
 \newpage
 \section{Chapter 1: Preliminaries}
-This chapter is mainly a review of basic concepts in set theory and category theory. My recommendations for readers: 
+    This chapter is mainly a review of basic concepts in set theory and category theory. My recommendations for readers: 
 \begin{itemize}
     \item Do not skip this chapter, read it word by word. Aluffi is a gifted writer. JUST BE PATIENT and READ. There are many subtle details that you probably have not seen before. 
     \item Try to do all the exercises. Most exercises are straightforward and don't take too much time but really help you solidify the concepts. This is especially important for readers who have not seen category theory before.
     \item The most important information (in my opinion) you need to take away from this chapter is the universal property. You may think it's useless at first, but I promise it will make sense once you get to section 7 of chapter 2. 
     \item Don't feel bad if you don't feel like you fully understand category theory after reading this chapter. This is normal. It's indeed abstract nonsense if you have no context to apply it to. The problem that makes me realize the power and clarity of category theory is Exercise 7.12 from chapter 2 (prove $F^{ab}(A)\cong F/[F,F]$). You may want to take a look at it when you get there. 
     \item Good Luck!
+%template
 \subsection{Exercise }
 \begin{discussion*}Exercise 
     \begin{abboy*}
@@ -63,53 +65,720 @@ This chapter is mainly a review of basic concepts in set theory and category the
     \end{evie*}
 \end{discussion*}
 
+
+
 \subsection{Exercise 2.5}
-\begin{discussion*}Formulate a notion of epimorphism, in the style of the notion of monomorphism seen in §2.6, and prove a result analogous to Proposition 2.3, for epimorphisms and surjection. 
+\begin{discussion*}
+    Formulate a notion of epimorphism, in the style of the notion of monomorphism seen in §2.6, and prove a result analogous to Proposition 2.3, for epimorphisms and surjection. 
     \begin{abboy*}
-    If f is an epimorphism, then f is surjective. 
-    \\
-    Not easy. 
-    \\
-Its form: for all sets Z and all functions $a'$ and $a'': B\to Z$, if $a'f=a''f$, then $a'=''a$. 
-\\
-Proof: $f: A\to B$. Assume f is not surjective for the sake of contradiction, then  there msut exist $b_0$ such that $b_0$ is not in $Im(f)$. Construct $a'(b_0)=1$ and $a''(b_0)=2$, and $a'(Im(f))=a''(Im(f))$ then $a'f=a''f$ but $a'$ doesn't equal to $a''$. Contradiction!
+        If f is an epimorphism, then f is surjective. 
+        \\
+        Not easy. 
+        \\
+        Its form: for all sets Z and all functions $a'$ and $a'': B\to Z$, if $a'f=a''f$, then $a'=''a$. 
+        \\
+        Proof: $f: A\to B$. Assume f is not surjective for the sake of contradiction, then  there msut exist $b_0$ such that $b_0$ is not in $Im(f)$. Construct $a'(b_0)=1$ and $a''(b_0)=2$, and $a'(Im(f))=a''(Im(f))$ then $a'f=a''f$ but $a'$ doesn't equal to $a''$. Contradiction!
     \end{abboy*}
-
 \end{discussion*}
-\subsection{Exercise 4.4}
 
-\begin{discussion*}Exercise 4.4
+
+\subsection{Exercise 3.9}
+\begin{discussion*}
+    An alternative to the notion of multiset introduced in $§$2.2 is obtained by
+    considering sets endowed with equivalence relations; equivalent elements are taken
+    to be multiple instances of elements ‘of the same kind’. Define a notion of morphism
+    between such enhanced sets, obtaining a category MSet containing (a ‘copy’ of) Set
+    as a full subcategory. (There may be more than one reasonable way to do this!
+    This is intentionally an open-ended exercise.) Which objects in MSet determine
+    ordinary multisets as defined in $§$2.2 and how? Spell out what a morphism of
+    multisets would be from this point of view. (There are several natural notions
+    of morphisms of multisets. Try to define morphisms in MSet so that the notion
+    you obtain for ordinary multisets captures your intuitive understanding of these
+    objects.)
+   
+    \begin{evie*}
+        I defined MSet like this in 3.9. Did anyone do it differently?
+    \begin{center}
+        \includegraphics[scale=0.6]{pic1-3.9.png}
+    \end{center}
+        In this category, a morphism is a monomorphism iff it is a injective, and an epimorphism iff it is surjective, but unlike in Set a morphism that is both mono and epi may not be iso.
+    \end{evie*}
+    \begin{arthur*}
+    i did the same thing
+    \end{arthur*}
     \begin{abboy*}
-    For second question, how can you have a category $C_{nonmono}$ without monomorphism? It must have identity right?
-    \end{abboy*}
-    \begin{abboy*}
-    btw any two non-monomorphism composition will be non-monomorphism. 
+        wait, which objects determine ordinary multisets as defined in 2.2 and how
+        what does $(A,\sim )$ mean? i assume A is a regular set and $\sim$ is a equiv relation. Ex. $A=\{a,b,c,d,e\}$ where $a\sim b$, $c\sim d\sim e$ (but $a,b,c,d,e$ are all distinct), then $(A,\sim)$ is essentially a multiset right since it's just $(a,a,c,c,c)$
+        i understand $A/\sim $
+        but $(A,\sim)$ is not in the book i think 
+        \\
+
+        in my example, are a and b the same thing in $(A,\sim)$?
     \end{abboy*}
     \begin{arthur*}
-    yeah, you can't have such a category, because the identity is always a monomorphism.
+        $(A, \sim)$ just means the set $A$ endowed with the equivalence relation $\sim$. In your example, you have a multiset that contains 2 distinct elements: $a$, which is the same as $b$, and you have 2 of that element, and $c$, which is the same as $d$ and $e$, and you have three of that one.
     \end{arthur*}
-\end{discussion*}
-\subsection{Exercise 5.9}
-
-\begin{discussion*}Exercise 5.9
     \begin{abboy*}
-    Say $A$, $B$ and $C$ are objects in category $\textbf{C}$. I think $A \times B \times C$ doesn't make sense in most category. In $SET$, it makes snese becasue $A\times B$ is also a set. But in general, $A \times B$ may not be the object of $\textbf{C}$. Then $(A\times B) \times C$ doesn't make sense.
-    \end{abboy*}
-    \begin{abboy*}
-    $@$Evie
-    \\
-
-product of objects doesn't amke sense soemtimes
+        $|(A,\sim)|$ is 2 or 5 in this case
     \end{abboy*}
     \begin{evie*}
-    "category with products" means a category where any two (or more, including infintely many) objects have a product in the category
+        I imagined embedding multisets like ${a, a, b}$ as sets-with-equivalence-relations ${(a,0), (a,1), b}$ with equivalence relation $(a,0)\sim (a,1)$. But there are also objects of MSet like ${(a,0), (a,1), ...}$ which would be interpreted as having infinitely many copies of $a$, which is not a multiset in the "a multiset is a function $A\to\mathbb N$" definition 
+        \\
+        I will say, I do find a lot of the exercises in this book to be worded confusingly, or where it's unclear what the author specifically wants from you. Not the worst-written exercises I've encountered, but could be a lot better
+    \end{evie*}
+    \begin{abboy*}
+        ok, so the size of $(A,\sim)$ is five
+    \end{abboy*}
+    \begin{evie*}
+        The size of $A$ is five. The size of $A/\sim$, which corresponds to how many distinct elements the multiset has, is two.
+    \end{evie*}
+    \begin{abboy*}
+        wait
+        \\
+        can you give me an example of a function that is both epi and mono but not iso in MSET
+        \\
+        i know this is true in general
+        \\
+        like in my opinion, MSet is bascially the same as Set. The objects in MSet are just with an extra relation right?
+        \\
+        MSet is isomorphic to SET?
+    \end{abboy*}
+    \begin{evie*}
+        Let $A=B={1,2}$ with $\sim_A = {(1,1),(2,2)}$ and $\sim_B={(1,1),(2,2),(1,2),(2,1)}$. The identity function is a morphism in MSet of $A\to B$ but not $B\to A$, and for $A\to B$ is both epi and mono
+        \\
+        This is almost exactly the same situation as there being a continuous function $[0,1)\cup [2,3)\to [0,2)$ that is injective and surjective but has no continuous inverse (and so is both epi and mono in the category of topological spaces with continuous maps, but not iso) 
+    \end{evie*}
+
+\end{discussion*}
+
+
+\subsection{Exercise 4.4}
+\begin{discussion*}
+    Prove that the composition of two monomorphisms is a monomorphism. Deduce that one can define a subcategory Cmono of a category $C$ by taking the same objects as in $C$ and defining $Hom_{C_{mono}} (A, B)$ to be the subset of $Hom_C(A, B)$ consisting of monomorphisms, for all objects A, B. (Cf. Exercise 3.8; of course, in
+    general $C_{mono}$ is not full in $C$.) Do the same for epimorphisms. Can you define
+    a subcategory $C_{nonmono}$ of $C$ by restricting to morphisms that are not monomorphisms?
+    \begin{abboy*}
+        For second question, how can you have a category $C_{nonmono}$ without monomorphism? It must have identity right?
+    \end{abboy*}
+    \begin{abboy*}
+        btw any two non-monomorphism composition will be non-monomorphism. 
+    \end{abboy*}
+    \begin{arthur*}
+        yeah, you can't have such a category, because the identity is always a monomorphism.
+    \end{arthur*}
+\end{discussion*}
+
+
+\subsection{Exercise 5.9}
+\begin{discussion*}
+    Let C be a category with products. Find a reasonable candidate for the universal property that the product $A \times B \times C$ of three objects of C ought to
+    satisfy, and prove that both $(A \times B) \times C$ and $A \times (B \times C)$ satisfy this universal
+    property. Deduce that $(A \times B) \times C$ and $A \times (B \times C)$ are necessarily isomorphic.
+    \begin{abboy*}
+        Say $A$, $B$ and $C$ are objects in category $\textbf{C}$. I think $A \times B \times C$ doesn't make sense in most category. In $SET$, it makes snese becasue $A\times B$ is also a set. But in general, $A \times B$ may not be the object of $\textbf{C}$. Then $(A\times B) \times C$ doesn't make sense.
+    \end{abboy*}
+    \begin{abboy*}
+        $@$Evie
+        \\
+        product of objects doesn't make sense sometimes
+    \end{abboy*}
+    \begin{evie*}
+        "category with products" means a category where any two (or more, including infintely many) objects have a product in the category
     \begin{center}
-        \includegraphics[scale=0.6]{pic1.png}
+        \includegraphics[scale=0.6]{pic1-5.9.png}
     \end{center}
     \end{evie*}
 \end{discussion*}
+
+
+
+
 \end{itemize}
 \section{Chapter 2: Groups, first encounter}
 If you have time, please try Exercise 7.12. 
+%template
+\subsection{Exercise }
+\begin{discussion*}Exercise 
+    \begin{abboy*}
+    
+    \end{abboy*}
+    \begin{arthur*}
+    
+    \end{arthur*}
+    \begin{evie*}
+    
+    \end{evie*}
+\end{discussion*}
+
+
+\subsection{Joke 1.1 }
+\begin{discussion*}Joke 1.1 
+    \begin{abboy*}
+    Groupiod is a category such that all its morphism are isomorphism. How is groupiod a group? I think it would make more sense if we say the $Aut_G(*)$ is a group. And the composition of the groupiod is the operator in the group
+    \end{abboy*}
+    
+    \begin{evie*}
+    Yeah, the definitions are equivalent.
+    \end{evie*}
+\end{discussion*}
+
+
+\subsection{Exercise 2.12}
+\begin{discussion*}Exercise 2.12
+    \begin{abboy*}
+    This is an interesting problem. Technique is infinite descent. Super cool but common in math olympiad.
+    \end{abboy*}
+\end{discussion*}
+
+
+\subsection{Exercise 2.15}
+\begin{discussion*}Exercise 2.15
+    \begin{abboy*}
+        It's worth thinking about.
+        \\
+        Problem itself is super easy. But it brings up a profound question, what is going to happen to the reduce residue system when we change $\mathbb{Z}/n\mathbb{Z}$ to $\mathbb{Z}/np \mathbb{Z}$ where $p$ is a prime.
+    \end{abboy*}
+    \begin{evie*}
+        This is closely related to 4.9.
+    \end{evie*}
+\end{discussion*}
+
+
+\subsection{Exercise 3.3}
+\begin{discussion*}Exercise 3.3
+    \begin{abboy*}
+        \[\begin{tikzcd}
+            &&& G \\
+            {G\times H} &&&&&& Z \\
+            &&& H
+            \arrow["{\pi_g(x)=(x,e_h)}"', from=1-4, to=2-1]
+            \arrow["{f_g}", from=1-4, to=2-7]
+            \arrow["{\sigma(x,y)=f_g(x)\cdot f_h(y)}"{description}, from=2-1, to=2-7]
+            \arrow["{\pi_h(h)=(e_g,h)}", from=3-4, to=2-1]
+            \arrow["{f_h}"', from=3-4, to=2-7]
+        \end{tikzcd}\]
+
+        I only use the the concept of abelian group once. Is my solution correct? 
+        For any $x\in G$ and $y\in H$, $\sigma(x,y)=\sigma((x,e_h)\cdot(e_g,y))=\sigma((x,e_h))\cdot
+        \sigma((e_g,y))=xy=yx$ (here is m the only place i use communicative).
+    \end{abboy*}
+    \begin{evie*}
+        Looks right to me.
+    \end{evie*}
+    \begin{abboy*}
+        is it ture when $G$ and $H$ are infinite?
+        \\
+        cuz i see some post on mathstack said that this reuslt only holds when $G$ and $H$ are finite. but the book doesn't mention it at all
+        \\
+        https://math.stackexchange.com/questions/243791/coproducts-in-textab
+    \end{abboy*}
+    \begin{evie*}
+        Yes it is still true when G and H are infinite
+        "Infinite coproduct" in that link means the coproduct of infinitely many groups.
+    \end{evie*}
+    \begin{abboy*}
+        oh, i see.
+        \\
+        i am scared of "infinite"
+        \\
+        but intuitively, this works regardless of the cardinality
+    \end{abboy*}
+\end{discussion*}
+
+
+\subsection{Exercise 3.5}
+\begin{discussion*}Exercise 3.5
+    \begin{abboy*}
+        I assume author mean $\mathbb{Q}$ is a group with addition. 
+        My solution: Assume $\mathbb{Q}=A\times B$ for the sake of contradiction. Assume $1=(x,y)$ where $x \in A$ and $y \in B$. For any rational $\frac{p}{q}$, it must be some $(a,b)$ where $a\in A$ and $b\in B$. Therefore, $p=q(a,b)=p(x,y)$. Thus, $\frac{a}{b}=\frac{x}{y}$ for all $a$ and $b$. This is impossible. 
+
+        Someone check my sol
+    \end{abboy*}
+    \begin{evie*}
+        Looks right to me. Similar to how I solved it.
+        \begin{center}
+            \includegraphics[scale=0.5]{pic2-3.5.png}
+        \end{center}
+    \end{evie*}
+    \begin{abboy*}
+        make more sense
+        \\
+        my solution has a bug, but can be easily fixed.
+        \\
+        So neat.
+    \end{abboy*}
+\end{discussion*}
+
+
+\subsection{Exercise 4.4}
+\begin{discussion*}Exercise 4.4
+    \begin{evie*}
+        Are $(\R,+)$ and $(\C,+)$ isomorphic?
+        \\
+        Has anyone made progress on this yet? I am pretty stuck.
+        \\
+        My best idea so far is: Consider both groups as vector spaces over $\Q$. Both have dimension $|\R|$, so there is a bijection between their bases that should extend to a bijective linear map from $\R$ to $\C$, and a linear map is just a group homomorphism with extra structure (respects scalar multiplication). But this does not seem like the kind of proof that's intended, and I also am not really familiar with the details for infinite-dimensional vector spaces (does same dimension imply linear isomorphism, or is that only for finite-dimensional vector spaces?)
+    \end{evie*}
+    \begin{arthur*}
+        i think that assuming the axiom of choice, your proof works (just pick a basis for both, map one to the other, extend linearly). but yeah, i don't think this is the intended solution at this point in the book, especially given that problem IV.1.1 is proving that RR and CC are QQ-linearly isomorphic
+    \end{arthur*}
+    \begin{abboy*}
+        it makes sense to me if both of them have the same dimension
+        oops, I am also unfamiliar with infinite dimension. 
+        I hate infinite. These things are counterintuitive.
+    \end{abboy*}
+\end{discussion*}
+
+
+\subsection{Exercise 4.12}
+\begin{discussion*}Exercise 4.12
+    \begin{abboy*}
+        $x^3=9$ ahs no solution because $1=(x^3)^{10}=9^{10}\not=1 \pmod{31}$
+    \end{abboy*}
+\end{discussion*}
+
+
+\subsection{Exercise 4.13}
+\begin{discussion*}Exercise 4.13
+    \begin{abboy*}
+        first of all, $(0,0)$ must go to $(0,0)$. For the rest of the three distinct elements $a$, $b$ and $c$ in $\mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$. They satisfy a key fact: $a+b=c$. This makes all permutations a group homomorphism. Just to share some thoughts
+        \\
+        $a+a$ is always $(0,0)$
+        \\
+        a little cute structure
+    \end{abboy*}
+\end{discussion*}
+
+
+\subsection{Exercise 4.15}
+\begin{discussion*}Exercise 4.15
+    \begin{abboy*}
+        compute the automorphism of $(\mathbb{Z},+)$. 
+
+        So it must satisfy $f(a)+f(b)=f(a+b)$. THIS IS Cauchy equation in functional equation. So the solution in $\mathbb{Z}$ is $f(x)=kx$ But since we want an isomorphism so $k$ is either $1$ or $-1$.
+    \end{abboy*}
+    \begin{evie*}
+        Another solution is just to observe that a homomorphism with $\mathbb{Z}$ (or any of its quotients) is fully determined by where it sends 1. 
+    \end{evie*}
+\end{discussion*}
+
+
+\subsection{Exercise 5.4}
+\begin{discussion*} $w\cdot w'=R(w\cdot w')$ is associative. 
+    \begin{evie*}
+        I was stuck on this one. Of course there is the brute-force approach but surely there is something better
+    \end{evie*}
+    \begin{abboy*}
+        ?brute force?
+        \\
+        wut
+        \\
+        how
+        \\
+        there are infinitely many cases i mean
+        \\
+        did u know any nice approach?
+        \\
+        i mean induction is fine
+        \\
+        wait
+        \\
+        actually
+        \\
+        induction is very straightforward
+        \\
+        it's kinda hard to type the proof
+        let me know if you want to know my proof, we can call (i want to share lol, if you are available)
+        \\
+        $@$Arthur
+        i have a solution that is pretty neat i think, using induction 
+        \\
+        The idea is to induce on the length of the words
+        \\
+        Hi Evie
+    \end{abboy*}
+    \begin{evie*}
+        I think there is a more beautiful proof from the fact that multiplication in the free group is just concatenation of paths in the Cayley graph (with cycles removed), and concatenation of paths is obviously associative 
+        \\
+        I'm not sure of the details yet though
+    \end{evie*}
+    \begin{abboy*}
+        Cayley graph in n dimension?
+        Sounds interesting
+    \end{abboy*}
+    \begin{arthur*}
+        i dont see how you induce on the length of the words
+    \end{arthur*}
+    \begin{abboy*}
+        Assume the claim is true for n
+        \\
+        In n+1, consider the last element $a$.
+        \\
+        Case 1: the nth element is not $a^{-1}$
+        \\
+        Case 2: the nth element is $a^{-1}$
+    \end{abboy*}
+    \begin{arthur*}
+        okay, that's essentially where I was stuck. Case 2 does not seem obvious to me
+    \end{arthur*}
+    So I basically explain it over a call, and he agreed with my solution.
+\end{discussion*}
+
+
+\subsection{Exercise 5.6}
+\begin{discussion*}Exercise 5.6
+    \begin{abboy*}
+        when author asks me to prove G is a coproduct of $A$ and $B$ in Grp, does he want me to draw the catgeory diagram and find a unqiue homomorphism (prove the G is an initial in the $Grp^{A,B}$)
+    \end{abboy*}
+    \begin{arthur*}
+        Yeah
+    \end{arthur*}
+\end{discussion*}
+
+
+\subsection{Exercise 6.7}
+\begin{discussion*}Exercise 6.7
+    \begin{abboy*}
+        if $\operatorname{Aut}(G) $ is cyclic, then $G$ is abelian. I found it difficult to prove this amazing result if you do not know $\operatorname{Inn}$. I appreciate how author guide us from $\operatorname{Inn}$ to $\operatorname{Aut}$. This is a fantastic proof.
+        \\
+        when we study a large group, we should look into some of its subgroups. it's like when we solve a Diophantine equation, it's hard to solve it directly. mod 3,4,5 etc. make our life easier.
+    \end{abboy*}
+\end{discussion*}
+
+
+\subsection{Exercise 6.9}
+\begin{discussion*}Exercise 6.9
+    \begin{abboy*}
+        someone checks my solution please. 
+
+        So for any finitely generated subgroup $G$ of $\mathbb{Q}$, there must exists a surjective homomorphism $\phi$ from $\mathbb{Z}^{\oplus n}$ to $G$. $n=1$ is trivial. Let's look at the case when $n=2$. So for any $x\in G$, there must exists integers $a$ and $b$ such that $x=a \times \phi(1,0)+ \times \phi(0,1)$. Assume $\phi(1,0)=\frac{p}{q}$ and $\phi(0,1)=\frac{m}{n}$. Then $x=\frac{apn+bmq}{qn}$. Apply Bezout's theorem, there must exists $a_0$ and $b_0$ such that $a_0pn+b_0mq=gcd(pn,mq)=d$. So $\frac{d}{qn}$ will be the generator of $G$. Thus, $G$ is cyclic.
+        \\
+
+        This solution starts from the categorical definition. but in this problem, using the latter definition is easier.
+    \end{abboy*}
+    \begin{abboy*}
+        nvm
+        \\
+        for any finitely generated group, let's assume its generators are $a_1$ to $a_n$. there must exists a $k$ such that $k\mid a_i$ is an integer. So $<a_1, \cdots ,a_n>$ is a subgroup of $<k>$. Thus, $<a_1, \cdots , a_n>  $must be a cyclic group
+        \\
+    \end{abboy*}
+    \begin{evie*}
+        Reading your solution now. There is also the option to just multiply everything in the subgroup by the lcm of the denominators of the generators to get a subgroup of $(\mathbb{Z},+)$, show that subgroup is cyclic, and divide by the lcm again
+        \\
+        Oh didn't see your second post, which is basically that.
+        \\
+        Yes, it looks right to me in the 2-generator case
+        \\
+        Doesn't affect the validity, but "Bezout's theorem" is a theorem in algebraic geometry that generalizes "polynomials of degree N intersect at at most N points". The one you mean is called Bezout's lemma.
+    \end{evie*}
+\end{discussion*}
+
+
+\subsection{Exercise 6.11}
+\begin{discussion*}Exercise 6.11
+    \begin{abboy*}
+        wut? coproduct of a non abelian group must be infinite right? so not $S_3$ 
+    \end{abboy*}
+    \begin{evie*}
+        Yeah that should work
+    \end{evie*}
+\end{discussion*}
+
+
+\subsection{Exercise 7.7}
+\begin{discussion*}Exercise 7.7
+    \begin{abboy*}
+        Not an easy one but solved!
+        Key 1: if $x$ is an element of order $n$, then for any $g \in G$, $(gxg^{-1})^n=e$ 
+
+        Key 2: if $x=h_1...h_k$ is in $H$ where $h_i$ has order of $n$, $gxg^{-1}=(gh_1g^{-1})(gh_2g^{-1})...gh_kg^{-1}$
+    \end{abboy*}
+
+\end{discussion*}
+
+
+\subsection{Exercise 7.11}
+\begin{discussion*}Exercise 7.11
+    \begin{abboy*}
+        Key: $gaba^{-1}b^{-1}g^{-1}=(gag^{-1})(gbg^{-1})(ga^{-1}g^{-1})(gb^{-1}g^{-1})=(gag^{-1})(gbg^{-1})(gag^{-1})^{-1}(gbg^{-1})^{-1}$
+        \\
+        Motivation: Define $\gamma_g=f$. Note that $f(ab)=f(a)f(b)$ THIS IS A CRAZY FUNCTION! And $f$ is a homomorphism. Favorite function in this book 
+        \\
+        Thus, $f(aba^{-1}b^{-1})=f(a)f(b)f(a^{-1})f(b^{-1})=f(a)f(b)f(a)^{-1}f(b)^{-1}$
+    \end{abboy*}
+    \begin{evie*}
+        Thanks. I feel like I tried a bunch of things like this, so I'm not sure how I missed it
+    \end{evie*}
+    \begin{abboy*}
+        yeayea
+        $G/[G,G]$ is abelian $\Leftrightarrow  ab\sim ba \Leftrightarrow  ab(ba)^{-1}=aba^{-1}b^{-1} \in [G,G]$ which is obvious
+    \end{abboy*}
+    \begin{evie*}
+        Anyway I always think of $\gamma_g$ as "do something in a different reference frame", like when you diagonalize a matrix.
+    \end{evie*}
+
+\end{discussion*}
+
+
+\subsection{Exercise 8.1}
+\begin{discussion*}Exercise 8.1
+    \begin{abboy*}
+        This is true right?
+        \\
+        $G_1\cong \frac{G_1\times H}{{e}\times H} \cong \frac{G_1\times H}{H\times {e}}\cong \frac{G_1}{H}\times \frac{H}{{e}}\cong \frac{G_2}{H}\times \frac{H}{{e}}$ 
+    \end{abboy*}
+    \begin{arthur*}
+        No. $S_3/C_3 = C_2 = C_6/C_3$ but $C_6$ and $S_3$ are different, as per examples 8.5 and 8.6
+    \end{arthur*}
+    \begin{abboy*}
+        what was wrong about my sol?
+    \end{abboy*}
+    \begin{arthur*}
+        im not sure you can split the quotients as you do $\frac{G \times H}{H \times e} =(G /H) \times (H/e)$
+        \\
+        everything else checks out i think
+    \end{arthur*}
+    \begin{abboy*}
+        Claim 8.4.
+    \end{abboy*}
+    \begin{arthur*}
+        ah yea
+        \\
+        $H$ is not necessarily normal though
+    \end{arthur*}
+    \begin{abboy*}
+        wut? then $G/H$ is not a group
+    \end{abboy*}
+    \begin{arthur*}
+        ah yeah.
+    \end{arthur*}
+    \begin{abboy*}
+        in this example, $C_3$ is normal
+    \end{abboy*}
+    \begin{arthur*}
+        yeah as well
+    \end{arthur*}
+    \begin{abboy*}
+        wait if $X\cong Y$ and $X$ and $Y$ are both normal in $G$. does it imply $G/X \cong G/Y$
+    \end{abboy*}
+    \begin{arthur*}
+        no i dont think so
+    \end{arthur*}
+    \begin{abboy*}
+        that's not necessarily true? $X$ and $Y$ can be dif subgroup of $G$
+        \\
+        i think that's the problem
+
+    \end{abboy*}
+    \begin{arthur*}
+        $\Z/d\Z$ are all different
+but all $d\Z$ are isomorphic to $\Z$
+    \end{arthur*}
+    \begin{abboy*}
+        $\frac{G_1\times H}{{e}\times H} \cong \frac{G_1\times H}{H\times {e}}$ is invalid.
+        \\
+        $\Z$ and $d\Z$ are perfect counterexample here. 
+    \end{abboy*}
+    \begin{abboy*}
+        yeah ok but the reason your proof didn't work was very subtle
+    \end{abboy*}
+\end{discussion*}
+
+
+\subsection{Exercise 8.3}
+\begin{discussion*}Exercise 8.3 
+    \begin{abboy*}
+        this is a cool result
+        \\
+        how do you guys prove it?
+        \\
+        my proof: choose the set A to be the underlying set of group $G$. Assume the underlying set of $G$ contains $n$ element: $a_1$ to $a_n$. for any $i$ and $j$, $a_i \cdot a_j=f(i, j)$
+
+        Choose R to be the $\textbf{normal subgroup}$ generated by \[\{ a_ia_jf(i, j)^{-1} \mid \text{for all } i \text{ and } j\}\]
+        we know they there must exits a homomorphism from F(G) to G (cuz F(G) is an initial) and the kernel is $K$.
+        \\
+        we need to prove $K=R$
+        \\
+        so for any element in $R$, it's clearly in $K$
+        \\
+        so for any element in $R$, it's clearly in $K$
+        \\
+        for any word in $K$, assume it's length is $n$. we induce on $n$. $n=1,2$ are trivial cases.
+        \\
+        when $n=m+1$, assume the first two element is $a_1$ and $a_2$. Assume the word is $a_1a_2 Z$ where $Z$ contains  $m-1$ letters.  We know that $a_1a_2f(1,2)^{-1}$ can be used.  By assumption, we construct the word $f(1,2)^{-1}Z$ since it's in the kernel and with length $\leq n$
+        \\
+        So we conclude that $K=R$
+        \\
+        so any finite group is finitely presneted.
+        guys check my proof
+        \\
+        also i want to know how you guys apporach this
+    \end{abboy*}
+    \begin{arthur*}
+        not sure i understand the details of your proof but i used the same general idea.
+        \begin{center}
+            \includegraphics[scale=0.6]{pic2-8.3.png}
+        \end{center}
+    \end{arthur*}
+    \begin{abboy*}
+        basically the same
+        yeah
+        \\
+        but u don't have to exclude the identity
+        right?
+    \end{abboy*}
+    \begin{arthur*}
+        yeah i dont think so. it just seemed cleaner to me
+    \end{arthur*}
+\end{discussion*}
+
+
+\subsection{Exercise 8.6}
+\begin{discussion*}Exercise 8.6
+    \begin{abboy*}
+        such a nice result but easy to prove. if the graph is a tree, then generators of  group has no relationship, then it must be free
+    \end{abboy*}
+\end{discussion*}
+
+
+\subsection{Exercise 8.8}
+\begin{discussion*}Exercise 8.8
+    \begin{abboy*}
+        Answer: $(R^*,x)$?
+    \end{abboy*}
+
+    \begin{evie*}
+        Yeah, this was my answer
+        \\
+        Proof: The determinant is a surjective group homomorphism $GL_n\to \R^*$, and its kernel is $SL_n$. First isomorphism theorem says that $\R^*$ is isomorphic to $GL_n / SL_n$
+    \end{evie*}
+\end{discussion*}
+
+
+\subsection{Exercise 8.10}
+\begin{discussion*}Exercise 8.10
+    \begin{abboy*}
+        What is $\frac{\mathbb{R} \times \mathbb{R} }{\mathbb{Z} \times \mathbb{Z}}$
+        \\
+        is it a Torus? 
+        \begin{center}
+            \includegraphics[scale=0.5]{pic2-8.10.png}
+        \end{center}
+    \end{abboy*}
+    \begin{evie*}
+        Yes it is. 
+    \end{evie*}
+\end{discussion*}
+
+
+\subsection{Exercise 8.14}
+\begin{discussion*}Exercise 8.14
+    \begin{abboy*}
+        quite interesting!
+        $f: g \to g^k$. 
+        Construct a integer $E$ such that $E\equiv 0 \pmod k$ and $E\equiv 1 \pmod n$ By Chinese remineder theorem, $E$ must exist. 
+        \\
+        For any $x\in G$, we take $f( x^{\frac{E}{k}})=x^E$. 
+        \\
+        Since the order of $x$, say $r$, must divide $n$. So $E\equiv 1 \pmod r$. So $x^E=x^{mr+1}=x$. 
+        \\
+        Thus, $f$ is surjective. 
+        \\
+        This is super useful. 
+        \\
+        Ex. When $p$ is a prime such that $p\equiv 2 \pmod 3$. $x^3 =a \pmod p$ always have a solution. Because $p-1$ is coprime to $3$! 
+    \end{abboy*}
+    \begin{evie*}
+        Minor stylistic complaint: $\to$ is be used to describe the signature of a function. $\mapsto$ is the one you meant, ie. $f : G\to G : g\mapsto g^k$.
+    \end{evie*}
+    \begin{abboy*}
+        Ok bud. 
+    \end{abboy*}
+    \begin{arthur*}
+        interesting, i didn't use the chinese remainder theorem. Instead, since $G$ is finite, I show that the function is injective: take $a, b$ two integers such that $a k + b n = 1$. If $g$ and $h$ are two elements of the group such that $g^k = h^k$, since $g^n = e = h^n$, we have that $g = g^{a k + b n} = h^{a k + b n} = h$, so the function $x \mapsto x^k$ is injective and therefore surjective.
+    \end{arthur*}
+    \begin{abboy*}
+        amazing solution!
+        Bezout lemma. 
+    \end{abboy*}
+\end{discussion*}
+
+
+\subsection{Exercise 8.17}
+\begin{discussion*}Exercise 8.17
+    \begin{abboy*}
+        Normality is such a powerful condition. Think about it. 
+
+        For a normal subgroup $H$. 
+
+        $aH \times bH$. Intuitively, it should have about $|H|^2$ (i mean, we really don't know) element right? But since $H$ is a subrgoup and it's normal. It tells us $aH \times bH = abb^{-1}HbH=ab (b^{-1}Hb) H=abHH =abH$. THIS IS A SUPER POWER TOOL. $(xH)^p$ is the same as $x^pH$. I know it's very obvious when you consider it in the view of equivlent relationship.  But When I look at $aH \times bH = abH$ without considering relationship and quotient group, I finally realize how powerful it is. 
+
+        In this problem, the indcutive step reuqires this insight. If there is a element $x$ of order $p$ in $G/H$, then $(xH)^p = H$ in $G$. So there musts exist an $h_0\in H$ such that $(xh_0)^p=e$.
+    \end{abboy*}
+\end{discussion*}
+
+
+\subsection{Exercise 8.9}
+\begin{discussion*}Exercise 8.9
+    \begin{evie*}
+        How did  you solve this? I really feel like there should be a beautiful solution but I can't find it.
+    \end{evie*}
+    \begin{abboy*}
+        U send the matrix in Ex6.3 to Exercise 8.9. Same a, b, c, d
+        That is actually a homomorphin
+        I checked it by computer
+        Surprising
+        I searched it up online, it has something to do with quaternion which I am not familiar with
+        I also feel like I need to learn more linear alg ngl
+        I never really handle complex matrix
+        Like I know most of the defs but need to learn more about it
+        \begin{center}
+            \includegraphics[scale=0.2]{pic2-8.9.png}
+        \end{center}
+    \end{abboy*}
+\end{discussion*}
+
+
+\subsection{Exercise }
+\begin{discussion*}Exercise 
+    \begin{abboy*}
+    
+    \end{abboy*}
+    \begin{arthur*}
+    
+    \end{arthur*}
+    \begin{evie*}
+    
+    \end{evie*}
+\end{discussion*}
+
+
+\subsection{Exercise }
+\begin{discussion*}Exercise 
+    \begin{abboy*}
+    
+    \end{abboy*}
+    \begin{arthur*}
+    
+    \end{arthur*}
+    \begin{evie*}
+    
+    \end{evie*}
+\end{discussion*}
+
+
+\subsection{Exercise }
+\begin{discussion*}Exercise 
+    \begin{abboy*}
+    
+    \end{abboy*}
+    \begin{arthur*}
+    
+    \end{arthur*}
+    \begin{evie*}
+    
+    \end{evie*}
+\end{discussion*}
+
 
 \end{document}

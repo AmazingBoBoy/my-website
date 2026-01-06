@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  3 JAN 2026 16:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  6 JAN 2026 00:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1016,33 +1016,33 @@ Package: relsize 2013/03/29 ver 4.1
 ) (./main text.aux)
 \openout1 = `"main text.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-Package scrbase Info: activating english \abstractname on input line 10.
-Package scrbase Info: activating english \partname on input line 10.
-Package scrbase Info: activating english \figurename on input line 10.
-Package scrbase Info: activating english \tablename on input line 10.
-Package scrbase Info: activating english \contentsname on input line 10.
-Package scrbase Info: activating english \listfigurename on input line 10.
-Package scrbase Info: activating english \listtablename on input line 10.
-Package scrbase Info: activating english \refname on input line 10.
-Package scrbase Info: activating english \indexname on input line 10.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+Package scrbase Info: activating english \abstractname on input line 11.
+Package scrbase Info: activating english \partname on input line 11.
+Package scrbase Info: activating english \figurename on input line 11.
+Package scrbase Info: activating english \tablename on input line 11.
+Package scrbase Info: activating english \contentsname on input line 11.
+Package scrbase Info: activating english \listfigurename on input line 11.
+Package scrbase Info: activating english \listtablename on input line 11.
+Package scrbase Info: activating english \refname on input line 11.
+Package scrbase Info: activating english \indexname on input line 11.
  (/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count374
@@ -1062,7 +1062,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/local/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring ON on input line 10.
+Package hyperref Info: Link coloring ON on input line 11.
  (./main text.out) (./main text.out)
 \@outlinefile=\write6
 \openout6 = `"main text.out"'.
@@ -1074,7 +1074,7 @@ Class scrartcl Info: loading recommended package `bookmark'.
 (scrartcl)           `bookmarkpackage=false' before \begin{document} and
 (scrartcl)           you can avoid this message adding:
 (scrartcl)             \usepackage{bookmark}
-(scrartcl)           before \begin{document} on input line 10.
+(scrartcl)           before \begin{document} on input line 11.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
  (/usr/local/texlive/2025/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
@@ -1083,27 +1083,27 @@ File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO)
 ))
 \c@lstlisting=\count381
 Package tocbasic Info: omitting babel extension for `lol'
-(tocbasic)             because of missing \bbl@set@language on input line 10.
+(tocbasic)             because of missing \bbl@set@language on input line 11.
 \scr@dte@lstlisting@maxnumwidth=\skip154
 
 
-Package todonotes Warning: The length marginparwidth is less than 2cm and will most likely cause issues with the appearance of inserted todonotes. The issue can be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to loading the todonotes package. on input line 10.
+Package todonotes Warning: The length marginparwidth is less than 2cm and will most likely cause issues with the appearance of inserted todonotes. The issue can be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to loading the todonotes package. on input line 11.
 
-LaTeX Info: Redefining \dots on input line 10.
-LaTeX Info: Redefining \microtypecontext on input line 10.
-Package microtype Info: Applying patch `item' on input line 10.
-Package microtype Info: Applying patch `toc' on input line 10.
-Package microtype Info: Applying patch `eqnum' on input line 10.
-Package microtype Info: Applying patch `footnote' on input line 10.
-Package microtype Info: Applying patch `verbatim' on input line 10.
-LaTeX Info: Redefining \microtypesetup on input line 10.
+LaTeX Info: Redefining \dots on input line 11.
+LaTeX Info: Redefining \microtypecontext on input line 11.
+Package microtype Info: Applying patch `item' on input line 11.
+Package microtype Info: Applying patch `toc' on input line 11.
+Package microtype Info: Applying patch `eqnum' on input line 11.
+Package microtype Info: Applying patch `footnote' on input line 11.
+Package microtype Info: Applying patch `verbatim' on input line 11.
+LaTeX Info: Redefining \microtypesetup on input line 11.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 10.
+LaTeX Info: Redefining \showhyphens on input line 11.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1113,7 +1113,7 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (
 isodate: babel.sty, (n)german.sty have not been loaded
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <15> not available
-(Font)              size <14.4> substituted on input line 16.
+(Font)              size <14.4> substituted on input line 17.
 
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmss' (encoding: OT1).
@@ -1121,129 +1121,129 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 
 LaTeX Font Warning: Font shape `OT1/cmss/bx/n' in size <15> not available
-(Font)              size <14.4> substituted on input line 16.
+(Font)              size <14.4> substituted on input line 17.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/bx/n' in size <31.11008> not available
-(Font)              size <24.88> substituted on input line 16.
+(Font)              size <24.88> substituted on input line 17.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <21.60004> not available
-(Font)              size <20.74> substituted on input line 16.
+(Font)              size <20.74> substituted on input line 17.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/sc' in size <21.60004> not available
-(Font)              size <20.74> substituted on input line 16.
+(Font)              size <20.74> substituted on input line 17.
 
-LaTeX Font Info:    Calculating math sizes for size <21.60004> on input line 16.
+LaTeX Font Info:    Calculating math sizes for size <21.60004> on input line 17.
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <15.11995> not available
-(Font)              size <14.4> substituted on input line 16.
+(Font)              size <14.4> substituted on input line 17.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <21.60004> not available
-(Font)              size <20.74> substituted on input line 16.
+(Font)              size <20.74> substituted on input line 17.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <15.11995> not available
-(Font)              size <14.4> substituted on input line 16.
+(Font)              size <14.4> substituted on input line 17.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <21.60004> not available
-(Font)              size <20.74> substituted on input line 16.
+(Font)              size <20.74> substituted on input line 17.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <15.11995> not available
-(Font)              size <14.4> substituted on input line 16.
+(Font)              size <14.4> substituted on input line 17.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 16.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 17.
 (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 16.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 17.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Trying to load font information for OMX+yhex on input line 16.
+LaTeX Font Info:    Trying to load font information for OMX+yhex on input line 17.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/yhmath/OMXyhex.fd
 File: OMXyhex.fd 
 File: OMXyhex.fd 2013/07/03 v1.1 YH's humble contribution to TeX maths (NP)
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 16.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 17.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <21.60004> not available
-(Font)              size <20.74> substituted on input line 16.
+(Font)              size <20.74> substituted on input line 17.
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <15.11995> not available
-(Font)              size <14.4> substituted on input line 16.
+(Font)              size <14.4> substituted on input line 17.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/bx/n' in size <21.60004> not available
-(Font)              size <20.74> substituted on input line 20.
+(Font)              size <20.74> substituted on input line 21.
 
-LaTeX Font Info:    Calculating math sizes for size <15> on input line 23.
+LaTeX Font Info:    Calculating math sizes for size <15> on input line 24.
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <10.49995> not available
-(Font)              size <10.95> substituted on input line 23.
+(Font)              size <10.95> substituted on input line 24.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <7.5> not available
-(Font)              size <7> substituted on input line 23.
+(Font)              size <7> substituted on input line 24.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <15> not available
-(Font)              size <14.4> substituted on input line 23.
+(Font)              size <14.4> substituted on input line 24.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <10.49995> not available
-(Font)              size <10.95> substituted on input line 23.
+(Font)              size <10.95> substituted on input line 24.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <7.5> not available
-(Font)              size <7> substituted on input line 23.
+(Font)              size <7> substituted on input line 24.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <15> not available
-(Font)              size <14.4> substituted on input line 23.
+(Font)              size <14.4> substituted on input line 24.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <10.49995> not available
-(Font)              size <10.95> substituted on input line 23.
+(Font)              size <10.95> substituted on input line 24.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <7.5> not available
-(Font)              size <7> substituted on input line 23.
+(Font)              size <7> substituted on input line 24.
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <15> not available
-(Font)              size <14.4> substituted on input line 23.
+(Font)              size <14.4> substituted on input line 24.
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <10.49995> not available
-(Font)              size <10.95> substituted on input line 23.
+(Font)              size <10.95> substituted on input line 24.
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <7.5> not available
-(Font)              size <7> substituted on input line 23.
+(Font)              size <7> substituted on input line 24.
 
 
-LaTeX Font Warning: Command \Large invalid in math mode on input line 23.
+LaTeX Font Warning: Command \Large invalid in math mode on input line 24.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <21.60004> not available
-(Font)              size <20.74> substituted on input line 23.
+(Font)              size <20.74> substituted on input line 24.
 
 
 LaTeX Font Warning: Font shape `TS1/cmr/m/n' in size <15> not available
-(Font)              size <14.4> substituted on input line 37.
+(Font)              size <14.4> substituted on input line 38.
 
 
 
@@ -1254,14 +1254,14 @@ LaTeX Font Warning: Font shape `TS1/cmr/m/n' in size <15> not available
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <12.50015> not available
-(Font)              size <12> substituted on input line 42.
+(Font)              size <12> substituted on input line 43.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <12.50015> not available
-(Font)              size <12> substituted on input line 42.
+(Font)              size <12> substituted on input line 43.
 
 [2{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-Package tocbasic Info: character protrusion at toc deactivated on input line 43.
+Package tocbasic Info: character protrusion at toc deactivated on input line 44.
  (./main text.toc)
 \tf@toc=\write7
 \openout7 = `"main text.toc"'.
@@ -1271,137 +1271,817 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 43.
 [3]
 
 LaTeX Font Warning: Font shape `OT1/cmss/bx/n' in size <17.99995> not available
-(Font)              size <17.28> substituted on input line 53.
+(Font)              size <17.28> substituted on input line 55.
 
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 54.
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <13.68759> not available
-(Font)              size <14.4> substituted on input line 54.
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <13.68759> not available
-(Font)              size <14.4> substituted on input line 54.
-
-Package hyperref Info: bookmark level for unknown discussion* defaults to 0 on input line 54.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 56.
 
-LaTeX Font Warning: Font shape `OT1/cmss/bx/n' in size <13.68759> not available
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <13.68759> not available
 (Font)              size <14.4> substituted on input line 56.
 
-Package hyperref Info: bookmark level for unknown abboy* defaults to 0 on input line 56.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 57.
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <13.68759> not available
+(Font)              size <14.4> substituted on input line 56.
+
+Package hyperref Info: bookmark level for unknown discussion* defaults to 0 on input line 56.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 59.
-Package hyperref Info: bookmark level for unknown arthur* defaults to 0 on input line 59.
+(mdframed)              on input line 58.
+
+LaTeX Font Warning: Font shape `OT1/cmss/bx/n' in size <13.68759> not available
+(Font)              size <14.4> substituted on input line 58.
+
+Package hyperref Info: bookmark level for unknown abboy* defaults to 0 on input line 58.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 60.
+ mdframed uses option nobreak mdframed on input line 59.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 62.
-Package hyperref Info: bookmark level for unknown evie* defaults to 0 on input line 62.
+(mdframed)              on input line 61.
+Package hyperref Info: bookmark level for unknown arthur* defaults to 0 on input line 61.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 63.
+ mdframed uses option nobreak mdframed on input line 62.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 67.
+(mdframed)              on input line 64.
+Package hyperref Info: bookmark level for unknown evie* defaults to 0 on input line 64.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 65.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 72.
 
 LaTeX Font Warning: Font shape `TS1/cmr/m/n' in size <13.68759> not available
-(Font)              size <14.4> substituted on input line 67.
+(Font)              size <14.4> substituted on input line 72.
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 69.
-LaTeX Font Info:    Calculating math sizes for size <13.68759> on input line 73.
+(mdframed)              on input line 74.
+LaTeX Font Info:    Calculating math sizes for size <13.68759> on input line 78.
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <9.58127> not available
-(Font)              size <10> substituted on input line 73.
+(Font)              size <10> substituted on input line 78.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <13.68759> not available
-(Font)              size <14.4> substituted on input line 73.
+(Font)              size <14.4> substituted on input line 78.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <9.58127> not available
-(Font)              size <10> substituted on input line 73.
+(Font)              size <10> substituted on input line 78.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <13.68759> not available
-(Font)              size <14.4> substituted on input line 73.
+(Font)              size <14.4> substituted on input line 78.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <9.58127> not available
-(Font)              size <10> substituted on input line 73.
+(Font)              size <10> substituted on input line 78.
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <13.68759> not available
-(Font)              size <14.4> substituted on input line 73.
+(Font)              size <14.4> substituted on input line 78.
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <9.58127> not available
-(Font)              size <10> substituted on input line 73.
+(Font)              size <10> substituted on input line 78.
 
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 76.
+ mdframed uses option nobreak mdframed on input line 81.
 
 
 [4]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 81.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 83.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 84.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 86.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 87.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 89.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 90.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 94.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 96.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 97.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 99.
+(mdframed)              on input line 87.
 
-Underfull \hbox (badness 10000) in paragraph at lines 99--101
+
+LaTeX Warning: Command \textsection invalid in math mode on input line 87.
+
+
+LaTeX Warning: Command \textsection invalid in math mode on input line 87.
+
+Missing character: There is no § in font cmr12!
+
+LaTeX Warning: Command \textsection invalid in math mode on input line 93.
+
+
+LaTeX Warning: Command \textsection invalid in math mode on input line 93.
+
+Missing character: There is no § in font cmr12!
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 100.
+<pic1-3.9.png, id=149, 453.695pt x 24.09pt>
+File: pic1-3.9.png Graphic file (type png)
+<use pic1-3.9.png>
+Package pdftex.def Info: pic1-3.9.png  used on input line 102.
+(pdftex.def)             Requested size: 272.2191pt x 14.45409pt.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 105.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 107.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 108.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 110.
+
+Underfull \hbox (badness 10000) in paragraph at lines 110--115
 
  []
 
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 103.
+ mdframed uses option nobreak mdframed on input line 117.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 105.
-<pic1.png, id=91, 596.98032pt x 87.32625pt>
-File: pic1.png Graphic file (type png)
-<use pic1.png>
-Package pdftex.def Info: pic1.png  used on input line 107.
+(mdframed)              on input line 119.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 120.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 122.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 123.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 125.
+
+Overfull \hbox (4.767pt too wide) in paragraph at lines 125--128
+\OT1/cmr/m/n/14.4 (-20) equivalence-relations $[]$ with equiv-a-lence re-la-tion $(\OML/cmm/m/it/14.4 a; \OT1/cmr/m/n/14.4 (-20) 0) \OMS/cmsy/m/n/14.4 ^^X
+ []
+
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 128.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 130.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 131.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 133.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 134.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 136.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 145.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 147.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 150.
+
+
+[5 <./pic1-3.9.png>]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 157.
+
+Overfull \hbox (3.40936pt too wide) in paragraph at lines 157--161
+\OML/cmm/m/it/14.4 Hom[]\OT1/cmr/m/n/14.4 (-20) (\OML/cmm/m/it/14.4 A; B\OT1/cmr/m/n/14.4 (-20) )$ to be the sub-set of $\OML/cmm/m/it/14.4 Hom[]\OT1/cmr/m/n/14.4 (-20) (\OML/cmm/m/it/14.4 A; B\OT1/cmr/m/n/14.4 (-20) )$ con-sist-ing of monomor-
+ []
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 161.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 162.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 164.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 165.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 167.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 168.
+
+
+[6]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 174.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 178.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 179.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 181.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 184.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 186.
+<pic1-5.9.png, id=177, 596.98032pt x 87.32625pt>
+File: pic1-5.9.png Graphic file (type png)
+<use pic1-5.9.png>
+Package pdftex.def Info: pic1-5.9.png  used on input line 188.
 (pdftex.def)             Requested size: 358.19095pt x 52.39615pt.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 109.
+ mdframed uses option nobreak mdframed on input line 190.
 
 
-[5 <./pic1.png>]
+[7 <./pic1-5.9.png>]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 201.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 203.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 204.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 206.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 207.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 209.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 210.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 215.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 217.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 218.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 221.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 222.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 227.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 229.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 230.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 235.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 237.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 240.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 242.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 243.
 
-[6] (./main text.aux)
+
+Package mdframed Warning: You got a bad break
+(mdframed)                because the last box will be empty
+(mdframed)                you have to change it manually
+(mdframed)                by changing the text, the space
+(mdframed)                or something else on input line 244.
+
+
+
+[8]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 248.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 250.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 264.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 266.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 267.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 269.
+
+Overfull \hbox (0.13644pt too wide) in paragraph at lines 269--274
+\OT1/cmr/m/n/14.4 (-20) https://math.stackexchange.com/questions/243791/coproducts-in-textab 
+ []
+
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 274.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 276.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 278.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 280.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 285.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 290.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 292.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 296.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 298.
+<pic2-3.5.png, id=214, 831.105pt x 120.45pt>
+File: pic2-3.5.png Graphic file (type png)
+<use pic2-3.5.png>
+Package pdftex.def Info: pic2-3.5.png  used on input line 300.
+(pdftex.def)             Requested size: 415.55148pt x 60.22484pt.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 302.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 304.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 309.
+
+
+[9]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 314.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 316.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 321.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 323.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 324.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 326.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 329.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 334.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 336.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 337.
+
+
+[10 <./pic2-3.5.png>]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 342.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 344.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 349.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 354.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 356.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 359.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 361.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 362.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 367.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 369.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 370.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 372.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 399.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 401.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 404.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 406.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 408.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 410.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 411.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 413.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 420.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 422.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 423.
+
+
+[11]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 429.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 431.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 432.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 434.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 435.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 440.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 442.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 445.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 450.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 452.
+
+Underfull \hbox (badness 10000) in paragraph at lines 454--456
+
+ []
+
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 458.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 460.
+
+Underfull \hbox (badness 10000) in paragraph at lines 460--464
+
+ []
+
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 464.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 466.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 473.
+
+
+[12]
+Package mdframed Info: Not enough space on this page on input line 474.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 478.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 480.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 481.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 483.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 484.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 489.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 491.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 495.
+
+
+[13]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 501.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 503.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 508.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 510.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 511.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 513.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 515.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 517.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 518.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 524.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 526.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 529.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 531.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 532.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 534.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 535.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 537.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 540.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 542.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 543.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 545.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 548.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 550.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 551.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 553.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 554.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 556.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 557.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 559.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 560.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 562.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 563.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 565.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 566.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 568.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 572.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 574.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 576.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 578.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 581.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 583.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 584.
+
+
+[14]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 589.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 591.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 616.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 618.
+<pic2-8.3.png, id=310, 577.15625pt x 664.4825pt>
+File: pic2-8.3.png Graphic file (type png)
+<use pic2-8.3.png>
+Package pdftex.def Info: pic2-8.3.png  used on input line 620.
+(pdftex.def)             Requested size: 346.29642pt x 398.69257pt.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 622.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 624.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 629.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 631.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 632.
+
+
+[15]
+
+[16]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 637.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 639.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 640.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 645.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 647.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 648.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 651.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 654.
+
+
+[17 <./pic2-8.3.png>]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 659.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 661.
+<pic2-8.10.png, id=346, 491.8375pt x 323.2075pt>
+File: pic2-8.10.png Graphic file (type png)
+<use pic2-8.10.png>
+Package pdftex.def Info: pic2-8.10.png  used on input line 665.
+(pdftex.def)             Requested size: 245.91814pt x 161.60335pt.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 667.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 669.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 670.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 675.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 677.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 690.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 692.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 693.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 695.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 696.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 698.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 699.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 701.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 703.
+
+
+[18 <./pic2-8.10.png>]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 708.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 710.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 717.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 722.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 724.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 725.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 727.
+<pic2-8.9.png, id=362, 1664.2175pt x 666.49pt>
+File: pic2-8.9.png Graphic file (type png)
+<use pic2-8.9.png>
+Package pdftex.def Info: pic2-8.9.png  used on input line 736.
+(pdftex.def)             Requested size: 332.8376pt x 133.29564pt.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 738.
+
+
+[19]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 743.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 745.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 746.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 748.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 749.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 751.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 752.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 757.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 759.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 760.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 762.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 763.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 765.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 766.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 771.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 773.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 774.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 776.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 777.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 779.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 780.
+
+
+[20 <./pic2-8.9.png>]
+
+[21] (./main text.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2020/03/25>
@@ -1415,18 +2095,18 @@ Package rerunfilecheck Info: File `"main text".out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 39790 strings out of 473190
- 839291 string characters out of 5715801
- 1427879 words of memory out of 5000000
- 62250 multiletter control sequences out of 15000+600000
- 581290 words of font info for 166 fonts, out of 8000000 for 9000
+ 40491 strings out of 473190
+ 852254 string characters out of 5715801
+ 1463883 words of memory out of 5000000
+ 62702 multiletter control sequences out of 15000+600000
+ 582654 words of font info for 192 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 123i,20n,128p,11025b,1606s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb>
-Output written on "main text.pdf" (6 pages, 148140 bytes).
+ 123i,20n,128p,11025b,1609s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb>
+Output written on "main text.pdf" (21 pages, 723644 bytes).
 PDF statistics:
- 192 PDF objects out of 1000 (max. 8388607)
- 146 compressed objects within 2 object streams
- 45 named destinations out of 1000 (max. 500000)
- 53426 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 622 PDF objects out of 1000 (max. 8388607)
+ 542 compressed objects within 6 object streams
+ 242 named destinations out of 1000 (max. 500000)
+ 53683 words of extra memory for PDF output out of 61914 (max. 10000000)
 
