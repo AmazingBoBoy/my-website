@@ -1,0 +1,340 @@
+\documentclass[15pt]{scrartcl}
+\usepackage[sexy]{evan}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\A}{\mathbb{A}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\cF}{\mathcal{F}}
+\newcommand{\bF}{\mathbb{F}}
+\newcommand{\cO}{\mathcal{O}}
+\newcommand{\pre}{^{-1}}
+\newcommand{\maxideal}{\mathfrak{m}}
+\newcommand{\primeideal}{\mathfrak{p}}
+
+
+\usepackage{relsize}
+\begin{document}
+\title{Note on Algebraic Geometry YouTube Series}
+\author{Jiawen Huang}
+\maketitle
+\tableofcontents
+\newpage
+\section{Disclaimer}
+This note is basically a copy of algebraic geometry note from Andreas Gathmann and algebraic geometry \href{https://www.youtube.com/playlist?list=PLn6dA-hP_G8SR-v8EV5m9vcpo-V9No-2V}{YouTube course} by Seidon Alsaody, Uppsala University. This note is written for my own reference. So there may be some typos and mistakes. Please kindly point them out to me if you find any.
+\newpage 
+\section{Preliminaries}
+We assume our ground field $k$ is algebraically closed throughout the note.
+\\
+Preliminaries are basic abstract algebra. More specifically, you need to know 
+\begin{itemize}
+    \subsection{Basic abstract algebra}
+    \item Rings
+    \item Ideals: maximal, prime and radical ideals
+    \item Fields and field extensions
+    \item Noetherian Rings: three equivalent definitions and Hilbert's basis theorem. 
+    \\
+
+    {\LARGE{\textbf{Do not learn algebraic geometry if you are not comfortable with these concepts.}}}\\
+\subsection{Affine Space and Affine Algebraic Sets}
+    \item Affine Space $\A^n$: the set of all $n$-tuples of elements in $k$.
+    \item Affine algebraic sets: $V(J)$ is the set of common zeros of all polynomials in $J$ or the set of common intersection of curve defined by polynomials in $J$. A subset of $\A^n$ is algebraic if it is of the form $V(J)$ for some ideal $J$ of $k[x_1,x_2,\ldots,x_n]$. 
+    \item Algebraic sets of $\A^1$ must be finite sets or the whole set because a nonzero polynomial in one variable has only finite many roots. 
+    \item Properties of $V(J)$:
+    \begin{enumerate}
+        \item If $I\subseteq J$, then $V(J)\subseteq V(I)$
+        \item $V(I)\cap V(J)=V(I+J)$. More generally, $\bigcap_{\alpha} V(I_{\alpha})=V(\sum_{\alpha} I_{\alpha})$ (all but finitely many $I_{\alpha}$ are zero).
+        \item $V(I)\cup V(J)=V(IJ)=V(I\cap J)$ (Nontrivial, notice that $IJ\subseteq I\cap J$. They are not equal in general. Exercise: If $I+J=R$ then $IJ=I\cap J$.) (This generalizes to finite union but not infinite union. Counterexample: the union of all points but one in $\A^1$ is not algebraic set.)
+        \item $V(\sqrt{J})=V(J)$
+    \end{enumerate}
+\end{itemize}
+\newpage 
+\section{Hilbert's Nullstellensatz}
+Let $A=k[x_1,x_2,\ldots,x_n]$ be the polynomial ring over an algebraically closed field $k$.
+\begin{itemize}
+    \item First, we need a reverse function of $V(J)$. Define $I(X)$ to be the ideal of $A$ consisting of all polynomials that vanish on $X\subseteq \A^n_k$. That is all the polynomials $f$ such that its curve passing through all points in $X$.
+    \item Properties of $I(X)$:
+    \begin{enumerate}
+        \item If $X\subseteq Y$, then $I(Y)\subseteq I(X)$
+        \item $I({a_1,a_2,\ldots,a_n})=(x_1-a_1,x_2-a_2,\ldots,x_n-a_n)$ (exercise, this is in fact not trivial)
+        \item If $X$ is an algebraic set, then $V(I(X))=X$. (this is not hard)
+    \end{enumerate}
+    \item Nullstellensatz: For any ideal $J$ of $A$, $I(V(J))=\sqrt{J}$
+    Proof sketch:
+    \begin{enumerate}
+    \item Zariski's Lemma: If $F$ is a finitely generated $k$-algebra that is also a field, then $F$ is a finite extension of $k$. There is an elementary proof if we assume $k$ is uncountable (Key: consider $\frac{1}{x-\lambda}$ for $\lambda\in k$ must be linearly dependent because $F$ is countable dimensional over $k$).
+    \item Weak Version: $V(J)\neq \emptyset $ for all proper ideal $J$ of $A$. 
+    \item Strong Version: Consider $J'=J+(1-fy)$ in $k[x_1,\ldots,x_n,y]$. 
+    \end{enumerate}
+    \item Some immediate consequences:
+    \begin{enumerate}
+        \item $I(X\cup Y)=I(X)\cap I(Y)$
+        \item $I(X\cap Y)=\sqrt{I(X)+I(Y)}$
+        \item If $f=g$ on $\A^n$, then $f=g$ in $A$.
+        \item If $f_{\mid X}=g_{\mid X}$, then $(f-g)\in I(X)$. We say $f\equiv g \mod I(X)$.
+    \end{enumerate}
+\end{itemize}
+\newpage 
+\section{Regular Function on Closed Set}
+Let $X\subseteq \A^n$ be an algebraic set. 
+\begin{itemize}
+    \subsection{Coordinate Rings}
+    \item Definition: $\mathcal{O}(X)=\frac{k[x_1,x_2,\ldots, x_n]}{I(X)}$ is called the coordinate ring of $X$. This is clearly a $k$-algebra.
+    \begin{example}
+        $\mathcal{O}(\A^n)\cong A$
+        \\
+        $\mathcal{O}({p})\cong k$ (evaluation at point $p$)
+        \\
+        $\mathcal{O}(\ell)\cong k[t]$ where $\ell$ is a line in $\A^n$
+    \end{example}
+    \item A function $\phi$ on $X$ is called regular function or polynomial function if there exists $f\in A$ such that $\phi(x)=f(x)$ for all $x\in X$.
+    \item There is a one-to-one correspondence between all the coordinate rings and all affine (affine means finitely generated) reduced $k$-algebras. Easy to show. 
+\subsection{Algebraic Subset of $X$}
+    \item Let $J$ be an ideal of $\mathcal{O}(X)$. Define $V_X(J)=\{p\in X\mid f(p)=0 \text{ for all } f \in J\}$. For any subset $Y$ of $X$, $Y$ is called an algebraic subset of $X$ if there exists an ideal $J$ of $\mathcal{O}(X)$ such that $Y=V_X(J)$.
+    \item Let $\pi$ be the projection from $A$ to $\mathcal{O}(X)$. Notice that $V_X(J)$ is just $V(\pi^{-1}(J))$. So an algebraic subset of $X$ is also an algebraic set in $\A^n$.  
+    \item We can also define $I_X(Y)=\{f\in \mathcal{O}(X)\mid f(p)=0 \text{ for all } p \in Y\}$. We can easily verify  $I_X(Y)=\frac{I(Y)}{I(X)}$.
+    \item With this, we can easily verify the following properties:
+    \begin{enumerate}
+        \item $\mathcal{O}(Y)\cong \frac{\mathcal{O}(X)}{I_X(Y)}$
+        \item We have the relative version of Nullstellensatz: For any ideal $J$ of $\mathcal{O}(X)$, $I_X(V_X(J))=\sqrt{J}$. (The proof is just applying the original Nullstellensatz and playing around with the quotient of ideals: $\frac{\sqrt{J}}{I(X)}=\sqrt{\frac{J}{I(X)}}$. More generally, the preimage of a radical ideal is radical) The weak one is also true: the maximal ideals of $\mathcal{O}(X)$ are in one-to-one correspondence the maximal ideals of $A$ that contains $I(X)$, which are in one-to-one correspondence with points in $X$.
+    \end{enumerate}
+    \begin{remark}
+        Later on, we will just use $I$ and $V$ instead of $I_X$ and $V_X$ when there is no confusion (when the ground algebraic set $X$ is fixed).
+    \end{remark}
+\end{itemize}
+\newpage
+\section{Zariski's Topology}
+
+\begin{itemize}
+    \subsection{Basic Definitions}
+    \item Definition: The closed sets of Zariski's topology on $\A^n$ are all the algebraic sets. 
+    \begin{remark}
+        The fact that algebraic sets form a topology is very surprising. 
+    \end{remark}
+    \item If $X$ is an algebraic set, we can define the Zariski's topology on $X$ similarly: closed sets are all the algebraic subsets of $X$ or the intersection of algebraic sets with $X$. (These two are the same)
+    \item $\A^1$ is non-hausdorff, any nonempty open set is dense and has finite complement. In general, $\A^n$ is also non-hausdorff and any nonempty open set is dense (we will show it later).
+    \subsection{Connectedness}
+    \item An algebraic set $X$ is connected if we cannot write $X=X_1\cup X_2$ where $X_1, x_2$ are nonempty proper \textbf{disjoint} closed (closed under $X$ or $\A^n$, doesn't matter since $X$ itself is closed) subsets of $X$.
+    \item Geometric intuition: connected means we can draw $X$ without lifting the pen.
+    \item Algebraic perspective: If $X=X_1\cap X_2$ is disconnected, then $\mathcal{O}(X)\cong \mathcal{O}(X_1)\times \mathcal{O}(X_2)$ (this is just CRT)
+    \item Some standard properties about connectedness: 
+    \begin{enumerate}
+        \item If a set $X$ admits an open connected covering $(U_i)$ such that $U_i\cap U_j\neq \emptyset$ for all $i,j$, then $X$ is connected. (exercise)
+        \item Connectedness is preserved under continuous maps. 
+        \item If $X$ is connected, so is $\overline{X}$. 
+    \end{enumerate}
+    \subsection{Irreducibility}
+    \item An algebraic set $X$ is irreducible if we cannot write $X=X_1\cup X_2$ where $X_1, x_2$ are nonempty proper closed subsets of $X$. 
+    \item Irreducibility implies connectedness but not vice versa (counterexample: $V(xy)$ in $\A^2$ is clearly connected but irreducible $V(xy)=V(x)\cup V(y)$.)
+    \\
+    \item Geometric intuition: irreducible means we cannot separate $X$ using "integral" several pieces. 
+    \item We have discussed that open sets of $\A^n$ are very large. For example, nonempty open set of $\A^1$ is always dense. In fact, we have the following lemma to formalize and generalize this idea. 
+    \begin{lemma}
+        In any irreducible topological space $X$, any nonempty open set is dense in $X$. 
+    \end{lemma}
+    \begin{proof}
+        Let $U$ be a nonempty open set in $X$. Consider $\overline{U}\cap (X-U)=\emptyset$. Thus, $\overline{U}=X$. (This proof is purely topological.)
+    \end{proof}
+    \begin{remark}
+        Let $X$ be an irreducible algebraic set and $U$ be a nonempty open set of $X$. If $f=g$ on $U$, then $f=g$ on $X$. This is because $V_X(f-g)$ is closed in $X$ and contains $U$. Since $\overline{U}=X$, we have $X=\overline{U}\subseteq V_X(f-g)\subseteq X$. Thus, $f=g$ on $X$. This makes sense because open set is very large in irreducible algebraic set (dense).
+    \end{remark}
+    \item Algebraic perspective: $X$ is irreducible if and only if $\mathcal{O}(X)$ is an integral domain if and only if $I(X)$ is a prime ideal of $A$. 
+    \\
+
+    This is very nice! It allows us to study geometric irreducibility using algebraic tools: ideals and integral domains. With this characterization, we know all affine space $\A^n$ are irreducible just like $\A^1$. 
+    \item Some standard properties about irreducibility:
+    \begin{enumerate}
+        \item Irreducibility is preserved under continuous maps. 
+        \item A set is irreducible if and only if its closure is irreducible.
+        \item If a set $X$ admits an open irreducible covering $(U_i)_{i\in I}$ such that $U_i\cap U_j\neq \emptyset$ for all $i,j$, then $X$ is irreducible. 
+        \\
+        Proof: Suppose $X=M\cap N$ where $M$ and $N$ are closed subsets of $X$, then consider $U_i=X\cap U_i=(M\cap U_i)\cup (N\cap U_i)$. Since $U_i$ is irreducible, we conclude that $U_i$ are either contained in $M$ or $N$. Assume $J\subset I$ such that $U_i\subseteq M$ for all $i\in J$ and $U_i\subseteq N$ for all $i\notin J$. Consider $M'=M\cap (X-\bigcup_{i\notin J} U_i)$ and $N'=N\cap (X-\bigcup_{i\in J} U_i)$. We have $X=M'\cup N'$ and $M'\cap N'=\emptyset$. So $X$ is disconnected unless one of $J=I$ or $J=\emptyset$. However, $X$ must be connected as we have shown before. Thus, $X$ is irreducible.
+        \item If $X\subseteq \A^n$ is irreducible and $Y\subseteq \A^m$ is irreducible, then $X\times Y\subseteq \A^{n+m}$ is also irreducible. 
+    \end{enumerate}
+    \subsection{Noetherian Topological Space}
+    \item A topological space $X$ is called Noetherian if every descending chain of closed subsets terminates. 
+    \begin{corollary}
+        Any algebraic set $X\subseteq \A^n$ is a Noetherian topological space. This follows from the fact that $k[x_1,x_2,\ldots,x_n]$ is a Noetherian ring, and its quotient $\mathcal{O}(X)$ is also Noetherian. 
+    \end{corollary}
+    There are six important properties of Noetherian topological spaces:
+    \begin{enumerate}
+    \item The subspace of a Noetherian topological space is also Noetherian. This is just like the submodule of a Noetherian module is also Noetherian. 
+    \item Any Noetherian topological space can be decomposed into finite union of irreducible closed sets that are not contained in each other. This decomposition is unique up to permutation. 
+    \\
+
+    With this fact, we can more or less assume our ground algebraic set $X$ is irreducible because we can always decompose it into irreducible components.
+    \item Similarly, any Noetherian topological space can be decomposed into finite \textbf{disjoint} union of connected closed sets that are not contained in each other. This decomposition is unique up to permutation. 
+    \item If $X$ is the finite union of Noetherian topological spaces, then $X$ is also Noetherian.
+    \item Noetherian is a topological property preserved under continuous maps.
+    \item \textbf{A topological space $X$ is Noetherian if and only if every open subset of $X$ is compact if and only if every subspace of $X$ (induced topology from $X$)  is compact.} This is tremendous because compactness is a very useful property in topology. Anyway, the proof is an exercise. 
+    \\
+
+    This property makes sense because open sets are very large in Zariski's topology. So finite many open sets will be sufficient to cover an open set.
+    \end{enumerate}
+    \begin{remark}
+        Noether killed infinite. Big thank you to Noether. 
+    \end{remark}
+    \subsection{Regular Function on Zariski's Open Set}
+    Given a zariski's topology on an algebraic set $X$,
+    \item We have defined the regular function on algebraic sets/closed set of $X$: coordinate rings. Now, we wish to define it on open set. So we may assume $X$ is an irreducible algebraic set, and we wish to define regular function on open set $U$ of Zariski's topology of $X$. 
+    \\
+    The problem is that $U$ is dense in $X$, so intuitively, $I(U)$ would be $0$ because $U$ is so large. Indeed, $V_X(I_X(U))=\overline{U}=X$ (this is true in general, $V(I(X))=\overline{X}$). So $I_X(U)=I_X(X)=0$. Alternative way to see this is that if $f$ vanishes on $U$, then $U\subseteq \overline{U}\subseteq V_X(f)\subseteq X$. So $f$ must be $0$. 
+    \\
+    Therefore, we can't define $\mathcal{O}_X(U)$ to be $\frac{\mathcal{O}(X)}{I_X(U)}$ because this is just $\mathcal{O}(X)$ again. Instead, we define it as follows:
+    \item Definition: Let $X$ be an algebraic set and $U$ be a Zariski's open set of $X$. A function $f:U\to k$ is called a regular function on $U$ if for each point $p\in U$, there exists an open neighborhood $p\in U_p\subseteq U$ and $g,h\in \mathcal{O}(X)$ such that for all $q\in U_p$, $f(x)=\frac{g(x)}{h(x)}$ and $h(x)\neq 0$ for all $x\in U_p$. The set of all regular functions on $U$ is denoted by $\mathcal{O}(U)$. We can easily verify that $\mathcal{O}_X(U)$ (or just $\cO(U)$ if the grounded algebraic set $X$ is fixed) is a $k$-algebra.
+    \begin{remark}
+        The notion of regular function on open set may lead to some confusion because $X$ itself is an open set of $X$. So $\mathcal{O}(X)$ has two different meanings: the coordinate ring of $X$ and the set of regular functions on the open set $X$. In fact, they are the same! We will see this in remark 4.11. 
+    \end{remark}
+    
+    \item We can also study the zero loci of a regular function on open set $U$. 
+    \begin{lemma}
+        $\phi\in \cO(U)$, then $V(\phi)=\{x\in U\mid \phi(x)=0\}$ is closed in $U$. 
+    \end{lemma}
+    \begin{proof}
+        For any $p\in U$, we can write $\phi=\frac{g_p}{h_p}$ on some open neighborhood $U_p$ of $p$ where $g_p,h_p\in \mathcal{O}(X)$ and $h$ doesn't vanish on $U_p$. Consider $U_a\setminus V(\phi)=U_a\setminus V(g_p)$, which is open in $U_a$, thus open in $U$. So $U\setminus V(\phi)=\bigcup_{p\in U} (U_p\setminus V(\phi))$ is open in $U$. Therefore, $V(\phi)$ is closed in $U$.
+    \end{proof}
+    \begin{remark}
+        A open set minus a closed set is still open. So this lemma is quite useful. 
+    \end{remark}
+    \begin{remark}[Identity Theorem of regular functions]
+        With Lemma 4.6, we can see the following: If $X$ is irreducible algebraic set and $U\subseteq V$ are nonempty open sets of $X$, then if $\phi_1, \phi_2\in \mathcal{O}(V)$ and $\phi_{1\mid U}=\phi_{2\mid U}$, then $\phi_1=\phi_2$ on $V$. This is becasue $V(\phi_1-\phi_2)$ is closed in $V$ and contains $U$. Since $\overline{V}=X$, $V$ is irreducible. So $V=\overline{U}\subseteq V(\phi_1-\phi_2)\subseteq V$. This makes sense because open set is very large in irreducible algebraic set (dense). 
+    \end{remark}
+    \item The fact that the denominator depends on the choice of the point is quite annoying. It's a local definition. Here is an example: 
+        \begin{example}
+            Let $X=V(x_1x_4-x_2x_3)\subseteq \A^4$ and $U=X\setminus V(x_2,x_4)$. 
+            Then, we have the following regular function on $U$:
+            \[\phi=\begin{cases}
+                \frac{x_1}{x_2} & \text{if } x_2\neq 0\\
+                \frac{x_3}{x_4} & \text{if } x_4\neq 0
+            \end{cases}\]
+        This is clearly a regular function because it's locally a ratio of polynomials. But we can't write it globally as a ratio of polynomials. $k[x_1,x_2,x_3,x_4]/(x_1x_4-x_2x_3)$ is non UFD. 
+        \end{example}
+    \subsection{Regular function on principal open set}
+    \item However, we can restrict our open set to be principal open set to have a global property. First, we define principal open set:
+    \begin{definition}
+        Let $X$ be an algebraic set and $f\in \mathcal{O}(X)$. Define $U_f=\{x\in X\mid f(x)\neq 0\}$. Then, $U_f$ is called the principal open set of $f$ in $X$.
+    \end{definition}
+
+    There are two basic properties of principal open sets:
+    \begin{enumerate}
+        \item The intersection of two principal open sets is also a principal open set because $U_f\cap U_g=U_{fg}$.
+        \item Any open set $U$ of $X$ can be written as finite union of principal open sets. Trivial by Noetherian property.
+    \end{enumerate}
+    \item If $U_f$ is a principal open set of $f\in \cO(X)$, then we have a nice description of $\mathcal{O}(U_f)=\{\frac{g}{f^n}\mid g\in \mathcal{O}(X), n\in \mathbb{N}\}$. So we can write any regular function on $U_f$ as a ratio of polynomials with denominator being some power of $f$, something global.
+    \begin{proof}
+    Consider a regular function $\phi: U_f\to k$. For any $p\in U_f$, we have open set $U_p$ in $U_f$ such that $p\in U_p\subseteq U_f$ and $\phi=\frac{g}{h}$ for some $g, h\in \cO(X)$ and $h$ doesn't vanish on $U_p$. We may further assume $U_p=U_t$ for some $t\in \cO(X)$. The only thing we can do here is to multiply something on numerator and denominator to turn it into a better form. Consider $h'=h\cdot t$ and $g'=g\cdot t$. Then, we have $\phi=\frac{g'}{h'}$ on $U_p$. Notice that $h'$ doesn't vanish on $U_t$ but does vanish outside $U_t$. So $V(h')=V(t)$. So we may just assume $t=h'$. $g'$ also vanishes outside $U_t$. 
+    \\
+
+    Since $U_f$ is an open set in a Noetherian topological space, we have an finite open covering of $U_f$:
+    \[U_f=\bigcup_{i=1}^m U_{h_i}\]
+    Taking the complement we have: 
+    \[V(f)=\bigcap_{i=1}^m V(h_i)\]
+    By Nullstellensatz, we have some $n\in \mathbb{N}$ such that $f^n\in (h_1,h_2,\ldots,h_m)$. So there exists $a_i\in \cO(X)$ such that
+    \[f^n=\sum_{i=1}^m a_i h_i\] 
+    Now, consider the following: 
+    \[\psi=\frac{\sum a_ig_i'}{\sum a_i h_i}\] 
+    For any $p\in U_f$, for any $j$, if $p\in U_{h_j}$, then $\frac{a_jg_j'}{a_j h_j}$ is defined at $p$ and equals to $\phi(p)$. If $p\notin U_{h_j}$, then $h_j(p)=0$, so $g_j'(p)=0$ as well. So we can conclude $\psi(p)=\phi(p)$ (think about this step, look the first remark below). Therefore, $\psi=\phi$ on $U_f$. This shows that any regular function on $U_f$ can be written as $\frac{g}{f^n}$ for some $g\in \cO(X)$ and $n\in \mathbb{N}$. 
+        
+    \end{proof}
+    \begin{remark}
+        A key property about fraction is used here. If $\frac{a}{b}=\frac{c}{d}$, then $\frac{a}{b}=\frac{c}{d}=\frac{a+c}{b+d}$.
+    \end{remark}
+    \begin{remark}
+    Let $f=1$. Then $U_f=X$. So we have $\mathcal{O}(X)=\{\frac{g}{1^n}\mid g\in \mathcal{O}(X), n\in \mathbb{N}\}=\mathcal{O}(X)$. This shows that the two different definitions of $\mathcal{O}(X)$ are indeed the same. 
+    \end{remark}
+    \begin{remark}
+        This is clearly similar to localization of of $\cO(X)$ at the multiplicative set generated by $f$. In fact, they are isomorphic. Proof is easy. And this is where the notion of localization comes from geometrically.
+    \end{remark}
+    \item The regular functions on some non-principal open set may also be in a nice form. For example, we can consider $X=\A^2\setminus\{0\}$ (nothing special about the origin here, we can remove any point). We claim that $\cO(X)=k[x,y]$. 
+    \begin{proof}
+        Although $X$ is not a principal open set, we can write it as union of two principal open sets: $X=U_x\cap U_y$. 
+        \\
+
+        Any regular function on $U_x$ can be written as $\frac{f(x,y)}{x^n}$ for some $f\in k[x,y]$ and $n\in \mathbb{N}$. Similarly, any regular function on $U_y$ can be written as $\frac{g(x,y)}{y^m}$ for some $g\in k[x,y]$ and $m\in \mathbb{N}$. We assume $x\nmid f,g$ They must agree on $U_x\cap U_y=U_{xy}$. Since $\A^2$ is irreducible, by identity theorem of regular functions, we have
+        \[\frac{f(x,y)}{x^n}=\frac{g(x,y)}{y^m} \text{ on } \A^2\]
+        So \[f(x,y)y^m=g(x,y)x^n \text{ in } k[x,y]\]
+        Since $k[x,y]$ is a UFD, we must have $x^n\mid f(x,y)$ and $y^m\mid g(x,y)$. Contradiction unless $n=m=0$. Therefore, any regular function on $X$ is actually a polynomial $f=g$ in $k[x,y]$. So $\cO(X)=k[x,y]$.
+    \end{proof}
+    \begin{remark}
+        This is quite surprising because we have removed a point from $\A^2$ but the regular functions remain the same. This tells us that there is no rational function that is undefined only at one point in $\A^2$. This is not true if $k=\R$. Just consider $\frac{1}{x^2+y^2}$.
+    \end{remark}
+\end{itemize}
+\newpage
+\section{Presheaf and Sheaf }
+\begin{itemize}
+    \subsection{Presheaf and Sheaf}
+    \item A presheaf $\cF$ of rings on a topological space $X$ is a contravariant functor from the topological space $X$ (a category with open sets as objects and inclusion as morphisms) to the category of rings. $\cF$ sends each open set of a ring $\cF(U)$ and each inclusion of open sets $V\subseteq U$ to a restriction ring homomorphism $\rho_{U,V}:\cF(U)\to \cF(V) : \phi_{\mid U} \mapsto \phi_{\mid V}$.
+    \\
+    For each open set $U\subseteq X$, the elements of $\cF(U)$ are called the sections of $\cF$ over $U$. 
+    \\
+
+    We also define $\cF(\emptyset)=0$ (the zero ring). This is just a convention, and it makes sense because $\emptyset$ is the initial object in the category of open sets of $X$ while $0$ is the final object in the category of rings. We can simply ignore this property in most situations.
+    \\
+    
+    From on now, when we are discussing about sheaf on algebraic sets, 
+   \fbox{we always assume any sheaf $\cF$ of rings is a sheaf of $k$-valued functions}
+    \item A sheaf is a presheat $\cF$ that satisfies the gluing property: 
+    If $U\subseteq X$ is an open set, for any open covering of $U=\bigcup_{i\in I} U_i$, if we have $\phi_i\in \cF(U_i)$ such that ${\phi_i}_{\mid U_i\cap U_j}={\phi_j}_{\mid U_i\cap U_j}$ for all $i,j\in I$, then there exists a unqiue lift: that is a unique $\psi \in \cF(U)$ such that $\psi_{\mid U_i}=\phi_i$ for all $i\in I$.
+    \begin{example}[Sheaf of Regular Functions]
+        Let $X$ be an algebraic set with Zariski's topology. For any open set $U$, define $\cO_X(U)$ to be the set of all regular functions on $U$ for each open set $U\subseteq X$. Then $\cO_X$ is a sheaf of rings on $X$.
+    \end{example}
+    \begin{example}[Sheaf of Continuous Functions]
+        Let $X$ be a subset of $\R^n$ with Euclidean topology. For any open set $U$, define $C^0(U,\R)$ to be the set of all continuous real-valued functions on $U$. Then $C^0(-,\R)$ is a sheaf of rings on $X$.
+    \end{example}
+    \begin{example}[A presheaf of constant functions, but not a sheaf]
+        Let $X$ be a subset of $\R$ with Euclidean topology. For any open set $U$, define $C^{\text{constant}}(U,\R)$ to be the set of all constant real-valued functions on $U$. Then $C^{\text{constant}}(-,\R)$ is a presheaf of rings on $X$. But it's not a sheaf because the gluing of constant functions may not be constant. 
+        \end{example}
+    \begin{remark}
+        The reason example 3 fails to be a sheaf is that the condition is global. In general, local conditions are easier to satisfy gluing condition. 
+    \end{remark}
+
+    \begin{remark}
+        Intuitively, a presheaf on $U$, $\cF(U)$ is a set of functions defined on the open set $U$ of a topological space. This is why we say the presheaf \textbf{on} topological space $X$. And sheaf are presheaf such that the functions can be glued together nicely or define locally.
+    \end{remark}
+    \subsection{Stalks and germs}
+    \item Let $\cF$ be a presheaf on a topological space $X$. For any point $p\in X$, we define the stalk of $\cF$ at $p$ to be the set \[\{(U,\phi)\mid \text{ open set }U\subseteq X, a\in U, \phi\in \cF(U) \}/\sim\]. $\sim$ is an equivalence relation defined as follows: $(U,\phi)\sim (V,\psi)$ if and only if there exists an open set $L \subseteq U\cap V$ such that $p\in L$ and $\phi_{\mid L}=\psi_{\mid L}$. The equivalence class of $(U,\phi)$ is called the germ of $\phi$ at $p$ and denoted by $\phi_p$. The stalk of $\cF$ at $p$ is denoted by $\cF_p$.
+    \begin{remark}
+        The germs in stalks are the function defined locally around the point $p$. So stalks capture the local behavior of the presheaf/sheaf at point $p$. The value at any point other than $p$ doesn't matter (we can always find a smaller neighborhood $U$ that doesn't contain that point).
+    \end{remark}
+    \begin{example}
+        Consider the sheaf of differentiable functions on $\R$. The germs of a function $f$ at point $p$ captures the information about the value of $f$ at $p$ and all its derivative at $p$. 
+    \end{example}
+    \begin{example}
+        Consider the sheaf of locally polynomial functions on $\R$. The stalk at point $p$ is isomorphic to the ring of $\R[x]$.
+    \end{example}
+    Next, we will see some basic properties of stalks in the sheaf of regular functions on algebraic sets.
+    \item We denoted the stalk of the sheaf of regular functions $\cO_X$ at point $p$ by $\cO_{X,p}$. The most important information about $\cO_{X,p}$ is that it's isomorphic to the localization of the coordinate ring $\cO(X)$ at the maximal ideal $\maxideal_p$ corresponding to point $p$, \[\{\frac{f}{g}\mid f,g\in \cO(X), g(p)\neq 0\}\]. And it's a local ring with a unique maximal ideal $\maxideal_{X,p}=\{\phi_p\in \cO_{X,p}\mid \phi(p)=0\}$. The isomorphism is given by sending $\frac{g}{f}$ in the localization $\cO(X)_{\maxideal_p}$ to $(U_f, \frac{g}{f})$ in the stalk $\cO_{X,p}$. 
+    \begin{remark}
+        An algebraic fact about local rings: A ring is a local ring if and only if the set of non-unit elements forms an ideal. In our case, the set of non-unit elements is exactly $\maxideal_{X,p}$.
+    \end{remark}
+    \end{itemize}
+\newpage
+\section{Morphism of algebraic sets and Ringed Spaces}
+\begin{itemize}
+    \subsection{Morphism of Algebraic Sets}
+    \subsection{Ringed Space and Affine Varieties}
+    \item A ringed space is a topological space $X$ equiped with a sheaf of rings $\cO_X$ on $X$. The sheaf $\cO_X$ is called the structure sheaf of the ringed space $(X,\cO_X)$.
+    \item If $U$ is an open set of a ringed space $(X,\cO_X)$, then $(U,\cO_{X\mid U})$ is also a ringed space where $\cO_{X\mid U}$ is the restriction of $\cO_X$ on $U$, which is also a sheaf. 
+    \item An affine variety is a ringed space that is \textbf{isomorphic as ringed space} to $(X,\cO_X)$ for some algebraic set $X$ with Zariski's topology and $\cO_X$ is the sheaf of regular functions on $X$.
+    \item Well, what is the morphism of ringed space? 
+    \item First of all, ringed spaces are topological spaces so we need the morphism to be some kind of continuous map $f$ from $X$ to $Y$. 
+    \item Next, we need $f$ to preserve the sheaf structure or compatible with the sheaf functor. 
+    \\
+    For any open set $U\subseteq Y$, we define the pullback of a section $\phi \in \cO_Y(U)$ as a function from $f^{-1}(U)$ to $k$ defined by $f^{\#}(\phi)=\phi\circ f$. 
+    \\
+
+    Then, a morphism of ringed spaces from $(X,\cO_X)$ to $(Y,\cO_Y)$ is a continuous map $f:X\to Y$ such that for any open set $U\subseteq Y$ and any section $\phi \in \cO_Y(U)$, the pullback $f^{\#}(\phi)\in \cO_X(f^{-1}(U))$.
+    \item An isomorphism of ringed spaces is a morphism of ringed spaces that admits an inverse morphism of ringed spaces. (Just like homeomorphism in topology)
+\end{itemize}
+
+
+
+
+
+
+
+
+
+
+\end{document}
