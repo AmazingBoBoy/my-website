@@ -68,8 +68,7 @@
 
 
 \subsection{Exercise 2.5}
-\begin{discussion*}
-    Formulate a notion of epimorphism, in the style of the notion of monomorphism seen in §2.6, and prove a result analogous to Proposition 2.3, for epimorphisms and surjection. 
+\begin{discussion*} Exercise 2.5
     \begin{abboy*}
         If f is an epimorphism, then f is surjective. 
         \\
@@ -83,19 +82,7 @@
 
 
 \subsection{Exercise 3.9}
-\begin{discussion*}
-    An alternative to the notion of multiset introduced in $§$2.2 is obtained by
-    considering sets endowed with equivalence relations; equivalent elements are taken
-    to be multiple instances of elements ‘of the same kind’. Define a notion of morphism
-    between such enhanced sets, obtaining a category MSet containing (a ‘copy’ of) Set
-    as a full subcategory. (There may be more than one reasonable way to do this!
-    This is intentionally an open-ended exercise.) Which objects in MSet determine
-    ordinary multisets as defined in $§$2.2 and how? Spell out what a morphism of
-    multisets would be from this point of view. (There are several natural notions
-    of morphisms of multisets. Try to define morphisms in MSet so that the notion
-    you obtain for ordinary multisets captures your intuitive understanding of these
-    objects.)
-   
+\begin{discussion*} Exercise 3.9
     \begin{evie*}
         I defined MSet like this in 3.9. Did anyone do it differently?
     \begin{center}
@@ -153,10 +140,7 @@
 
 
 \subsection{Exercise 4.4}
-\begin{discussion*}
-    Prove that the composition of two monomorphisms is a monomorphism. Deduce that one can define a subcategory Cmono of a category $C$ by taking the same objects as in $C$ and defining $Hom_{C_{mono}} (A, B)$ to be the subset of $Hom_C(A, B)$ consisting of monomorphisms, for all objects A, B. (Cf. Exercise 3.8; of course, in
-    general $C_{mono}$ is not full in $C$.) Do the same for epimorphisms. Can you define
-    a subcategory $C_{nonmono}$ of $C$ by restricting to morphisms that are not monomorphisms?
+\begin{discussion*} Exercise 4.4
     \begin{abboy*}
         For second question, how can you have a category $C_{nonmono}$ without monomorphism? It must have identity right?
     \end{abboy*}
@@ -170,10 +154,7 @@
 
 
 \subsection{Exercise 5.9}
-\begin{discussion*}
-    Let C be a category with products. Find a reasonable candidate for the universal property that the product $A \times B \times C$ of three objects of C ought to
-    satisfy, and prove that both $(A \times B) \times C$ and $A \times (B \times C)$ satisfy this universal
-    property. Deduce that $(A \times B) \times C$ and $A \times (B \times C)$ are necessarily isomorphic.
+\begin{discussion*} Exercise 5.9
     \begin{abboy*}
         Say $A$, $B$ and $C$ are objects in category $\textbf{C}$. I think $A \times B \times C$ doesn't make sense in most category. In $SET$, it makes snese becasue $A\times B$ is also a set. But in general, $A \times B$ may not be the object of $\textbf{C}$. Then $(A\times B) \times C$ doesn't make sense.
     \end{abboy*}
@@ -268,9 +249,9 @@ If you have time, please try Exercise 7.12.
     \begin{abboy*}
         is it ture when $G$ and $H$ are infinite?
         \\
-        cuz i see some post on mathstack said that this reuslt only holds when $G$ and $H$ are finite. but the book doesn't mention it at all
+        cuz i see some \href{https://math.stackexchange.com/questions/243791/coproducts-in-textab}{post} on mathstack said that this reuslt only holds when $G$ and $H$ are finite. but the book doesn't mention it at all
         \\
-        https://math.stackexchange.com/questions/243791/coproducts-in-textab
+        
     \end{abboy*}
     \begin{evie*}
         Yes it is still true when G and H are infinite
@@ -655,6 +636,27 @@ but all $d\Z$ are isomorphic to $\Z$
 \end{discussion*}
 
 
+\subsection{Exercise 8.9}
+\begin{discussion*}Exercise 8.9
+    \begin{evie*}
+        How did  you solve this? I really feel like there should be a beautiful solution but I can't find it.
+    \end{evie*}
+    \begin{abboy*}
+        U send the matrix in Ex6.3 to Exercise 8.9. Same a, b, c, d
+        That is actually a homomorphin
+        I checked it by computer
+        Surprising
+        I searched it up online, it has something to do with quaternion which I am not familiar with
+        I also feel like I need to learn more linear alg ngl
+        I never really handle complex matrix
+        Like I know most of the defs but need to learn more about it
+        \begin{center}
+            \includegraphics[scale=0.2]{pic2-8.9.png}
+        \end{center}
+    \end{abboy*}
+\end{discussion*}
+
+
 \subsection{Exercise 8.10}
 \begin{discussion*}Exercise 8.10
     \begin{abboy*}
@@ -717,56 +719,266 @@ but all $d\Z$ are isomorphic to $\Z$
     \end{abboy*}
 \end{discussion*}
 
+\subsection{Exercise 9.4}
+\begin{discussion*}Exercise 9.4
+    \begin{abboy*}
+        what is the another natural right action author wants
+        \\
+        my idea: $ag^{-1}$
+    \end{abboy*}
+    \begin{arthur*}
+        i used the conjugation in reverse $g^{-1} h g$
+    \end{arthur*}
+    \begin{abboy*}
+        it's not a right action?
+        wait
+        idk man, that may work 
+        it's an action anyway...
 
-\subsection{Exercise 8.9}
-\begin{discussion*}Exercise 8.9
+    \end{abboy*}
+    \begin{arthur*}
+        pretty sure it is. but in any case, i'm not sure there's a right answer here, there's plenty of examples
+    \end{arthur*}
     \begin{evie*}
-        How did  you solve this? I really feel like there should be a beautiful solution but I can't find it.
+        My answer was also $g^{-1}hg$. Another is $\alpha(g,h)=g^{-1}h$.
     \end{evie*}
     \begin{abboy*}
-        U send the matrix in Ex6.3 to Exercise 8.9. Same a, b, c, d
-        That is actually a homomorphin
-        I checked it by computer
-        Surprising
-        I searched it up online, it has something to do with quaternion which I am not familiar with
-        I also feel like I need to learn more linear alg ngl
-        I never really handle complex matrix
-        Like I know most of the defs but need to learn more about it
+        i am confused about left and right group action. so in my opinion, there are no left and right. it's just a homomorphism $\sigma$ from G to Aut(A). We abbreviate $\sigma (g)(a) =ga$ I mean it has nothing to do with left and right? What does left and right action actually mean, can someone give me an example of right action? 
+        \\
+        $\sigma $ is just a function. it just convention that human being write function on the left and variable on the left?
+        \\
+        weird.
+        i just ignore the words "right" and "left" when i read the text.
+    \end{abboy*}
+    \begin{arthur*}
+        a right action is not a group homomorphism from G to Aut(A)
+        if you write your right action as $\rho(g, a) = a g$, then you have $\rho( gh, a) = agh = \rho(h, \rho(a, g))$
+    \end{arthur*}
+    \begin{abboy*}
+        ?
+        so what is a right action
+        i mean i know what's an action of group on a set of a category
+    \end{abboy*}
+    \begin{arthur*}
+        i think it's a function $\phi$ from G to Aut(A) such that $\phi(g h)= \phi(h) \phi(g)$ 
+    \end{arthur*}
+    \begin{abboy*}
+        wait
+        so u are saying right action is not a homomorpshim
+        ???
+        so right action is not an action
+        left action= action but right action is somehting else. 
+        \\
+        so from ur point of view, right action is a function $\phi$ from G to Aut(A) such that $\phi(g h)= \phi(h) \phi(g)$
+    \end{abboy*}
+    \begin{arthur*}
+        yeah
+    \end{arthur*}
+    This discussion made me understand what right group action is. 
+\end{discussion*}
+
+
+\subsection{Exercise 9.9}
+\begin{discussion*}Exercise 9.9
+    \begin{abboy*}
+        i am not sure about my solution: 
+
+        Key 1:  Any set can be partitioned into serveral orbits and actions on orbits are all transitive 
+
+        Key 2: each orbit will be isomorphic to a $G/Stab(a)$, where $a$ is an element in orbit
+
+        Key 3: orginal set A= the coproduct of all the orbits  = coproduct of all  $G/stab(a)$
+    \end{abboy*}
+    \begin{arthur*}
+        yup i have the same thing
+    \end{arthur*}
+\end{discussion*}
+
+
+\subsection{Exercise 9.10}
+\begin{discussion*}Exercise 9.10
+    \begin{abboy*}
+        wut?? $|G/H|=\frac{|G|}{|H|}=|H/G|$ so there is a bijection??? 
+        \\
+        also, i don't know how to use proposition 9.9. ho do u find a set A such that A is acted transitively by G and the $stab(a)$ is equal to $H$.  Or given a subgroup $H$ of $G$, does there always exist a set $A$ (be acted transitively by $G$) such that $stab(a)=H$
+    \end{abboy*}
+    \begin{evie*}
+        I also didn't use the hints. My approach was that a right-coset of G is just a left-coset of the opposite group, and G is isomorphic to its opposite group
+    \end{evie*}
+    \begin{arthur*}
+        the proof should work even if the group is infinite.
+    \end{arthur*}
+    \begin{evie*}
+        I think Lagrange's theorem still works if you define division of infinite cardinals correctly, even if it's much less useful
+    \end{evie*}
+    \begin{arthur*}
+        ah yeah you're right i hadn't thought about that
+    \end{arthur*}
+    \begin{evie*}
+        Lagrange's theroem is that $|G| = [G:H] \times  |G/H|$. When |G| is infinite this is the same as $|G| = \max([G : H], |G/H|)$, so for infinite groups we would have $\max([G : H], |G/H|) = \max([G : H], |G \backslash H|)$. I don't think this is enough to guarantee that $|G/H|=|G\backslash H|$ without additional assumptions (like $[G : H]$ being finite)
+    \end{evie*}
+    \begin{arthur*}
+        yeah. you can still probably reason using only cardinals, but it's kinda ugly.
+    \end{arthur*}
+\end{discussion*}
+
+
+\subsection{Exercise 9.13}
+\begin{discussion*}Exercise 9.13
+    \begin{abboy*}
+        interesting. 
+        \\
+        First, I don't realize $gHg^{-1}$ i a subgroup of $G$ although it's trivial. 
+        Second, $\phi: H \to (gHg^{-1}$ is not easy to find.
+        \\
+        my phi :$\phi(xH)=(xg^{-1}) (gHg^{-1})$
+        it's indeed bijective
+    \end{abboy*}
+\end{discussion*}
+
+
+\subsection{Exercise 9.14}
+\begin{discussion*}Exercise 9.14
+    \begin{evie*}
+        I've been working on this for a few days and I'd love to see how you guys are solving it. I have some ideas but they are all either very ugly or fruitless.
+    \end{evie*}
+    \begin{abboy*}
+        Yes yeah!
+    My favorite problem of the section
+    \\
+    for $(y^{\pm}x)(y^{\pm}x) \cdots (y^{\pm}x)y^{\pm}$. Take $r<0$, th result must be positive, contradiction.
+    \\
+    For $x(y^{\pm}x)(y^{\pm}x) \cdots (y^{\pm}x)$, take r to be positive, the result must be neagtive
+    \\
+    becasue $x(r)=\frac{-1}{r}$
+    \\
+    for $(y^{\pm}x)(y^{\pm}x) \cdots (y^{\pm}x)$ we do case work.
+    \\
+    Case 1: $(y^{\pm}x)(y^{\pm}x) \cdots (yx)$ ( the last pair is (yx)). We take $r= -\frac{\sqrt{2}}{2} $ (any -1<irrational<0 ). yx(r) must be in positive. So it will be positive forever, which contradict with the fact that $r<0$
+    \\
+    Case 2: $(y^{\pm}x)(y^{\pm}x) \cdots (y^{-1}x)$ (the last pair is $y^{-1}x$ ). we take $r=-\sqrt{2}$ (or any irrational <-1). $y^{-1}x(r) $ must be positive. So it will be positive forever
+    \\
+    agian, contradiction
+    \\
+    another fantastic fact.  
+    \[ M= \left[ 
+        {\begin{array}{cc}
+        a & b\\
+        c & d \\
+        \end{array} } \right]
+    \] 
+    such that $a+d=0$, then $M^2=I$ (identity)
+    \\
+    when $M\in PSL_2(\mathbb(Z))$ 
+    \\
+    When $det(M)=(a+d)^2$, $M^3=I$ (i am not sure about this one)
+    \end{abboy*}
+    \begin{evie*}
+        Hm, so the idea is that all sufficiently negative inputs to $y^{-1}x$ become positive, and multiplying by/composing with $yx$ doesn't solve this problem, so no product of $y^{-1}x$ and $yx$ can give the identity. I like that, it's very pretty
+        \\
+        and $x(y^{\pm 1}x)\cdots (y^{\pm 1}x)$ still has that sign problem
+        \\
+        And then $y$ and $y^{-1}$ both swap the sign of $r$ for sufficiently large $|r|$, so if you put one of them on the right side then you'll have the problem that sufficiently positive values become negative
+    \end{evie*}
+    \begin{abboy*}
+        Wait
+        \\
+        My solution includes this case
+        \\
+        Do u mean it also has a sign problem which leads to contradiction?
+    \end{abboy*}
+    \begin{abboy*}
+        This result is somehow related to an AMC problem: \href{https://artofproblemsolving.com/wiki/index.php?title=2024_AMC_12A_Problems/Problem_25}{2024 AMC 12A Problem 25}
+    \end{abboy*}
+\end{discussion*}
+
+
+\subsection{Exercise 9.16}
+\begin{discussion*}Exercise 9.16
+    \begin{abboy*}
+        \[\begin{tikzcd}
+            H && G \\
+            \\
+            && {\text{Aut(vertices of the Tree)}}
+            \arrow["i", hook, from=1-1, to=1-3]
+            \arrow["{\sigma\circ i}"', from=1-1, to=3-3]
+            \arrow["\sigma", from=1-3, to=3-3]
+        \end{tikzcd}\]
+        So H must act on the tree. Since $G$ act on the tree freely, $H$ must act on the tree freely. Thus, $H$ must be a free group.
+        \\
+        someone checks my solution
+        And i am not too sure how to prove: only free group act freely on tree.
+    \end{abboy*}
+    \begin{arthur*}
+        yeah i have the same solution. and i expect that the proof of "only free groups act freely on trees" is pretty hard and uses notions we don't know yet. 
+    \end{arthur*}
+
+\end{discussion*}
+
+
+\subsection{Exercise 9.17}
+\begin{discussion*}Exercise 9.17
+    \begin{abboy*}
+        a functional equation.
+        \\
+        For any $\phi \in \text{Aut}_{G-set}(G)$, $\phi(xy)=y\phi(x) $ for any $x$ and $y$ in $G$. Take $x=e$. $\phi(y)=y\phi(e)$. 
+        \\
+        So the value of $\phi(e)$ uniquely determines the $\phi$. So $\text{Aut}_{G-set}(G) \cong G$
+    \end{abboy*}
+
+\end{discussion*}
+
+
+\subsection{Exercise 10.1}
+\begin{discussion*}Exercise 10.1
+    \begin{abboy*}
+        $1\times G \to G \to 1\times G$ is an identity
+        \\
+        first of all, since $1\times G$ is a product in $C_{1,G}$. so there must exists $\pi_1$ and $\pi_G$ such that $1\times G$ with $\pi_1$ and $\pi_G$ is the final in $C_{1,G}$.
+        \\
+        Based on the diagram, there must exists morphism $\epsilon \times id_G$ from $G$ to $1 \times G$
+
+        \[\begin{tikzcd}
+            && {1\times G} \\
+            \\
+            1 &&&& G \\
+            \\
+            && G
+            \arrow["{\pi_1}", from=1-3, to=3-1]
+            \arrow["{\pi_G}"', from=1-3, to=3-5]
+            \arrow["{\exists!\epsilon \times id_G}"{description}, from=5-3, to=1-3]
+            \arrow["\epsilon"', from=5-3, to=3-1]
+            \arrow["{id_G}", from=5-3, to=3-5]
+        \end{tikzcd}\]
+        From the previus diagram, we know that $(\epsilon \times id_G)\circ \pi_G=id_G$. Now, we show that $\pi_G \circ (\epsilon \times idG)=id{1\times G}$ 
+        \\
+        By the universal property of product, there exists a unique, say $f$ morphism from $1\times G$ to $1\times G$ with the morphism $\pi_1$ and $\pi_G$ such that the diagram commutes.
+        \\
+        First, we prove the $f=id_{1\times G}$ this is trivial
+        \\
+        Now, we prove that $f=id_{1\times G}=\pi_G \circ (\epsilon \times id_G)$. It suffices to show that $\pi_G \circ (\epsilon \times id_G)$ makes the diagram commutes
+        \\
+        It suffices to show that (1) $\pi_1 \circ [\pi_G \circ (\epsilon \times id_G)]=\pi_1$ and (2) $\pi_G \circ [\pi_G \circ (\epsilon \times id_G)]=\pi_G$
         \begin{center}
-            \includegraphics[scale=0.2]{pic2-8.9.png}
+            \includegraphics[scale=0.2]{pic2-10.1.png}
         \end{center}
+        (2) is trivial $!$
+        \\
+        FOr (1), note that $1$ is the final in category. There exists a unqiue morphism from $1\times G$ to $1$. So $\pi_1 \circ [\pi_G \circ (\epsilon \times id_G)]$ must be $\pi_1$, by the universal property of $1$. We're done!
     \end{abboy*}
 \end{discussion*}
 
 
-\subsection{Exercise }
-\begin{discussion*}Exercise 
+\subsection{Exercise 10.5}
+\begin{discussion*}Exercise 10.5
     \begin{abboy*}
-    
+        wow. A group object in Grp is an abelian group! inverse function is homomorphism 
     \end{abboy*}
-    \begin{arthur*}
-    
-    \end{arthur*}
-    \begin{evie*}
-    
-    \end{evie*}
+
 \end{discussion*}
 
 
-\subsection{Exercise }
-\begin{discussion*}Exercise 
-    \begin{abboy*}
-    
-    \end{abboy*}
-    \begin{arthur*}
-    
-    \end{arthur*}
-    \begin{evie*}
-    
-    \end{evie*}
-\end{discussion*}
-
-
+%template
 \subsection{Exercise }
 \begin{discussion*}Exercise 
     \begin{abboy*}
