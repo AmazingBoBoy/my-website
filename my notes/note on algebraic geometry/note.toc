@@ -16,7 +16,8 @@
 \contentsline {section}{\numberline {6}Presheaf and Sheaf}{14}{section.82}%
 \contentsline {subsection}{\numberline {6.1}Presheaf and Sheaf}{14}{subsection.83}%
 \contentsline {subsection}{\numberline {6.2}Stalks and germs}{15}{subsection.94}%
-\contentsline {section}{\numberline {7}Morphism of algebraic sets and Ringed Spaces}{17}{section.103}%
-\contentsline {subsection}{\numberline {7.1}Morphism of Algebraic Sets}{17}{subsection.104}%
-\contentsline {subsection}{\numberline {7.2}Ringed Space and Affine Varieties}{17}{subsection.105}%
+\contentsline {section}{\numberline {7}Ringed Spaces and its morphisms}{17}{section.103}%
+\contentsline {subsection}{\numberline {7.1}Ringed Space and Affine Varieties}{17}{subsection.104}%
+\contentsline {subsection}{\numberline {7.2}Product of affine Varieties}{19}{subsection.116}%
+\contentsline {subsection}{\numberline {7.3}Some strange affine varieties}{21}{subsection.119}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
