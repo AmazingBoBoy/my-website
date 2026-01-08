@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1767770222.68632 "/Users/kaihuang/Documents/VS Code/my-website/my notes/note on algebraic geometry/note.tex" "note.pdf" "note" 1767770225.03438 0
-  "/Users/kaihuang/Documents/VS Code/my-website/my notes/note on algebraic geometry/note.tex" 1767770220.02861 37259 23185837874d981bc44b7181229b801b ""
+["pdflatex"] 1767866840.36114 "/Users/kaihuang/Documents/VS Code/my-website/my notes/note on algebraic geometry/note.tex" "note.pdf" "note" 1767866842.81694 0
+  "/Users/kaihuang/Documents/VS Code/my-website/my notes/note on algebraic geometry/note.tex" 1767866837.46529 37332 b8e29a3b220599afdc8460c08bd9ffe9 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm1440.tfm" 1136768653 1536 3290a75021d32d016616fe527bc9884c ""
@@ -262,11 +262,11 @@
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1741450574 3345740 46b66fdb0378f7bf5921b5eabf1762b8 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
   "evan.sty" 1767691280.64222 29770 b9305cfa1e10857183abaea4b60464cc ""
-  "note.aux" 1767770224.91423 17056 20a92d6dbd1ac6b5332b7c3e4d6d8740 "pdflatex"
-  "note.out" 1767770224.06494 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "note.pre" 1767770223.30869 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "note.tex" 1767770220.02861 37259 23185837874d981bc44b7181229b801b ""
-  "note.toc" 1767770224.91705 1963 6e32f92e167d48f2583bfbb036bdc264 "pdflatex"
+  "note.aux" 1767866842.69946 17056 20a92d6dbd1ac6b5332b7c3e4d6d8740 "pdflatex"
+  "note.out" 1767866841.82884 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "note.pre" 1767866841.06703 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "note.tex" 1767866837.46529 37332 b8e29a3b220599afdc8460c08bd9ffe9 ""
+  "note.toc" 1767866842.7022 1963 6e32f92e167d48f2583bfbb036bdc264 "pdflatex"
   (generated)
   "note.aux"
   "note.log"
