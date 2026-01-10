@@ -14,6 +14,7 @@
 \newcommand{\primeideal}{\mathfrak{p}}
 
 
+
 \usepackage{relsize}
 \begin{document}
 \title{Note on Algebraic Geometry YouTube Series}
@@ -420,7 +421,43 @@ So $\cO(X\times Y)$ satisfies the universal property of tensor product in the ca
 \begin{example}[$\A^2\setminus \{0\}$ is not an affine Varieties]
     This is clear because we have shown that the regular functions on $\A^2\setminus \{0\}$ is $k[x,y]$. If it's an affine variety, then its coordinate ring must be isomorphic to $k[x,y]$. So $\A^2\setminus \{0\}$ must be isomorphic to $\A^2$ as ringed spaces, clearly a contradiction.
 \end{example}
-    
+\end{itemize}
+\newpage
+\section{Tools from Commutative Algebra that we need}
+Since this is an algebraic geoemtry note, we omit all the proofs in this section. 
+\begin{itemize}
+    \subsection{Integral extension}
+    \item This is the analog of algebraic extension in field theory. The idea is to make the extension $R'$ of $R$ a finitely generated module over $R$. 
+    \begin{definition}
+        Let $R\subseteq R'$ be an extension of rings. An element $r'\in R'$ is said to be integral over $R$ if there exists a monic polynomial $f(x)\in R[x]$ such that $f(r')=0$. The extension $R\subseteq R'$ is called an integral extension if every element of $R'$ is integral over $R$.
+    \end{definition}
+    \begin{theorem}
+        If $R\subseteq R'$ is an extension of rings and $R'=R[a_1, \ldots, a_n]$ is a finitely generated $R$-algebra, then the following are equivalent:
+        \begin{enumerate}
+            \item $R\subseteq R'$ is an integral extension.
+            \item Each $a_i$ is integral over $R$.
+            \item $R'$ is a finitely generated $R$-module.
+        \end{enumerate}
+            The proof requires the Cayley-Hamilton theorem to construct the characteristic polynomial to be the monic polynomial. This is also called the determinant trick. 
+    \end{theorem}
+    \begin{example}
+        $R=\C[x]$ and $R'=\C[x,y]/(y^2-x^2)$. Then, $R\subseteq R'$ is an integral extension because $y$ is integral over $R$ as it satisfies the monic polynomial $y^2-x^2=0$.
+        \\
+
+        There is a geometric interpretation of this example. The ring inclusion $R \to R'$ corresponds to a morphism of affine varieties from $V(y^2-x^2)$ to $\A^1$ defined by $(x,y)\mapsto x$. 
+        
+    The geometric meaning of integral extension is that for any point $A\in \A^1$, the preimage of $A$ under this morphism consists of finitely many points (in this case, only 2 points $A_1$ and $A_2$ are the preimage of $A$). 
+    \end{example}
+    \begin{example}[Non integral extension]
+        $R=\C[x]$ and $R'=\C[x,y]/(yx-1)$. This is not an integral extension because $y$ is not integral over $R$ as there is no monic polynomial in $R[x]$ that $y$ satisfies.
+        \\
+        Geometrically, the ring inclusion $R \to R'$ corresponds to a morphism of affine varieties from $V(yx-1)$ to $\A^1$ defined by $(x,y)\mapsto x$.
+        \begin{center}
+            
+        \end{center}
+    The geometric meaning of non-integral extension is that there exists a point $B\in \A^1$ such that the preimage of $B$ under this morphism is an infinite set (in this case, the hyperbola approaches the $y$-axis but never touches it, so the preimage of point $B$ on the $y$-axis is empty).
+    \end{example}
+hard
 \end{itemize}
 
 

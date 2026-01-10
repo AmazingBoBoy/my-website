@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  9 JAN 2026 19:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  9 JAN 2026 19:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Users/kaihuang/Documents/VS Code/my-website/my notes/note on algebraic geometry/note.tex"
-(/Users/kaihuang/Documents/VS Code/my-website/my notes/note on algebraic geometry/note.tex
+**"/Users/kaihuang/Documents/VS Code/my-website/my notes/tilz/tilz.tex"
+(/Users/kaihuang/Documents/VS Code/my-website/my notes/tilz/tilz.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
 (/usr/local/texlive/2025/texmf-dist/tex/latex/koma-script/scrartcl.cls
@@ -259,7 +259,7 @@ Package: derivative 2024/02/08 v1.4 Nice and easy derivatives and differentials 
 \l__deriv_sort_max_int=\count290
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/asymptote/asymptote.sty
 Package: asymptote 2024/02/26 v1.38 Asymptote style file for LaTeX
- (./note.pre)
+ (./tilz.pre)
 \ASYbox=\box57
 \ASYdimen=\dimen151
 \c@asy=\count291
@@ -295,7 +295,7 @@ Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
 ) (/usr/local/texlive/2025/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 ))
-\openout4 = `note.pre'.
+\openout4 = `tilz.pre'.
 
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
@@ -1001,59 +1001,92 @@ Package scrlayer-scrpage Info: Makeing stand-alone element `pagehead' from
 (scrlayer-scrpage)             alias to `pageheadfoot' on input line 1106.
 )) (/usr/local/texlive/2025/texmf-dist/tex/latex/relsize/relsize.sty
 Package: relsize 2013/03/29 ver 4.1
-) (./note.aux)
-\openout1 = `note.aux'.
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/pgfplots/pgfplots.sty (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
+Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
+ (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
+\t@pgfplots@toka=\toks53
+\t@pgfplots@tokb=\toks54
+\t@pgfplots@tokc=\toks55
+\pgfplots@tmpa=\dimen296
+\c@pgfplots@coordindex=\count374
+\c@pgfplots@scanlineindex=\count375
+ (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code.tex)) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.code.tex) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_loader.code.tex (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex)
+Package pgfplots: loading complementary utilities for your pgf version...
+\t@pgf@toka=\toks56
+\t@pgf@tokb=\toks57
+\t@pgf@tokc=\toks58
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_pgfutil-common-lists.tex)) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.tex (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructure.code.tex) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructureext.code.tex) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray.code.tex
+\c@pgfplotsarray@tmp=\count376
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatrix.code.tex) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshared.code.tex
+\c@pgfplotstable@counta=\count377
+\t@pgfplotstable@a=\toks59
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque.code.tex) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.code.tex (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.data.code.tex)) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb.code.tex) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.surfshading.code.tex
+\c@pgfplotslibrarysurf@no=\count378
+ (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading.pgfsys-pdftex.def))) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.tex (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.code.tex)) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.code.tex) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.code.tex (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandler.code.tex (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplotimage.code.tex))) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.tex) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessing.code.tex) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.code.tex) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.tex) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.tex) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathreplacing.code.tex (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathreplacing.code.tex)) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.contourlua.code.tex)
+\pgfplots@numplots=\count379
+\pgfplots@xmin@reg=\dimen297
+\pgfplots@xmax@reg=\dimen298
+\pgfplots@ymin@reg=\dimen299
+\pgfplots@ymax@reg=\dimen300
+\pgfplots@zmin@reg=\dimen301
+\pgfplots@zmax@reg=\dimen302
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryplotmarks.code.tex
+File: tikzlibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
+File: pgflibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (./tilz.aux)
+\openout1 = `tilz.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-Package scrbase Info: activating english \abstractname on input line 19.
-Package scrbase Info: activating english \partname on input line 19.
-Package scrbase Info: activating english \figurename on input line 19.
-Package scrbase Info: activating english \tablename on input line 19.
-Package scrbase Info: activating english \contentsname on input line 19.
-Package scrbase Info: activating english \listfigurename on input line 19.
-Package scrbase Info: activating english \listtablename on input line 19.
-Package scrbase Info: activating english \refname on input line 19.
-Package scrbase Info: activating english \indexname on input line 19.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+Package scrbase Info: activating english \abstractname on input line 14.
+Package scrbase Info: activating english \partname on input line 14.
+Package scrbase Info: activating english \figurename on input line 14.
+Package scrbase Info: activating english \tablename on input line 14.
+Package scrbase Info: activating english \contentsname on input line 14.
+Package scrbase Info: activating english \listfigurename on input line 14.
+Package scrbase Info: activating english \listtablename on input line 14.
+Package scrbase Info: activating english \refname on input line 14.
+Package scrbase Info: activating english \indexname on input line 14.
  (/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count374
-\scratchdimen=\dimen296
+\scratchcounter=\count380
+\scratchdimen=\dimen303
 \scratchbox=\box83
-\nofMPsegments=\count375
-\nofMParguments=\count376
-\everyMPshowfont=\toks53
-\MPscratchCnt=\count377
-\MPscratchDim=\dimen297
-\MPnumerator=\count378
-\makeMPintoPDFobject=\count379
-\everyMPtoPDFconversion=\toks54
+\nofMPsegments=\count381
+\nofMParguments=\count382
+\everyMPshowfont=\toks60
+\MPscratchCnt=\count383
+\MPscratchDim=\dimen304
+\MPnumerator=\count384
+\makeMPintoPDFobject=\count385
+\everyMPtoPDFconversion=\toks61
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring ON on input line 19.
- (./note.out) (./note.out)
+Package hyperref Info: Link coloring ON on input line 14.
+ (./tilz.out) (./tilz.out)
 \@outlinefile=\write6
-\openout6 = `note.out'.
+\openout6 = `tilz.out'.
 
 Class scrartcl Info: loading recommended package `bookmark'.
 (scrartcl)           Using `bookmark' together with `hyperref' is recommended,
@@ -1062,36 +1095,36 @@ Class scrartcl Info: loading recommended package `bookmark'.
 (scrartcl)           `bookmarkpackage=false' before \begin{document} and
 (scrartcl)           you can avoid this message adding:
 (scrartcl)             \usepackage{bookmark}
-(scrartcl)           before \begin{document} on input line 19.
+(scrartcl)           before \begin{document} on input line 14.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
  (/usr/local/texlive/2025/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
 File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO)
-\BKM@id=\count380
+\BKM@id=\count386
 ))
-\c@lstlisting=\count381
+\c@lstlisting=\count387
 Package tocbasic Info: omitting babel extension for `lol'
-(tocbasic)             because of missing \bbl@set@language on input line 19.
+(tocbasic)             because of missing \bbl@set@language on input line 14.
 \scr@dte@lstlisting@maxnumwidth=\skip154
 
 
-Package todonotes Warning: The length marginparwidth is less than 2cm and will most likely cause issues with the appearance of inserted todonotes. The issue can be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to loading the todonotes package. on input line 19.
+Package todonotes Warning: The length marginparwidth is less than 2cm and will most likely cause issues with the appearance of inserted todonotes. The issue can be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to loading the todonotes package. on input line 14.
 
-LaTeX Info: Redefining \dots on input line 19.
-LaTeX Info: Redefining \microtypecontext on input line 19.
-Package microtype Info: Applying patch `item' on input line 19.
-Package microtype Info: Applying patch `toc' on input line 19.
-Package microtype Info: Applying patch `eqnum' on input line 19.
-Package microtype Info: Applying patch `footnote' on input line 19.
-Package microtype Info: Applying patch `verbatim' on input line 19.
-LaTeX Info: Redefining \microtypesetup on input line 19.
+LaTeX Info: Redefining \dots on input line 14.
+LaTeX Info: Redefining \microtypecontext on input line 14.
+Package microtype Info: Applying patch `item' on input line 14.
+Package microtype Info: Applying patch `toc' on input line 14.
+Package microtype Info: Applying patch `eqnum' on input line 14.
+Package microtype Info: Applying patch `footnote' on input line 14.
+Package microtype Info: Applying patch `verbatim' on input line 14.
+LaTeX Info: Redefining \microtypesetup on input line 14.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 19.
+LaTeX Info: Redefining \showhyphens on input line 14.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1099,9 +1132,11 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )
 isodate: babel.sty, (n)german.sty have not been loaded
+Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
+
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <15> not available
-(Font)              size <14.4> substituted on input line 23.
+(Font)              size <14.4> substituted on input line 19.
 
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmss' (encoding: OT1).
@@ -1109,125 +1144,114 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 
 LaTeX Font Warning: Font shape `OT1/cmss/bx/n' in size <15> not available
-(Font)              size <14.4> substituted on input line 23.
+(Font)              size <14.4> substituted on input line 19.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/bx/n' in size <31.11008> not available
-(Font)              size <24.88> substituted on input line 23.
+(Font)              size <24.88> substituted on input line 19.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <21.60004> not available
-(Font)              size <20.74> substituted on input line 23.
+(Font)              size <20.74> substituted on input line 19.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/sc' in size <21.60004> not available
-(Font)              size <20.74> substituted on input line 23.
+(Font)              size <20.74> substituted on input line 19.
 
-LaTeX Font Info:    Calculating math sizes for size <21.60004> on input line 23.
+LaTeX Font Info:    Calculating math sizes for size <21.60004> on input line 19.
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <15.11995> not available
-(Font)              size <14.4> substituted on input line 23.
+(Font)              size <14.4> substituted on input line 19.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <21.60004> not available
-(Font)              size <20.74> substituted on input line 23.
+(Font)              size <20.74> substituted on input line 19.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <15.11995> not available
-(Font)              size <14.4> substituted on input line 23.
+(Font)              size <14.4> substituted on input line 19.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <21.60004> not available
-(Font)              size <20.74> substituted on input line 23.
+(Font)              size <20.74> substituted on input line 19.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <15.11995> not available
-(Font)              size <14.4> substituted on input line 23.
+(Font)              size <14.4> substituted on input line 19.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 23.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 19.
 (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 23.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 19.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Trying to load font information for OMX+yhex on input line 23.
+LaTeX Font Info:    Trying to load font information for OMX+yhex on input line 19.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/yhmath/OMXyhex.fd
 File: OMXyhex.fd 
 File: OMXyhex.fd 2013/07/03 v1.1 YH's humble contribution to TeX maths (NP)
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 23.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 19.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <21.60004> not available
-(Font)              size <20.74> substituted on input line 23.
+(Font)              size <20.74> substituted on input line 19.
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <15.11995> not available
-(Font)              size <14.4> substituted on input line 23.
+(Font)              size <14.4> substituted on input line 19.
 
-
-LaTeX Font Warning: Font shape `OT1/cmss/bx/n' in size <21.60004> not available
-(Font)              size <20.74> substituted on input line 23.
-
-Package tocbasic Info: character protrusion at toc deactivated on input line 23.
-(./note.toc
-LaTeX Font Info:    Calculating math sizes for size <15> on input line 3.
-
+LaTeX Font Info:    Calculating math sizes for size <15> on input line 28.
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <10.49995> not available
-(Font)              size <10.95> substituted on input line 3.
+(Font)              size <10.95> substituted on input line 28.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <7.5> not available
-(Font)              size <7> substituted on input line 3.
+(Font)              size <7> substituted on input line 28.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <15> not available
-(Font)              size <14.4> substituted on input line 3.
+(Font)              size <14.4> substituted on input line 28.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <10.49995> not available
-(Font)              size <10.95> substituted on input line 3.
+(Font)              size <10.95> substituted on input line 28.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <7.5> not available
-(Font)              size <7> substituted on input line 3.
+(Font)              size <7> substituted on input line 28.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <15> not available
-(Font)              size <14.4> substituted on input line 3.
+(Font)              size <14.4> substituted on input line 28.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <10.49995> not available
-(Font)              size <10.95> substituted on input line 3.
+(Font)              size <10.95> substituted on input line 28.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <7.5> not available
-(Font)              size <7> substituted on input line 3.
+(Font)              size <7> substituted on input line 28.
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <15> not available
-(Font)              size <14.4> substituted on input line 3.
+(Font)              size <14.4> substituted on input line 28.
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <10.49995> not available
-(Font)              size <10.95> substituted on input line 3.
+(Font)              size <10.95> substituted on input line 28.
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <7.5> not available
-(Font)              size <7> substituted on input line 3.
-
-)
-\tf@toc=\write7
-\openout7 = `note.toc'.
+(Font)              size <7> substituted on input line 28.
 
 
 
@@ -1238,387 +1262,35 @@ LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <7.5> not available
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <12.50015> not available
-(Font)              size <12> substituted on input line 24.
+(Font)              size <12> substituted on input line 41.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <12.50015> not available
-(Font)              size <12> substituted on input line 24.
+(Font)              size <12> substituted on input line 41.
 
 [2]
 
+LaTeX Font Warning: Font shape `OT1/cmss/bx/n' in size <21.60004> not available
+(Font)              size <20.74> substituted on input line 54.
+
+
+
 [3]
 
-LaTeX Font Warning: Font shape `OT1/cmss/bx/n' in size <17.99995> not available
-(Font)              size <17.28> substituted on input line 33.
-
-
-LaTeX Font Warning: Font shape `TS1/cmr/m/n' in size <15> not available
-(Font)              size <14.4> substituted on input line 34.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 37--39
-
- []
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <25.91995> not available
-(Font)              size <24.88> substituted on input line 40.
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <25.91995> not available
-(Font)              size <24.88> substituted on input line 40.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 40--41
-
- []
-
-
-
-[4{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+[4]
 
 [5]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 86.
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <15> not available
-(Font)              size <14.4> substituted on input line 86.
-
-Package hyperref Info: bookmark level for unknown example defaults to 0 on input line 86.
-LaTeX Font Info:    Calculating math sizes for size <17.99995> on input line 94.
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <17.99995> not available
-(Font)              size <17.28> substituted on input line 94.
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <12.5999> not available
-(Font)              size <12> substituted on input line 94.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <17.99995> not available
-(Font)              size <17.28> substituted on input line 94.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <12.5999> not available
-(Font)              size <12> substituted on input line 94.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <17.99995> not available
-(Font)              size <17.28> substituted on input line 94.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <12.5999> not available
-(Font)              size <12> substituted on input line 94.
-
-
-LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <17.99995> not available
-(Font)              size <17.28> substituted on input line 94.
-
-
-LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <12.5999> not available
-(Font)              size <12> substituted on input line 94.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 94.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 94.
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 104.
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <13.68759> not available
-(Font)              size <14.4> substituted on input line 104.
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <13.68759> not available
-(Font)              size <14.4> substituted on input line 104.
-
-Package hyperref Info: bookmark level for unknown remark defaults to 0 on input line 104.
-LaTeX Font Info:    Calculating math sizes for size <13.68759> on input line 104.
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <9.58127> not available
-(Font)              size <10> substituted on input line 104.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <13.68759> not available
-(Font)              size <14.4> substituted on input line 104.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <9.58127> not available
-(Font)              size <10> substituted on input line 104.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <13.68759> not available
-(Font)              size <14.4> substituted on input line 104.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <9.58127> not available
-(Font)              size <10> substituted on input line 104.
-
-
-LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <13.68759> not available
-(Font)              size <14.4> substituted on input line 104.
-
-
-LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <9.58127> not available
-(Font)              size <10> substituted on input line 104.
-
-
 
 [6]
-Package mdframed Info: Not enough space on this page on input line 105.
+Overfull \hbox (48.0072pt too wide) in paragraph at lines 199--206
+[] [] 
+ []
+
 
 
 [7]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 114.
 
-Underfull \hbox (badness 10000) in paragraph at lines 130--132
-
- []
-
-
-
-[8]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 135.
-Package hyperref Info: bookmark level for unknown lemma defaults to 0 on input line 135.
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/it' in size <15> not available
-(Font)              size <14.4> substituted on input line 138.
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 141.
-
-Underfull \hbox (badness 10000) in paragraph at lines 143--145
-
- []
-
-
-
-[9]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 159.
-Package hyperref Info: bookmark level for unknown corollary defaults to 0 on input line 159.
-
-Underfull \hbox (badness 10000) in paragraph at lines 164--166
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 171--173
-
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 177.
-
-
-[10]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 188.
-
-Underfull \hbox (badness 10000) in paragraph at lines 191--193
-
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 193.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 199.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 201.
-
-
-[11]
-Package mdframed Info: Not enough space on this page on input line 203.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 206.
-Package hyperref Info: bookmark level for unknown definition defaults to 0 on input line 217.
-
-Underfull \hbox (badness 10000) in paragraph at lines 227--229
-
- []
-
-
-
-[12]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 242.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 245.
-
-
-Package mdframed Warning: You got a bad break
-(mdframed)                because the last box will be empty
-(mdframed)                you have to change it manually
-(mdframed)                by changing the text, the space
-(mdframed)                or something else on input line 246.
-
-Package mdframed Info: You first box width is to small
- mdframed fixed it
-(mdframed)              on input line 246.
-
-
-[13]
-
-Package mdframed Warning: You got a bad break
-(mdframed)                because the last split box is empty
-(mdframed)                You have to change the settings on input line 246.
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 248.
-
-Underfull \hbox (badness 10000) in paragraph at lines 252--254
-
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 261.
-
-
-[14]
-Underfull \hbox (badness 10000) in paragraph at lines 268--272
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 273--275
-
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 280.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 283.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 286.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 290.
-
-
-[15]
-Package mdframed Info: Not enough space on this page on input line 291.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 294.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 299.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 302.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 305.
-LaTeX Font Info:    Trying to load font information for U+euf on input line 308.
- (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/ueuf.fd
-File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/microtype/mt-euf.cfg
-File: mt-euf.cfg 2006/07/03 v1.1 microtype config. file: AMS Euler Fraktur (RS)
-)
-
-[16]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 310.
-
-
-[17]
-Underfull \hbox (badness 10000) in paragraph at lines 322--326
-
- []
-
-
-
-[18]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 339.
-
-Underfull \hbox (badness 10000) in paragraph at lines 340--342
-
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 347.
-Package hyperref Info: bookmark level for unknown theorem defaults to 0 on input line 347.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 356.
-
-
-[19]
-Underfull \hbox (badness 10000) in paragraph at lines 359--361
-
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 371.
-
-
-[20]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 379.
-
-
-[21]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 413.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 421.
-
-
-[22]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 435.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 444.
-
-Underfull \hbox (badness 10000) in paragraph at lines 444--446
-
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 451.
-
-
-[23]
-
-[24] (./note.aux)
+[8] (./tilz.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2020/03/25>
@@ -1628,22 +1300,22 @@ L3 programming layer <2020/03/25>
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 6.23007pt have occurred.
 
-Package rerunfilecheck Info: File `note.out' has not changed.
+Package rerunfilecheck Info: File `tilz.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 40147 strings out of 473190
- 845797 string characters out of 5715801
- 1422231 words of memory out of 5000000
- 62442 multiletter control sequences out of 15000+600000
- 589149 words of font info for 212 fonts, out of 8000000 for 9000
+ 49593 strings out of 473190
+ 1172978 string characters out of 5715801
+ 2110404 words of memory out of 5000000
+ 72042 multiletter control sequences out of 15000+600000
+ 572350 words of font info for 104 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 123i,21n,128p,11005b,1465s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb>
-Output written on note.pdf (24 pages, 261299 bytes).
+ 123i,21n,128p,10983b,2415s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on tilz.pdf (8 pages, 121510 bytes).
 PDF statistics:
- 487 PDF objects out of 1000 (max. 8388607)
- 408 compressed objects within 5 object streams
- 161 named destinations out of 1000 (max. 500000)
- 53549 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 132 PDF objects out of 1000 (max. 8388607)
+ 87 compressed objects within 1 object stream
+ 15 named destinations out of 1000 (max. 500000)
+ 26783 words of extra memory for PDF output out of 29859 (max. 10000000)
 
