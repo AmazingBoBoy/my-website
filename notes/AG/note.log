@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  9 JAN 2026 19:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  10 JAN 2026 00:44
 entering extended mode
- restricted \write18 enabled.
+ \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Users/kaihuang/Documents/VS Code/my-website/my notes/note on algebraic geometry/note.tex"
-(/Users/kaihuang/Documents/VS Code/my-website/my notes/note on algebraic geometry/note.tex
+**"/Users/kaihuang/Documents/VS Code/my-website/notes/AG/note.tex"
+(/Users/kaihuang/Documents/VS Code/my-website/notes/AG/note.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
 (/usr/local/texlive/2025/texmf-dist/tex/latex/koma-script/scrartcl.cls
@@ -1606,19 +1606,38 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 444.
-
-Underfull \hbox (badness 10000) in paragraph at lines 444--446
-
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 451.
+<diagram1-1.pdf, id=291, 272.01625pt x 227.77898pt>
+File: diagram1-1.pdf Graphic file (type pdf)
+<use diagram1-1.pdf>
+Package pdftex.def Info: diagram1-1.pdf  used on input line 448.
+(pdftex.def)             Requested size: 272.01558pt x 227.77841pt.
 
 
 [23]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 453.
+<diagram1-2.pdf, id=303, 217.8539pt x 272.9146pt>
+File: diagram1-2.pdf Graphic file (type pdf)
+<use diagram1-2.pdf>
+Package pdftex.def Info: diagram1-2.pdf  used on input line 458.
+(pdftex.def)             Requested size: 217.85335pt x 272.91391pt.
 
-[24] (./note.aux)
+
+[24 <./diagram1-1.pdf>]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 462.
+<diagram1-3.pdf, id=344, 223.90852pt x 273.71762pt>
+File: diagram1-3.pdf Graphic file (type pdf)
+<use diagram1-3.pdf>
+Package pdftex.def Info: diagram1-3.pdf  used on input line 465.
+(pdftex.def)             Requested size: 223.90797pt x 273.71695pt.
+
+
+[25 <./diagram1-2.pdf>]
+
+[26 <./diagram1-3.pdf>] (./note.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2020/03/25>
@@ -1632,18 +1651,18 @@ Package rerunfilecheck Info: File `note.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 40147 strings out of 473190
- 845797 string characters out of 5715801
- 1422231 words of memory out of 5000000
- 62442 multiletter control sequences out of 15000+600000
+ 40174 strings out of 473190
+ 846311 string characters out of 5715801
+ 1422229 words of memory out of 5000000
+ 62465 multiletter control sequences out of 15000+600000
  589149 words of font info for 212 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 123i,21n,128p,11005b,1465s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 123i,21n,128p,10978b,1465s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb>
-Output written on note.pdf (24 pages, 261299 bytes).
+Output written on note.pdf (26 pages, 277995 bytes).
 PDF statistics:
- 487 PDF objects out of 1000 (max. 8388607)
- 408 compressed objects within 5 object streams
- 161 named destinations out of 1000 (max. 500000)
- 53549 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 563 PDF objects out of 1000 (max. 8388607)
+ 465 compressed objects within 5 object streams
+ 165 named destinations out of 1000 (max. 500000)
+ 53564 words of extra memory for PDF output out of 61914 (max. 10000000)
 

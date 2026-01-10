@@ -442,22 +442,29 @@ Since this is an algebraic geoemtry note, we omit all the proofs in this section
     \end{theorem}
     \begin{example}
         $R=\C[x]$ and $R'=\C[x,y]/(y^2-x^2)$. Then, $R\subseteq R'$ is an integral extension because $y$ is integral over $R$ as it satisfies the monic polynomial $y^2-x^2=0$.
-        \\
-
+        
         There is a geometric interpretation of this example. The ring inclusion $R \to R'$ corresponds to a morphism of affine varieties from $V(y^2-x^2)$ to $\A^1$ defined by $(x,y)\mapsto x$. 
+        \begin{center}
+            \includegraphics{diagram1-1.pdf}
+        \end{center}
         
     The geometric meaning of integral extension is that for any point $A\in \A^1$, the preimage of $A$ under this morphism consists of finitely many points (in this case, only 2 points $A_1$ and $A_2$ are the preimage of $A$). 
     \end{example}
     \begin{example}[Non integral extension]
         $R=\C[x]$ and $R'=\C[x,y]/(yx-1)$. This is not an integral extension because $y$ is not integral over $R$ as there is no monic polynomial in $R[x]$ that $y$ satisfies.
-        \\
+        
         Geometrically, the ring inclusion $R \to R'$ corresponds to a morphism of affine varieties from $V(yx-1)$ to $\A^1$ defined by $(x,y)\mapsto x$.
         \begin{center}
-            
+            \includegraphics{diagram1-2.pdf}
         \end{center}
-    The geometric meaning of non-integral extension is that there exists a point $B\in \A^1$ such that the preimage of $B$ under this morphism is an infinite set (in this case, the hyperbola approaches the $y$-axis but never touches it, so the preimage of point $B$ on the $y$-axis is empty).
+    The geometric meaning of non-integral extension is that there exists a point $B\in \A^1$ such that the preimage of $B$ under this morphism is an \textbf{infinite set} or an \textbf{empty}. 
     \end{example}
-hard
+    \begin{example}[Non integral extension]
+        $R=\C[x]$ and $R'=\C[x,y]/(xy)$.
+        \begin{center}
+            \includegraphics{diagram1-3.pdf}
+        \end{center}
+    \end{example}
 \end{itemize}
 
 
