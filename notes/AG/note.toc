@@ -20,6 +20,6 @@
 \contentsline {subsection}{\numberline {7.1}Ringed Space and Affine Varieties}{18}{subsection.104}%
 \contentsline {subsection}{\numberline {7.2}Product of affine Varieties}{20}{subsection.116}%
 \contentsline {subsection}{\numberline {7.3}Some strange affine varieties}{22}{subsection.119}%
-\contentsline {section}{\numberline {8}Tools from Commutative Algebra that we need}{23}{section.124}%
+\contentsline {section}{\numberline {8}Tools from Commutative Algebra that we need (to be finished)}{23}{section.124}%
 \contentsline {subsection}{\numberline {8.1}Integral extension}{23}{subsection.125}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
