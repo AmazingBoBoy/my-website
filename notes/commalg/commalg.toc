@@ -1,0 +1,2 @@
+\contentsline {section}{\numberline {1}Chapter 1: Roots of Commutative Algebra}{4}{section.3}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
