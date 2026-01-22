@@ -503,6 +503,12 @@ INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/yhmath/yhcmex10.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/yhmath/yhcmex10.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/yhmath/yhcmex10.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm
+INPUT ./ss.png
+INPUT ./ss.png
+INPUT ./ss.png
+INPUT ./ss.png
+INPUT ./ss.png
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
 INPUT commalg.aux
 INPUT ./commalg.out
 INPUT ./commalg.out

@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1768974777.65833 "/Users/kaihuang/Documents/VS Code/my-website/notes/commalg/commalg.tex" "commalg.pdf" "commalg" 1768974780.81521 0
-  "/Users/kaihuang/Documents/VS Code/my-website/notes/commalg/commalg.tex" 1768974777.3786 7248 f6a4610bac68bbb74c3c01f1d5b6ad7f ""
+["pdflatex"] 1769065345.17385 "/Users/kaihuang/Documents/VS Code/my-website/notes/commalg/commalg.tex" "commalg.pdf" "commalg" 1769065348.48465 0
+  "/Users/kaihuang/Documents/VS Code/my-website/notes/commalg/commalg.tex" 1769065344.88925 9132 c229b6449bb1608fe903bc3600af2f45 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -249,12 +249,13 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1753427630 5467155 19efa205003f9ecad95fbbaa6ff24da1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1741450574 3345740 46b66fdb0378f7bf5921b5eabf1762b8 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "commalg.aux" 1768974780.64407 2462 852998eb75e0c14b4947cd234ece1da5 "pdflatex"
-  "commalg.out" 1768974780.06039 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "commalg.pre" 1768974778.77065 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "commalg.tex" 1768974777.3786 7248 f6a4610bac68bbb74c3c01f1d5b6ad7f ""
-  "commalg.toc" 1768974780.64546 210 b938acb5f1cede6a35f636cbf047332d "pdflatex"
+  "commalg.aux" 1769065348.28305 2874 9aad162a72bbbea9edb75dad33b1ed4d "pdflatex"
+  "commalg.out" 1769065347.54394 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "commalg.pre" 1769065346.25409 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "commalg.tex" 1769065344.88925 9132 c229b6449bb1608fe903bc3600af2f45 ""
+  "commalg.toc" 1769065348.28447 210 b938acb5f1cede6a35f636cbf047332d "pdflatex"
   "evan.sty" 1768377469.64933 29770 b9305cfa1e10857183abaea4b60464cc ""
+  "ss.png" 1769064647.89639 105043 fc0e8087d2e8051da94b66f07ca401ad ""
   (generated)
   "commalg.aux"
   "commalg.log"

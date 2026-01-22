@@ -67,7 +67,7 @@ We discuss the history of Commutative Algebra and three of the four big theorems
 \end{proof}
 
 \begin{theorem}[Hilbert's syzygy theorem]
-    If $R=k[x_1, \ldots, x_n]$ is a graded polynomial ring over a field $k$, then every finitely generated graded $R$-module $M$ has a finite graded free resolution of length at most $n$.
+    If $R=k[x_1, \ldots, x_n]$ is a graded polynomial ring over a field $k$, then every finitely generated graded $R$-module $M=\bigoplus_{s \in \mathbb{Z}} M_s$ has a finite graded free resolution of length at most $n$.
 \end{theorem}
 Proof is omitted. 
 \begin{theorem}[Hilber's function theorem]
@@ -79,6 +79,16 @@ We will present two proofs of this theorem.
     \[ 0 \to F_n \to F_{n-1} \to \cdots \to F_1 \to F_0 \to M \to 0. \]
     Thus, we have $H_M(d) = \sum_{i=0}^n (-1)^i H_{F_i}(d)$. So we only need to study the dimension of free modules $F_i$, which is a direct sum of $k[x_1, \ldots, x_n]$. Note that $H_{R}(d) = \dim_k R_d = \binom{n+d-1}{n-1}$ (star and bar counting trick), which is a polynomial in $d$ when $d$ is sufficiently large. Therefore, $H_M(d)$ is also a polynomial in $d$ for sufficiently large $d$.
 \end{proof}
+\begin{remark}[The Euler characteristic]
+    Why does $H_M(d) = \sum_{i=0}^n (-1)^i H_{F_i}(d)$ hold? This result is a property of the Euler characteristic. For any complex of finite-dimensional vector spaces
+    \[V_*: 0\to V_n \to V_{n-1} \to \cdots \to V_1 \to V_0 \to 0,\]
+    We define its Euler characteristic to be
+    \[\chi(V_*) = \sum_{i=0}^n (-1)^i \dim_k V_i.\]
+    There is a nontrivial fact that the Euler characteristic is $0$ if the complex is exact. The easiest proof is via the decomposition of exact sequence into short exact sequences and sum up the dimension relations for each short exact sequence.
+    \begin{center}
+      \includegraphics[scale=0.5]{ss.png}
+    \end{center}
+\end{remark}
 Second one is via induction on $n$.
 \begin{proof}
     $n=0$ is trivial. Suppose it's true for number less than $n$. Consider the short exact sequence
@@ -92,5 +102,15 @@ Second one is via induction on $n$.
     Therefore, $H_M(d)$ also agrees with a polynomial when $d$ is large enough. 
 \end{proof}
 
+\begin{remark}
+    Is $H_M(d)$ always finite? The answer is yes if $M$ is a finitely generated module over $k[x_1, \ldots, x_n]$. This is nontrivial because $H_M(d)$ is considering the dimension of $M$ as module over $k$, not over $R$. 
+    \begin{proof}
+        Consider $M'=\bigoplus_{s=d}^\infty M_s$. $M'$ is a submodule of $M$, so it's finitely generated as $R$-module. Let $m_1, \ldots, m_t$ be the generators of $M'$. Each $m_i$ has degree at least $d$. So for any element in $M_d$, it's a linear combination of $m_i$ with coefficients in $R$ of degree at most $0$ (otherwise it would have degree greater than $d$). Therefore, $M_d$ is spanned by $m_1, \ldots, m_t$ over $k$, which is finite-dimensional. 
+    \end{proof}
+    I came up with another more intuitive proof.  
+    \begin{proof}
+        $M$ is finitely generated as $R$-module by $m_1, \ldots, m_t$. For some degree $d$, any element in $M_d$ must be a linear combination of $m_i$ with coefficients as the monomials in $R$ of degree at most $d-\deg(m_i)$. There are only finitely many such monomials, so $M_d$ is finite-dimensional over $k$.
+    \end{proof}
+\end{remark}
 
 \end{document}
