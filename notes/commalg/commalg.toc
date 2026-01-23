@@ -1,3 +1,4 @@
-\contentsline {section}{\numberline {1}January 17, 2026}{4}{section.3}%
-\contentsline {section}{\numberline {2}January 20, 2026}{5}{section.10}%
+\contentsline {section}{\nonumberline January 17, 2026}{4}{section*.4}%
+\contentsline {section}{\nonumberline January 20, 2026}{5}{section*.12}%
+\contentsline {section}{\nonumberline January 22, 2026}{7}{section*.24}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

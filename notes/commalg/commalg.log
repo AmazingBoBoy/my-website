@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  21 JAN 2026 23:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  22 JAN 2026 15:18
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1004,33 +1004,33 @@ Package: relsize 2013/03/29 ver 4.1
 ) (./commalg.aux)
 \openout1 = `commalg.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-Package scrbase Info: activating english \abstractname on input line 19.
-Package scrbase Info: activating english \partname on input line 19.
-Package scrbase Info: activating english \figurename on input line 19.
-Package scrbase Info: activating english \tablename on input line 19.
-Package scrbase Info: activating english \contentsname on input line 19.
-Package scrbase Info: activating english \listfigurename on input line 19.
-Package scrbase Info: activating english \listtablename on input line 19.
-Package scrbase Info: activating english \refname on input line 19.
-Package scrbase Info: activating english \indexname on input line 19.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+Package scrbase Info: activating english \abstractname on input line 17.
+Package scrbase Info: activating english \partname on input line 17.
+Package scrbase Info: activating english \figurename on input line 17.
+Package scrbase Info: activating english \tablename on input line 17.
+Package scrbase Info: activating english \contentsname on input line 17.
+Package scrbase Info: activating english \listfigurename on input line 17.
+Package scrbase Info: activating english \listtablename on input line 17.
+Package scrbase Info: activating english \refname on input line 17.
+Package scrbase Info: activating english \indexname on input line 17.
  (/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count374
@@ -1050,7 +1050,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/local/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring ON on input line 19.
+Package hyperref Info: Link coloring ON on input line 17.
  (./commalg.out) (./commalg.out)
 \@outlinefile=\write6
 \openout6 = `commalg.out'.
@@ -1062,7 +1062,7 @@ Class scrartcl Info: loading recommended package `bookmark'.
 (scrartcl)           `bookmarkpackage=false' before \begin{document} and
 (scrartcl)           you can avoid this message adding:
 (scrartcl)             \usepackage{bookmark}
-(scrartcl)           before \begin{document} on input line 19.
+(scrartcl)           before \begin{document} on input line 17.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
  (/usr/local/texlive/2025/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
@@ -1071,27 +1071,27 @@ File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO)
 ))
 \c@lstlisting=\count381
 Package tocbasic Info: omitting babel extension for `lol'
-(tocbasic)             because of missing \bbl@set@language on input line 19.
+(tocbasic)             because of missing \bbl@set@language on input line 17.
 \scr@dte@lstlisting@maxnumwidth=\skip154
 
 
-Package todonotes Warning: The length marginparwidth is less than 2cm and will most likely cause issues with the appearance of inserted todonotes. The issue can be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to loading the todonotes package. on input line 19.
+Package todonotes Warning: The length marginparwidth is less than 2cm and will most likely cause issues with the appearance of inserted todonotes. The issue can be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to loading the todonotes package. on input line 17.
 
-LaTeX Info: Redefining \dots on input line 19.
-LaTeX Info: Redefining \microtypecontext on input line 19.
-Package microtype Info: Applying patch `item' on input line 19.
-Package microtype Info: Applying patch `toc' on input line 19.
-Package microtype Info: Applying patch `eqnum' on input line 19.
-Package microtype Info: Applying patch `footnote' on input line 19.
-Package microtype Info: Applying patch `verbatim' on input line 19.
-LaTeX Info: Redefining \microtypesetup on input line 19.
+LaTeX Info: Redefining \dots on input line 17.
+LaTeX Info: Redefining \microtypecontext on input line 17.
+Package microtype Info: Applying patch `item' on input line 17.
+Package microtype Info: Applying patch `toc' on input line 17.
+Package microtype Info: Applying patch `eqnum' on input line 17.
+Package microtype Info: Applying patch `footnote' on input line 17.
+Package microtype Info: Applying patch `verbatim' on input line 17.
+LaTeX Info: Redefining \microtypesetup on input line 17.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 19.
+LaTeX Info: Redefining \showhyphens on input line 17.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1101,7 +1101,7 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (
 isodate: babel.sty, (n)german.sty have not been loaded
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <15> not available
-(Font)              size <14.4> substituted on input line 23.
+(Font)              size <14.4> substituted on input line 21.
 
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmss' (encoding: OT1).
@@ -1109,116 +1109,116 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 
 LaTeX Font Warning: Font shape `OT1/cmss/bx/n' in size <15> not available
-(Font)              size <14.4> substituted on input line 23.
+(Font)              size <14.4> substituted on input line 21.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/bx/n' in size <31.11008> not available
-(Font)              size <24.88> substituted on input line 23.
+(Font)              size <24.88> substituted on input line 21.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <21.60004> not available
-(Font)              size <20.74> substituted on input line 23.
+(Font)              size <20.74> substituted on input line 21.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/sc' in size <21.60004> not available
-(Font)              size <20.74> substituted on input line 23.
+(Font)              size <20.74> substituted on input line 21.
 
-LaTeX Font Info:    Calculating math sizes for size <21.60004> on input line 23.
+LaTeX Font Info:    Calculating math sizes for size <21.60004> on input line 21.
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <15.11995> not available
-(Font)              size <14.4> substituted on input line 23.
+(Font)              size <14.4> substituted on input line 21.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <21.60004> not available
-(Font)              size <20.74> substituted on input line 23.
+(Font)              size <20.74> substituted on input line 21.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <15.11995> not available
-(Font)              size <14.4> substituted on input line 23.
+(Font)              size <14.4> substituted on input line 21.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <21.60004> not available
-(Font)              size <20.74> substituted on input line 23.
+(Font)              size <20.74> substituted on input line 21.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <15.11995> not available
-(Font)              size <14.4> substituted on input line 23.
+(Font)              size <14.4> substituted on input line 21.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 23.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 21.
 (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 23.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 21.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Trying to load font information for OMX+yhex on input line 23.
+LaTeX Font Info:    Trying to load font information for OMX+yhex on input line 21.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/yhmath/OMXyhex.fd
 File: OMXyhex.fd 
 File: OMXyhex.fd 2013/07/03 v1.1 YH's humble contribution to TeX maths (NP)
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 23.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 21.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <21.60004> not available
-(Font)              size <20.74> substituted on input line 23.
+(Font)              size <20.74> substituted on input line 21.
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <15.11995> not available
-(Font)              size <14.4> substituted on input line 23.
+(Font)              size <14.4> substituted on input line 21.
 
 
 
-LaTeX Font Info:    Calculating math sizes for size <15> on input line 23.
+LaTeX Font Info:    Calculating math sizes for size <15> on input line 21.
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <10.49995> not available
-(Font)              size <10.95> substituted on input line 23.
+(Font)              size <10.95> substituted on input line 21.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <7.5> not available
-(Font)              size <7> substituted on input line 23.
+(Font)              size <7> substituted on input line 21.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <15> not available
-(Font)              size <14.4> substituted on input line 23.
+(Font)              size <14.4> substituted on input line 21.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <10.49995> not available
-(Font)              size <10.95> substituted on input line 23.
+(Font)              size <10.95> substituted on input line 21.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <7.5> not available
-(Font)              size <7> substituted on input line 23.
+(Font)              size <7> substituted on input line 21.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <15> not available
-(Font)              size <14.4> substituted on input line 23.
+(Font)              size <14.4> substituted on input line 21.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <10.49995> not available
-(Font)              size <10.95> substituted on input line 23.
+(Font)              size <10.95> substituted on input line 21.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <7.5> not available
-(Font)              size <7> substituted on input line 23.
+(Font)              size <7> substituted on input line 21.
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <15> not available
-(Font)              size <14.4> substituted on input line 23.
+(Font)              size <14.4> substituted on input line 21.
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <10.49995> not available
-(Font)              size <10.95> substituted on input line 23.
+(Font)              size <10.95> substituted on input line 21.
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <7.5> not available
-(Font)              size <7> substituted on input line 23.
+(Font)              size <7> substituted on input line 21.
 
 [1
 
@@ -1226,9 +1226,9 @@ LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <7.5> not available
 {/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 
 LaTeX Font Warning: Font shape `OT1/cmss/bx/n' in size <21.60004> not available
-(Font)              size <20.74> substituted on input line 24.
+(Font)              size <20.74> substituted on input line 22.
 
-Package tocbasic Info: character protrusion at toc deactivated on input line 24.
+Package tocbasic Info: character protrusion at toc deactivated on input line 22.
 (./commalg.toc)
 \tf@toc=\write7
 \openout7 = `commalg.toc'.
@@ -1237,93 +1237,93 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 24.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <12.50015> not available
-(Font)              size <12> substituted on input line 25.
+(Font)              size <12> substituted on input line 23.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <12.50015> not available
-(Font)              size <12> substituted on input line 25.
+(Font)              size <12> substituted on input line 23.
 
 [2]
 
 [3]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 33.
-Package hyperref Info: bookmark level for unknown corollary defaults to 0 on input line 33.
+(mdframed)              on input line 31.
+Package hyperref Info: bookmark level for unknown corollary defaults to 0 on input line 31.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/it' in size <15> not available
-(Font)              size <14.4> substituted on input line 37.
+(Font)              size <14.4> substituted on input line 35.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--39
+Underfull \hbox (badness 10000) in paragraph at lines 35--37
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--42
+Underfull \hbox (badness 10000) in paragraph at lines 38--40
 
  []
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 48.
+(mdframed)              on input line 46.
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <13.68759> not available
-(Font)              size <14.4> substituted on input line 48.
+(Font)              size <14.4> substituted on input line 46.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <13.68759> not available
-(Font)              size <14.4> substituted on input line 48.
+(Font)              size <14.4> substituted on input line 46.
 
-Package hyperref Info: bookmark level for unknown remark defaults to 0 on input line 48.
-LaTeX Font Info:    Calculating math sizes for size <13.68759> on input line 48.
+Package hyperref Info: bookmark level for unknown remark defaults to 0 on input line 46.
+LaTeX Font Info:    Calculating math sizes for size <13.68759> on input line 46.
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <9.58127> not available
-(Font)              size <10> substituted on input line 48.
+(Font)              size <10> substituted on input line 46.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <13.68759> not available
-(Font)              size <14.4> substituted on input line 48.
+(Font)              size <14.4> substituted on input line 46.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <9.58127> not available
-(Font)              size <10> substituted on input line 48.
+(Font)              size <10> substituted on input line 46.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <13.68759> not available
-(Font)              size <14.4> substituted on input line 48.
+(Font)              size <14.4> substituted on input line 46.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <9.58127> not available
-(Font)              size <10> substituted on input line 48.
+(Font)              size <10> substituted on input line 46.
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <13.68759> not available
-(Font)              size <14.4> substituted on input line 48.
+(Font)              size <14.4> substituted on input line 46.
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <9.58127> not available
-(Font)              size <10> substituted on input line 48.
+(Font)              size <10> substituted on input line 46.
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 51.
+(mdframed)              on input line 49.
 
 
 [4]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 58.
-Package hyperref Info: bookmark level for unknown theorem defaults to 0 on input line 58.
+(mdframed)              on input line 56.
+Package hyperref Info: bookmark level for unknown theorem defaults to 0 on input line 56.
 
-Underfull \hbox (badness 10000) in paragraph at lines 62--64
+Underfull \hbox (badness 10000) in paragraph at lines 60--62
 
  []
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 69.
+(mdframed)              on input line 67.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 73.
@@ -1335,10 +1335,10 @@ Package mdframed Info: mdframed detected package amsthm
 (mdframed)              on input line 82.
 
 Overfull \hbox (6.29161pt too wide) in paragraph at lines 83--84
-[]\OT1/cmr/bx/n/14.4 (-20) Remark 2.4 \OT1/cmr/m/n/14.4 (-20) (The Eu-ler char-ac-ter-is-tic)\OT1/cmr/bx/n/14.4 (-20) . []\OT1/cmr/m/n/14.4 (-20) Why does $\OML/cmm/m/it/14.4 H[]\OT1/cmr/m/n/14.4 (-20) (\OML/cmm/m/it/14.4 d\OT1/cmr/m/n/14.4 (-20) ) = [][](\OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 (-20) 1)[]\OML/cmm/m/it/14.4 H[]\OT1/cmr/m/n/14.4 (-20) (\OML/cmm/m/it/14.4 d\OT1/cmr/m/n/14.4 (-20) )$
+[]\OT1/cmr/bx/n/14.4 (-20) Remark 0.7 \OT1/cmr/m/n/14.4 (-20) (The Eu-ler char-ac-ter-is-tic)\OT1/cmr/bx/n/14.4 (-20) . []\OT1/cmr/m/n/14.4 (-20) Why does $\OML/cmm/m/it/14.4 H[]\OT1/cmr/m/n/14.4 (-20) (\OML/cmm/m/it/14.4 d\OT1/cmr/m/n/14.4 (-20) ) = [][](\OMS/cmsy/m/n/14.4 ^^@\OT1/cmr/m/n/14.4 (-20) 1)[]\OML/cmm/m/it/14.4 H[]\OT1/cmr/m/n/14.4 (-20) (\OML/cmm/m/it/14.4 d\OT1/cmr/m/n/14.4 (-20) )$
  []
 
-<ss.png, id=84, 854.19125pt x 398.48875pt>
+<ss.png, id=86, 854.19125pt x 398.48875pt>
 File: ss.png Graphic file (type png)
 <use ss.png>
 Package pdftex.def Info: ss.png  used on input line 89.
@@ -1370,18 +1370,18 @@ Package rerunfilecheck Info: File `commalg.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 39579 strings out of 473190
- 835342 string characters out of 5715801
- 1417249 words of memory out of 5000000
- 62069 multiletter control sequences out of 15000+600000
+ 39582 strings out of 473190
+ 835346 string characters out of 5715801
+ 1416249 words of memory out of 5000000
+ 62068 multiletter control sequences out of 15000+600000
  578948 words of font info for 154 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  123i,21n,128p,10986b,1196s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on commalg.pdf (7 pages, 225268 bytes).
+Output written on commalg.pdf (7 pages, 225919 bytes).
 PDF statistics:
- 174 PDF objects out of 1000 (max. 8388607)
- 117 compressed objects within 2 object streams
- 28 named destinations out of 1000 (max. 500000)
- 39042 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 184 PDF objects out of 1000 (max. 8388607)
+ 127 compressed objects within 2 object streams
+ 32 named destinations out of 1000 (max. 500000)
+ 39050 words of extra memory for PDF output out of 42996 (max. 10000000)
 
