@@ -388,6 +388,10 @@ INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/koma-script/scrlayer-scrpage.
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/koma-script/scrlayer-scrpage.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/koma-script/scrlayer.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/koma-script/scrlayer.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/quiver/quiver.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/quiver/quiver.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.code.tex
+INPUT /usr/local/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.code.tex
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/relsize/relsize.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/relsize/relsize.sty
 INPUT ./commalg.aux
@@ -509,6 +513,15 @@ INPUT ./ss.png
 INPUT ./ss.png
 INPUT ./ss.png
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/ueuf.fd
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/ueuf.fd
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/ueuf.fd
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/euler/eufm10.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/microtype/mt-euf.cfg
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/microtype/mt-euf.cfg
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/microtype/mt-euf.cfg
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/euler/eufm10.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/euler/eufm7.tfm
 INPUT commalg.aux
 INPUT ./commalg.out
 INPUT ./commalg.out
@@ -524,5 +537,7 @@ INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb

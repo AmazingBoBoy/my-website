@@ -1,5 +1,6 @@
 \documentclass[15pt]{scrartcl}
 \usepackage[sexy]{evan}
+\usepackage{quiver}
 \newcommand{\R}{\mathbb{R}}
 \newcommand{\N}{\mathbb{N}}
 \newcommand{\Q}{\mathbb{Q}}
@@ -25,6 +26,8 @@
 This note is basically a copy of Eisenbud's Commutative Algebra with a View Toward Algebraic Geometry, with some additional explanations and examples from Eisenbud's lectures and my own understanding.
 \\
 This latex style is made by Evan Chen. 
+\\
+In this note, all ring are commutative with unity unless otherwise specified.
 \newpage 
 
 \section{January 17, 2026}
@@ -116,6 +119,30 @@ Second one is via induction on $n$.
 \section{January 22, 2026}
 Today we discuss the Hilbert's Nullstellensatz and the equivalence between the category of affine algebraic varieties and the category of finitely generated reduced $k$-algebras. For further details, please refer to \href{https://github.com/AmazingBoBoy/my-website/blob/main/notes/alggeo/note.pdf}{here}. 
 
+\section{January 27, 2026}
+There is a readiness exam today. 
 
+For problem 3, we have a stronger result. For any $R$ and ideals $I$ and $J$, we have an isomorphism
+\[\frac{R}{I}\otimes_R \frac{R}{J} \cong \frac{R}{I+J}.\]
+This can be proven by the right exactness of tensor product $N\otimes_R(-)$.
+\\
 
+Next, we discuss localization. We essentially invert elements of a multiplicative subset $U \subseteq R$. The key propositions are the following:
+\begin{enumerate}
+    \item There is a natural map $\phi: R \to M[U\inv]$ given by $r \mapsto \frac{r}{1}$. 
+    \item For any ideal $J\subseteq R[U\inv]$, $I^c=\phi\inv(I)$ is an ideal of $R$ disjoint from $U$. (This is true in general for any ring homomorphism $\phi$.)
+    \item For any ideal $I \subseteq R$ disjoint from $U$, the extension $I^e=U\inv I$ is a proper ideal of $R[U\inv]$. 
+    \item For any $J\subseteq R[U\inv]$, we have $J=(J^c)^e$. 
+    \item However, the $(I^e)^c=I$ is false, even if $I\cap S=\emptyset$. Example: let $U=\{1,x,x^2,\ldots \}$ and $R=\CC[x,y]$, $(xy)^e=(y)$ in $R[U\inv]$ and $((xy)^e)^c= (y)$ in $R$. The correct statement is $(I^e)^c= \{ r \in R: \exists u \in U, ur \in I\}$. If $I$ is prime, then $(I^e)^c=I$.
+    \item This gives us the following bijection of prime ideals between $R$ and $R[U\inv]$: 
+    \begin{center}
+        \[\begin{tikzcd}[sep=scriptsize]
+	{\{\kq \subseteq R[U^{-1}]\}} &&&&&& {\{ \kp\subseteq R:  \kp\cap U=\emptyset\}}
+	\arrow["{\phi^{-1}(-)}", curve={height=-24pt}, from=1-1, to=1-7]
+	\arrow["{U^{-1}(-)}", curve={height=-24pt}, from=1-7, to=1-1]
+\end{tikzcd}\]
+    \end{center}
+    
+    
+\end{enumerate}
 \end{document}
