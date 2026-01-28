@@ -124,9 +124,18 @@ There is a readiness exam today.
 
 For problem 3, we have a stronger result. For any $R$ and ideals $I$ and $J$, we have an isomorphism
 \[\frac{R}{I}\otimes_R \frac{R}{J} \cong \frac{R}{I+J}.\]
-This can be proven by the right exactness of tensor product $N\otimes_R(-)$.
-\\
-
+\begin{proof}
+    We will show a more general result: 
+    For any ideal $I$, we have the exact sequence
+    \[ 0 \to I \to R \to R/I \to 0.\]
+    Tensoring with $N$, we get the right exact sequence
+    \[ I \otimes_R N \to R \otimes_R N \to (R/I) \otimes_R N \to 0.\]
+    Notice that the image of $I \otimes_R N$ in $R \otimes_R N \cong N$ is exactly $IN$. Thus, we have the isomorphism $\frac{N}{IN } \cong (R/I) \otimes_R N$. Taking $N=R/J$, we get
+    \[ \frac{R/J}{I(R/J)} \cong (R/I) \otimes_R (R/J).\]
+    Note that $I(R/J)=IR/J = (I+J)/J$ (an elementary result, informally $I(R/J)$ is just $I/J$, but $I$ may not contain $J$ so we just use $I+J/J$ to avoid confusion), so we have
+    \[ \frac{R/J}{I(R/J)} \cong \frac{R}{I+J}.\]
+    Combining the two isomorphisms, we get the desired result.
+\end{proof}
 Next, we discuss localization. We essentially invert elements of a multiplicative subset $U \subseteq R$. The key propositions are the following:
 \begin{enumerate}
     \item There is a natural map $\phi: R \to M[U\inv]$ given by $r \mapsto \frac{r}{1}$. 
@@ -142,7 +151,15 @@ Next, we discuss localization. We essentially invert elements of a multiplicativ
 	\arrow["{U^{-1}(-)}", curve={height=-24pt}, from=1-7, to=1-1]
 \end{tikzcd}\]
     \end{center}
-    
+\end{enumerate}
+Other properties of localization that I think are important:
+\begin{enumerate}
+    \item Localization is an exact functor.
+    \item Localization commutes with direct sums and direct limits because it's a left adjoint functor. 
+    \item Localization is nice with respect to tensor products: 
+    Let $M$ and $A$ be $R$-modules, $N$ be an $R[U\inv]$-module, then we have the isomorphism
+    \[U\inv M\otimes_{U\inv R} N \cong U\inv (M \otimes_R N) \]
+    \[U\inv(A\otimes_R M)=U\inv A\otimes_{R[U\inv]} U\inv M\]
     
 \end{enumerate}
 \end{document}

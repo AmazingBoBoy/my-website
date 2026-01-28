@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  27 JAN 2026 16:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  27 JAN 2026 16:55
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1361,18 +1361,16 @@ LaTeX Font Warning: Font shape `OT1/cmr/m/it' in size <13.68759> not available
 
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 126--129
-
- []
-
-LaTeX Font Info:    Trying to load font information for U+euf on input line 140.
-(/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/ueuf.fd
+LaTeX Font Info:    Trying to load font information for U+euf on input line 149.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/microtype/mt-euf.cfg
 File: mt-euf.cfg 2006/07/03 v1.1 microtype config. file: AMS Euler Fraktur (RS)
 )
 
-[8] (./commalg.aux)
+[8]
+
+[9] (./commalg.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2020/03/25>
@@ -1386,18 +1384,18 @@ Package rerunfilecheck Info: File `commalg.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 39823 strings out of 473190
- 840845 string characters out of 5715801
- 1418629 words of memory out of 5000000
+ 39829 strings out of 473190
+ 840888 string characters out of 5715801
+ 1419629 words of memory out of 5000000
  62285 multiletter control sequences out of 15000+600000
- 579656 words of font info for 157 fonts, out of 8000000 for 9000
+ 579705 words of font info for 158 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  123i,21n,128p,10986b,1307s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on commalg.pdf (8 pages, 244999 bytes).
+Output written on commalg.pdf (9 pages, 248238 bytes).
 PDF statistics:
- 213 PDF objects out of 1000 (max. 8388607)
- 151 compressed objects within 2 object streams
- 41 named destinations out of 1000 (max. 500000)
+ 221 PDF objects out of 1000 (max. 8388607)
+ 158 compressed objects within 2 object streams
+ 45 named destinations out of 1000 (max. 500000)
  39058 words of extra memory for PDF output out of 42996 (max. 10000000)
 
