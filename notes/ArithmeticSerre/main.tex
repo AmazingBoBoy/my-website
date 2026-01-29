@@ -1,0 +1,76 @@
+\documentclass[15pt]{scrartcl}
+\usepackage[sexy]{evan}
+\usepackage{quiver}
+\usepackage{relsize}
+\newcommand{\PP}{\mathbb{P}}
+\begin{document}
+\title{Note on \textit{A course in Arithmetic} by J.-P. Serre}
+\author{Jiawen Huang}
+\maketitle
+\newpage
+\tableofcontents
+\newpage
+
+\section{Jan. 28 2026}
+\begin{theorem}
+    The finite subgroup of a field's multiplicative group is cyclic.
+\end{theorem}
+This can be easily proven using the structure theorem of finite abelian groups and the fundamental theorem of Algebra. 
+\\
+
+\begin{definition}
+    For any prime $p$ or $p=\infty$, we define the 
+    \[\norm{x}_p=\begin{cases}
+    p^{-v_p(x)} & p \text{ is a prime}\\
+    \norm{x} & p=\infty
+    \end{cases}\]
+\end{definition}
+\begin{theorem}
+    For any rational number $r$, $\prod_{p}\norm{r}_p=1$ 
+\end{theorem}
+This is trivial from the definition of $v_p$.
+\\
+
+We can in general define a norm on a number field $K$ as follows: 
+\begin{definition}
+    $\norm{\cdot}: K\to \RR_{\geq 0}$ is a norm if
+    \begin{enumerate}
+        \item $\norm{x}=0$ iff $x=0$
+        \item $\norm{xy}=\norm{x}\norm{y}$
+        \item $\norm{x+y}\leq \norm{x}+\norm{y}$
+    \end{enumerate}
+\end{definition}
+\begin{corollary}
+    $\norm{1}=1$ and $\norm{-1}=1$
+\end{corollary}
+\begin{definition}
+    Norm $N_1$ and $N_2$ are equivalent if there exists a real number $c$ such that $N_2(x)=N_1(x)^a$ for all $x$.
+\end{definition}
+\begin{theorem}[Ostrowski's Theorem]
+    Any non-trivial norm on $\QQ$ is equivalent to either the usual absolute value or to $\norm{x}_p$ for some prime $p$.
+\end{theorem}
+\begin{proof}
+
+\end{proof}
+
+\begin{theorem}[Hensel's Lemma]
+\end{theorem}
+\begin{proof}
+    
+\end{proof}
+\begin{theorem}[Hasse principle]
+    
+\end{theorem}
+\begin{example}
+    $f(x,y,z)=5x^2+7y^2-13z^2$. We want to find a nontrivial $f(x,y,z)=0$ has non-trivial solutions in $\QQ$ using Hensel's Lemma. 
+\end{example}
+Consider this curve in $\PP^3$, is there any other solution? 
+\\
+
+Use parameterization of this curve. 
+\\
+
+\begin{theorem}
+    If $n\geq 3$, $x^n+y^n=z^n$ has no non-trivial solutions in $\CC[x]$. 
+\end{theorem}
+\end{document}

@@ -1,18 +1,7 @@
 \documentclass[15pt]{scrartcl}
 \usepackage[sexy]{evan}
 \usepackage{quiver}
-\newcommand{\R}{\mathbb{R}}
-\newcommand{\N}{\mathbb{N}}
-\newcommand{\Q}{\mathbb{Q}}
-\newcommand{\Z}{\mathbb{Z}}
-\newcommand{\A}{\mathbb{A}}
-\newcommand{\C}{\mathbb{C}}
-\newcommand{\cF}{\mathcal{F}}
-\newcommand{\bF}{\mathbb{F}}
-\newcommand{\cO}{\mathcal{O}}
-\newcommand{\pre}{^{-1}}
-\newcommand{\maxideal}{\mathfrak{m}}
-\newcommand{\primeideal}{\mathfrak{p}}
+
 \setcounter{secnumdepth}{0}
 \usepackage{relsize}
 \begin{document}
@@ -74,7 +63,7 @@ We discuss the history of Commutative Algebra and three of the four big theorems
 \end{theorem}
 Proof is omitted. 
 \begin{theorem}[Hilber's function theorem]
-    Let $M$ be a finitely generated graded module over the polynomial ring $R=k[x_1, \ldots, x_n]$. Then there exists a polynomial $P(t) \in \Q[t]$ such that for all sufficiently large $d$, we have $\dim_k M_d =H_M(d) = P(d)$.
+    Let $M$ be a finitely generated graded module over the polynomial ring $R=k[x_1, \ldots, x_n]$. Then there exists a polynomial $P(t) \in \QQ[t]$ such that for all sufficiently large $d$, we have $\dim_k M_d =H_M(d) = P(d)$.
 \end{theorem}
 We will present two proofs of this theorem.
 \begin{proof}
@@ -140,7 +129,7 @@ Next, we discuss localization. We essentially invert elements of a multiplicativ
 \begin{enumerate}
     \item There is a natural map $\phi: R \to M[U\inv]$ given by $r \mapsto \frac{r}{1}$. 
     \item For any ideal $J\subseteq R[U\inv]$, $I^c=\phi\inv(I)$ is an ideal of $R$ disjoint from $U$. (This is true in general for any ring homomorphism $\phi$.)
-    \item For any ideal $I \subseteq R$ disjoint from $U$, the extension $I^e=U\inv I$ is a proper ideal of $R[U\inv]$. 
+    \item For any ideal $I \subseteq R$ disjoint from $U$, the extension $I^e=U\inv I$ is a proper ideal of $R[U\inv]$. (if they are not disjoint, then $1$ is in the $U\inv I$, so it's not proper). 
     \item For any $J\subseteq R[U\inv]$, we have $J=(J^c)^e$. 
     \item However, the $(I^e)^c=I$ is false, even if $I\cap S=\emptyset$. Example: let $U=\{1,x,x^2,\ldots \}$ and $R=\CC[x,y]$, $(xy)^e=(y)$ in $R[U\inv]$ and $((xy)^e)^c= (y)$ in $R$. The correct statement is $(I^e)^c= \{ r \in R: \exists u \in U, ur \in I\}$. If $I$ is prime, then $(I^e)^c=I$.
     \item This gives us the following bijection of prime ideals between $R$ and $R[U\inv]$: 
@@ -154,12 +143,44 @@ Next, we discuss localization. We essentially invert elements of a multiplicativ
 \end{enumerate}
 Other properties of localization that I think are important:
 \begin{enumerate}
-    \item Localization is an exact functor.
-    \item Localization commutes with direct sums and direct limits because it's a left adjoint functor. 
+    \item The universal property of localization: for any $R$-module $M$ and $N$, multiplicative closed set $U$. If $U$ acts invertibly on $N$, then any $R$-module homomorphism $\psi: M \to N$ factors uniquely through $U\inv M$. That is, there exists a unique $R$-module homomorphism $\tilde{\psi}: U\inv M \to N$ such that the following diagram commutes:
+    % https://q.uiver.app/#q=WzAsMyxbMCwwLCJNIl0sWzMsMCwiTiJdLFsxLDIsIlVeey0xfU0iXSxbMCwxLCJcXHBzaSJdLFswLDIsIlxccGhpIiwyXSxbMiwxLCJcXHRpbGRle1xccHNpfSIsMl1d
+\[\begin{tikzcd}
+	M &&& N \\
+	\\
+	& {U^{-1}M}
+	\arrow["\psi", from=1-1, to=1-4]
+	\arrow["\phi"', from=1-1, to=3-2]
+	\arrow["{\tilde{\psi}}"', from=3-2, to=1-4]
+\end{tikzcd}\]
+    \item If $R$ is Noetherian, then so is $R[U\inv]$. If $R$ is UFD, then so is $R[U\inv]$.
+    \item Localization commutes with direct sums and direct limits because it's a left adjoint functor. It's left adjoint to the forgetful functor from $R[U\inv]$-modules to $R$-modules, forgetting the inverted elements' action. 
+    \item Left adjointness implies that localization is right exact. In fact, localization is an exact functor. 
+    \item Exactness implies that localization preserves finite limits and colimits. In particular, it preserves kernels, cokernels, finite intersections (fiber product=a finite limit). Left adjointness implies that it preserves colimits (need not to assume finiteness). In general, left exactness preserves finite limits, right exactness preserves finite colimits.
+    
     \item Localization is nice with respect to tensor products: 
     Let $M$ and $A$ be $R$-modules, $N$ be an $R[U\inv]$-module, then we have the isomorphism
+    \[U\inv R\otimes_R M \cong U\inv M\]
     \[U\inv M\otimes_{U\inv R} N \cong U\inv (M \otimes_R N) \]
-    \[U\inv(A\otimes_R M)=U\inv A\otimes_{R[U\inv]} U\inv M\]
-    
+    \[U\inv(A\otimes_R M)=U\inv A\otimes_{U\inv R} U\inv M\]
+    \item Tensor products are associative: for any $R$-module $M$, $R$-$S$-bimodule $N$ and $S$-module $P$, we have the isomorphism
+    \[(M \otimes_R N) \otimes_S P \cong M \otimes_R (N \otimes_S P).\]
 \end{enumerate}
+We also discuss some property of tensor products and $\mathrm{Hom}$ functors. 
+\begin{enumerate}
+    \item $(-)\otimes_R M$ is left adjoint to $\mathrm{Hom}_R(M,-)$. Thus, $\mathrm{Hom}_R(M,-)$ is right exact.
+    \item $h_N(-)=\mathrm{Hom}_R(-,N): \text{R-Mod}^{\text{op}} \to \text{R-Mod}$ is right adjoint to $h^N(-)^{\text{op}}: \text{R-Mod} \to \text{R-Mod}^{\text{op}}$. 
+\end{enumerate}
+\section{January 29, 2026}
+Some multiplicative closed sets that are often used:
+\begin{enumerate}
+    \item $U=R_x={1,x,x^2,\ldots }$ for some $x \in R$. The localization $R_x$ is often denoted as $R[x\inv]$.
+    \item $U=R \setminus \kp$ for some prime ideal $\kp$. $U\inv R$ is often denoted as $R_\kp$ and called the localization of $R$ at $\kp$.
+\end{enumerate}
+\begin{example}[Ring of Laurent polynomials]
+    $k[x]_x=k[x, x\inv]$. 
+\end{example}
+\begin{example}
+    The regular function on an affine open subset $D(f)$ of an affine variety $X$ is given by the localization of the coordinate ring $A(X)$ at $f$, that is $A(X)_f$.
+\end{example}
 \end{document}
