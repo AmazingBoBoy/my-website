@@ -16,7 +16,7 @@ This note is basically a copy of Eisenbud's Commutative Algebra with a View Towa
 \\
 This latex style is made by Evan Chen. 
 \\
-In this note, all ring are commutative with unity unless otherwise specified.
+In this note, all rings $R$ are commutative with unity unless otherwise specified.
 \newpage 
 
 \section{January 17, 2026}
@@ -156,13 +156,14 @@ Other properties of localization that I think are important:
     \item If $R$ is Noetherian, then so is $R[U\inv]$. If $R$ is UFD, then so is $R[U\inv]$.
     \item Localization commutes with direct sums and direct limits because it's a left adjoint functor. It's left adjoint to the forgetful functor from $R[U\inv]$-modules to $R$-modules, forgetting the inverted elements' action. 
     \item Left adjointness implies that localization is right exact. In fact, localization is an exact functor. 
-    \item Exactness implies that localization preserves finite limits and colimits. In particular, it preserves kernels, cokernels, finite intersections (fiber product=a finite limit). Left adjointness implies that it preserves colimits (need not to assume finiteness). In general, left exactness preserves finite limits, right exactness preserves finite colimits.
+    \item Exactness implies that localization preserves finite limits and colimits. In particular, it preserves kernels, cokernels (quotient of modules), finite intersections (fiber product=a finite limit). Left adjointness implies that it preserves colimits (need not to assume finiteness). In general, left exactness preserves finite limits, right exactness preserves finite colimits.
     
     \item Localization is nice with respect to tensor products: 
     Let $M$ and $A$ be $R$-modules, $N$ be an $R[U\inv]$-module, then we have the isomorphism
-    \[U\inv R\otimes_R M \cong U\inv M\]
-    \[U\inv M\otimes_{U\inv R} N \cong U\inv (M \otimes_R N) \]
-    \[U\inv(A\otimes_R M)=U\inv A\otimes_{U\inv R} U\inv M\]
+    \[U\inv R\otimes_R M \cong U\inv M, \]
+    \[U\inv (M \otimes_R N)\cong U\inv M\otimes_{U\inv R} N, \]
+    \[U\inv(A\otimes_R M)=U\inv A\otimes_{U\inv R} U\inv M.\]
+    The first isomorphism tells us $(-)\otimes_R U\inv R$ is exact, that is $U\inv R$ is a flat $R$-module.
     \item Tensor products are associative: for any $R$-module $M$, $R$-$S$-bimodule $N$ and $S$-module $P$, we have the isomorphism
     \[(M \otimes_R N) \otimes_S P \cong M \otimes_R (N \otimes_S P).\]
 \end{enumerate}
@@ -177,10 +178,33 @@ Some multiplicative closed sets that are often used:
     \item $U=R_x={1,x,x^2,\ldots }$ for some $x \in R$. The localization $R_x$ is often denoted as $R[x\inv]$.
     \item $U=R \setminus \kp$ for some prime ideal $\kp$. $U\inv R$ is often denoted as $R_\kp$ and called the localization of $R$ at $\kp$.
 \end{enumerate}
-\begin{example}[Ring of Laurent polynomials]
+\begin{example}[The Ring of Laurent Polynomials]
     $k[x]_x=k[x, x\inv]$. 
 \end{example}
 \begin{example}
     The regular function on an affine open subset $D(f)$ of an affine variety $X$ is given by the localization of the coordinate ring $A(X)$ at $f$, that is $A(X)_f$.
 \end{example}
+\begin{example}[stalk of a variety at a point]
+    Let $X \subseteq \mathbb{A}^n$ be an affine variety over an algebraically closed field $k$. For any point $p \in X$, the stalk of $X$ at $p$ (all regular functions that are well-defined locally at $p$) is isomorphic to the localization of the coordinate ring $A(X)$ at the maximal ideal $\km_p$ corresponding to the point $p$. That is, 
+    \[\mathcal{O}_{X,p}=A(X)_{\km_p}=\{\frac{f}{g} \mid f,g \in A(X), g(p)\neq 0\}. \]
+    
+\end{example}
+\begin{example}
+    $(\ZZ/10\ZZ)_2 \cong \ZZ/5\ZZ$.
+    \begin{proof}
+        $(\ZZ/(10))_2=(\ZZ_2/(10)_2)=(\ZZ_2/(5)_2)=(\ZZ/(5))_2=\ZZ/5\ZZ$. 
+        \\
+        Most equalities are guaranteed by the fact that localization preserves quotients. The last step is because $\ZZ/(5)$ is a field, so any nonzero element is invertible.
+    \end{proof}
+\end{example}
+\begin{theorem}[Local Global Principle]
+    $M=0$ if and only if $M_\kp=0$ for all prime ideals $\kp$ if and only if $M_\km=0$ for all maximal ideals $\km$.
+    \\
+
+    The best way to understand this theorem is through dimension argument in algebraic geometry. The codimension of a point (the largest dimension of objects containing the point) is the same as the height of the corresponding prime ideal, which is the Krull dimension of the localized ring at that prime ideal. If the codimenson of any point is $0$, then the variety is empty. So the coordinate ring of the variety is $0$. 
+\end{theorem}
+\begin{theorem}
+    A sequence of $R$-modules is exact if and only if the localized sequence at any prime ideal is exact if and only if the localized sequence at any maximal ideal is exact.
+\end{theorem}
+
 \end{document}
