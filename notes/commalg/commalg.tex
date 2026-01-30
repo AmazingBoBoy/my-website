@@ -199,10 +199,13 @@ Some multiplicative closed sets that are often used:
 \end{example}
 \begin{theorem}[Local Global Principle]
     $M=0$ if and only if $M_\kp=0$ for all prime ideals $\kp$ if and only if $M_\km=0$ for all maximal ideals $\km$.
+\end{theorem}
+\begin{remark}
+    One way to understand this theorem is through dimension argument in algebraic geometry. The codimension of a point (the largest dimension of objects containing the point) is the same as the height of the corresponding prime ideal, which is the Krull dimension of the localized ring at that prime ideal. If the codimenson of any point is $0$, then the variety is empty! So the coordinate ring of the variety is $0$. 
     \\
 
-    The best way to understand this theorem is through dimension argument in algebraic geometry. The codimension of a point (the largest dimension of objects containing the point) is the same as the height of the corresponding prime ideal, which is the Krull dimension of the localized ring at that prime ideal. If the codimenson of any point is $0$, then the variety is empty. So the coordinate ring of the variety is $0$. 
-\end{theorem}
+    Another way to understand this theorem is through the stalks of a sheaf. If a ring of regular functions is $0$ at every stalk (the small neighborhood of every point), then the only function in the ring is the zero function. So the ring itself is $0$.
+\end{remark}
 \begin{theorem}
     A sequence of $R$-modules is exact if and only if the localized sequence at any prime ideal is exact if and only if the localized sequence at any maximal ideal is exact.
 \end{theorem}
