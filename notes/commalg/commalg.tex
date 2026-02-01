@@ -131,13 +131,13 @@ Next, we discuss localization. We essentially invert elements of a multiplicativ
     \item For any ideal $J\subseteq R[U\inv]$, $I^c=\phi\inv(I)$ is an ideal of $R$ disjoint from $U$. (This is true in general for any ring homomorphism $\phi$.)
     \item For any ideal $I \subseteq R$ disjoint from $U$, the extension $I^e=U\inv I$ is a proper ideal of $R[U\inv]$. (if they are not disjoint, then $1$ is in the $U\inv I$, so it's not proper). 
     \item For any $J\subseteq R[U\inv]$, we have $J=(J^c)^e$. 
-    \item However, the $(I^e)^c=I$ is false, even if $I\cap S=\emptyset$. Example: let $U=\{1,x,x^2,\ldots \}$ and $R=\CC[x,y]$, $(xy)^e=(y)$ in $R[U\inv]$ and $((xy)^e)^c= (y)$ in $R$. The correct statement is $(I^e)^c= \{ r \in R: \exists u \in U, ur \in I\}$. If $I$ is prime, then $(I^e)^c=I$.
+    \item However, the $(I^e)^c=I$ is false, even if $I\cap S=\emptyset$. Example: let $U=\{1,x,x^2,\ldots \}$ and $R=\CC[x,y]$, $(xy)^e=(y)$ in $R[U\inv]$ and $((xy)^e)^c= (y)$ in $R$. The correct statement is \[(I^e)^c= \{ r \in R: \exists u \in U, ur \in I\}=\sum_{u\in U} (I:u)\supseteq (I:U)\supseteq I\]. If $I$ is prime, then $(I^e)^c=I$.
     \item This gives us the following bijection of prime ideals between $R$ and $R[U\inv]$: 
     \begin{center}
         \[\begin{tikzcd}[sep=scriptsize]
-	{\{\kq \subseteq R[U^{-1}]\}} &&&&&& {\{ \kp\subseteq R:  \kp\cap U=\emptyset\}}
-	\arrow["{\phi^{-1}(-)}", curve={height=-24pt}, from=1-1, to=1-7]
-	\arrow["{U^{-1}(-)}", curve={height=-24pt}, from=1-7, to=1-1]
+    {\{\kq \subseteq R[U^{-1}]\}} &&&&&& {\{ \kp\subseteq R:  \kp\cap U=\emptyset\}}
+    \arrow["{\phi^{-1}(-)}", curve={height=-24pt}, from=1-1, to=1-7]
+    \arrow["{U^{-1}(-)}", curve={height=-24pt}, from=1-7, to=1-1]
 \end{tikzcd}\]
     \end{center}
 \end{enumerate}
@@ -146,12 +146,12 @@ Other properties of localization that I think are important:
     \item The universal property of localization: for any $R$-module $M$ and $N$, multiplicative closed set $U$. If $U$ acts invertibly on $N$, then any $R$-module homomorphism $\psi: M \to N$ factors uniquely through $U\inv M$. That is, there exists a unique $R$-module homomorphism $\tilde{\psi}: U\inv M \to N$ such that the following diagram commutes:
     % https://q.uiver.app/#q=WzAsMyxbMCwwLCJNIl0sWzMsMCwiTiJdLFsxLDIsIlVeey0xfU0iXSxbMCwxLCJcXHBzaSJdLFswLDIsIlxccGhpIiwyXSxbMiwxLCJcXHRpbGRle1xccHNpfSIsMl1d
 \[\begin{tikzcd}
-	M &&& N \\
-	\\
-	& {U^{-1}M}
-	\arrow["\psi", from=1-1, to=1-4]
-	\arrow["\phi"', from=1-1, to=3-2]
-	\arrow["{\tilde{\psi}}"', from=3-2, to=1-4]
+    M &&& N \\
+    \\
+    & {U^{-1}M}
+    \arrow["\psi", from=1-1, to=1-4]
+    \arrow["\phi"', from=1-1, to=3-2]
+    \arrow["{\tilde{\psi}}"', from=3-2, to=1-4]
 \end{tikzcd}\]
     \item If $R$ is Noetherian, then so is $R[U\inv]$. If $R$ is UFD, then so is $R[U\inv]$.
     \item Localization commutes with direct sums and direct limits because it's a left adjoint functor. It's left adjoint to the forgetful functor from $R[U\inv]$-modules to $R$-modules, forgetting the inverted elements' action. 
@@ -170,7 +170,7 @@ Other properties of localization that I think are important:
 We also discuss some property of tensor products and $\mathrm{Hom}$ functors. 
 \begin{enumerate}
     \item $(-)\otimes_R M$ is left adjoint to $\mathrm{Hom}_R(M,-)$. Thus, $\mathrm{Hom}_R(M,-)$ is right exact.
-    \item $h_N(-)=\mathrm{Hom}_R(-,N): \text{R-Mod}^{\text{op}} \to \text{R-Mod}$ is right adjoint to $h^N(-)^{\text{op}}: \text{R-Mod} \to \text{R-Mod}^{\text{op}}$. 
+    \item $h_N(-)=\mathrm{Hom}_R(-,N): \text{R-Mod}^{\text{op}} \to \text{R-Mod}$ is right adjoint to $h_N(-)^{\text{op}}: \text{R-Mod} \to \text{R-Mod}^{\text{op}}$. 
 \end{enumerate}
 \section{January 29, 2026}
 Some multiplicative closed sets that are often used:

@@ -3,6 +3,7 @@
 \usepackage{quiver}
 \usepackage{relsize}
 \newcommand{\PP}{\mathbb{P}}
+
 \begin{document}
 \title{Note on \textit{A course in Arithmetic} by J.-P. Serre}
 \author{Jiawen Huang}
@@ -11,7 +12,53 @@
 \tableofcontents
 \newpage
 
-\section{Jan. 28 2026}
+\section{Chapter 1}
+This is a list of proofs of nontrivial results in Chapter 1 of \textit{A course in Arithmetic} by J.-P. Serre.
+\\
+
+Let $K$ be a finite field with $q$ elements. 
+\begin{theorem}
+    Let $u$ be an integer $\geq 0$. The sum 
+    \[S(X^u)=\sum_{x\in K} x^u=\begin{cases}
+        -1 & \text{if } u>0 \text{ and } (q-1)\mid u\\
+        0 & \text{otherwise}
+    \end{cases}\]
+$u=0$ is subtle here. We define $x^0=1$ for all $x\in K$ (this definition is nice when we work with polynomials because we can write $1$ as $x^0$ to maintain symmetry), so $S(X^0)=q=0$.
+\end{theorem}
+The proof is easy. Use primitive roots. 
+\\
+The variant proof: $x\mapsto x^u$ is a group homomorphism from $K^\times $ to itself. The kernel is all $x$ such that $x$ is a root of $x^{\gcd(u,q-1)}-1$. So the image has size $\frac{q-1}{\gcd(u,q-1)}$, which implies the image is just the $d=\frac{q-1}{\gcd(u,q-1)}$ roots of unity. So the sum is $0$ unless $d=1$ (sum of d-th roots of unity is $0$ if $d\geq 2$ s coprime to $p$).
+\begin{theorem}[Chevalley-Warning Theorem]
+    Let $P_1,\ldots,P_r$ be polynomials in $n$ variables over a finite field $K$ of characteristic $p$. If the sum of their degrees is less than $n$, then the number of common solutions to the equations $P_1=\cdots=P_r=0$ is divisible by $p$. 
+\end{theorem}
+\begin{proof}
+This uses a common trick in counting roots over finite fields. Consider the polynomial
+\[Q=\prod_{i=1}^r (1-P_i^{q-1})\]
+The number of common solutions is equal to $\sum_{x\in K^n} Q(x)$ since if $P_i(x)=0$ for all $i$, then $Q(x)=1$, otherwise $Q(x)=0$. 
+\\
+
+Expand this. For each monomial in the expansion $x^{u_1}_1\cdots x^{u_n}_n$, since $\sum \deg(P_i)(q-1)<n(q-1)$, we have $u_j$ is not divisible less than $q-1$ for some $j$. So by the previous theorem, the sum over $K^n$ of this monomial is $0$. (that's why we define $x^0=1$ above). So the number of common solutions is $0$ mod $p$.
+\end{proof}
+\begin{corollary}
+    All quadratic forms in at least 3 variables over a finite field have nontrivial zeros. 
+\end{corollary}
+\begin{theorem}
+    $\left( \frac{2}{p}\right)=(-1)^{\frac{p^2-1}{8}}$
+\end{theorem}
+\begin{proof}
+    Let $\alpha$ be the primitve 8th root of unity $\alpha$ in $\ol{\FF_p}$. Then, $y^2=(\alpha+\alpha^{-1})^2=2$. If $p\equiv \pm 1\mod 8$, then $y^p=y$, so $2$ is a square in $\FF_p$. If $p\equiv \pm 3\mod 8$, then $y^p=-y$, so $2$ is not a square in $\FF_p$.
+\end{proof}
+\begin{theorem}[Law of Quadratic Reciprocity]
+    For two odd primes $p$ and $q$, we have
+    \[\left( \frac{p}{q}\right)\left( \frac{q}{p}\right)=(-1)^{\frac{(p-1)(q-1)}{4}}\]
+    
+\end{theorem}
+The key is to consider the Gauss sum: Let $\zeta$ be a primitive $p$-th root of unity in $\ol{\FF_p}$, then define
+\[y=\sum_{x\in \FF_p}\left( \frac{x}{p}\right) \zeta^x\] 
+Then we have $y^2=\left( \frac{-1}{p}\right)p=(-1)^{\frac{p-1}{2}}p$ and $y^{q-1}=\left( \frac{q}{p}\right)$. Combining these two gives the result.
+\section{Meeting 1 on Jan. 28 2026}
+This is a list of nontrivial results in the first meeting of the course.
+
 \begin{theorem}
     The finite subgroup of a field's multiplicative group is cyclic.
 \end{theorem}
