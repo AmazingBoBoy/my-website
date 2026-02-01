@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1769916737.13847 "/Users/kai/Documents/VS Code/my-website/notes/ArithmeticSerre/main.tex" "main.pdf" "main" 1769916739.11402 0
-  "/Users/kai/Documents/VS Code/my-website/notes/ArithmeticSerre/main.tex" 1769916733.1451 5164 84843d3c9f6a91e3245c7c06df2406eb ""
+["pdflatex"] 1769929681.10513 "/Users/kai/Documents/VS Code/my-website/notes/ArithmeticSerre/main.tex" "main.pdf" "main" 1769929683.3099 0
+  "/Users/kai/Documents/VS Code/my-website/notes/ArithmeticSerre/main.tex" 1769929680.9172 5164 84843d3c9f6a91e3245c7c06df2406eb ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -251,11 +251,11 @@
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1741450574 3345740 46b66fdb0378f7bf5921b5eabf1762b8 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
   "evan.sty" 1769916530.47264 29770 b9305cfa1e10857183abaea4b60464cc ""
-  "main.aux" 1769916739.01522 4296 753f444781bafecbee8e8c0f47bba843 "pdflatex"
-  "main.out" 1769916738.53965 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "main.pre" 1769916737.76744 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "main.tex" 1769916733.1451 5164 84843d3c9f6a91e3245c7c06df2406eb ""
-  "main.toc" 1769916739.01626 212 24c7b924735cf14f64836f657c6773a8 "pdflatex"
+  "main.aux" 1769929683.19929 4296 753f444781bafecbee8e8c0f47bba843 "pdflatex"
+  "main.out" 1769929682.67778 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.pre" 1769929681.80329 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.tex" 1769929680.9172 5164 84843d3c9f6a91e3245c7c06df2406eb ""
+  "main.toc" 1769929683.20039 212 24c7b924735cf14f64836f657c6773a8 "pdflatex"
   (generated)
   "main.aux"
   "main.log"
