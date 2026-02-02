@@ -94,7 +94,7 @@ We can in general define a norm on a number field $K$ as follows:
     Norm $N_1$ and $N_2$ are equivalent if there exists a real number $c$ such that $N_2(x)=N_1(x)^a$ for all $x$.
 \end{definition}
 \begin{theorem}[Ostrowski's Theorem]
-    Any non-trivial norm on $\QQ$ is equivalent to either the usual absolute value or to $\norm{x}_p$ for some prime $p$.
+    Any non-trivial norm on $\QQ$ is equivalent to either the usual absolute value $\norm{\cdot}_\infty$ or to $\norm{\cdot}_p$ for some prime $p$.
 \end{theorem}
 \begin{proof}
 
@@ -120,4 +120,124 @@ Use parameterization of this curve.
 \begin{theorem}
     If $n\geq 3$, $x^n+y^n=z^n$ has no non-trivial solutions in $\CC[x]$. 
 \end{theorem}
+\section{Chapter 2}
+\subsection{$\ZZ_p$ and $\QQ_p$}
+Let $A_n=\ZZ/p^n\ZZ$. There is a natural projection map $\phi_n: A_{n}\to A_{n-1}$.
+\begin{definition}
+    We define $\ZZ_p$ as the limit (in category of rings) of 
+    \[\cdots \taking{\phi_{n+1}} A_n \taking{\phi_{n}} A_{n-1} \taking{\phi_{n-1}} \cdots \taking{\phi_{2}} A_1\]
+\end{definition}
+By the definition, any $x\in \ZZ_p$ can be represented as a seqeunce $(\ldots,x_2,x_1)$ where $x_n\in A_n$ and $\phi_n(x_n)=x_{n-1}$. Alternatively, we can represent $x$ as an infinite sum
+\[x=a_0+a_1 p + a_2 p^2 + \cdots\]
+where $a_i\in \{0,1,\ldots,p-1\}$. 
+\\
+
+We can define the topology on $\ZZ_p$ as the induced topology from the product topology on $\prod A_n$ where $A_n$ is given the discrete topology. 
+\begin{theorem}
+    $\ZZ_p$ is compact.
+\end{theorem}
+\begin{proof}
+    We will need a lemma from topology. 
+    \begin{lemma}
+        \textbf{Closed subset of a compact space is compact.}
+    \begin{proof}
+            If $K$ is compact and $F\subseteq K$ is closed, then for any open covering of $F$, we can add $K\setminus F$ to get an open covering of $K$. So there is a finite subcovering, removing $K\setminus F$ gives a finite subcovering of $F$.
+        \end{proof}
+    \end{lemma}
+    Since $\prod A_n$ is compact by Tychonoff's theorem, it suffices to show $\ZZ_p$ is closed in $\prod A_n$. It suffices show that its complement is open. For any $y\notin \ZZ_p$, there exists some $j$ such that $\phi_{j}(y_{j})\neq y_{j-1}$. There exists an open set $U=\prod U_n$ where $U_n=A_n$ for $n\neq j,j-1$, $U_j=\{y_j\}$ and $U_{j-1}=\{y_{j-1}\}$. It's clear that $U$ is an open neighborhood of $y$ and $U\cap \ZZ_p=\emptyset$. So $\ZZ_p$ is closed.
+\end{proof}
+\begin{theorem}
+    \[0\to A_m \taking{\times p^n} A_{m+n} \taking{\phi_{m+n,n}} A_n \to 0\]
+    is an exact seqeunce of abelian groups.
+\end{theorem}
+This is easy to check. The first injective map is moving the the last $m$ digits $\times p^n$ to the left by $n$ places and fill the last $n$ digits with zero, the second map is just truncating the last $n$ digits. We will use this in $\ZZ_p$.
+\begin{theorem}
+    \[0\to \ZZ_p \taking{\times p^n} \ZZ_p \to A_n \to 0 \]
+    is an exact seqeunce of abelian groups.
+\end{theorem}
+\begin{proof}
+    First, we need to show $\ZZ_p \taking{\times p^n} \ZZ_p$ is injective. Notice that if $\phi_{m+n,n}(x_{m+n})=x_n$, then $p^mx_n$ and $p^mx_{m+n}$ are the same in $A_{m+n}$. Therefore, we conclude that multiplying by $p^n$ is just adding $n$ zeros to the end, that is sending $(\ldots,x_2,x_1)$ to $(\ldots,p^nx_2,p^nx_1,0,\ldots,0)$. Let $j$ be the smallest integer such that the $j$-th digit of $x$ is nonzero (not divisble by $p^j$), then the $j+n$-th digit of $\times p^n x$ is also nonzero since it's not divisible by $p^{j+n}$, so the map is injective.
+    \\
+
+    The image of $\times p^n$ is just $p^n\ZZ_p$, which is exactly the kernel of the projection map to $A_n$ since the last $n$ digits are all zero.
+\end{proof}
+\begin{theorem}
+    Two propositions:
+    \begin{enumerate}
+        \item For an element $x\in \ZZ_p$ to be invertible, it is equivalent to say that it's not divisible by $p$, i.e., the first digit $a_0$ in its expansion is nonzero.
+        \item Let $U$ be the group of units in $\ZZ_p$. Then we have the decomposition. For any $x\in \ZZ_p$, we can write 
+        \[x=p^nu\]
+        where $n\geq 0$ and $u\in U$ in a unique way.
+    \end{enumerate}
+\end{theorem}
+For part 1, if $x_1$ is invertible, $a_i$ are corpime to $p$. By Bezout's lemma, there exists $a_i,b_i\in \ZZ$ such that $a_i x_i + b_i p^i=1$. Let $a=(\ldots,a_2,a_1)$, this is clearly the inverse of $x$ and we can check it's indeed in $\ZZ_p$.
+\\
+
+Other parts are easy. 
+\begin{definition}
+    We define $v_p(x)=n$ if $x=p^n u$ where $u$ is a unit in $\ZZ_p$.
+    \\
+    We define $v_p(0)=+\infty$.
+\end{definition}
+\begin{proposition}
+    $v_p(xy)=v_p(x)+v_p(y)$ and $v_p(x+y)\geq \inf\{v_p(x),v_p(y)\}$ with equality if $v_p(x)\neq v_p(y)$.
+\end{proposition}
+This allows us to define a metric on $\ZZ_p$ as follows:
+\begin{definition}
+    $d(x,y)=p^{-v(x-y)}$
+\end{definition}
+A notbale property is that $d(x,y)=d(x-z,y-z)$ for any $x,y,z\in \ZZ_p$. So the metric is translation invariant. In particular, we have $d(x,y)=d(0,y-x)$.
+\\
+
+\begin{theorem}
+    The metric space $(\ZZ_p,d)$ is homomorphic to the topological space $\ZZ_p$ defined as the subspace of $\prod A_n$ with the product topology.
+\end{theorem}
+\begin{proof}
+    It suffices to show that the identity map from $(\ZZ_p,d)$ to $\ZZ_p$ is continuous in both directions.
+    \\
+    For any open set $U\subseteq \ZZ_p$, 
+    \[U=\ZZ_p\cap \left(\bigcup_{i\in I}(\prod U_{n, i})\right)=\bigcup_{i\in I}\left((\prod U_{n, i}\cap \ZZ_p)\right)\] 
+    where $U_{n,i}=A_n$ for all but finitely many $n$.
+    \\
+
+    What does $T_i=\prod U_{n, i}\cap \ZZ_p$ looks like? Let $N$ be the largest integer such that $U_{N,i}\neq A_N$. Then, $T_i$ is the set of $x$ such that the first $N$ digits of $x$ are fixed and the rest can be anything possible, that is $x=(\ldots,a_N,\ldots,a_1)$ where $a_1,\ldots,a_N$ are fixed. The preimage of $T_i$ in $(\ZZ_p,d)$ is precisely the open ball centered at $x$ with radius $p^{-N}$, that is $x+p^N\ZZ_p$. 
+    \\
+
+    Conversely, what does any open ball in $(\ZZ_p,d)$ look like in $\ZZ_p$? First, the open ball of $0$ is just ideals $p^n\ZZ_p$. For other point, if the radius of the open abll is $p^{-N}$, for some $N\in\ZZ$. $d(x,y)=d(0,x-y)<p^N$ means $v_p(x-y)>N$, which means the first $N$ digits of $x$ and $y$ are the same. So the open balls are the cosets of $p^n\ZZ_p$. So the preimage of this open ball is the set of $y$ such that the first $N$ digits are fixed, which is clearly open in $\ZZ_p$.
+\end{proof}
+\begin{remark}
+    Any open ball is also closed in $\ZZ_p$, since the image of $d(0,x)$ is discrete in $\RR$. So $\ZZ_p$ is totally disconnected.
+\end{remark}
+\begin{remark}
+    $\ZZ_p$ is complete under this metric. This follows from the fact that $\ZZ_p$ is compact.
+\end{remark}
+\begin{remark}
+    $\ZZ$ is dense in $\ZZ_p$. Just find an integer with the same first $n$ digits as the element in $\ZZ_p$ you want to approximate.
+\end{remark}
+\begin{definition}
+    We define $\QQ_p$ as the field of fractions of $\ZZ_p$. Equivalently, it's the localization of $\ZZ_p$ at $U={1,p,p^2,\ldots}$. 
+    \\
+\end{definition}
+\begin{definition}
+    For any $x\in \QQ_p$, we can write $x=p^n u$ where $n\in \ZZ$ and $u\in U$. We define $v_p(x)=n$ and $v_p(0)=+\infty$.
+\end{definition}
+$x\in \QQ_p$ is in $\ZZ_p$ iff $v_p(x)\geq 0$.
+\begin{proposition}
+    propositions about $\QQ_p$:
+    \begin{enumerate}
+        \item The metric $d(x,y)=p^{-v_p(x-y)}$ makes $\QQ_p$ a topological field.
+        \item $\ZZ_p$ is a clopen subset of $\QQ_p$. 
+        \item $\QQ_p$ is locally compact, that is for any $x\in \QQ_p$, there exists open set $U$ and compact set $K$ such that $x\in U\subseteq K$.
+        \item $\QQ$ is dense in $\QQ_p$.
+    \end{enumerate}
+\end{proposition}
+For any open neighborhood of $x\in \QQ_p$, it looks like $x+p^n\ZZ_p$ for some $n$ (in fact clopen). Notice that translation and scaling are homeomorphisms, so any neighborhood of $x$ is compact. Others are easy to check. 
+\begin{proposition}
+    The metric $d$ is an ultrametric, that is it satisfies the strong triangle inequality
+    \[d(x,z)\leq \max\{d(x,y),d(y,z)\}\]
+    for any $x,y,z\in \QQ_p$.
+    \\
+
+    As a result, $d(u_m,u_n)\leq \sup_{k\geq n} d(u_{k},u_{k+1})$ for any sequence $\{u_n\}$ in $\QQ_p$ and any $m>n$. Therefore, a sequence $\{u_n\}$ is Cauchy iff $d(u_n,u_{n+1})\to 0$ as $n\to \infty$ iff $\lim_{n\to \infty} u_{n+1}-u_n=0$.
+\end{proposition}
 \end{document}
