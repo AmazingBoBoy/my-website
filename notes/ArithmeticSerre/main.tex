@@ -120,6 +120,12 @@ Use parameterization of this curve.
 \begin{theorem}
     If $n\geq 3$, $x^n+y^n=z^n$ has no non-trivial solutions in $\CC[x]$. 
 \end{theorem}
+\begin{proof}
+    Assume $f,g h$ are non-constant polynomials such that $f^n+g^n=h^n$. We further assume they $\max{\deg(f), \deg(g), \deg(h)}$ is minimal among all such triples. Therefore, $\gcd(f,g)=\gcd(g,h)=\gcd(h,f)=1$. (otherwise, we can divide the common factor to get a smaller degree triple).
+    \\
+    
+    $f^n=h^n-g^n=\prod (h-\zeta^i g)$ where $\zeta$ is a primitive $n$-th root of unity. Notice that $\gcd(h-\zeta^i g,h-\zeta^j g)=\gcd(g,h)$ for $i\neq j$. So all $h-\zeta^i g$ are coprime to each other. Thus, $h-g=a^n$, $h-\zeta g=b^n$, $z-\zeta^2 g=c^n$ for some non-constant polynomials $a,b,c\in \CC[x]$. We can easily find $p, q,r \in \CC$ such that $(pa)^n+(qb)^n+(rc)^n=0$. This contradicts the minimality of our choice of $f,g,h$.
+\end{proof}
 \section{Chapter 2}
 \subsection{$\ZZ_p$ and $\QQ_p$}
 Let $A_n=\ZZ/p^n\ZZ$. There is a natural projection map $\phi_n: A_{n}\to A_{n-1}$.
@@ -130,9 +136,8 @@ Let $A_n=\ZZ/p^n\ZZ$. There is a natural projection map $\phi_n: A_{n}\to A_{n-1
 By the definition, any $x\in \ZZ_p$ can be represented as a seqeunce $(\ldots,x_2,x_1)$ where $x_n\in A_n$ and $\phi_n(x_n)=x_{n-1}$. Alternatively, we can represent $x$ as an infinite sum
 \[x=a_0+a_1 p + a_2 p^2 + \cdots\]
 where $a_i\in \{0,1,\ldots,p-1\}$. 
-\\
 
-We can define the topology on $\ZZ_p$ as the induced topology from the product topology on $\prod A_n$ where $A_n$ is given the discrete topology. 
+We can also define the topology on $\ZZ_p$ as the induced topology from the product topology on $\prod A_n$ where $A_n$ is given the discrete topology. 
 \begin{theorem}
     $\ZZ_p$ is compact.
 \end{theorem}
@@ -174,6 +179,10 @@ For part 1, if $x_1$ is invertible, $a_i$ are corpime to $p$. By Bezout's lemma,
 \\
 
 Other parts are easy. 
+
+\begin{proposition}
+    As a ring, we can check that $\ZZ_p$ is an integral domain. In fact, it's a local ring with maximal ideal $p\ZZ_p$.
+\end{proposition} 
 \begin{definition}
     We define $v_p(x)=n$ if $x=p^n u$ where $u$ is a unit in $\ZZ_p$.
     \\
@@ -221,10 +230,10 @@ A notbale property is that $d(x,y)=d(x-z,y-z)$ for any $x,y,z\in \ZZ_p$. So the 
 \begin{definition}
     For any $x\in \QQ_p$, we can write $x=p^n u$ where $n\in \ZZ$ and $u\in U$. We define $v_p(x)=n$ and $v_p(0)=+\infty$.
 \end{definition}
-$x\in \QQ_p$ is in $\ZZ_p$ iff $v_p(x)\geq 0$.
 \begin{proposition}
     propositions about $\QQ_p$:
     \begin{enumerate}
+        \item $x\in \QQ_p$ is in $\ZZ_p$ iff $v_p(x)\geq 0$.
         \item The metric $d(x,y)=p^{-v_p(x-y)}$ makes $\QQ_p$ a topological field.
         \item $\ZZ_p$ is a clopen subset of $\QQ_p$. 
         \item $\QQ_p$ is locally compact, that is for any $x\in \QQ_p$, there exists open set $U$ and compact set $K$ such that $x\in U\subseteq K$.

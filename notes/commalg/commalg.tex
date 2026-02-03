@@ -12,11 +12,13 @@
 \tableofcontents
 \newpage
 \section*{Acknowledgement}
-This note is basically a copy of Eisenbud's Commutative Algebra with a View Toward Algebraic Geometry, with some additional explanations and examples from Eisenbud's lectures and my own understanding.
-\\
-This latex style is made by Evan Chen. 
-\\
-In this note, all rings $R$ are commutative with unity unless otherwise specified.
+\begin{enumerate}
+    \item This note is basically a copy of Eisenbud's Commutative Algebra with a View Toward Algebraic Geometry, with some additional explanations and examples from Eisenbud's lectures and my own understanding.
+\item This latex style is made by Evan Chen. 
+\item In this note, all rings $R$ are commutative with unity unless otherwise specified.
+\item When we use the language of category theory, we are in $R$-modules categories unless otherwise specified.
+\end{enumerate}
+
 \newpage 
 
 \section{January 17, 2026}
@@ -156,7 +158,10 @@ Other properties of localization that I think are important:
     \item If $R$ is Noetherian, then so is $R[U\inv]$. If $R$ is UFD, then so is $R[U\inv]$.
     \item Localization commutes with direct sums and direct limits because it's a left adjoint functor. It's left adjoint to the forgetful functor from $R[U\inv]$-modules to $R$-modules, forgetting the inverted elements' action. 
     \item Left adjointness implies that localization is right exact. In fact, localization is an exact functor. 
-    \item Exactness implies that localization preserves finite limits and colimits. In particular, it preserves kernels, cokernels (quotient of modules), finite intersections (fiber product=a finite limit). Left adjointness implies that it preserves colimits (need not to assume finiteness). In general, left exactness preserves finite limits, right exactness preserves finite colimits.
+    \item Exactness implies that localization preserves finite limits and finite colimits. In particular, it preserves kernels, cokernels (quotient of modules), finite intersections (intersetctions= a fiber product=a finite limit) and finite products. Left adjointness implies that it preserves colimits (need not to assume finiteness). In general, left exactness preserves finite limits, right exactness preserves finite colimits. 
+    \begin{proof}
+        Exactness implies preservation split exact sequences. Thus, this fucntor preserves products and kernels. Any finite limit can be constructed using products and kernels, so it preserves finite limits. Colimit is similar. 
+    \end{proof}
     
     \item Localization is nice with respect to tensor products: 
     Let $M$ and $A$ be $R$-modules, $N$ be an $R[U\inv]$-module, then we have the isomorphism
