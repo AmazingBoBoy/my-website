@@ -97,13 +97,13 @@ We can in general define a norm on a number field $K$ as follows:
     Any non-trivial norm on $\QQ$ is equivalent to either the usual absolute value $\norm{\cdot}_\infty$ or to $\norm{\cdot}_p$ for some prime $p$.
 \end{theorem}
 \begin{proof}
+    We consider two cases:
+    \\
 
-\end{proof}
+    \textbf{Case 1:} Assumn $\norm{n}\leq 1$ for all $n\in \ZZ$. If there exists $n$ such that $\norm{n}<1$. Then there must be a prime $p$ dividing $n$ such that $\norm{p}<1$. We claim that $p$ is the only prime such that $\norm{p}<1$. Let $q$ be another prime such that $\norm{q}<1$. We can find $N$ such that $\norm{p}^N$ and $\norm{q}^N$ are both less than $\frac{1}{2}$. By Bezout's lemma, we can find integers $a,b$ such that $ap^N+bq^N=1$. So $1=\norm{1}=\norm{ap^N+bq^N}\leq \norm{a}\norm{p}^N+\norm{b}\norm{q}^N<\frac{\norm{a}+\norm{b}}{2}\leq 1$, which is a contradiction. So in this case, $\norm{\cdot}$ is equivalent to $\norm{\cdot}_p$.
+    \\
 
-\begin{theorem}[Hensel's Lemma]
-\end{theorem}
-\begin{proof}
-    
+    The rest is sort of cumbersome. 
 \end{proof}
 \begin{theorem}[Hasse principle]
     
@@ -123,7 +123,7 @@ Use parameterization of this curve.
 \begin{proof}
     Assume $f,g h$ are non-constant polynomials such that $f^n+g^n=h^n$. We further assume they $\max{\deg(f), \deg(g), \deg(h)}$ is minimal among all such triples. Therefore, $\gcd(f,g)=\gcd(g,h)=\gcd(h,f)=1$. (otherwise, we can divide the common factor to get a smaller degree triple).
     \\
-    
+
     $f^n=h^n-g^n=\prod (h-\zeta^i g)$ where $\zeta$ is a primitive $n$-th root of unity. Notice that $\gcd(h-\zeta^i g,h-\zeta^j g)=\gcd(g,h)$ for $i\neq j$. So all $h-\zeta^i g$ are coprime to each other. Thus, $h-g=a^n$, $h-\zeta g=b^n$, $z-\zeta^2 g=c^n$ for some non-constant polynomials $a,b,c\in \CC[x]$. We can easily find $p, q,r \in \CC$ such that $(pa)^n+(qb)^n+(rc)^n=0$. This contradicts the minimality of our choice of $f,g,h$.
 \end{proof}
 \section{Chapter 2}
@@ -181,7 +181,11 @@ For part 1, if $x_1$ is invertible, $a_i$ are corpime to $p$. By Bezout's lemma,
 Other parts are easy. 
 
 \begin{proposition}
-    As a ring, we can check that $\ZZ_p$ is an integral domain. In fact, it's a local ring with maximal ideal $p\ZZ_p$.
+    propositions of $\ZZ_p$ as rings: 
+    \begin{enumerate}
+        \item As a ring, we can check that $\ZZ_p$ is an integral domain. In fact, it's a local ring with maximal ideal $p\ZZ_p$.
+        \item $\ZZ_p$ is discrete valuation ring. Thus, Euclidean domain, PID and UFD.
+    \end{enumerate}
 \end{proposition} 
 \begin{definition}
     We define $v_p(x)=n$ if $x=p^n u$ where $u$ is a unit in $\ZZ_p$.
@@ -214,15 +218,15 @@ A notbale property is that $d(x,y)=d(x-z,y-z)$ for any $x,y,z\in \ZZ_p$. So the 
 
     Conversely, what does any open ball in $(\ZZ_p,d)$ look like in $\ZZ_p$? First, the open ball of $0$ is just ideals $p^n\ZZ_p$. For other point, if the radius of the open abll is $p^{-N}$, for some $N\in\ZZ$. $d(x,y)=d(0,x-y)<p^N$ means $v_p(x-y)>N$, which means the first $N$ digits of $x$ and $y$ are the same. So the open balls are the cosets of $p^n\ZZ_p$. So the preimage of this open ball is the set of $y$ such that the first $N$ digits are fixed, which is clearly open in $\ZZ_p$.
 \end{proof}
-\begin{remark}
-    Any open ball is also closed in $\ZZ_p$, since the image of $d(0,x)$ is discrete in $\RR$. So $\ZZ_p$ is totally disconnected.
-\end{remark}
-\begin{remark}
-    $\ZZ_p$ is complete under this metric. This follows from the fact that $\ZZ_p$ is compact.
-\end{remark}
-\begin{remark}
-    $\ZZ$ is dense in $\ZZ_p$. Just find an integer with the same first $n$ digits as the element in $\ZZ_p$ you want to approximate.
-\end{remark}
+\begin{proposition}
+    propositions of $\ZZ_p$ as a metric space:
+    \begin{enumerate}
+        \item image of $d(0,x)$ is discrete in $\RR$. So $\ZZ_p$ is totally disconnected.
+        \item $\ZZ_p$ is complete under this metric. This follows from the fact that $\ZZ_p$ is compact.
+        \item $\ZZ$ is dense in $\ZZ_p$. Just find an integer with the same first $n$ digits as the element in $\ZZ_p$ you want to approximate.
+    \end{enumerate}
+\end{proposition}
+
 \begin{definition}
     We define $\QQ_p$ as the field of fractions of $\ZZ_p$. Equivalently, it's the localization of $\ZZ_p$ at $U={1,p,p^2,\ldots}$. 
     \\
@@ -249,4 +253,85 @@ For any open neighborhood of $x\in \QQ_p$, it looks like $x+p^n\ZZ_p$ for some $
 
     As a result, $d(u_m,u_n)\leq \sup_{k\geq n} d(u_{k},u_{k+1})$ for any sequence $\{u_n\}$ in $\QQ_p$ and any $m>n$. Therefore, a sequence $\{u_n\}$ is Cauchy iff $d(u_n,u_{n+1})\to 0$ as $n\to \infty$ iff $\lim_{n\to \infty} u_{n+1}-u_n=0$.
 \end{proposition}
+\subsection{$p$-adic equations}
+\begin{lemma}
+    Let $\cdots \to D_n \to D_{n-1} \to \cdots \to D_1$ be a projective system of non-empty finite sets. Then, the projective limit $\varprojlim D_n$ is non-empty.
+\end{lemma}
+\begin{proof}
+    If each projection map is surjective, then it's clear. So our goal is to turn each map into a surjective map. For each $D_n$, we define $D_{n,p}$ to be the image of $D_{n+p}$ projected to $D_n$. Therefore, for a fixed $n$, we have a decreasing sequence of non-empty finite sets
+    \[D_n\supseteq D_{n,1}\supseteq D_{n,2}\supseteq \cdots\]
+    Since $D_i$ is finite, there exists $N$ such that $D_{n,N}=D_{n,N+1}=\cdots$. We define $E_n=D_{n,N}$. It's clearly that $E_n$ is non-empty and finite. And $E_n$ is the image of $E_{n+1}$ projected to $D_n$. So we have a projective system of non-empty finite sets with surjective projection maps. Therefore, the projective limit $\varprojlim E_n$ is non-empty. It's clear that $\varprojlim E_n \subseteq \varprojlim D_n$, so $\varprojlim D_n$ is non-empty.
+\end{proof}
+\begin{definition}
+    If $f\in \ZZ_p[x]$ is a polynomial, for $n\geq 1$, we define $f_n\in A_n[x]$ to be the reduction of $f$ mod $p^n$.
+\end{definition}
+\begin{theorem}
+    Let $S$ be a set of polynomials in $\ZZ_p[x_1,\ldots,x_n]$. The following are equivalent:
+    \begin{enumerate}
+        \item There exists a common root of $S$ in $\ZZ_p^n$. 
+        \item For all $m\geq 1$, there exists a common root of $S_m$ (the reduction of $S$ mod $p^m$) in $A_m^n$.
+    \end{enumerate}
+\end{theorem}
+\begin{proof}
+    $(1)\implies (2)$ is trivial since we can reduce the common root mod $p^m$ to get a common root in $A_m^n$.
+    \\
+    
+    For $(2)\implies (1)$, for each $m\geq 1$, let $D_m$ be the set of common roots of $S_m$. So we have a project system of non-empty finite sets $\{D_m\}$ with projection maps induced by the natural projection $A_{m}\to A_{m-1}$. By the previous lemma, the projective limit $\varprojlim D_m$ is non-empty. Any element in the projective limit gives a common root of $S$ in $\ZZ_p^n$.
+\end{proof}
+\begin{definition}
+    $x=(x_1, \ldots, x_n)\in (\ZZ_p)^n$ is called primitive if one of $x_i$ is a unit in $\ZZ_p$. One can similarly define primitive elements in $(A_n)^n$.
+\end{definition}
+\begin{theorem}
+    Let $S$ be a set of homogeneous polynomials in $\ZZ_p[x_1,\ldots,x_n]$. The following are equivalent:
+    \begin{enumerate}
+        \item $S$ has a non trivial common root in $\QQ_p^n$.
+        \item There exists a common primitive root of $S$ in $\ZZ_p^n$. 
+        \item For all $m\geq 1$, there exists a common primitive root of $S_m$ (the reduction of $S$ mod $p^m$) in $A_m^n$.
+    \end{enumerate}
+\end{theorem}
+This is easy to check. 
+\begin{lemma}[Hensel's Lemma]
+    Let $f\in \ZZ_p[x]$ be a polynomial. Let $a\in \ZZ_p$, $n, k\in \ZZ$ such that $0\leq 2k <n$, $f(a)\equiv 0\pmod{p^n}$ and $v_p(f'(a))=k$. Then, there exists a  $b\in \ZZ_p$ such that 
+    \\
+    $f(b)\equiv 0\pmod{p^{n+1}}$, $v_p(f'(b))=k$ and $b\equiv a\pmod{p^{n-k}}$.
+\end{lemma}
+Our familiar version is the case when $k=0$ and $n=1$. 
+\begin{proof}
+    Take $b=a+p^{n-k}z$ with $z\in \ZZ_p$ so that $a\equiv b \pmod{p^{n-k}}$. 
+    \[f(b)=f(a+p^{n-k}z)=f(a)+p^{n-k}zf'(a)+ p^{2n-2k}z^2t+\cdots\]
+Therefore, let $f'(a)=p^kc$ and $f(a)=p^nr$, we have
+\[f(b)\equiv p^nr+p^nzc\pmod{p^{n+1}}\]
+Note that the second term is suppose to be $(p^{2n-2k}z^2)\frac{f''(a)}{2}$, so where is the $\frac{1}{2}$? This is a real problem if $p=2$ The answer is that when we expand $f(a+x)$, all coefficients of $x^2$ should automatically be in $\ZZ_p$, so $f''(a)$ is divisible by $2$. And here we denote $t=\frac{f''(a)}{2}$
+\\
+
+Since $p\nmid c$, we can find $z$ such that $r+zc\equiv 0\pmod{p}$. Lastly, we can easily check that $f'(b)=f'(a+p^{n-k}z)\equiv f'(a)\pmod{p^{n-k}}$, so $v_p(f'(b))=k$.
+\end{proof}
+\begin{remark}
+    Notice that we can do this iteratively to get a solution $y\in \ZZ_p$ such that $f(y)=0$ and $y\equiv a \pmod{p^{n-k}}$.
+\end{remark}
+
+\begin{theorem}[Generalization of Hensel's Lemma]
+    Let $f\in \ZZ_p[x_1,\ldots,x_m]$ be a polynomial. Let $a=(a_1,\ldots,a_n)\in (\ZZ_p)^m$, $n, k\in \ZZ$  and $1\leq j \leq m$ such that $0\leq 2k <n$, $f(a)\equiv 0\pmod{p^n}$ and $v_p\left(\frac{\partial f}{\partial x_j}(a)\right)=k$. 
+    \\
+
+    Then there exists $y\in \ZZ_p^m$ such that $f(y)=0$ and $y\equiv a\pmod{p^{n-k}}$.
+\end{theorem}
+\begin{proof}
+    When $m=1$ is just Hensel's lemma. 
+    \\
+
+    If $m>1$, we can plug in $x_i=a_i$ for all $i\neq j$ and consider the polynomial $g(x_j)=f(a_1,\ldots,a_{j-1},x_j,a_{j+1},\ldots,a_m)$. It's clear that $g(a_j)\equiv 0\pmod{p^n}$ and $v_p(g'(a_j))=v_p\left(\frac{\partial f}{\partial x_j}(a)\right)=k$. So by Hensel's lemma, there exists $y_j\in \ZZ_p$ such that $g(y_j)=0$ and $y_j\equiv a_j \pmod{p^{n-k}}$. Thus, $y=(a_1,\ldots,a_{j-1},y_j,a_{j+1},\ldots,a_m)$ is the desired solution and $y\equiv a\pmod{p^{n-k}}$.
+\end{proof}
+\begin{corollary}
+    Here are three useful special cases:
+    \begin{enumerate}
+        \item If $a\in (\ZZ_p)^m$ such that $f(a)\equiv 0\pmod p$ and there exists $1\leq j \leq m$ such that $\frac{\partial f}{\partial x_j}(a)$ is a unit in $\ZZ_p$, then there exists $y\in (\ZZ_p)^m$ such that $f(y)=0$ and $y\equiv a \pmod{p}$. This is the case when $n=1$ and $k=0$. 
+        \item Suppose $p\neq 2$, let $f(x)=\sum_{i,j} a_{ij}x_ix_j$ with $a_{ij}=a_{ji}\in \ZZ_p$. If $\det(a_{ij})$ is a unit in $\ZZ_p$ and there exists a non-zero solution $r\in (\ZZ/p\ZZ)^n$ such that $f(r)\equiv t \pmod p$ for some $t\in \ZZ_p$, then there exists a non-trivial solution $y\in (\ZZ_p)^n$ such that $f(y)=t$ and $y\equiv r \pmod{p}$. 
+        \\
+
+        This is special case of (1). To prove it, we simply need to verify there exists $1\leq j \leq n$ such that $\frac{\partial f}{\partial x_j}(r)$ is a unit in $\ZZ_p$. Notice that \[\frac{\partial f}{\partial x_i}(r)=2\sum_{j}a_{ij}r_j\] 
+        The vector $(\frac{\partial f}{\partial x_1}(r),\ldots,\frac{\partial f}{\partial x_n}(r))$ is just $2A r$ where $A=(a_{ij})$. Since $\det(A)$ is a unit in $\ZZ_p$, $A$ is invertible over $\ZZ/p\ZZ$. Since $r$ is non-trivial, $Ar$ is also non-trivial, so at least one of its coordinates is a unit in $\ZZ_p$. 
+        \item If $p=2$, let $f(x)=\sum_{i,j} a_{ij}x_ix_j$ with $a_{ij}=a_{ji}\in \ZZ_2$. If $\det(a_{ij})$ is a unit in $\ZZ_2$ and there exists a non-zero solution $r\in (\ZZ/8\ZZ)^n$ such that $f(r)\equiv t \pmod 8$ for some $t\in \ZZ_2$ and $\frac{\partial f}{\partial x_j}(r)\not\equiv 0 \pmod{4}$, then there exists a non-trivial solution $y\in (\ZZ_2)^n$ such that $f(y)=t$ and $y\equiv r \pmod{8}$. This is the case when $n=3$ and $k=1$. The proof is similar to (2).
+    \end{enumerate}
+\end{corollary}
 \end{document}

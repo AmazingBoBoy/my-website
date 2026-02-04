@@ -1,6 +1,6 @@
-\contentsline {section}{\nonumberline January 17, 2026}{4}{section*.8}%
-\contentsline {section}{\nonumberline January 20, 2026}{5}{section*.16}%
-\contentsline {section}{\nonumberline January 22, 2026}{7}{section*.28}%
-\contentsline {section}{\nonumberline January 27, 2026}{8}{section*.30}%
-\contentsline {section}{\nonumberline January 29, 2026}{10}{section*.47}%
+\contentsline {section}{\nonumberline January 17, 2026: A theorem in Invariant Theory}{4}{section*.8}%
+\contentsline {section}{\nonumberline January 20, 2026: Basis, syzygy, and Hilbert's function theorems}{5}{section*.16}%
+\contentsline {section}{\nonumberline January 22, 2026: Nullstellensatz and equivalence of algebraic varieties and affine algebras}{8}{section*.28}%
+\contentsline {section}{\nonumberline January 27, 2026: Localization and Tensor Products}{8}{section*.30}%
+\contentsline {section}{\nonumberline January 29, 2026: More on Localization}{10}{section*.47}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
