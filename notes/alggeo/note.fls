@@ -1,8 +1,8 @@
-PWD /Users/kaihuang/Documents/VS Code/my-website/notes/AG
+PWD /Users/kai/Documents/VS Code/my-website/notes/alggeo
 INPUT /usr/local/texlive/2025/texmf.cnf
 INPUT /usr/local/texlive/2025/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/kaihuang/Documents/VS Code/my-website/notes/AG/note.tex
+INPUT /Users/kai/Documents/VS Code/my-website/notes/alggeo/note.tex
 OUTPUT note.log
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/koma-script/scrartcl.cls
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/koma-script/scrartcl.cls
