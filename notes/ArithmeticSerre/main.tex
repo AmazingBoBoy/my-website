@@ -307,7 +307,7 @@ Note that the second term is suppose to be $(p^{2n-2k}z^2)\frac{f''(a)}{2}$, so 
 Since $p\nmid c$, we can find $z$ such that $r+zc\equiv 0\pmod{p}$. Lastly, we can easily check that $f'(b)=f'(a+p^{n-k}z)\equiv f'(a)\pmod{p^{n-k}}$, so $v_p(f'(b))=k$.
 \end{proof}
 \begin{remark}
-    Notice that we can do this iteratively to get a solution $y\in \ZZ_p$ such that $f(y)=0$ and $y\equiv a \pmod{p^{n-k}}$.
+    Notice that we can do this iteratively to get a solution $y\in \ZZ_p$ such that $f(y)=0$ and $y\equiv a \pmod{p^{n-k}}$. Furthermore, $y$ is unique. 
 \end{remark}
 
 \begin{theorem}[Generalization of Hensel's Lemma]
@@ -334,4 +334,98 @@ Since $p\nmid c$, we can find $z$ such that $r+zc\equiv 0\pmod{p}$. Lastly, we c
         \item If $p=2$, let $f(x)=\sum_{i,j} a_{ij}x_ix_j$ with $a_{ij}=a_{ji}\in \ZZ_2$. If $\det(a_{ij})$ is a unit in $\ZZ_2$ and there exists a non-zero solution $r\in (\ZZ/8\ZZ)^n$ such that $f(r)\equiv t \pmod 8$ for some $t\in \ZZ_2$ and $\frac{\partial f}{\partial x_j}(r)\not\equiv 0 \pmod{4}$, then there exists a non-trivial solution $y\in (\ZZ_2)^n$ such that $f(y)=t$ and $y\equiv r \pmod{8}$. This is the case when $n=3$ and $k=1$. The proof is similar to (2).
     \end{enumerate}
 \end{corollary}
+\section*{multiplicative Group of $\QQ_p$}
+Let $U=(\ZZ_p)^{\times}$ be the group of units in $\ZZ_p$ and $U_n=1+p^n\ZZ_p$. $U_n$ form a decreasing sequence of subgroups of $U$, therefore, we have the following projective system:
+\[\cdots \to \frac{U}{U_n}\to \frac{U}{U_{n-1}} \to \cdots \to \frac{U}{U_1}\to 0\]
+The limit of this projective system is clearly $U$. 
+\\
+
+It's easy to check that $\frac{U}{U_n}\cong (\ZZ/p^n\ZZ)^{\times}$. In particular, $\frac{U}{U_1}\cong \FF_p^{\times}$. 
+\begin{lemma}
+    $\frac{U_1}{U_n}$ is finite of order $p^{n-1}$.
+\end{lemma}
+We can construct the canonical surjection from $\frac{U}{U_n} \surjto \frac{U}{U_1}$. The kernel is $\frac{U_1}{U_n}$. Therefore, we know that $|\frac{U_1}{U_n}|=\frac{|\frac{U}{U_n}|}{|\frac{U}{U_1}|}=\frac{p^{n-1}(p-1)}{p-1}=p^{n-1}$.
+\\
+
+We can also construct an explicit isomorphism from $\frac{U_n}{U_{n+1}}$ ($n\geq 1$) to $\ZZ/p\ZZ$ sending $1+p^nx$ to $x\pmod p$. $(1+p^nx)(1+p^ny)=1+p^n(x+y)+p^{2n}xy\equiv 1+p^n(x+y)\pmod{U_{n+1}}$. So the map is indeed a homomorphism. It's clearly surjective, and the kernel is $U_{n+1}$. So it's an isomorphism. So $|\frac{U_n}{U_{n+1}}|=p$.
+\\
+
+\begin{theorem}
+    $U\cong \FF_p^{\times} \times U_1$ as abelian groups.
+\end{theorem}
+\begin{proof}
+    First, we notice that 
+    \[0\to U_1 \to U \to \FF_p^{\times} \to 0\]
+    is exact. So it suffices to show this sequence splits. 
+    \\
+
+    First, we consider the following exact sequence:
+    \[0 \to \frac{U_1}{U_n}\to \frac{U}{U_n} \to \FF_p^{\times} \to 0\]
+    This sequnece splits since $\gcd(|\FF_p^{\times}|,|\frac{U_1}{U_n}|)=\gcd(p-1,p^{n-1})=1$. This implies there is a injective homomorphism $\FF_p^{\times}\to \frac{U}{U_n}$ for all $n \geq 1$. 
+    \\
+
+    Therefore, by the universal property of projective limit, we have an injective homomorphism $\FF_p^{\times}\to U$ splitting the original exact sequence.
+\\
+
+Alternative proof: 
+\\
+
+Consider equaton $x^{p-1}-1=0$. In $\ZZ/p\ZZ$, it has $p-1$ distinct roots. So by Hensel's lemma, it has $p-1$ distinct roots in $\ZZ_p$ (each one of them uniquely corresponds to a root in $\ZZ/p\ZZ$), giving us a injective homomorphism from $\FF_p^{\times}$ to $U$. So we have the decomposition $U\cong \FF_p^{\times}\times U_1$.
+\end{proof}
+\begin{corollary}
+    $\QQ_p$ contains all $(p-1)$-th roots of unity.
+\end{corollary}
+\begin{lemma}
+    Let $x\in U_n-U_{n+1}$. Then,
+    \\
+    if $n\geq 1$ and $p\neq 2$, $x^p\in U_{n+1}-U_{n+2}$;
+    \\
+    if $p=2$ and $n \geq 2$, $x^2\in U_{n+1}-U_{n+2}$. 
+\end{lemma}
+Proof is just to write $x=1+kp^n$ where $p\nmid k$ and expand $x^p$ using binomial theorem.
+
+\begin{theorem}
+    If $p\neq 2$, $(U_1, \times)\cong (\ZZ_p, +)$.
+    If $p=2$, $(U_2, \times)\cong (\ZZ_2, +)$ and $U_1\cong \ZZ/2\ZZ \times (\ZZ_2, +)$.
+\end{theorem}
+\begin{proof}
+The lemma above tells us that $\frac{U_1}{U_{n+1}}$ is a cyclic group of order $p^n$. So $U_1$ is isomorphic to the projective limit of cyclic groups of order $p^n$, which is $\ZZ_p$. The case when $p=2$ is similar, we will get $U_2\cong \ZZ_2$. 
+\\
+
+For $U_1\cong \ZZ/2\ZZ \times (\ZZ_2, +)$, we notice the exact sequence: 
+\[0\to U_2 \to U_1 \to \frac{U_1}{U_2} \to 0\]
+We know that $\frac{U_1}{U_2}\cong \ZZ/2\ZZ$. So it suffices to show this sequence splits. we manually construct an injective homomorphism from $\ZZ/2\ZZ$ to $U_1$ sending the non-trivial element to $-1$.
+\\
+
+Alternative proof with analytic approach:
+\\
+
+It's clear that $(\ZZ_p, +)$ is isomorphic to $(p\ZZ_p, +)$ via the map $x\mapsto px$. Then, we can define the exponential map
+\[\exp: p\ZZ_p \to U_1, \quad \exp(x)=\sum_{n=0}^{\infty} \frac{x^n}{n!}\] 
+And the logarithm map
+\[\log: U_1 \to p\ZZ_p, \quad \log(1+px)=\sum_{n=1}^{\infty} (-1)^{n+1} \frac{x^n}{n}\]
+It's easy to check that they are inverses of each other. Next, we need to check that they are well-defined: Notice that 
+Therefore, we have the isomorphism $(U_1, \times)\cong (p\ZZ_p, +)\cong (\ZZ_p, +)$.
+\end{proof}
+\begin{theorem}
+    $(\QQ_p^{\times}, \times) \cong (\ZZ,+) \times (\ZZ/(p-1)\ZZ, +) \times (\ZZ_p,+)$ if $p\neq 2$;
+    \\
+    $(\QQ_2^{\times}, \times) \cong (\ZZ,+) \times (\ZZ/2\ZZ, +) \times (\ZZ_2,+)$.
+    \\
+    This makes multiplication into addition, which is easier to work with in many cases such as finding squares in $\QQ_p$.
+\end{theorem}
+Finally, we discuss the squares in $\QQ_p$.
+\begin{theorem}
+    If $p\neq 2$, $x=p^nu\in \QQ_p^{\times}$ is a square iff n=$v_p(x)$ is even and $u \pmod p$ is a square in $\FF_p^{\times}$.
+\end{theorem}
+Easy to check. 
+\begin{theorem}
+    If $p=2$, $x=2^n u \in \QQ_2^{\times}$ is a square iff $n=v_2(x)$ is even and $u\equiv 1 \pmod 8$. 
+    \\
+    
+    In fact, $u$ is a square if and only if $u\in U_3$ becasue $U_3$ is mapped to $2ZZ_2$ (square means divisible by 2 in additon group) under the isomorphism $U_1\cong \ZZ/2\ZZ \times (\ZZ_2,+)$. 
+\end{theorem}
+\begin{remark}
+    For any prime, we conclude that $(\QQ_p^{\times})^2$ is open set in $\QQ_p^{\times}$. If $x=p^{2k}u$ is a square, then there exists $n=4k$ such that the open ball $x+p^{4k}\ZZ_p$ is contained in $(\QQ_p^{\times})^2$ becasue any element in this open ball has even valuation and its unit part is congruent to $u$ mod $p$, which is a square in $\FF_p^{\times}$.
+\end{remark}
 \end{document}

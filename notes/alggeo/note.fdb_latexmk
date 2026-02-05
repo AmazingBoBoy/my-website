@@ -1,21 +1,21 @@
 # Fdb version 4
-["cusdep asy pdf diagram1-1"] 1768034230.02651 "diagram1-1.asy" "diagram1-1.pdf" "diagram1-1" 1770181555.49353 0
+["cusdep asy pdf diagram1-1"] 1768034230.02651 "diagram1-1.asy" "diagram1-1.pdf" "diagram1-1" 1770239963.62437 0
   "diagram1-1.asy" 1769916530.47396 3069 ee56c3df069bfeaf6c440fabd9f56956 ""
   (generated)
   "diagram1-1.pdf"
   (rewritten before read)
-["cusdep asy pdf diagram1-2"] 1768034233.84006 "diagram1-2.asy" "diagram1-2.pdf" "diagram1-2" 1770181555.49351 0
+["cusdep asy pdf diagram1-2"] 1768034233.84006 "diagram1-2.asy" "diagram1-2.pdf" "diagram1-2" 1770239963.62435 0
   "diagram1-2.asy" 1769916530.47428 3040 ae5770ca96c2bb2c2419011de8f9491b ""
   (generated)
   "diagram1-2.pdf"
   (rewritten before read)
-["cusdep asy pdf diagram1-3"] 1768034660.81733 "diagram1-3.asy" "diagram1-3.pdf" "diagram1-3" 1770181555.49347 0
+["cusdep asy pdf diagram1-3"] 1768034660.81733 "diagram1-3.asy" "diagram1-3.pdf" "diagram1-3" 1770239963.62431 0
   "diagram1-3.asy" 1769916530.47447 3275 7b2e83c3728c82604d4ffddb21c80ed8 ""
   (generated)
   "diagram1-3.pdf"
   (rewritten before read)
-["pdflatex"] 1770181553.10157 "/Users/kai/Documents/VS Code/my-website/notes/alggeo/note.tex" "note.pdf" "note" 1770181555.49355 0
-  "/Users/kai/Documents/VS Code/my-website/notes/alggeo/note.tex" 1770181552.76418 40291 57e92e817aa89fff9eec6217eedb4e57 ""
+["pdflatex"] 1770239961.18361 "/Users/kai/Documents/VS Code/my-website/notes/alggeo/note.tex" "note.pdf" "note" 1770239963.62439 0
+  "/Users/kai/Documents/VS Code/my-website/notes/alggeo/note.tex" 1770239960.92732 40606 a78e10da079bc942eab406f8b84bcfdc ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm1440.tfm" 1136768653 1536 3290a75021d32d016616fe527bc9884c ""
@@ -280,11 +280,11 @@
   "diagram1-2.pdf" 1769916530.4744 19514 382026d8e6a68e38a10fc9fe13e5d818 "cusdep asy pdf diagram1-2"
   "diagram1-3.pdf" 1769916530.47456 30220 218deb93c51592d6696cf6a497644044 "cusdep asy pdf diagram1-3"
   "evan.sty" 1769916530.47528 29770 b9305cfa1e10857183abaea4b60464cc ""
-  "note.aux" 1770181555.37701 19370 0e93a759f350bd50b78f2e6bb78c6cdc "pdflatex"
-  "note.out" 1770181554.46481 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "note.pre" 1770181553.73505 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "note.tex" 1770181552.76418 40291 57e92e817aa89fff9eec6217eedb4e57 ""
-  "note.toc" 1770181555.38027 2168 f2a71c53fbc21fc191b78e2afdd6df2d "pdflatex"
+  "note.aux" 1770239963.50132 19370 0e93a759f350bd50b78f2e6bb78c6cdc "pdflatex"
+  "note.out" 1770239962.57579 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "note.pre" 1770239961.81534 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "note.tex" 1770239960.92732 40606 a78e10da079bc942eab406f8b84bcfdc ""
+  "note.toc" 1770239963.50456 2168 f2a71c53fbc21fc191b78e2afdd6df2d "pdflatex"
   (generated)
   "note.aux"
   "note.log"
