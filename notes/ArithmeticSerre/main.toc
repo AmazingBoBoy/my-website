@@ -1,6 +1,7 @@
-\contentsline {section}{\numberline {1}Chapter 1}{3}{section.2}%
-\contentsline {section}{\numberline {2}Meeting 1 on Jan. 28 2026}{4}{section.13}%
-\contentsline {section}{\numberline {3}Chapter 2}{6}{section.37}%
-\contentsline {subsection}{\numberline {3.1}$\mathbb Z_p$ and $\mathbb Q_p$}{6}{subsection.38}%
-\contentsline {subsection}{\numberline {3.2}$p$-adic equations}{10}{subsection.83}%
+\contentsline {section}{\numberline {1}Chapter 1: Finite Fields and Quadratic Reciprocity}{3}{section.2}%
+\contentsline {section}{\numberline {2}Meeting 1 on Jan. 28 2026: Overview of the course}{4}{section.13}%
+\contentsline {section}{\numberline {3}Chapter 2: $p$-adic numbers}{6}{section.35}%
+\contentsline {subsection}{\numberline {3.1}$\mathbb Z_p$ and $\mathbb Q_p$}{6}{subsection.36}%
+\contentsline {subsection}{\numberline {3.2}$p$-adic equations}{10}{subsection.81}%
+\contentsline {subsection}{\numberline {3.3}multiplicative Group of $\mathbb Q_p$}{13}{subsection.108}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

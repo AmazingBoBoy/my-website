@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1770254755.95886 "/Users/kai/Documents/VS Code/my-website/notes/ArithmeticSerre/main.tex" "main.pdf" "main" 1770254758.37686 0
-  "/Users/kai/Documents/VS Code/my-website/notes/ArithmeticSerre/main.tex" 1770254753.32198 26787 b3aff5fe8c0f92cd80a3107faba7e4a8 ""
+["pdflatex"] 1770254948.4229 "/Users/kai/Documents/VS Code/my-website/notes/ArithmeticSerre/main.tex" "main.pdf" "main" 1770254950.78466 0
+  "/Users/kai/Documents/VS Code/my-website/notes/ArithmeticSerre/main.tex" 1770254945.80518 26820 9c319aa1bf2be331f1f51721ef7d99ea ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -258,11 +258,11 @@
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1741450574 3345740 46b66fdb0378f7bf5921b5eabf1762b8 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
   "evan.sty" 1769916530.47264 29770 b9305cfa1e10857183abaea4b60464cc ""
-  "main.aux" 1770254758.26037 11531 35dc8f4aa7f8b12049c749cb0c667dea "pdflatex"
-  "main.out" 1770254757.29419 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "main.pre" 1770254756.57658 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "main.tex" 1770254753.32198 26787 b3aff5fe8c0f92cd80a3107faba7e4a8 ""
-  "main.toc" 1770254758.26209 458 e42571ee3f46b296cd15be6b66cd21d0 "pdflatex"
+  "main.aux" 1770254950.67155 12771 d1d022d797774acfd006d0364388c4c0 "pdflatex"
+  "main.out" 1770254949.73988 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.pre" 1770254949.02632 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.tex" 1770254945.80518 26820 9c319aa1bf2be331f1f51721ef7d99ea ""
+  "main.toc" 1770254950.67337 645 6ae36eb35cae6df0b9ed6d7ab6cafd1d "pdflatex"
   (generated)
   "main.aux"
   "main.log"

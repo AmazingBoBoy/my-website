@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  4 FEB 2026 17:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  4 FEB 2026 17:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1304,12 +1304,13 @@ LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <15> not available
 (Font)              size <14.4> substituted on input line 69.
 
 Package hyperref Info: bookmark level for unknown definition defaults to 0 on input line 69.
+
+
+[4]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 76.
 
-
-[4]
 Underfull \hbox (badness 10000) in paragraph at lines 78--80
 
  []
@@ -1332,306 +1333,330 @@ Underfull \hbox (badness 10000) in paragraph at lines 103--105
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 108.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 112.
-Package hyperref Info: bookmark level for unknown example defaults to 0 on input line 112.
+(mdframed)              on input line 109.
+Package hyperref Info: bookmark level for unknown example defaults to 0 on input line 109.
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--113
+
+ []
 
 
-[5]
 Underfull \hbox (badness 10000) in paragraph at lines 114--116
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 117--119
 
- []
-
+[5]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 121.
+(mdframed)              on input line 118.
 
-Underfull \hbox (badness 10000) in paragraph at lines 124--126
+Underfull \hbox (badness 10000) in paragraph at lines 121--123
 
  []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 126.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 126.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/bx/n' in size <17.99995> not available
-(Font)              size <17.28> substituted on input line 130.
+(Font)              size <17.28> substituted on input line 127.
 
-LaTeX Font Info:    Calculating math sizes for size <17.99995> on input line 130.
+LaTeX Font Info:    Calculating math sizes for size <17.99995> on input line 127.
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <17.99995> not available
-(Font)              size <17.28> substituted on input line 130.
+(Font)              size <17.28> substituted on input line 127.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <12.5999> not available
-(Font)              size <12> substituted on input line 130.
+(Font)              size <12> substituted on input line 127.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <17.99995> not available
-(Font)              size <17.28> substituted on input line 130.
+(Font)              size <17.28> substituted on input line 127.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <12.5999> not available
-(Font)              size <12> substituted on input line 130.
+(Font)              size <12> substituted on input line 127.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <17.99995> not available
-(Font)              size <17.28> substituted on input line 130.
+(Font)              size <17.28> substituted on input line 127.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <12.5999> not available
-(Font)              size <12> substituted on input line 130.
+(Font)              size <12> substituted on input line 127.
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <17.99995> not available
-(Font)              size <17.28> substituted on input line 130.
+(Font)              size <17.28> substituted on input line 127.
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <12.5999> not available
-(Font)              size <12> substituted on input line 130.
+(Font)              size <12> substituted on input line 127.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 130.
+(hyperref)                removing `math shift' on input line 127.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 130.
+(hyperref)                removing `subscript' on input line 127.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 130.
+(hyperref)                removing `math shift' on input line 127.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 130.
+(hyperref)                removing `math shift' on input line 127.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 130.
+(hyperref)                removing `subscript' on input line 127.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 130.
+(hyperref)                removing `math shift' on input line 127.
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 142.
+(mdframed)              on input line 139.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 144.
+Package hyperref Info: bookmark level for unknown lemma defaults to 0 on input line 144.
 
 
 [6]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 147.
-Package hyperref Info: bookmark level for unknown lemma defaults to 0 on input line 147.
+(mdframed)              on input line 152.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 155.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 160.
+(mdframed)              on input line 157.
 
-Overfull \hbox (19.65419pt too wide) in paragraph at lines 164--166
+Overfull \hbox (19.65419pt too wide) in paragraph at lines 161--163
 []\OT1/cmr/m/n/14.4 (-20) First, we need to show $\U/msb/m/n/15 Z[] [] Z[]$ \OT1/cmr/m/n/14.4 (-20) is in-jec-tive. No-tice that if $\OML/cmm/m/it/14.4 ^^^[]\OT1/cmr/m/n/14.4 (-20) (\OML/cmm/m/it/14.4 x[]\OT1/cmr/m/n/14.4 (-20) ) =
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--166
+Underfull \hbox (badness 10000) in paragraph at lines 161--163
 
  []
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 170.
+(mdframed)              on input line 167.
 
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 178--180
+Underfull \hbox (badness 10000) in paragraph at lines 175--177
 
  []
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 184.
-Package hyperref Info: bookmark level for unknown proposition defaults to 0 on input line 184.
+(mdframed)              on input line 181.
+Package hyperref Info: bookmark level for unknown proposition defaults to 0 on input line 181.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 196.
+(mdframed)              on input line 193.
 
-Underfull \hbox (badness 10000) in paragraph at lines 202--204
+Underfull \hbox (badness 10000) in paragraph at lines 199--201
 
  []
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 206.
+(mdframed)              on input line 203.
 
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 212--215
+Underfull \hbox (badness 10000) in paragraph at lines 209--212
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--218
-
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 222.
-
-Underfull \hbox (badness 10000) in paragraph at lines 231--233
+Underfull \hbox (badness 10000) in paragraph at lines 213--215
 
  []
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 238.
+(mdframed)              on input line 219.
+
+Underfull \hbox (badness 10000) in paragraph at lines 228--230
+
+ []
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 235.
 
 
 [9]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 249.
+(mdframed)              on input line 246.
 
-Underfull \hbox (badness 10000) in paragraph at lines 250--253
+Underfull \hbox (badness 10000) in paragraph at lines 247--250
 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 256.
+(hyperref)                removing `math shift' on input line 253.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 256.
+(hyperref)                removing `math shift' on input line 253.
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 258.
+(mdframed)              on input line 255.
 
 
 [10]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 269.
+(mdframed)              on input line 266.
 
-Underfull \hbox (badness 10000) in paragraph at lines 276--278
+Underfull \hbox (badness 10000) in paragraph at lines 273--275
 
  []
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 285.
+(mdframed)              on input line 282.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 293.
+(mdframed)              on input line 290.
 
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 303--306
+Underfull \hbox (badness 10000) in paragraph at lines 300--303
 
  []
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 307.
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <13.68759> not available
+(Font)              size <14.4> substituted on input line 307.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <13.68759> not available
+(Font)              size <14.4> substituted on input line 307.
+
+Package hyperref Info: bookmark level for unknown remark defaults to 0 on input line 307.
+LaTeX Font Info:    Calculating math sizes for size <13.68759> on input line 307.
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <9.58127> not available
+(Font)              size <10> substituted on input line 307.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <13.68759> not available
+(Font)              size <14.4> substituted on input line 307.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <9.58127> not available
+(Font)              size <10> substituted on input line 307.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <13.68759> not available
+(Font)              size <14.4> substituted on input line 307.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <9.58127> not available
+(Font)              size <10> substituted on input line 307.
+
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <13.68759> not available
+(Font)              size <14.4> substituted on input line 307.
+
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <9.58127> not available
+(Font)              size <10> substituted on input line 307.
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 310.
 
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <13.68759> not available
-(Font)              size <14.4> substituted on input line 310.
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <13.68759> not available
-(Font)              size <14.4> substituted on input line 310.
-
-Package hyperref Info: bookmark level for unknown remark defaults to 0 on input line 310.
-LaTeX Font Info:    Calculating math sizes for size <13.68759> on input line 310.
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <9.58127> not available
-(Font)              size <10> substituted on input line 310.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <13.68759> not available
-(Font)              size <14.4> substituted on input line 310.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <9.58127> not available
-(Font)              size <10> substituted on input line 310.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <13.68759> not available
-(Font)              size <14.4> substituted on input line 310.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <9.58127> not available
-(Font)              size <10> substituted on input line 310.
-
-
-LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <13.68759> not available
-(Font)              size <14.4> substituted on input line 310.
-
-
-LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <9.58127> not available
-(Font)              size <10> substituted on input line 310.
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 313.
-
-Underfull \hbox (badness 10000) in paragraph at lines 314--316
+Underfull \hbox (badness 10000) in paragraph at lines 311--313
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 320--322
+Underfull \hbox (badness 10000) in paragraph at lines 317--319
 
  []
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 326.
+(mdframed)              on input line 323.
 
-Underfull \hbox (badness 10000) in paragraph at lines 329--331
+Underfull \hbox (badness 10000) in paragraph at lines 326--328
 
  []
 
 
 
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 339--342
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 334.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 334.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 334.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 336--339
 
  []
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 345.
+(mdframed)              on input line 342.
 
 
 [13]
+Underfull \hbox (badness 10000) in paragraph at lines 344--346
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 347--349
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 350--352
-
- []
-
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 354.
+(mdframed)              on input line 351.
 
-Underfull \hbox (badness 10000) in paragraph at lines 358--361
+Underfull \hbox (badness 10000) in paragraph at lines 355--358
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 363--366
+Underfull \hbox (badness 10000) in paragraph at lines 360--363
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 364--366
 
  []
 
@@ -1640,58 +1665,53 @@ Underfull \hbox (badness 10000) in paragraph at lines 367--369
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 370--372
-
- []
-
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 373.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 376.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 379.
 
 
 [14]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 388.
+(mdframed)              on input line 385.
 
-Underfull \hbox (badness 10000) in paragraph at lines 392--394
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 396--399
+Underfull \hbox (badness 10000) in paragraph at lines 389--391
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 400--402
+Underfull \hbox (badness 10000) in paragraph at lines 393--396
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 397--399
 
  []
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 411.
+(mdframed)              on input line 408.
 
 
 [15]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 419.
+(mdframed)              on input line 416.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 423.
+(mdframed)              on input line 420.
 
-Underfull \hbox (badness 10000) in paragraph at lines 423--425
+Underfull \hbox (badness 10000) in paragraph at lines 420--422
 
  []
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 429.
+(mdframed)              on input line 426.
 
 
 [16] (./main.aux)
@@ -1711,18 +1731,18 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 39993 strings out of 473190
- 843119 string characters out of 5715801
+ 39989 strings out of 473190
+ 843025 string characters out of 5715801
  1424544 words of memory out of 5000000
- 62323 multiletter control sequences out of 15000+600000
+ 62321 multiletter control sequences out of 15000+600000
  586354 words of font info for 195 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  123i,20n,128p,10986b,1272s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (16 pages, 250346 bytes).
+Output written on main.pdf (16 pages, 251351 bytes).
 PDF statistics:
  364 PDF objects out of 1000 (max. 8388607)
  295 compressed objects within 3 object streams
- 145 named destinations out of 1000 (max. 500000)
- 47253 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 143 named destinations out of 1000 (max. 500000)
+ 47261 words of extra memory for PDF output out of 51595 (max. 10000000)
 
