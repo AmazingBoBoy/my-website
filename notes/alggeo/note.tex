@@ -471,6 +471,7 @@ So $\cO(X\times Y)$ satisfies the universal property of tensor product in the ca
 % \end{itemize}
 
 \section{Prevarieties and Varieties}
+\subsection{Constructing Prevarieties}
 The problem with affine varieties is that not all "nice" spaces are affine varieties. For example, $\A^2\setminus \{0\}$ is not an affine variety. So we need to generalize the notion of affine varieties to include more "nice" spaces. This leads us to the notion of prevarieties and varieties. 
 
 \begin{definition}
@@ -548,7 +549,12 @@ More generally, we can glue finitely many prevarieties together to get a new pre
     \item $f_{jk}\circ f_{ij}=f_{ik}$ on $f_{ij}^{-1}(U_{jk})$
 \end{enumerate}
 The construction of ringed space structure on the glued space is similar to the case of gluing two prevarieties together. We omit the details here.
+\begin{remark}
+    One may ask why do we need to satisfy those compatibility conditions? And how do we ensure that those conditions are suffices for us to if we want our glued space to be somewhat meaningful and well-defined?
+    \\
 
+    To answer these questions, we need to recall how we construct topological spaces by gluing: taking disjoint union and quotienting by the equivalence relation $\sim$ defined as $a\sim f(a)$ . The compatibility conditions ensure that the relation is indeed equivalence relation. The first condition ensures symmetry. The second and third conditions ensure transitivity. Reflexivity is clear. Therefore, the compatibility conditions are necessary and sufficient (sufficiency is not very clear if you see it in a purely geometric way) for us to construct the glued space.
+\end{remark}
 
 
 

@@ -21,4 +21,5 @@
 \contentsline {subsection}{\numberline {7.2}Product of affine Varieties}{16}{subsection.116}%
 \contentsline {subsection}{\numberline {7.3}Some strange affine varieties}{17}{subsection.119}%
 \contentsline {section}{\numberline {8}Prevarieties and Varieties}{18}{section.124}%
+\contentsline {subsection}{\numberline {8.1}Constructing Prevarieties}{18}{subsection.125}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
