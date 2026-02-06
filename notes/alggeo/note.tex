@@ -17,7 +17,7 @@
 
 \usepackage{relsize}
 \begin{document}
-\title{Note on Algebraic Geometry YouTube Series}
+\title{Note on Algebraic Geometry}
 \author{Jiawen Huang}
 \maketitle
 \tableofcontents
@@ -482,6 +482,12 @@ The problem with affine varieties is that not all "nice" spaces are affine varie
 \end{remark}
 \begin{remark}
     It's clear that any affine variety is a prevariety. Moreover, any open set of a affine variety is a prevariety because any open set of an affine variety can be covered by finitely many principal open sets, which are all affine varieties. 
+    \\
+
+    Moreover, any open subset of a prevariety is also a prevariety because we can cover it with the open subsets of the affine open sets which can be covered by finitely many affine varieties. The sheaf structure on the open subset is just the restriction of the sheaf structure on the prevariety. This is called the open subprevariety of a prevariety.
+    \\
+
+    We can also define the closed subprevariety of a prevariety $X$. We will do this later. 
 \end{remark}
 
 The basic way to construct prevarieties is to glue affine varieties together or to glue finitely many prevarieties. Let's first glue two prevarieties together $(X_1, \SO_{X_1})$ and $(X_2, \SO_{X_2})$. Let $U_{12}\subseteq X_1$ and $U_{21}\subseteq X_2$ be open sets such that there exists an isomorphism of ringed spaces $f_{12}:U_{12}\to U_{21}$. Therefore, we can glue $X_1$ and $X_2$ together along $U_{12}$ and $U_{21}$ via $f_{12}$.
@@ -524,7 +530,21 @@ More precisely,
 \end{tikzcd}\]
     This is a sheaf because the sheaf axioms follow from the sheaf axioms of $\SO_{X_1}$ and $\SO_{X_2}$. Therefore, $(X,\SO_X)$ is a ringed space.    
 \end{itemize}
-One can immedaitely check the $i_1$ and $i_2$ are indeed morphisms of ringed spaces from $(X_1,\SO_{X_1})$ and $(X_2,\SO_{X_2})$ to $(X,\SO_X)$ respectively. In fact, the image of $i_j(X_j)$ is an open subset of $X$ isomorphic to $(X_j,\SO_{X_j})$ as ringed spaces for $j=1,2$. We will just open the inclusion and say $X_1$ and $X_2$ are open subsets of $X$ from now on. Since $X_1$ and $X_2$ are prevarieties, we can cover them by finitely many affine open sets. Therefore, $X$ can be covered by finitely many affine open sets. Thus, $X$ is a prevariety.
+One can immedaitely check the $i_1$ and $i_2$ are indeed morphisms of ringed spaces from $(X_1,\SO_{X_1})$ and $(X_2,\SO_{X_2})$ to $(X,\SO_X)$ respectively. In fact, the image of $i_j(X_j)$ is an open subset of $X$ isomorphic to $(X_j,\SO_{X_j})$ as ringed spaces for $j=1,2$. We will just open the inclusion and say $X_1$ and $X_2$ are open subsets of $X$ from now on. Since $X_1$ and $X_2$ are prevarieties, we can cover them by finitely many affine open sets. Therefore, $X$ can be covered by finitely many affine open sets. Thus, $X$ is a prevariety. 
+\begin{remark}
+    We have a pretty complicated description for the sheaf on the glued space. In practice, we don't really need to use this complicated description. To verify/find a regular function, we just need to verify/find a regular function on each open affine set that agree on the intersection. By the gluing property of sheaf, we can glue them together to get a regular function on the glued space. Here is a lemma to illustrate this point:
+\end{remark}
+\begin{lemma}
+        If $\phi\in \SO_X(U)$, then \[V(\phi)=\{x\in U \mid \phi(x)=0\}\]
+        is a closed subset of $U$. 
+        
+\end{lemma}
+\begin{proof}
+        For any open subset $U\subseteq X$ where $X$ is a prevarieties. $U$ itself can be a open subprevariety of $X$. So we can cover $U$ by finitely many affine open sets $(U_i)_{i=1, \ldots, m}$. Since 
+        \[V(\phi)=\bigcup_{i=1}^m V(\phi|_{U_i})\]
+        \[U\setminus V(\phi)=\bigcap_{i=1}^m \left(U\setminus V(\phi|_{U_i})\right)\]
+        Notice that $\phi|_{U_i}\in \SO_X(U_i)$, so $V(\phi|_{U_i})$ is a closed subset of $U_i$. Therefore, $U\setminus V(\phi|_{U_i})$ is an open subset of $U_i$. Since $U_i$ is an open subset of $X$, $U\setminus V(\phi|_{U_i})$ is also an open subset of $X$. Therefore, $U\setminus V(\phi)$ is an intersection of finitely many open subsets of $X$, so it's an open subset of $X$. Thus, $V(\phi)$ is a closed subset of $X$.
+\end{proof}
 \begin{example}
     We can glue two copies of $\A^1$ together via the isomorphism $f_{12}:\A^1\setminus \{0\}\to \A^1\setminus \{0\}$ defined by $f_{12}(x)=\frac{1}{x}$. The resulting prevariety is called the projective line and denoted by $\PP^1$.
     \\
@@ -556,6 +576,58 @@ The construction of ringed space structure on the glued space is similar to the 
     To answer these questions, we need to recall how we construct topological spaces by gluing: taking disjoint union and quotienting by the equivalence relation $\sim$ defined as $a\sim f(a)$ . The compatibility conditions ensure that the relation is indeed equivalence relation. The first condition ensures symmetry. The second and third conditions ensure transitivity. Reflexivity is clear. Therefore, the compatibility conditions are necessary and sufficient (sufficiency is not very clear if you see it in a purely geometric way) for us to construct the glued space.
 \end{remark}
 
+\subsection{Morphism of Prevarieties}
+\begin{theorem}
+    If $X$ is a prevariety and $Y\subseteq \A^n$ is an affine variety. Let $f=(f_1, \ldots, f_n)$ be a morphism of ringed space from an open subset $U\subseteq X$ to $Y$ if and only if each $f_i\in O_X(U)$ and the image of $f$ is contained in $Y$. 
+    \\
+
+    In particular, the morphism from $X$ to $\A^1$ is the same as the regular functions on $X$, that is $\hom(X,\A^1)=\SO_X(X)$.
+\end{theorem}
+\begin{proof}
+    If $f$ is a morphism of ringed spaces from $U$ to $Y$, $f\inv(Y)=U$, then for any $i$, $f_i=y_i\circ f=f^*y_i\in \SO_X(f\inv(Y))=\SO_X(U)$.
+    \\
+    
+    Conversely, we have conditons: each $f_i\in O_X(U)$ and the image of $f$ is contained in $Y$. 
+    \\
+
+    First, we need to show that $f$ is indeed a continuous map. For any closed subset $Z=V(g_1, \ldots, g_t )\subseteq Y$ where $g_j\in \SO_Y(Y)$, consider
+    \[f\inv(Z)=\{x\in U\mid G_j(x)=g_j(f_1(x), \ldots, f_n(x))=0 \text{ for all } j=1,\ldots, t\}\]
+    we claim that $f\inv(Z)$ is closed in $U$. Since $U$ is covered by finitely many affine open sets, we can restrict $G_j$ to $X_i$ for each affine open set $X_i$ in the cover. ${G_j}|_{ X_i}=g_j(f_1|_{X_i}, \ldots, f_n|_{X_i})$. Since $X_i$ is affine variety, $f_1|_{X_i}, \ldots, f_n|_{X_i}$ are regular functions on $X_i$, which is locally rational functions. Since $g_j$ is a regular function on $Y$, it's locally a rational function. Therefore, $G_j|_{X_i}$ is locally a rational function on $X_i$. Since $X_i$ is an affine variety, $G_j|_{X_i}$ is a regular function on $X_i$. Therefore, by the gluing property of sheaf, $G_j$ is a regular function on $U$. Therefore, $f\inv(Z)=V(G_1, \ldots, G_t)$ is a closed subset of $U$ as we have shown in the lemma above. Thus, $f$ is a continuous map. 
+    \\
+
+    Next, we show that $f$ is a morphism of ringed spaces. For any open subset $V\subseteq Y$, we need to show that for any $\phi\in \SO_Y(V)$, $f^*\phi=\phi\circ f$ is a regular function on $f\inv(V)$. Notice that $f\inv(V)$ is an open subset of $U$, so we can cover it by finitely many affine open sets $X_j$. Thus, it suffices to show $\phi\circ f|_{X_j}\in \SO_{X}(X_j)$ for each $j$. Since $X_j$ is an affine variety, $f_i|_{X_j}$ is a regular function on $X_j$ for each $j$. So $\phi(f_1|_{X_j}, \ldots, f_n|_{X_j})$ is a regular function on $X_j$ (locally a rational function) because $\phi$ is a regular function on $Y$ (locally a rational function). Therefore, $\phi\circ f|_{X_j}\in \SO_X(X_j)$ for each $j$. By the gluing property of sheaf, $\phi\circ f$ is a regular function on $f\inv(V)$. Thus, $f$ is a morphism of ringed spaces.
+\end{proof}
+\begin{example}
+    Every morphism of ringed spaces from $\PP^1$ to $\A^1$ is a constant map.
+    \begin{proof}
+        Morphisms of ringed spaces from $\PP^1$ to $\A^1$ are the same as regular functions on $\PP^1$. We can cover $\PP^1$ by two affine open set $X_1=X_2=\A^1$. So for any regular function $\phi$ on $\PP^1$, $\phi|_{X_1}$ and $\phi|_{X_2}$ are regular functions on $\A^1$ which is just polynomials in $k[x]$. Assume they are $f$ and $g$ respectively. Notice they must agree on the intersection $X_1\cap X_2=\A^1\setminus \{0\}$. So $f(x)=g(\frac{1}{x})$ on $\A^1\setminus \{0\}$. That is, they are the same in $\SO(\A^1\setminus \{0\})=k[x,x\inv]$. So $f$ and $g$ are the same in $k[x,x\inv]$. Notice that $f(x)$ is generated by $1, x, x^2, \ldots$ and $g(\frac{1}{x})$ is generated by $1, \frac{1}{x}, \frac{1}{x^2}, \ldots$. So the only way for $f$ and $g$ to be the same in $k[x,x\inv]$ is that they are both constant polynomials since $1, x, \frac 1x, x^2, \frac{1}{x^2}, \ldots$ are linearly independent in $k[x,x\inv]$. Therefore, $\phi$ is a constant function on $\PP^1$. Thus, every morphism of ringed spaces from $\PP^1$ to $\A^1$ is a constant map.
+        \\
+
+        So $\hom(\PP^1, \A^1)=\SO_{\PP^1}(\PP^1)=k$.
+    \end{proof}
+\end{example}
+\begin{theorem}
+    If $X$ is a prevariety and $Y\subseteq \A^n$ is an affine variety. And there is a bijection: 
+    % https://q.uiver.app/#q=WzAsMixbMCwwLCJcXHtcXHRleHR7bW9ycGhpc21zIH0gWFxcdG8gWVxcfSJdLFsyLDAsIlxce1xcdGV4dHttb3JwaGlzbXMgb2Ygay1hbGdlYnJhIH0gXFxtYXRoY2Fse099X1koWClcXHRvIFxcbWF0aGNhbHtPfV9YKFgpXFx9Il0sWzAsMSwiMToxIiwwLHsic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoiYXJyb3doZWFkIn19fV1d
+\[\begin{tikzcd}
+	{\{\text{morphisms } X\to Y\}} && {\{\text{morphisms of k-algebra } \mathcal{O}_Y(X)\to \mathcal{O}_X(X)\}}
+	\arrow["{1:1}", tail reversed, from=1-1, to=1-3]
+\end{tikzcd}\]
+    
+\end{theorem}
+\begin{proof}
+For any $f\in \hom(X,Y)$, we can apply the functor $\SO_{-}$ to get a morphism of $k$-algebras $f^*:\SO_Y(Y)\to \SO_X(X)$. Conversely, for any morphism of $k$-algebras $g:\SO_Y(Y)\to \SO_X(X)$, we can construct a morphism of ringed spaces $f:X\to Y$  as follows: 
+\[f(x)=(g(y_1), \ldots, g(y_n))\]
+With the theorem above, it suffices to show the image of $f$ is contained in $Y$, that is equivalent to show that for any $h\in I(Y)$, $h(f(x))=0$ for any $x\in X$. Since $h\in I(Y)$, $h=0$ in $\SO_Y(Y)$. So $g(h)=g(0)=0$ in $\SO_X(X)$. So $h(f(x))=g(h)(x)=0$ for any $x\in X$. Therefore, the image of $f$ is contained in $Y$. Thus, one can easily verify that these two assignments are inverse of each other. So there is a bijection between morphisms of ringed spaces from $X$ to $Y$ and morphisms of $k$-algebras from $\SO_Y(Y)$ to $\SO_X(X)$.
+\end{proof}
+\begin{remark}
+    This is not true if $Y$ is not an affine variety. For example, if $Y=\PP^1$, then $\SO_Y(Y)=k$ and there is only one morphism of $k$-algebras from $\SO_Y(Y)$ to $\SO_X(X)$, which is the constant map. However, there are many morphisms of ringed spaces from $X$ to $\PP^1$ (For example, one can have $[x:y]\mapsto [y:x]$ as a morphism from $\PP^1$ to $\PP^1$ , which is not identity). 
+\end{remark}
+\begin{example}
+    Every morphism of ringed spaces from $\A^1\setminus \{0\}$ to $\PP^1$ can be extended to a morphism of ringed spaces from $\A^1$ to $\PP^1$. 
+    \begin{proof}
+    \end{proof}
+\end{example}
 
 
 
