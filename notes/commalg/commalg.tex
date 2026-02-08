@@ -1,7 +1,7 @@
 \documentclass[15pt]{scrartcl}
 \usepackage[sexy]{evan}
 \usepackage{quiver}
-
+\newcommand{\Ann}{\mathrm{Ann}}
 \setcounter{secnumdepth}{0}
 \usepackage{relsize}
 \begin{document}
@@ -174,8 +174,7 @@ Other properties of localization that I think are important:
 \end{enumerate}
 We also discuss some property of tensor products and $\mathrm{Hom}$ functors. 
 \begin{enumerate}
-    \item $(-)\otimes_R M$ is left adjoint to $\mathrm{Hom}_R(M,-)$. Thus, $\mathrm{Hom}_R(M,-)$ is right exact.
-    \item $h_N(-)=\mathrm{Hom}_R(-,N): \text{R-Mod}^{\text{op}} \to \text{R-Mod}$ is right adjoint to $h_N(-)^{\text{op}}: \text{R-Mod} \to \text{R-Mod}^{\text{op}}$. 
+    \item $(-)\otimes_R M$ is left adjoint to $\mathrm{Hom}_R(M,-)$. Thus, $\mathrm{Hom}_R(M,-)$ is right exact.    \item $h_N(-)=\mathrm{Hom}_R(-,N): \text{R-Mod}^{\text{op}} \to \text{R-Mod}$ is right adjoint to $h_N(-)^{\text{op}}: \text{R-Mod} \to \text{R-Mod}^{\text{op}}$. 
 \end{enumerate}
 \section{January 29, 2026: More on Localization}
 Some multiplicative closed sets that are often used:
@@ -218,7 +217,164 @@ Some multiplicative closed sets that are often used:
     In particular, an $R$-module homomorphism $\phi: M \to N$ is injective (surjective) if and only if the localized homomorphism $\phi_\kp: M_\kp \to N_\kp$ is injective (surjective) for all prime ideals $\kp$ if and only if the localized homomorphism $\phi_\km: M_\km \to N_\km$ is injective (surjective) for all maximal ideals $\km$.
 \end{theorem}
 
+\begin{example}[Chinese Remainder Theorem]
+    Let $R$ be a ring, and let $Q_i$ be ideals of $R$ such that $Q_i+Q_j=R$ for all $i \neq j$. Then we have the isomorphism
+    \[R/\bigcap_{i=1}^n Q_i \cong \bigoplus_{i=1}^n R/Q_i.\]
+    Furthermore, one can show that $\bigcap_{i=1}^n Q_i = \prod_{i=1}^n Q_i$.
+    \begin{proof}
+        We have a natural injection from $R/\bigcap_{i=1}^n Q_i$ to $\bigoplus_{i=1}^n R/Q_i$ given by $r \mapsto (r+Q_1, \ldots, r+Q_n)$. We will show that this map is also surjective by localization.
+        \\
+        For any maximal ideal $\km$ of $R$, there is at most one $Q_i$ contained in $\km$ since $Q_i+Q_j=R$ for all $i \neq j$. Since $Q_j$ is not contained in $\km$, then the localization of $Q_j$ at $\km$ is the whole localized ring $R_\km$.
+        \\
 
-\section*{February 3, 2026: Finite Length and Artinian}
+        When we localize the injection at $\km$, we get the map 
+        \[R_{\km}/\bigcap_{i=1}^n (Q_i)_{\km} \to \bigoplus_{i=1}^n R_{\km}/(Q_i)_{\km}.\]
+        That is, 
+        \[R_{\km}/(Q_i)_{\km} \to R_{\km}/(Q_i)_{\km}.\]
+        which is clearly an isomorphism. Thus, the localized map is an isomorphism for any maximal ideal $\km$. By the local global principle, the original map is also an isomorphism.
+    \end{proof}
+\end{example}
+\begin{theorem}
+    Let $R$ be a ring, and $S$ be a $R$-algebra and $S$ is flat as an $R$-module. If $M$ and $N$ are $S$-modules, and $M$ is finitely presented as an $R$-module, then we have the isomorphism
+\[S\otimes_R\mathrm{Hom}_R(M,N) \cong \mathrm{Hom}_S(M\otimes_R S,N\otimes_R S).\]
+
+\end{theorem}
+\begin{proof}
+    There is a natural homomorphism \[\alpha_M: S\otimes_R\mathrm{Hom}_R(M,N) \to \mathrm{Hom}_S(M\otimes_R S,N\otimes_R S)\] sending $s\otimes f$ to the homomorphism $m\otimes s' \mapsto f(m)\otimes ss'$. 
+    \\
+
+    First, if $M$ is a free $R$-module, then $\alpha$ is an isomorphism, this is very easy. Thus, for any finitely presented $R$-module $M$, we have an exact sequence 
+    \[F\to G\to M \to 0.\]
+    where $F$ and $G$ are free $R$-modules. Applying $\hom_R(-, N)$, we get the exact sequence
+    \[0 \to \mathrm{Hom}_R(M,N) \to \mathrm{Hom}_R(G,N) \to \mathrm{Hom}_R(F,N).\]
+    Applying $S\otimes_R -$ ($S$ is flat), we get the exact sequence
+    \[0 \to S\otimes_R\mathrm{Hom}_R(M,N) \to S\otimes_R\mathrm{Hom}_R(G,N) \to S\otimes_R\mathrm{Hom}_R(F,N).\]
+    On the other hand, applying $-\otimes_R S$ to the first exact sequence, we get the exact sequence
+    \[F\otimes_R S \to G\otimes_R S \to M\otimes_R S \to 0.\]
+    Applying $\mathrm{Hom}_S(-,N\otimes_R S)$, we get the exact sequence
+    \[0 \to \mathrm{Hom}_S(M\otimes_R S,N\otimes_R S) \to \mathrm{Hom}_S(G\otimes_R S,N\otimes_R S) \to \mathrm{Hom}_S(F\otimes_R S,N\otimes_R S).\]
+    We have the following commutative diagram:
+    \[\begin{tikzcd}
+    0 && 0 \\
+    0 && 0 \\
+    S\otimes_R\mathrm{Hom}_R(M,N) && \mathrm{Hom}_S(M\otimes_R S,N\otimes_R S) \\
+    S\otimes_R\mathrm{Hom}_R(G,N) && \mathrm{Hom}_S(G\otimes_R S,N\otimes_R S) \\
+    S\otimes_R\mathrm{Hom}_R(F,N) && \mathrm{Hom}_S(F\otimes_R S,N\otimes_R S)
+    \arrow[from=1-1, to=2-1]
+    \arrow[from=1-3, to=2-3]
+    \arrow["0", from=1-1, to=1-3]
+    \arrow["0", from=2-1, to=2-3]
+    \arrow["\alpha_M", from=3-1, to=3-3]
+    \arrow["\alpha_G", from=4-1, to=4-3]
+    \arrow["\alpha_F", from=5-1, to=5-3]
+    \arrow[from=2-1, to=3-1]
+    \arrow[from=3-1, to=4-1]
+    \arrow[from=2-3, to=3-3]
+    \arrow[from=3-3, to=4-3]
+    \arrow[from=4-1, to=5-1]
+    \arrow[from=4-3, to=5-3]
+\end{tikzcd}\]
+By five lemma, $\alpha_M$ is an isomorphism.
+    
+\end{proof}
+\begin{application}[Eisenbud's Exercise 2.13]
+    If $C$ is finitely presented, then the short exact sequence
+    \[0\to A \to B \to C\to 0\]
+    splits if and only if 
+    
+    \[0\to A_p \to B_p \to C_p \to 0\]
+    splits for all prime ideals $p$.
+    \\
+    
+    The key idea is to use the facts: $R_p$ is flat and 
+    \[0\to A \to B \to C\to 0\]
+    splits if and only if  \[0\to \hom(C,A) \to \hom(C,B) \to \hom(C,C) \to 0\] is exact.
+\end{application}
+
+\begin{theorem}
+    \[\sqrt{I}=\bigcap_{\kp \supseteq I} \kp\]
+\end{theorem}
+\begin{proof}
+    One direction is trivial. For the nontrivial one, assume $f\in \kp$ for all prime ideals $\kp$ containing $I$. We want to show that $f \in \sqrt{I}$. If not, then we can localize at $\{|f^n: n \geq 0\}$. In the localized ring, $I_f$ is a proper ideal, so there exists a maximal ideal $\km$ containing $I_f$. $\km$ corresponds to a prime ideal $\kp$ in the original ring containing $I$ but not containing $f$, contradicting the assumption.
+\end{proof}
+\section{February 3, 2026: Finite Length and Artinian}
 Today we discuss the finite length condition. 
+
+\begin{definition}
+    We define the length of a module $M$ to be the smallest integer $\ell(M)=n$ such that there exists a chain of submodules of $M$ of length $n$:
+\[M=M_0\supsetneq M_1 \supsetneq \cdots \supsetneq M_n=0.\]
+If such $n$ does not exist, we say $M$ has infinite length. If $M$ has finite length, we say $M$ is of finite length.
+\end{definition}
+\begin{lemma}
+    Let $N$ be a simple $R$-module, then $N \cong R/\km$ for some maximal ideal $\km$ of $R$. In fact, $\km=\Ann(N)$.
+\end{lemma}
+
+\begin{proposition}
+    Let $R$ be a ring, and $M$ be an $R$-module. $M$ has a finite composition series if and only if $M$ is both Noetherian and Artinian. If $M=M_0\supsetneq M_1 \supsetneq \cdots \supsetneq M_n=0$ has a finite composition series, then 
+    \begin{enumerate}
+        \item Any strictly descending chain of submodules of $M$ has length at most $n$.
+        \item Any composition series of $M$ has length $n$. This gives a well-defined notion of the length of $M$, denoted as $\ell(M)$, which is the length of any composition series of $M$.
+        \item The sum of localization maps $M\to M_{\km}$ for all maximal ideals $\km$ gives an isomorphism of $R$-modules: 
+        \[M\cong \bigoplus_{\km} M_{\km}\]
+        where the sum is take over all maximal $\km$ such that $\frac{M_i}{M_{i+1}} \cong R/\km$ for some $i$. Note that for each maximal ideal $\km$, we only use it once even if it appears multiple times as composition factors.
+        \item The number of composition factors isomorphic to $R/\km$ is the same as the length of $M_{\km}$ as $R_{\km}$-module. Thus, it's indepenent of the choice of composition series. Furthermore, any two composition series of $M$ have the same multiset of composition factors. 
+        \item $M=M_{\km}$ if and only if $M$ is annihilated by some power of $\km$. 
+        \item For any submodule $N\subseteq M$, $\ell(M)=\ell(N)+\ell(\frac{M}{N})$. And the composition factors of $M$ is the disjoint union of the composition factors of $N$ and $M/N$ as multisets.
+    \end{enumerate}
+\end{proposition}
+\begin{proof}
+    If $M$ is Artinian and Noetherian, we can pick a maximal proper submodule $M_1$ of $M$ (by Noetherian condition), then $M/M_1$ is simple. Then, we pick a maximal proper submodule $M_2$ of $M_1$, and so on. We can continue this process to get a composition series. It must be finite because $M$ is Artinian.
+    \\
+    
+    First, show that if $M'$ is a proper submodule of $M$, then $\ell(M')<\ell(M)$, that is for any composition series of $M$ of length $n$, we can find a composition series of $M'$ of length less than $n$. Just take the intersection of $M'$ with the composition series of $M$.
+    This would give us $M'\supseteq M'\cap M_1 \supseteq M' \cap M_2 \supseteq \cdots \supseteq M' \cap M_n=0$. We claim that this is a composition series of $M'$. Notice that $\frac{M'\cap M_i}{M' \cap M_{i+1}}\cong \frac{M'\cap M_i+M_{i+1}}{M_{i+1}}\subseteq \frac{M_i}{M_{i+1}}$ is either $0$ or $\frac{M_i}{M_{i+1}}$ which are btoh simple. And it can't be $\frac{M_i}{M_{i+1}}$: if $M'\cap M_i+M_{i+1}=M_i$ for all $i$, $M' \supseteq M_i$ for all $i$ (induct from $i=n$ to $i=0$), so $M'=M$, contradiction. Thus, we have $\ell(M')<\ell(M)$.
+    \\
+
+    Second, we show that for any strictly descending chain of submodules of $M$, its length is at most $\ell(M)$. We proceed by induction on $\ell(M)$. If $\ell(M)=0$, trivial. If $\ell(M)=n$, we have $M=M_0\supsetneq N_1 \supsetneq \cdots \supsetneq N_k=0$. Notice $N_1$ is a proper submodule of $M$, so $\ell(N_1)<\ell(M)=n$. By the inductive hypothesis, $k-1 \leq \ell(N_1)<n$. Thus, $k \leq n$.
+    \\
+
+    Third, we can show that any composition series of $M$ has length $n$. For any $M=M_0\supsetneq M_1 \supsetneq \cdots \supsetneq M_n=0$ is a composition series of $M$. By the definiton of $\ell(M)$, we have $\ell(M)\leq n$. On the other hand, by what we just proved, any strictly descending chain of submodules of $M$ has length at most $\ell(M)$, so $n \leq \ell(M)$. Thus, $n=\ell(M)$. So all composition series of $M$ have the same length, which is $\ell(M)$.
+    \\
+
+    Fourth, we can show that $M$ is Noetherian and Artinian. For any ascending chain of submodules of $M$, its length is at most $\ell(M)$, so it must stabilize. For any descending chain of submodules of $M$, its length is at most $\ell(M)$, so it must stabilize. 
+    \\
+
+    Fifth, we want to show (3). It suffices to show the isomorphism when we localize at any maximal ideal $Q$. We begin with the case when $\ell(M)=1$, that is, when $M$ is simple. $M\cong R/\km$ for some maximal ideal $\km$. If $\km=Q$, then $M_Q\cong (\frac{R}{Q})_Q$. Since $\frac{R}{Q}$ is a field, any nonzero element is invertible, so $(\frac{R}{Q})_Q \cong \frac{R}{Q}$. If $\km \neq Q$, then $M_Q\cong (\frac{R}{\km})_Q=0$ since $\km$ becomes the whole ring after localization. In particular, we conclude that if $Q$ and $Q'$ are two different maximal ideals and $M$ is a simple module, then $(M_Q)_{Q'}=0$.
+    \\
+    
+    Sixth, we now return to the general case. Let $M$ be an $R$-module of length $n$. We have a composition series of $M$:
+    \[M=M_0\supsetneq M_1 \supsetneq \cdots \supsetneq M_n=0.\]
+    We can localization at any maximal ideal $Q$ to get the series of $M_Q$:
+    \[M_Q=(M_0)_Q\supseteq (M_1)_Q \supseteq \cdots \supseteq (M_n)_Q=0.\]
+    Notice that $\frac{(M_i)_Q}{(M_{i+1})_Q}\cong (\frac{M_i}{M_{i+1}})_Q$ is either $0$ or $\frac{M_i}{M_{i+1}}$. So this is a composition series of $M_Q$ (some terms may be repeated). We denote $\frac{M_i}{M_{i+1}} \cong R/\km_i$. If $\km_i=Q$, then $\frac{(M_i)_Q}{(M_{i+1})_Q}\cong R/Q$. If $\km_i \neq Q$, then $\frac{(M_i)_Q}{(M_{i+1})_Q}=0$. Thus, the length of $M_Q$ is the number of composition factors of $M$ isomorphic to $R/Q$. This tells us the compistion factors of $M$ is indepenent from the choice of composition series, and any two composition series of $M$ have the same multiset of composition factors. In particular, if there is no composition factor of $M$ isomorphic to $R/Q$, then $M_Q=0$. 
+    Furthermore, $(M_Q)_{Q'}=0$ for any two distinct maximal ideals $Q$ and $Q'$. 
+    \\
+
+    Seventh, consider $\phi: M \to \bigoplus_{\km} M_{\km}$ where $\km$ runs through all maximal ideals corresponding to the composition factors of $M$. Since $M_Q=0$ for any maximal ideal $Q$ that is not corresponding to the composition factors of $M$, we can harmlessly extend the sum to all maximal ideals of $R$. We will show that $\phi$ is an isomorphism.
+    \\
+
+    For any maximal ideal $Q$, we have 
+    \[\phi_Q: M_Q\to M_Q\]
+    Since $(M_Q)_{Q'}=0$ for any two distinct maximal ideals $Q$ and $Q'$, the localization of $\bigoplus_{\km} M_{\km}$ at $Q$ is just $M_Q$. Thus, $\phi_Q$ is an isomorphism. By the local global principle, $\phi$ is an isomorphism.
+    \\
+
+    Eighth, we let $M=\oplus_{\km_i} M_{\km_i}$. If $M$ is annihilated by some power of $\km$, then we claim that $M=M_{\km}$. If not, then there exists some maximal ideal $\km_j \neq \km$ such that $M_{\km'}\neq 0$. Therefore, there exists $a\in \km$ but $a\notin \km_j$. Since $M_{\km_j}$ is annihilated by some power of $\km$, there exists some $n$ such that $a^n M_{\km_j}=0$. On the other hand, since $a\notin \km_j$, $a$ is invertible in $R_{\km_j}$, so $M_{\km_j}=0$, contradiction. Thus, we have $M=M_{\km}$. Conversely, if $M=M_{\km}$, then the compistion factors of $M$ are all isomorphic to $R/\km$, so $M$ is annihilated by some power of $\km$.
+    \\
+
+    Lastly, combining the composition series of $N$ and $M/N$, we can get a composition series of $M$. Thus, $\ell(M)=\ell(N)+\ell(M/N)$. In particular, if $N$ and $M/N$ are of finite length, then so is $M$. Conversely, we can always construct a composition series of $M$ containing $N$ to get a compistion series of $N$ and $M/N$. Therefore, the disjoint union of their compistion factors is the composition factors of $M$ as multisets.
+\end{proof}
+\begin{theorem}
+    Let $R$ be a ring. The following are equivalent:
+    \begin{enumerate}
+        \item $R$ is of finite length as an $R$-module.
+        \item $R$ is Artinian.
+        \item $R$ is Noetherian and has Krull dimension $0$ (that is, all prime ideals of $R$ are maximal).
+    \end{enumerate}
+\end{theorem}
+\begin{proof}
+    (1) to (2) is proven by the previous proposition. (2) to (3) 
+    \\
+
+    
+\end{proof}
 \end{document}

@@ -16,11 +16,11 @@
 \contentsline {section}{\numberline {6}Presheaf and Sheaf}{12}{section.82}%
 \contentsline {subsection}{\numberline {6.1}Presheaf and Sheaf}{12}{subsection.83}%
 \contentsline {subsection}{\numberline {6.2}Stalks and germs}{13}{subsection.94}%
-\contentsline {section}{\numberline {7}Ringed Spaces and its morphisms}{14}{section.103}%
-\contentsline {subsection}{\numberline {7.1}Ringed Space and Affine Varieties}{14}{subsection.104}%
-\contentsline {subsection}{\numberline {7.2}Product of affine Varieties}{16}{subsection.116}%
-\contentsline {subsection}{\numberline {7.3}Some strange affine varieties}{17}{subsection.119}%
-\contentsline {section}{\numberline {8}Prevarieties and Varieties}{18}{section.124}%
-\contentsline {subsection}{\numberline {8.1}Constructing Prevarieties}{18}{subsection.125}%
-\contentsline {subsection}{\numberline {8.2}Morphism of Prevarieties}{21}{subsection.145}%
+\contentsline {section}{\numberline {7}Ringed Spaces and its morphisms}{15}{section.103}%
+\contentsline {subsection}{\numberline {7.1}Ringed Space and Affine Varieties}{15}{subsection.104}%
+\contentsline {subsection}{\numberline {7.2}Product of affine Varieties}{17}{subsection.116}%
+\contentsline {subsection}{\numberline {7.3}Some strange affine varieties}{18}{subsection.119}%
+\contentsline {section}{\numberline {8}Prevarieties and Varieties}{19}{section.124}%
+\contentsline {subsection}{\numberline {8.1}Constructing Prevarieties}{19}{subsection.125}%
+\contentsline {subsection}{\numberline {8.2}Morphism of Prevarieties}{22}{subsection.145}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

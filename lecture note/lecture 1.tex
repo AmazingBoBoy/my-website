@@ -1,0 +1,138 @@
+\documentclass[12pt]{scrartcl}
+\usepackage[sexy]{evan}
+\usepackage{quiver}
+\newcommand{\Ann}{\mathrm{Ann}}
+\newcommand{\A}{\mathbb{A}}
+\newcommand{\PP}{\mathbb{P}}
+\usepackage{relsize}
+\begin{document}
+\title{Lecture 1: Sheaf}
+\author{Jiawen Huang}
+\maketitle
+\section{Presehaf}
+\begin{definition}
+    Let $X$ be a topological space. Define $\SC$ to be the catgeory of open sets in $X$ with inclusions as morphisms. A presheaf $\SF$ is a contravariant funtor from $\SC$ to the category of rings/algebras/abelian groups. We call $\SF$ a presheaf of rings/algebras/abelian groups on $X$. 
+    \\
+    
+    More specifically, for each open set $U\subseteq X$, we have $\SF(U)$, and for each inclusion $V\subseteq U$, we have a restriction map $\rho_{UV}:\SF(U)\to \SF(V)$ such that $\rho_{UU}=\mathrm{id}$ and $\rho_{VW}\circ \rho_{UV}=\rho_{UW}$ for any $W\subseteq V\subseteq U$. 
+    \begin{center}
+        In this lecture, we assume all $\SF$ are presheaves of $k$-valued functions from $U$ to $k$, which is clearly a $k$-algebra under pointwise addition and multiplication.
+    \end{center}
+\end{definition}
+\begin{example}[Presheaf of regular functions]
+    Let $X$ be an algebraic set with Zariski's topology. For each open set $U\subseteq X$, we define $\SO_X(U)$ to be the set of regular functions on $U$. And $\SO_X$ is a presheaf of rings on $X$.
+    \\
+
+    A regular function on $U$ is defined as a function $f:U\to k$ such that for each point $p\in U$, there exists an open neighborhood $V$ of $p$ and $f, g\in A(X)=k[x_1,\cdots,x_n]/I(X)$ such that $g(q)\neq 0$ for all $q\in V$ and $f(q)=\frac{f(q)}{g(q)}$ for all $q\in V$.
+\end{example}
+\begin{example}[Presheaf of continuous functions]
+    Let $X$ be the subspace of Euclidean space $\RR^n$. For each open set $U\subseteq X$, we define $C^0(U,\RR)$ to be the set of continuous functions from $U$ to $\RR$. Then $C^0$ is a presheaf of rings on $X$.
+\end{example}
+\begin{example}[Presheaf of smooth functions]
+    Let $X$ be the subspace of Euclidean space $\RR^n$. For each open set $U\subseteq X$, we define $C^\infty(U,\RR)$ to be the set of smooth functions from $U$ to $\RR$. Then $C^\infty$ is a presheaf of rings on $X$.
+\end{example}
+\begin{example}[Presheaf of constant functions]
+    Let $X$ be the subspace of Euclidean space $\RR^n$. For each open set $U\subseteq X$, we define $C^{constant}(U,\RR)$ to be the set of constant functions from $U$ to $\RR$. Then $C^{constant}$ is a presheaf of rings on $X$.
+\end{example}
+\section{Sheaf}
+\begin{definition}
+    A sheaf is a presheat $\SF$ that satisfies the gluing property:
+    If $U\subseteq X$ is an open set of topological space $X$, for any open covering of $U=\bigcup_{i\in I}U_i$, if we have $\phi_i\in \SF(U_i)$ such that ${\phi_i}\mid_{U_i\cap U_j}={\phi_j}\mid_{U_i\cap U_j}$ for all $i,j\in I$, then there exists a unqiue lift: that is a unique $\psi \in \SF(U)$ such that $\psi\mid_{U_i}=\phi_i$ for all $i\in I$.
+    \\
+
+    In other words, if we have a function $\psi: U \to k$ such that $\psi\mid_{U_i}\in \SF(U_i)$ for all $i\in I$, then $\psi\in \SF(U)$.
+\end{definition}
+\begin{example}
+    The presheaf of regular functions is a sheaf.
+\end{example}
+\begin{example}
+    The presheaf of continuous functions is a sheaf.
+\end{example}
+\begin{example}
+    The presheaf of constant functions is not a sheaf.
+\end{example}
+\begin{remark}
+    We can glue function together in the first two examples becuase they are defined by local conditions. So we can check it in each open set. However, the presheaf of constant functions is not a sheaf because being a constant function is a global condition. 
+\end{remark}
+% \section{Stalk}
+% \begin{definition}
+%     Let $\SF$ be a sheaf on $X$, for each point $p\in X$, we define the stalk of $\SF$ at $p$ to be the direct limit $\SF_p=\varinjlim_{p\in U} \SF(U)$, where the limit is taken over all open sets containing $p$.
+%     \\
+
+%     More explicitly, an element in $\SF_p$ is an equivalence class of pairs $(U,\phi)$ where $U$ is an open set containing $p$ and $\phi\in \SF(U)$. We say $(U,\phi)\sim (V,\psi)$ if there exists an open set $W\subseteq U\cap V$ containing $p$ such that $\phi\mid_W=\psi\mid_W$.
+%     \\
+
+%     An element of $\SF_p$ is called a germ of $\SF$ at $p$.
+% \end{definition}
+% \begin{remark}
+%     Stalks are used to capture the local behavior of a sheaf at a point. For example, the stalk of the sheaf of differentiable functions at a point $p$ tells us the derivative of the function at $p$. 
+% \end{remark}
+% \begin{example}
+%     Let $\SO_X$ be the sheaf of regular functions on an algebraic set $X$. This is equivalent to the localization of $A(X)$ at the maximal ideal $\km_p$ corresponding to $p$. In particular, $\SO_{X,p}\cong A(X)_{\km_p}$.
+% \end{example}
+% \begin{example}
+%     The stalk of locally polynomial functions at a point $p$ is just the ring of polynomials $k[x_1,\cdots,x_n]$.
+% \end{example}
+\section{Ringed space}
+\begin{definition}
+    A ringed space is a pair $(X,\SO_X)$ where $X$ is a topological space and $\SO_X$ is a sheaf of rings on $X$. We call $\SO_X$ the structure sheaf of $X$.
+\end{definition}
+An open set of a ringed space is a ringed space with the structure sheaf given by the restriction of the structure sheaf of the original ringed space. 
+\begin{definition}
+    A morphism of ringed spaces $f:(X,\SO_X)\to (Y,\SO_Y)$ is a continuous map $f:X\to Y$ such that for each open set $V\subseteq Y$ and each $\phi\in \SO_Y(V)$, we have $f^*(\phi)=\phi\circ f\in \SO_X(f^{-1}(V))$.
+\end{definition}
+One can verifty the compositions of morphism of ringed spaces are morphisms of ringed spaces. 
+\begin{proposition}[Gluing property of morphism of ringed spaces]
+    Let $f: X\to Y$ be a map and $X=\bigcup_i U_i$ be an open cover. Then $f$ is a morphism of ringed spaces if and only if $f\mid_{U_i}: U_i\to Y$ is a morphism of ringed spaces for all $i$.
+\end{proposition}
+
+This gives us a category of ringed spaces. With ringed space, we can define affine varieties in general: 
+\begin{definition}
+    An affine variety is a ringed space $(X,\SO_X)$ that is isomorphic to $(Y,\SO_Y)$ where $Y$ is an algebraic set and $\SO_Y$ is the sheaf of regular functions on $Y$.
+    \\
+
+    We define the morphism of affine varieties to be the morphism of ringed spaces.
+\end{definition}
+\begin{example}
+    Principal open set $D(f)\subseteq \A^n$ is an affine variety. In particular, $D(f)\cong V(tf-1)\subseteq \A^{n+1}$. The structure sheaf of $D(f)$ is given by the restriction of the structure sheaf of $\A^n$. 
+\end{example}
+\begin{theorem}
+    If $Y\subseteq \A^n$ $f:(X,\SO_X)\to (Y,\SO_Y)$ is a morphism of affine varieties if and only if $f=(f_1,\cdots,f_n)$ where $f_i\in \SO_X(X)$ for all $i=1,\cdots,n$ and the image of $f$ is contained in $Y$.
+\end{theorem}
+\begin{remark}
+    The nice thing about having ringed spaces is that we no longer need to worry about the embedding of an affine variety. 
+\end{remark}
+\begin{theorem}
+    There is a natural bijection between morphisms of affine varieties $f:(X,\SO_X)\to (Y,\SO_Y)$ and morphisms of algebras $f^*:A(Y)\to A(X)$.
+\end{theorem}
+
+\section{Some applications of sheaf}
+We can use sheaf to define a lot of objects. 
+
+\subsection{Prevarieties}
+\begin{definition}
+    A prevariety is a ringed space $(X,\SO_X)$ such that $X$ can be covered by finitely many open sets $U_i$ such that $(U_i,\SO_X\mid_{U_i})$ is an affine variety for all $i$.
+\end{definition}
+\begin{example}
+    $\PP^1$ is a prevariety. In particular, we can cover $\PP^1$ by $2$ open sets $U_1=\PP^1\setminus \{[0:1]\}$ and $U_2=\PP^1\setminus \{[1:0]\}$, and both of them are isomorphic to $\A^1$.
+\end{example}
+\subsection{Premanifolds}
+\begin{definition}
+    A premanifold is a (locally) ringed space $(X,\SO_X)$ such that $X$ can be covered by finitely many open sets $U_i$ such that $(U_i,\SO_X\mid_{U_i})$ is isomorphic to $(V,C^\infty\mid_V)$ where $V$ is an open set in $\RR^n$ for some $n$.
+    \\
+
+    A manifold is a premanifold that is Hausdorff and second countable.
+\end{definition}
+
+The nice thing about sheaf and ringed space is that we can easily define the morphism of prevarieties and premanifolds, just the morphism of ringed spaces.
+
+\subsection{How to glue thing together}
+Given two ringed space $(X,\SO_X)$ and $(Y,\SO_Y)$, we can glue them together along an open subset $U\subseteq X$ and $V\subseteq Y$ such that $(U,\SO_X\mid_U)$ is isomorphic to $(V,\SO_Y\mid_V)$: 
+\begin{enumerate}
+    \item As a set, we define $Z=X\sqcup Y/\sim$ where $\sim$ is the equivalence relation generated by $p\sim f(p)$ for all $p\in U$ where $f:U\to V$ is an isomorphism of ringed spaces.
+    \item We define the topology on $Z$ to be the finest topology such that the natural maps $X\to Z$ and $Y\to Z$ are continuous. In particular, a subset $W\subseteq Z$ is open if and only if $W\cap X$ is open in $X$ and $W\cap Y$ is open in $Y$.
+    \item We define the structure sheaf $\SO_Z$ on $Z$ to be the finest sheaf such that the natural maps $X\to Z$ and $Y\to Z$ are morphisms of ringed spaces. In particular, for each open set $W\subseteq Z$, we define $\SO_Z(W)$ to be the set of functions $\phi:W\to k$ such that $\phi\mid_{W\cap X}\in \SO_X(W\cap X)$ and $\phi\mid_{W\cap Y}\in \SO_Y(W\cap Y)$.
+\end{enumerate}
+
+This gives us a way to construct new ringed spaces from old ones. For example, we can glue two copies of $\A^1$ together along $\A^1\setminus \{0\}$ to get a prevariety. We can probably glue four copies of $\RR^2$ to get a sphere $S^2$ as a manifold. 
+\end{document}

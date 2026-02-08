@@ -3,4 +3,5 @@
 \contentsline {section}{\nonumberline January 22, 2026: Nullstellensatz and equivalence of algebraic varieties and affine algebras}{8}{section*.28}%
 \contentsline {section}{\nonumberline January 27, 2026: Localization and Tensor Products}{8}{section*.30}%
 \contentsline {section}{\nonumberline January 29, 2026: More on Localization}{10}{section*.47}%
+\contentsline {section}{\nonumberline February 3, 2026: Finite Length and Artinian}{14}{section*.73}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
