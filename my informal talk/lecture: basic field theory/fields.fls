@@ -1,8 +1,8 @@
-PWD /Users/kai/Documents/VS Code/my-website/my informal talk/lecture: 
+PWD /Users/kai/Documents/VS Code/my-website/my informal talk/lecture: basic field theory
 INPUT /usr/local/texlive/2025/texmf.cnf
 INPUT /usr/local/texlive/2025/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/kai/Documents/VS Code/my-website/my informal talk/lecture: /fields.tex
+INPUT /Users/kai/Documents/VS Code/my-website/my informal talk/lecture: basic field theory/fields.tex
 OUTPUT fields.log
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/koma-script/scrartcl.cls
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/koma-script/scrartcl.cls
