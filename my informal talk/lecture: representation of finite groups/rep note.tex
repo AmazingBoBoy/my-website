@@ -1,0 +1,201 @@
+\documentclass[15pt]{scrartcl}
+\usepackage[sexy]{evan}
+
+\newcommand{\C}{\mathbb{C}}
+\begin{document}
+
+\title{Rep Note}
+\date{\today}
+\author{Jiawen Huang}
+\maketitle
+\section{Assumption}
+We are working on $\C$ and finite group $G$. 
+\section{Irreducible and Decomposable Representation}
+Counterexample: 
+\[\phi: \C\to GL_2(\C)\]
+\[\phi(a)=\begin{bmatrix}
+1 & a \\
+0 & 1
+\end{bmatrix}\]
+This is irreducible but not decomposable. 
+\subsection{Unitary Representation}
+\begin{definition}
+Given a rep $\phi: G\to GL(V)$ and $V$ is an inner product space. $\phi$ is irreducible if 
+\[\langle \phi_g(v), \phi_g(w)\rangle=\langle v, w\rangle\]
+\end{definition}
+In $\C$, the standard inner product is defined as $\langle v,w\rangle=\sum \overline{v_x}w_x$
+\begin{proposition}
+If rep $\phi$ is unitary, then $\phi$ irreducible if and only if $\phi$ is indecomposable. 
+\end{proposition}
+\begin{proof}
+If $\phi$ is reducible, then let $W$ be the $G$ invariant subspace of $V$, that is $\phi_g(W)=W$ for all $g$. Consider the subspace $W^\perp$. Notice that for any $x\in W^\perp$, any $v\in W$ and any $g\in G$
+\[0=\langle x, \phi_{g^{-1}}(v)\rangle=\langle \phi_{g}(x),\phi_g\phi_{g^{-1}}(v) \rangle=\langle \phi_{g}(x),v \rangle \]
+Thus, for any $x\in W^\perp $, $\phi_g(x)$ is orthogonal to $v$ for all $v\in W$ and $g\in G$. Thus, $W^\perp$ is a G invariant subspace of $V$. Thus, $V=W\oplus W^\perp$ as rep. 
+\end{proof}
+\begin{remark}
+We would like these two conecpts to be equivalent. So we want our rep to be unitary, or equivalent to a unitrary rep. 
+\end{remark}
+\begin{theorem}
+Every representation of a finite group $G$ is equivalent to a unitary rep. From now on, we assume all the reps are unitary. 
+\end{theorem}
+\begin{proof}
+Let $\rho : G\to GL(V)$ be a rep. It is similar to $\phi: G\to GL(\C^n)$ where $\C^n$ has standard basis. We can find an inner product of $\C^n$.  
+We define a new inner product of the space. 
+\[(v,w)=\sum_{g\in G}<\phi_g(v), \phi_g(w)>\]
+This is well defined because $G$ is finite. And we can verify $(v,w)$ is indeed an inner product of $\C$. 
+\\
+
+It's easy to see $\phi $ is a unitary rep w.r.t. the inner product $(v,w)$. 
+\end{proof}
+\begin{theorem}[Maschke]
+Every rep of a finite group can be decomposed into irreducible rep.
+\end{theorem}
+\begin{proof}
+By theorem 2.4 and proposition 2.2, rep of a finite group is irreducible is equivalent of being indecomposable. 
+\end{proof}
+
+\section{Morphism of Reps}
+Does any linear transformation is morphism of rep? No, but we can turn it into a morphism of rep. 
+\begin{definition}
+Given rep $\phi: G\to GL(V)$ and $\rho: G\to GL(W)$. For any linear transformation $T$ from $V$ to $W$, we define \[T^{\#}:=\frac{1}{|G|}\sum_{g\in G}\rho_{g^{-1}}T\phi_g\]
+\end{definition}
+\begin{proposition}
+\begin{itemize}
+\item If $T$ is a morphism of reps, then $T=T^\#$
+\end{itemize}
+\end{proposition}
+\begin{lemma}[Schur's Lemma]
+The morphism between two irreducible reps $\phi$ and $\rho$ is either 0 or invertable. Consequently: 
+
+\begin{itemize}
+\item If $\phi\not\sim\rho$, then $\Hom_G(\phi, \rho)=0$ 
+\item If $\phi=\rho$, then for any $T\in \Hom_G(\phi, \rho)$, $T=\lambda I$ 
+\item if $\phi=\rho$, for any linear trasnformation $L$, $L^\#=\frac{Tr(L)}{deg(\phi)}I$
+\end{itemize}
+\end{lemma}
+\begin{corollary}
+Let $G$ be an abelian group, irreducible rep of $G$ must be degree of one. 
+\end{corollary}
+For any $h\in G$, $\phi_h$ commutes with $\phi_g$ for any $g\in G$, then $\phi_h\in \Hom_G(\phi, \phi)$. Then use schur lemma. 
+\begin{corollary}
+Any matrix with finite order must be diagonalizable. 
+\end{corollary}
+\section{The Orthogonality Relations}
+\begin{definition}
+Given a finite group $G$, define 
+\[L(G)=\C^G=\{f\mid f:  G\to G\}\]
+This is in fact a $\C$ vector space and we can define the inner product as \[<f_1, f_2>=\frac{1}{|G|}\sum_{g\in G}f_1(g)\overline{f_2(g)}\]
+Its dimension over $\C$ is the size of $G$. 
+\end{definition}
+\begin{definition}
+Given a rep $\phi$. Define $\phi_{ij}(g)$ to be the (i,j) entry of the matrix $\phi(g)$. Notice that $\phi_{ij}\in L(G)$. 
+\end{definition}
+\begin{theorem}[Schur orthogonlaity relations]
+
+Suppose $\phi$ and $\rho$ are inequivalent irreducible unitary representation. Then, 
+\begin{itemize}
+\item $<\phi_{ij},\rho_{k\ell}>=0$
+\item $<\phi_{ij},\phi_{k\ell}>= 
+\begin{cases}
+    \frac 1n & \text{if } i=k, j=\ell \\
+    0 & \text{else}
+    \end{cases}
+$
+\end{itemize}
+
+\end{theorem}
+
+\begin{proof}
+The key fact to prove this is $(E_{ik}^\#)_{jl}=<\phi_{ij},\rho_{kl}>$. We then use schur lemma. 
+\end{proof}
+Thus, we know that $\phi_{ij}$ form an orthonormal set of $L(G)$. Thsi implies
+\[\sum_{\text{irreducible } \phi}\deg(\phi)^2\leq |G|\]
+With this, we are ready to develop character theory. 
+\section{Character Theory}
+\begin{definition}
+\[\chi_{\phi}(g)=Tr(\phi(g))=\sum_{i=1}^n\phi_{ii}(g)\]
+\end{definition}
+Notice that $\chi_\phi$ is in $L(G)$.
+\begin{proposition}
+All of them are trivial by the definition
+\begin{itemize}
+
+\item $\chi_\phi(1)=\deg(\phi)$
+\item If $\phi \sim \rho$, $\chi_\phi=\chi_\rho$
+\item $\chi_\phi(gxg^{-1})=\chi_\phi(x)$, $\chi_\phi$ is a class function. 
+\item $\chi_{\phi\oplus\rho}=\chi_{\phi}+\chi_{\rho}$
+\end{itemize}
+\end{proposition}
+
+Denote $Z(L(G))$ as the set of all class functions
+\begin{proposition}
+$\dim(Z(L(G)))=\#\text{conjuagcy classes of } G$
+\end{proposition}
+Trivial. 
+
+
+
+\begin{theorem}
+$<\chi_\phi, \chi_\rho>=0$ iff $\phi\not\sim\rho$
+\\
+$<\chi_\phi, \chi_\rho>=1$ iff $\phi\sim\rho$
+\\
+
+Consequently: 
+\begin{enumerate}
+\item Character fully characterizes the equivalent classes of reps
+\item Notice that $\chi_\phi$ is a class function so the number of irreducible reps $\leq $ number of conjugacy classes of $G$. 
+\end{enumerate}
+\end{theorem}
+Proof is easy by Theorem 4.3. 
+\\
+
+We have shown that a finite group rep has a decomposition. Is it unique? YES. 
+\begin{theorem}
+Every finite group representation can be uniquely decomposed into irreducible representations. 
+\end{theorem}
+\begin{corollary}
+A rep $\phi$ is irreducible if and only if $<\chi_\phi, \chi_\phi>=1$
+\end{corollary}
+This gives us a way to decide whether a rep is irreducible or not. 
+
+\begin{problem}
+Find all the irreducible reps of $S_3$. 
+\end{problem}
+1. $\sum \chi_\phi(1)^2=\sum \deg(\phi)^2\leq 6$
+\\
+2. Trivial rep
+\\
+This is tough!
+
+\section{Regular Rep $L$ }
+
+This is the rep of $G$ on the group algebra $\C[G]$. 
+This is nice because we can compute $\chi_L(g)=
+\begin{cases}
+    |G| & \text{if } g=1 \\
+    0 & \text{else}
+    \end{cases}$
+\\
+
+Thus, $<\chi_L,\chi_{\phi_i}>=m_i=d_i$
+
+\begin{corollary}
+\[|G|=\sum \deg(\phi)^2\]
+And $\phi_{ij}^{(k)}$ form a basis of $L(G)$. 
+\end{corollary}
+
+Furthermore, we can show that $\chi$ of all irreducible reps form a basis of $Z(L(G))$ (This is a fairly complicated result-Artin Theorem). This concludes that the number of conjugacy classes $=$ the number of irreducible reps. 
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}

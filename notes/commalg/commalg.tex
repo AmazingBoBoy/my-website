@@ -363,6 +363,9 @@ If such $n$ does not exist, we say $M$ has infinite length. If $M$ has finite le
 
     Lastly, combining the composition series of $N$ and $M/N$, we can get a composition series of $M$. Thus, $\ell(M)=\ell(N)+\ell(M/N)$. In particular, if $N$ and $M/N$ are of finite length, then so is $M$. Conversely, we can always construct a composition series of $M$ containing $N$ to get a compistion series of $N$ and $M/N$. Therefore, the disjoint union of their compistion factors is the composition factors of $M$ as multisets.
 \end{proof}
+\begin{remark}
+    Notice that $M\cong \bigoplus_{\km} M_{\km}$. This is direct sum. \textbf{NOT} direct product. And the proof doesn't work with infinite direct product because localization is left adjoint, so it preserves colimits but not limits. 
+\end{remark}
 \begin{theorem}
     Let $R$ be a ring. The following are equivalent:
     \begin{enumerate}
@@ -370,11 +373,133 @@ If such $n$ does not exist, we say $M$ has infinite length. If $M$ has finite le
         \item $R$ is Artinian.
         \item $R$ is Noetherian and has Krull dimension $0$ (that is, all prime ideals of $R$ are maximal).
     \end{enumerate}
+    If that's the case, then there are finitely many prime ideals=maximal ideals of $R$. 
 \end{theorem}
 \begin{proof}
-    (1) to (2) is proven by the previous proposition. (2) to (3) 
+    (1) to (2) is proven by the previous proposition. 
     \\
 
-    
+    (2) to (3): 
+    \begin{claim}
+    $0$ is the product of finitely many maximal ideals. 
+    \end{claim}
+    \begin{proof}
+        Let $\SF$ the be family of all ideals that are product of finitely many maximal ideals (can be repeated). $\SF$ is clearly nonempty, thus by Artinian condition, there is a minimal element in $\SF$, say $J$.
+        \\
+        By the maximality of $J$, for any maximal ideal $\km$, $J\km=J$ and $J\subseteq M$. We also have $J^2\subseteq J$, so $J^2=J$. 
+        \\
+
+        We claim that $J=0$. If not, let $\SF'$ be the family of all ideals $I$ such that $IJ\neq 0$. Let $I$ be the minimal element of $\SF'$. Thus, $IJ=IJ^2=(IJ)J$. Thus, $IJ=I$ by the minimality of $I$. So there must exists $f\in I$ such that $(f)J\neq 0$. So $I=(f)$. So $(f)J=(f)$. Thus, there eixsts $g\in J$ such that $fg=f$. So $f(1-g)=0$. Since $J$ is contiained in all maximal ideals, $1-g$ is not contained in any maximal ideals, so $1-g$ is invertible. Thus, $f=0$, contradiction. So $J=0$.
+    \end{proof}
+
+    Thus, we have $0=\km_1\cdots \km_n$ for some maximal ideals $\km_1, \ldots, \km_n$. This implies that for any prime ideal $\kp$, $\kp\subseteq (0)=\km_1\cdots \km_n \subseteq \km_i$ for some $i$. We claim that $\kp\supseteq \km_i$. If not, there eixsts $f_i\in \km_i$ but $f_i\notin \kp$ for all $i$. But $\prod_{i=1}^n f_i \in \km_1\cdots \km_n =0 \subseteq \kp$, so at least one $f_i\in \kp$. Thus, $\kp\supseteq \km_i$ is maximal. Therefore, any prime ideal of $R$ is maximal and there are only finitely many prime ideals of $R$.
+    \\
+
+    We now show that $R$ is Noetherian. Consider $M_i=\frac{\km_1\cdots \km_i}{\km_1\cdots \km_i\km_{i+1}}$ as $R/\km_{i+1}$-vector spaces. 
+    \begin{claim}
+        $M_i$ is finite-dimensional as $R/\km_{i+1}$-vector space.
+    \end{claim}
+    \begin{proof}
+        For any subspace of $M_i$, it corresponds to an ideal $I\subseteq R$. Since $R$ is Artinian, any descending chain of subspaces of $M_i$ must stabilize, so $M_i$ is finite-dimensional. Thus, we can construct a $M_i\supseteq M_{i,1} \supseteq \cdots \supseteq M_{i,n_i}=0$ such that $M_{i,j}/M_{i,j+1}\cong R/\km_{i+1}$ for all $j$. This is a finite composition series of $M_i$ as $R$-module, so $M_i$ is of finite length as $R$-module. Putting the composition series of $M_i$ together, we can get a composition series of $R$. Thus, by the previous proposition, $R$ is Noetherian.
+    \end{proof}
+    (3) to (1): Assume $R$ is not of finite length. Consider $\SF$ to be the family of ideals such that $R/I$ is not of finite length as $R$-module. $\SF$ is clearly nonemtpy since $(0) \in \SF$, so there is a maximal element $I$ in $\SF$. 
+    \begin{claim}
+        $I$ is a prime ideal. 
+    \end{claim}
+    \begin{proof}
+        if not, then there exisst $ab\in I$ but $a,b\notin I$. Thus, $(I:a) \supsetneq I$ and $(I)+(a) \supsetneq I$. Thus, $\frac{R}{(I:a)}$ and $\frac{R}{I+(a)}$ are both of fintie length. Consider the exact sequence of $R$-modules: 
+        \[0 \to \frac{R}{(I:a)} \taking{\times a} \frac{R}{I} \to \frac{R}{I+(a)} \to 0.\]
+        Pasting the composition series of $\frac{R}{(I:a)}$ and $\frac{R}{I+(a)}$, we can get a finite composition series of $\frac{R}{I}$, so $\frac{R}{I}$ is of finite length, contradiction. Thus, $I$ is a prime ideal.
+        \\
+
+        Since $I$ is also maximal ideal. $R/I$ is a field, so $R/I$ is of finite length, contradiction. Thus, $\SF$ is empty and $R$ is of finite length.
+    \end{proof}
+    Finally, we complete the proof. 
 \end{proof}
+\begin{proposition}
+    Here are a few proeprty of Artinian rings:
+    \begin{enumerate}
+        \item Any quotient of an Artinian ring is Artinian. 
+        \item Any localization of an Artinian ring is an Artinian ring.
+    \end{enumerate}
+    In module theory, we have the following properties of module of finite length (finitely generated Artinian module over a Noetherian ring):
+    \begin{enumerate}
+        \item Any submodule of finite length module is of finite length.
+        \item Any quotient of finite length module is of finite length.
+        \item Any localization of finite length module is of finite length 
+        \\($U\inv\frac{M_i}{M_{i+1}}\cong U\inv R/\km_i\cong \frac{U\inv R}{U\inv \km_i}=0$ or a simple module).
+    \end{enumerate}
+\end{proposition}
+Now, we put this in a geometric setting: 
+\begin{theorem}
+    Let $X$ be an affine variety over an algebraically closed field $k$. The following are equivalent:
+    \begin{enumerate}
+        \item $X$ is a finite set of points. 
+        \item $A(X)$ is a finite-dimensional $k$-vector space, and its dimension is exactly the number of points in $X$.
+        \item $A(X)$ is Artinian. 
+    \end{enumerate}
+\end{theorem}
+\begin{proof}
+    (1) to (2): Let $p_i$ be the points in $X$. They are disconnected, so $A(X)=\prod_{p_i\in X}A(p_i)=k^n$ where $n$ is the number of points in $X$.
+    \\
+
+    (2) to (3): If $A(X)$ is a finite-dimensional $k$-vector space, then it has a finite composition series as $A(X)$-module, so it's Artinian. Or, any descending chain of ideals of $A(X)$ is also a descending chain of subspaces of $A(X)$, so it must stabilize since the dimension of $A(X)$ is finite. 
+    \\
+
+    (3) to (1): If $A(X)$ is Artinian, then $A(X)$ has finitely many prime ideals, which are all maximal. Thus, $X$ has finitely many points.
+\end{proof}
+
+\begin{theorem}[Structure Theorem for Artinian Rings]
+    Let $R$ be an Artinian ring, which is also module of finite length as $R$-module. Then we have the isomorphism
+    \[R\cong \bigoplus_{i=1}^n R_{\km_i}\]
+    where each $R_{\km_i}$ is an Artinian local ring.
+\end{theorem}
+\begin{proof}
+    The isomorphism we had for $R$ as $R$-module is actually an isomorphism of rings. The ring structure on $\bigoplus_{i=1}^n R_{\km_i}$ is given by the componentwise multiplication. Beyond that, we need to show the localization of an Artinian ring is Artinian. This is because the localization of an Artinian ring must be Noetherian. Prime ideals of the localized ring correspond to prime ideals of the original ring contained in the maximal ideal we localize at. So in fact, the localized ring has only one prime ideal, which is maximal, so it has Krull dimension $0$. Thus, the localized ring is Artinian.
+\end{proof}
+\begin{corollary}
+    Let $R$ be a Noetherian ring, and let $M$ be a finitely generated $R$-module. The following are equivalent:
+    \begin{enumerate}
+        \item $M$ is of finite length.
+        \item Some finite product of maximal ideals of $R$ annihilates $M$. (can be repeated)
+        \item All primes that contain $\Ann(M)$ are maximal ideals
+        \item $R/\Ann(M)$ is Artinian.
+    \end{enumerate}
+\end{corollary}
+\begin{proof}
+    (1) to (2): Trivial. 
+    \\
+    (2) to (3): if a prime ideal $\kp$ contains $\Ann(M)\supseteq \km_1\cdots \km_n$, then $\kp$ contains some $\km_i$, which is a maximal ideal. Thus, $\kp$ is a maximal ideal.
+    \\
+    (3) to (4): Trivial. 
+    \\
+    (4) to (1): Let $S=\frac{R}{\Ann(M)}$. Since $S$ is Artinian, $S$ is of finite length as $S$-module. $M$ is finitely generated as $R$-module, we claim that $M$ is also finitely generated as $S$-module: $\phi: R^n\surjto M$, we can define a map from $S^n$ to $M$ by sending $r_1+\Ann(M), \ldots, r_n+\Ann(M)$ to $\phi(r_1, \ldots, r_n)$. This is well-defined since $\phi(\Ann(M)^n)=0$ and clearly surjective. Thus, $M$ is a quotient of $S^n$. So $M$ is of finite length as $S$-module, so it's also of finite length as $R$-module since any composition factor in $S$-module is also simple as $R$-module.
+\end{proof}
+\begin{corollary}
+    Let $R$ be a Noetherian ring, and let $M$ be a finitely generated $R$-module, $I=\Ann(M)$. Then $M_{\kp}$ is of finite length as $R_{\kp}$-module if and only if $\kp$ is a minimal prime of $I$.
+    \\
+
+    This gives us a way to make a module into a module of finite length by localizing at the minimal primes of its annihilator.
+\end{corollary}
+\begin{proof}
+    If $\kp$ is a minimal prime of $I$, then $\kp_{\kp}$ is the minimal prime of $I_{\kp}$, which is the nilradical of $R_{\kp}$. In fact, $\kp_{\kp}$ is a maximal ideal of $R_{\kp}$. Thus, $\kp_{\kp}^n=0$ for some $n$ and $M_{\kp}$ is annihilated by $\kp_{\kp}^n$ (some finite product of maximal ideals), by the corollary above, $M_{\kp}$ is of finite length as $R_{\kp}$-module.
+    \\
+
+    \begin{lemma}
+        If $M$ is finitely generated $R$-module, then $\Ann(U\inv M)\cong U\inv \Ann(M)$ as $U\inv R$-modules. 
+        \\
+
+        This is not ture if $M$ is not finitely generated: take $R=\ZZ$, $M=\frac{\QQ}{\ZZ}$ and $U=\ZZ^\times$, $\Ann(M)=0$ but $U\inv M=0$ so $\Ann(U\inv M)=\QQ$. 
+    \end{lemma}
+        With the lemma, we can show the converse. If $M_{\kp}$ is of finite length as $R_{\kp}$-module, then $R_{\kp}/\Ann(M_{\kp})$ is Artinian. $\Ann(M_{\kp})=I_{\kp}$, so $R_{\kp}/I_{\kp}$ is Artinian. Moreover, $R_{\kp}/I_{\kp}$ is a local ring, so it has only one prime/maximal ideal. So $\kp_{\kp}$ is the unique prime ideal of $R_{\kp}$ containing $I_{\kp}$. Thus, $\kp$ is the unique prime ideal of $R$ over $I$ contained in $\kp$, so $\kp$ is a minimal prime of $I$.
+\end{proof}
+\begin{corollary}
+    Let $I$ be an ideal of a Noetherian ring $R$ and $\kp$ is a prime containing $I$.  Then the following are equivalent:
+    \begin{enumerate}
+        \item $\kp$ is a minimal prime of $I$.
+        \item $\frac{R_{\kp}}{I_{\kp}}$ is Artinian.
+        \item There eixsts $n$ such that $\kp_{\kp}^n \subseteq I_{\kp}$.
+    \end{enumerate}
+\end{corollary}
+The idea of the proof is the same as the previous corollary.
 \end{document}

@@ -1,0 +1,106 @@
+\documentclass[20pt]{scrartcl}
+\usepackage[sexy]{evan}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\F}{\mathbb{F}}
+\usepackage{relsize}
+\begin{document}
+\title{Cyclotomic Polynomials}
+\date{\today}
+\author{Jiawen Huang}
+\maketitle
+
+\section{Why do we care about Cyclotomic Polynomials?}
+\begin{enumerate}
+    \item Every finite Division Ring is in fact a field.
+    \item Weak Dirichlet Theorem on Primes in Arithmetic Progressions: for any integer $n$, there are infinitely many primes of the form $kn+1$.
+    \item Zsigmondy's Theorem: for any integers $a > b > 0$ and $n > 1$, there exists a prime that divides $a^n - b^n$ but does not divide $a^k - b^k$ for any $k < n$, with some exceptions.
+\end{enumerate}
+\section{What is a Cyclotomic Polynomial?}
+\begin{enumerate}
+    \item Definition: The $n$-th cyclotomic polynomial $\Phi_n(x)$ is defined as the monic polynomial whose roots are the primitive $n$-th roots of unity. Explicitly,
+    \[\Phi_n(x) = \prod_{\substack{1 \leq k \leq n \\ \gcd(k,n) = 1}} \left(x - e^{2\pi i k/n}\right).\]
+    \begin{example}
+    $\Phi_p(x) = x^{p-1} + x^{p-2} + \cdots + x + 1$ for a prime $p$.
+    $\Phi_1(x) = x - 1$.
+    $\Phi_2(x) = x + 1$.
+    $\Phi_3(x) = x^2 + x + 1$.
+    $\Phi_4(x) = x^2 + 1$.
+    \end{example}
+    \item $x^n - 1$ can be factored as
+    \[x^n - 1 = \prod_{d \mid n} \Phi_d(x).\]
+    Why?
+    \item Its degree is $\phi(n)$. 
+    \item $\Phi_n(x)$ is a monic polynomial with integer coefficients. 
+    \begin{proof}
+        Use induction on $n$. $\Phi_n(x)\mid x^n-1$ in $\C[x]$, its quotient is $f(x) = \prod_{d\mid n, d < n} \Phi_d(x)$, which is in $\Z[x]$ by inductive hypothesis. Consider the long division of $x^n-1$ by $f(x)$ in $\Z[x]$. $x^n-1=f(x)q(x)+r(x)$. 
+        So $f(x)(q(x)-\Phi_n(x))=-r(x)$. So $r(x)=0$ and $q(x)=\Phi_n(x)\in \Z[x]$.
+    \end{proof}
+    \item $\Phi_n(x)$ is irreducible in $\Q[x]$. 
+    \begin{proof}
+    Let $f(x)$ be the irreducible proper factor of $\Phi_n(x)$.
+    \\
+
+    \textbf{Case 1}: There exists $m$ and $p\nmid n$ such that $f(\zeta_n^m)=0$ but $f(\zeta_n^{pm})\neq 0$. 
+    \\
+
+    Let $\Phi_n(x)=f(x)g(x)$. So $\zeta_n^m$ is a root of $g(x^p)$. 
+    Since $f$ is irreducible, it must be the minimal polynomial 
+    of $\zeta_n^m$. So $f(x)\mid g(x^p)$ in $\Z[x]$. 
+    \\
+    Thus, $f(x)\mid g(x^p)=g(x)^p $ in $\F_p[x]$. So there exists an irreducible $l(x)\mid f(x)\mid g(x)^p$ so $l(x)\mid g(x)$. So $l(x)^2\mid \Phi_n(x)\mid x^n-1$. 
+    Since $p\nmid n$, $x^n-1$ is separable but $l(x)^2$ is not. Contradiction. 
+    \\
+
+    \textbf{Case 2}: For any root $\zeta_n^m$ of $f(x)$ and any $p\nmid n$, $\zeta_n^{mp}$ is also a root of $f(x)$. 
+    In this case, we claim that $f(x)=\Phi_n(x)$. Indeed: if for any $t$ that is coprime to $n$, there exists $k$ coprime to $n$ such taht $t\equiv mk\pmod n$. (both $t$ and $m$ have inverse)
+    \\
+    Therefore, $\zeta_n^t=\zeta_n{mk}=\zeta{mp_1p_2\cdot p_i}$ where $p_1$ to $p_i$ are all coprime to $n$. Thus, $\zeta_n^t$ is a roof of $f(x)$. 
+    
+    \end{proof}
+    \item Thus, we see that $\Q(\zeta_n)$ is the splitting field of $\Phi_n(x)$. Since $\Phi_n(x)$ is irreducible and Galois, $\Q(\zeta_n)$ must be Galois. And its Galois group is $(\Z/n\Z)^\times$
+\end{enumerate}
+\section{get to know it}
+    \begin{enumerate}
+        \item Find $\Phi_n(x)$ for $N\leq 8$.
+        \item Find $\Phi_{2^m}(x)$
+        \item If $n$ is odd, prove $\Phi_{2n}(x)=\Phi_n(-x)$
+        \item In general, 
+        \[\Phi_{pn}(x)=\begin{cases}
+        \Phi_n(x^p) & p\mid n\\
+        \frac{\Phi_n(x^p)}{\Phi_n(x)} & p\nmid n
+        \end{cases}\]
+        \item Prove: integer $a>1$, if $\Phi_n(a)\mid a-1$, then $n=1$. In fact, $|x-1|^{\phi(n)}<\Phi_n(x)<|x+1|^{\phi(n)}$ for all $x$. 
+        \item Prove: $\Phi_n(x)\mid \frac{x^n-1}{x^d-1}$ in $\Z[x]$ for all proper divisors $d$ of $n$.
+    \end{enumerate}
+\section{Wedderburn's Little Theorem}
+\textbf{Theorem}: Every finite division ring is a field.
+\begin{enumerate}
+    \item If $D$ is a finite division ring, then its center is a finite field. $Z=\F_q$ for some $q$.
+    \item $D$ is a vector space over $\F_q$ with dimension $n$. So $|D|=q^n$.
+    \item Any centralizer is also a vector space, thus $|C_D(a)|=q^d$ for some $d\mid n$.
+    \item Remove the $0$ and look at them as a group. By class formula:
+    \[q^n-1=|Z|+\sum \frac{|G|}{|Stab_G(r)|}=q-1+\sum \frac{q^n-1}{q^d-1}.\]
+    \item So $\Phi_n(x)\mid (q-1)$. So $n=1$ and $D=Z$ is a field. 
+\end{enumerate}
+\section{$\Phi_n(x)$ and order of an element mod $p$}
+\begin{enumerate}
+    \item Let $a$ be an integer. If $p\mid \Phi_n(x)$, then $p\mid a^n-1$
+    \item Moreover, if $p\nmid n$, $p\nmid a^d-1$ for all $d<n$. Why? (separability comes into play here)
+    \item Thus, if $p\nmid n$, then $p\mid \Phi_n(a)$ iff the order of $a$ in mod $p$ is $n$. 
+    \item Furthermore, $n\mid p-1$ Why? Order of $a$ divides $p-1$!
+    \item Thus, there are infintely many primes $\equiv 1\pmod n$. 
+\end{enumerate}
+\section{Zsigmondy's Theorem}
+\begin{enumerate}
+    \item Our goal is to find a prime such that $p\mid a^n-1$ but not $a^d-1$ for any $d<n$. So $p$ must divide $\Phi_n(a)$. 
+    \item If we have a prime $p\mid \Phi_n(a)$, then we wish $p\nmid n$ to ensure that $p\nmid a^d-1$ for all $d<n$. (separability consideration)
+    \item So given $a$, is there a prime such that $p\mid \Phi_n(a)$ but $p\nmid n$? 
+    \item Mostly, yes. 
+    \item Assume not. Let $p_1, p_2, \ldots, p_k$ be all the prime divisors of $n$. Then $\Phi_n(a)$ is consisted of $p_1, p_2, \ldots, p_k$. 
+    \item By lifting the exponent lemma, we have $v_{p_i}(\Phi_n(a)) \leq v_{p_i}(\frac{a^n-1}{a^{n/p_i^e}-1}) + v_{p_i}(n)\leq v_{p_i}(n)$. So $(a-1)^{\phi(n)}<\Phi_n(a)\leq n$. This is clearly wrong when $a$ is large.
+\end{enumerate}
+\end{document}
