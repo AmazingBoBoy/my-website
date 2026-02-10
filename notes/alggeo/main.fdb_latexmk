@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1770595847.30519 "/Users/kai/Documents/VS Code/my-website/notes/alggeo/main.tex" "main.pdf" "main" 1770595849.92942 0
-  "/Users/kai/Documents/VS Code/my-website/notes/alggeo/main.tex" 1770496228.0217 58508 a631a6afa39c785cb8aa28ebc8eedf09 ""
+["pdflatex"] 1770631456.97366 "/Users/kai/Documents/VS Code/my-website/notes/alggeo/main.tex" "main.pdf" "main" 1770631459.68065 0
+  "/Users/kai/Documents/VS Code/my-website/notes/alggeo/main.tex" 1770631456.74388 58693 09b37048dbc4dcbb44cba0e03ae93301 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1136768653 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
@@ -277,11 +277,11 @@
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1741450574 3345740 46b66fdb0378f7bf5921b5eabf1762b8 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
   "evan.sty" 1770419382.16275 29821 58932749b347b2555d271ae7cbf4750b ""
-  "main.aux" 1770595849.80022 20900 3436bf9b763a1fa14bdc8be52e5a4668 "pdflatex"
-  "main.out" 1770595848.6278 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "main.pre" 1770595847.89698 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "main.tex" 1770496228.0217 58508 a631a6afa39c785cb8aa28ebc8eedf09 ""
-  "main.toc" 1770595849.80367 2229 3cb1809ca9ae8448de6e2dfa51f795a8 "pdflatex"
+  "main.aux" 1770631459.54621 20899 0dd608a91c50447269f44ee8398f9963 "pdflatex"
+  "main.out" 1770631458.41916 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.pre" 1770631457.62406 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.tex" 1770631456.74388 58693 09b37048dbc4dcbb44cba0e03ae93301 ""
+  "main.toc" 1770631459.54959 2229 3cb1809ca9ae8448de6e2dfa51f795a8 "pdflatex"
   (generated)
   "main.aux"
   "main.log"

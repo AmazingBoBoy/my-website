@@ -2,6 +2,7 @@
 \usepackage[sexy]{evan}
 \usepackage{quiver}
 \newcommand{\Ann}{\mathrm{Ann}}
+\newcommand{\Ass}{\mathrm{Ass}}
 \setcounter{secnumdepth}{0}
 \usepackage{relsize}
 \begin{document}
@@ -42,6 +43,7 @@
 \begin{remark}
     Graded rings are great because it allows us to use induction on degree. So we only need to worry about homogeneous elements. 
 \end{remark}
+\newpage
 \section{January 20, 2026: Basis, syzygy, and Hilbert's function theorems}
 First day of Commutative Algebra course!
 
@@ -106,7 +108,7 @@ Second one is via induction on $n$.
         $M$ is finitely generated as $R$-module by $m_1, \ldots, m_t$. For some degree $d$, any element in $M_d$ must be a linear combination of $m_i$ with coefficients as the monomials in $R$ of degree at most $d-\deg(m_i)$. There are only finitely many such monomials, so $M_d$ is finite-dimensional over $k$.
     \end{proof}
 \end{remark}
-
+\newpage 
 \section{January 22, 2026: Nullstellensatz and equivalence of algebraic varieties and affine algebras}
 Today we discuss the Hilbert's Nullstellensatz and the equivalence between the category of affine algebraic varieties and the category of finitely generated reduced $k$-algebras. For further details, please refer to \href{https://github.com/AmazingBoBoy/my-website/blob/main/notes/alggeo/note.pdf}{here}. 
 
@@ -176,6 +178,7 @@ We also discuss some property of tensor products and $\mathrm{Hom}$ functors.
 \begin{enumerate}
     \item $(-)\otimes_R M$ is left adjoint to $\mathrm{Hom}_R(M,-)$. Thus, $\mathrm{Hom}_R(M,-)$ is right exact.    \item $h_N(-)=\mathrm{Hom}_R(-,N): \text{R-Mod}^{\text{op}} \to \text{R-Mod}$ is right adjoint to $h_N(-)^{\text{op}}: \text{R-Mod} \to \text{R-Mod}^{\text{op}}$. 
 \end{enumerate}
+\newpage 
 \section{January 29, 2026: More on Localization}
 Some multiplicative closed sets that are often used:
 \begin{enumerate}
@@ -297,6 +300,7 @@ By five lemma, $\alpha_M$ is an isomorphism.
 \begin{proof}
     One direction is trivial. For the nontrivial one, assume $f\in \kp$ for all prime ideals $\kp$ containing $I$. We want to show that $f \in \sqrt{I}$. If not, then we can localize at $\{|f^n: n \geq 0\}$. In the localized ring, $I_f$ is a proper ideal, so there exists a maximal ideal $\km$ containing $I_f$. $\km$ corresponds to a prime ideal $\kp$ in the original ring containing $I$ but not containing $f$, contradicting the assumption.
 \end{proof}
+\newpage 
 \section{February 3, 2026: Finite Length and Artinian}
 Today we discuss the finite length condition. 
 
@@ -486,7 +490,7 @@ Now, we put this in a geometric setting:
     \\
 
     \begin{lemma}
-        If $M$ is finitely generated $R$-module, then $\Ann(U\inv M)\cong U\inv \Ann(M)$ as $U\inv R$-modules. 
+        If $M$ is finitely generated $R$-module, then $\Ann_{U\inv R}(U\inv M)\cong U\inv \Ann_{R}(M)$ as $U\inv R$-modules. 
         \\
 
         This is not ture if $M$ is not finitely generated: take $R=\ZZ$, $M=\frac{\QQ}{\ZZ}$ and $U=\ZZ^\times$, $\Ann(M)=0$ but $U\inv M=0$ so $\Ann(U\inv M)=\QQ$. 
@@ -502,4 +506,112 @@ Now, we put this in a geometric setting:
     \end{enumerate}
 \end{corollary}
 The idea of the proof is the same as the previous corollary.
+\begin{theorem}
+    Let $R$ be a Noetherian ring. $R$ is a finite direct product of integral domains if and only if for any maximal ideal $\km$ of $R$, $R_{\km}$ is an integral domain.
+\end{theorem}
+
+\newpage 
+\section{February 5, 2026: Associated Primes}
+Chapter 3 of Eisenbud's book is about associated primes. It's absolutely horrible and messy in my opinion. I will try to give a more clean and organized presentation of the material in this chapter.
+\\
+
+Before we go into our man theorem, we need several curcial lemmas: 
+\begin{lemma}[Prime Avoidance]
+    Let $R$ be a ring, and $I_1, \ldots, I_n, J$ be ideals of $R$ and suppose $J\subseteq \bigcup_{i=1}^n I_i$. 
+    \begin{enumerate}
+        \item If $R$ contain an infinite fields, then $J\subseteq I_i$ for some $i$.
+        \item If $(I_i)$ has at least $(n-2)$ prime ideals, then $J\subseteq I_i$ for some $i$. In practice, all $I_i$ are prime ideals, so this condition is satisfied.
+    \end{enumerate}
+\end{lemma}
+\begin{proof}
+    (1): Notice that any ideal is a vector subspace of $R$ over the infinite field. So we have $J=\bigcup_{i=1}^n (J\cap I_i)$. where $J\cap I_i$ are subspace of $J$ over the infinite field. 
+    \begin{lemma}
+        Let $V$ be a vector space over $k$, and $V=\bigcup_{i=1}^n W_i$ where $W_i$ are proper subspaces of $V$. Then $|k|\leq n-1$.
+        \\
+
+        \href{https://math.stackexchange.com/a/1165719}{Here is a beautiful proof}. 
+    \end{lemma}
+    Thus, $J\subseteq I_i$ for some $i$.
+    \\
+
+    (2): We proceed by induction on $n$. $n=1$ and $n=2$ are easy. For $n$, we can assume there exists $u_i\notin \bigcup_{j\neq i} I_j$ for all $i$. Assume $I_1$ is a prime, consider $u_1+\prod_{k=2}^n u_k$. It is clearly not contained in $I_1$. And it's not contained in $I_j$ for any $j\neq 1$ since $u_1\notin I_j$. Thus, we get a contradiction. So $J\subseteq I_i$ for some $i$.
+\end{proof}
+\begin{lemma}
+    $I$ is an annihilator of some nonzero element $m$ of $M$ if and only if $R/I$ can be embedded into $M$ as $R$-module. $R/I\cong (m)\subseteq M$. 
+\end{lemma}
+\begin{theorem}
+    This is the main result of today: Let $R$ be a Noetherian ring, and $M$ be a finitely generated $R$-module. Then, 
+    \begin{enumerate}
+        \item $\Ass(M)$ is nonempty
+        \item $\Ass(M)$ is finite
+        \item The union of all associated primes of $M$ is exactly the union of all annihilators of nonzero elements of $M$. In particular, if $M=R$, then the union of all associated primes of $R$ is exactly the set of zero-divisors of $R$.
+        \item $\Ass_{U\inv R}(U\inv M)=\{U\inv \kp: \kp \in \Ass_R(M), \kp \cap U = \emptyset\}$. 
+        \item All the minimal primes of $\Ann(M)$ are in $\Ass(M)$. 
+    \end{enumerate}
+\end{theorem}
+\begin{proof}
+    (1): Since $M$ is Noetherian, we can pick the maximal element $I$ in the family of annihilators of nonzero elements of $M$. Say $I=\Ann(m)$ for some $m\neq 0$. We claim that $I$ is a prime ideal. For any $ab\in I$, we have $abm=0$. If $a\notin I$,  Notice that $\Ann(m)\subseteq \Ann(am)$. By the maximality of $I$, we have $\Ann(m)=\Ann(am)$. Thus, $b\in \Ann(am)=I$. So $I$ is a prime ideal, and $I\in \Ass(M)$.
+    \\
+
+    We can in fact show a stronger result, for any nonzero element $m\in M$, there exists some associated prime $\kp$ of $M$ such that $\Ann(m)\subseteq \kp$. This is because we can pick the maximal element $I$ in the family of annihilators of nonzero elements of $M$ that contains $\Ann(m)$. By the same argument as above, $I$ is a prime ideal, so $I\in \Ass(M)$ and $\Ann(m)\subseteq I$.
+    \\
+
+    (2): we first need to introduce filtration of $M$. 
+    \begin{lemma}
+        If $R$ is Noetherian and $M$ is a finitely generated $R$-module, then there exists a filtration of $M$:
+        \[0=M_0\subsetneq M_1 \subsetneq \cdots \subsetneq M_n=M\]
+        such that $M_i/M_{i-1}\cong R/\kp_i$ for some prime ideal $\kp_i$ of $R$.
+    \end{lemma}
+    \begin{proof}
+        Notice that $\Ass(M)$ is nonempty, so we can pick $\kp_1\in \Ass(M)$ such that there exist $R/\kp_1\cong M_1\subseteq M$. Then we can consider $M/M_1$, which is also a finitely generated $R$-module, so we can pick $\kp_2\in \Ass(M/M_1)$ such that there exist $R/\kp_2\cong M_2/M_1\subseteq M/M_1$. Thus, we get an ascending chain of submodules of $M$:
+        \[0=M_0\subsetneq M_1 \subsetneq M_2 \cdots\]
+        By Noetherian condition, this chain must stabilize, so we can get a filtration of $M$ as desired.
+    \end{proof}
+    \begin{lemma}
+        If $\kp=\Ann(m)$ for some $m\in M$, then $\kp=\Ann(m')$ for all nonzero $m'\in (m)$. 
+        \\
+
+        Furthermore, if $R/\kp_1\cong (m_1)\subseteq M$ and $R/\kp_2\cong (m_2)\subseteq M$, then either $\kp_1=\kp_2$ or $(m_1)\cap (m_2)=0$. In other words, each associated primes correspond to cyclic submodules of $M$ that are orthogonal to each other.
+    \end{lemma}
+    \begin{proof}
+        The first one is easy. The second follows immediately from the first one: if there exists some nonzero element in $(m_1)\cap (m_2)$, then its annihilator is both $\kp_1$ and $\kp_2$, so $\kp_1=\kp_2$.
+    \end{proof}
+    \begin{lemma}
+        All associated primes $\kp$ of $M$ appear in the filtration of $M$ we just constructed. 
+    \end{lemma}
+    \begin{proof}
+        Let $\kp$ be an associated prime of $M$ and $N\subseteq M$ be a cyclic submodule such that $N\cong R/\kp$. We have shown that either $\kp=\kp_1$ or $N\cap M_1=0$. For the latter case, we can consider $N\cong \frac{N+M_1}{M_1}\subseteq \frac{M}{M_1}$. We can apply the same argument to $N$ and $M_2/M_1$, and so on. Eventually, we must have $\kp=\kp_i$ for some $i$.
+    \end{proof}
+    with this lemma, we can show that $\Ass(M)$ is finite since there are only finitely many $\kp_i$ in the filtration of $M$.
+    \\
+
+    (3): For any nonzero element $m\in M$, we can find the maximal element $I$ in the family of annihilators of nonzero elements of $M$ that contains $\Ann(m)$. This, we conclude that the union of all associated primes of $M$ is exactly the union of all annihilators of nonzero elements of $M$. In particular, if $M=R$, then the union of all associated primes of $R$ is exactly the set of zero-divisors of $R$.
+    \\
+
+    (4): First, for any $\kp\in \Ass(M)$ such that $\kp\cap U=\emptyset$, we have $R/\kp\cong (m)\subseteq M$ for some nonzero $m\in M$. Localizing at $U$, we get $\frac{U\inv R}{U\inv kp}\cong \subseteq U\inv M$. Thus, $U\inv \kp \in \Ass_{U\inv R}(U\inv M)$.
+    \\
+    Conversely, if $\kp'\in \Ass_{U\inv R}(U\inv M)$, then there exists $\frac{m}{u}\in U\inv M$ such that $\Ann_{U\inv R}(\frac{m}{u})=\kp'$. Let $\kp=\phi\inv(\kp')$ where $\phi: R \to U\inv R$ is the localization map. Notice that $\kp$ is a finitely generated, say $r_1, \ldots, r_n$. For each $r_i$, we have $\frac{r_i}{1}\in \kp'$, so there exists some $u_i\in U$ such that $u_ir_im=0$. Let $m'=u_1u_2\cdots u_nm$. We claim that $\kp=\Ann(m')$. 
+    \\If $r\in \kp$, then $r=\sum c_ir_i$ for some $c_i\in R$, so $rm'=ru_1u_2\cdots u_nm=0$. So $r\in \Ann(m')$. Conversely, if $r\in \Ann(m')$, then $ru_1u_2\cdots u_nm=0$. So $\frac{ru_1u_2\cdots u_n}{1}\in \Ann(\frac{m}{u})=\kp'$. So $\frac{ru_1u_2\cdots u_n}{1}\cdot \frac{1}{u_1u_2\cdots u_n}=\frac{r}{1}\in \kp'$. Thus, $r\in \phi\inv(\kp')=\kp$. So $\kp=\Ann(m')$ and $\kp\in \Ass(M)$.
+    \\
+
+    There is an easier to shwo this using the 
+    \[S\otimes_R\mathrm{Hom}_R(M,N) \cong \mathrm{Hom}_S(M\otimes_R S,N\otimes_R S).\] 
+    Letting $S=U\inv R$ and $N=U\inv M$, this gives us a way to lift the embedding in localization back to the original ring.
+    \\
+
+    (5): for any minimal prime $\kp$ of $\Ann(M)$, we can localize at $\kp$. $\kp_{\kp}$ is the unique prime/maximal ideal of $R_{\kp}$ containing $\Ann(M)_{\kp}=\Ann(M_{\kp})$ since $\kp$ is a minimal prime of $\Ann(M)$. Notice that $M_{\kp}$ is Neotherian because $M$ is finitely generated over a Noetherian ring. And $M_{\kp}$ is nonzero module because $\kp\supseteq \Ann(M)$. Thus, there exists an associated prime $\kp'$ of $M_{\kp}$ by (1). By (4), Any associated prime of $M_{\kp}$ is of the form $\kp_{\kp}$ for some $\kp\in \Ass(M)$ such that $\kp\subseteq \kp$. So $\kp$ is an associated prime of $M$.
+\end{proof}
+\begin{corollary} 
+    The intersection of all associated primes of a Noetherian ring $R$ is exactly the nilradical of $R$.
+\end{corollary}
+\begin{proof}
+    Any prime $\kp$ must contain in $\Ann(R)$ since $\Ann(R)=0$. So any prime is contained a minimal prime of $\Ann(R)=(0)$. So the intersection of all associated primes of $R$ contained the intersection of all minimal primes of $\Ann(R)=(0)$. which contains the intersection of all primes of $R$, which is the nilradical of $R$. On the other hand, any associated prime $\kp$ is a prime ideal, so it contains the nilradical of $R$. Thus, the intersection of all associated primes of $R$ is exactly the nilradical of $R$.
+\end{proof}
+\begin{theorem}
+    Assume $M$ is an $R$-module over Noetherian ring $R$. Let $m\in M$, 
+    $m=0$ if and only if $m_{\kp}=0$ for all $\kp\in \Ass(M)$.
+\end{theorem}
+\begin{proof}
+    One direction is trivial. Conversely, if $m\neq 0$, there exists some associated prime $\kp$ of $M$ such that $\Ann(m)\subseteq \kp$. Localizing at $\kp$, we have $(m)_{\kp}$ is a nonzero submodule of $M_{\kp}$ since $\Ann(m)\subseteq \kp$. (or one can see $\Ann(M)_{\kp}=\Ann(M_{\kp})\subseteq \kp_{\kp}\subsetneq R_{\kp}$, if $M_{\kp}=0$, then $\Ann(M_{\kp})=R_{\kp}$) Thus, $m_{\kp}\neq 0$.
+\end{proof}
 \end{document}
