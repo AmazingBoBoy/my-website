@@ -1,35 +1,48 @@
-\documentclass[15pt]{scrartcl}
-\usepackage[sexy]{evan}
-\newcommand{\R}{\mathbb{R}}
-\newcommand{\N}{\mathbb{N}}
-\newcommand{\Q}{\mathbb{Q}}
-\newcommand{\Z}{\mathbb{Z}}
-\newcommand{\F}{\mathbb{F}}
-\usepackage{relsize}
-\setcounter{secnumdepth}{0}
+\documentclass{article}
+\usepackage{CJKutf8}
 \begin{document}
-\title{How to Solve Problems}
-\date{\today}
-\author{Jiawen Huang}
+\begin{CJK*}{UTF8}{gbsn}
+
+\title{COSIEE}
 \maketitle
 
-\newpage
+\section{Creating New}
+New definitions and new ojects can be created to solve problems, and see how they interact with the original objects.
+
+\section{Objects and Morphisms}
+Seek the relationship between objects and morphism. 
+\\
+How to turn an object into a morphism and vice versa. How to properly equip an object with morphism to make it more useful. 
+\\
+
+\section{Strengthening and Weakening}
+We can generalized or weaken the statement to make it easier to prove. 
+
+Example: 
+Given a group of automorphisms, we can look at the set of objects fixed by the morphism. 
+Given a set of objects, we can look at the group of morphisms that fix them. 
+\section{Induction}
+Do it one by one. 
+
+\section{Extremalism}
+Consider EXTREME cases/objects/assumptions.
+\section{Equivalent perspectives}
+同样一个命题，我们可以从不同的视角去看待它。比如说，以下几个陈述是等价的：
+\begin{center}
+    $p\mid t^n-1$
+    \\
+    t is a root of $x^n-1 \pmod{p}$
+    \\
+    the order of t modulo $p$ divides $n$
+\end{center}
+第一个是整出的角度，第二个是从方程的根的角度，第三个是从阶数的角度。我们可以从不同的角度去看待一个命题。
 
 
-\section{Acknowledgment}
-This is Evan Style LaTeX template. Thanks to Evan Chen for creating such a beautiful style file.
-\newpage 
-\begin{enumerate}
-    \item Look at a certain statement or problem from different perspectives. For example: the following statements are equivalent:
-    \[p\mid t^n-1\]
-    \[\text{t is a root of } x^n-1 \pmod{p}\]
-    \[\text{the order of t modulo p divides n}\]
-    \item Seek the relationship between objects and morphism. How to turn an object into a morphism and vice versa.
-    \[\text{Given a group of automorphisms, we can look at the set of objects fixed by the morphism}\]
-    \[\text{Given a set of objects, we can look at the group of morphisms that fix them}\]
-    \[\text{An element in a field extension k to F can be seen as a linear transformation of F vector space over k}\]
-    \item Look for the generalized version to dismiss the redundant information.
-    \item Create new definition and play with it to see how it fits into the problems.
-    \item Create extra objects and see how they interact with the existing objects. 
-\end{enumerate}
+
+
+
+\end{CJK*}
+
+
+
 \end{document}

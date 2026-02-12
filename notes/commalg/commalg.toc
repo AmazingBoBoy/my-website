@@ -3,6 +3,6 @@
 \contentsline {section}{\nonumberline January 22, 2026: Nullstellensatz and equivalence of algebraic varieties and affine algebras}{8}{section*.28}%
 \contentsline {section}{\nonumberline January 27, 2026: Localization and Tensor Products}{8}{section*.30}%
 \contentsline {section}{\nonumberline January 29, 2026: More on Localization}{11}{section*.47}%
-\contentsline {section}{\nonumberline February 3, 2026: Finite Length and Artinian}{16}{section*.73}%
-\contentsline {section}{\nonumberline February 5, 2026: Associated Primes}{25}{section*.131}%
+\contentsline {section}{\nonumberline February 3, 2026: Finite Length and Artinian}{15}{section*.73}%
+\contentsline {section}{\nonumberline February 5, 2026: Associated Primes}{22}{section*.131}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

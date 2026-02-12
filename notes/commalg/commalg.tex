@@ -1,4 +1,4 @@
-\documentclass[15pt]{scrartcl}
+\documentclass[12pt]{scrartcl}
 \usepackage[sexy]{evan}
 \usepackage{quiver}
 \newcommand{\Ann}{\mathrm{Ann}}
@@ -614,4 +614,18 @@ Before we go into our man theorem, we need several curcial lemmas:
 \begin{proof}
     One direction is trivial. Conversely, if $m\neq 0$, there exists some associated prime $\kp$ of $M$ such that $\Ann(m)\subseteq \kp$. Localizing at $\kp$, we have $(m)_{\kp}$ is a nonzero submodule of $M_{\kp}$ since $\Ann(m)\subseteq \kp$. (or one can see $\Ann(M)_{\kp}=\Ann(M_{\kp})\subseteq \kp_{\kp}\subsetneq R_{\kp}$, if $M_{\kp}=0$, then $\Ann(M_{\kp})=R_{\kp}$) Thus, $m_{\kp}\neq 0$.
 \end{proof}
+Here is another lemma about $\Ass(M)$:
+\begin{lemma}
+    \[0\to A\to B\to C\to 0\] is an exact sequence of $R$-modules. Then $\Ass(A)\subseteq \Ass(B)\subseteq \Ass(A)\cup \Ass(C)$. 
+    \\
+
+    The last inclusion can be strict very easily. Let $B=R$ be integral domain and $A=\km$ for some maximal ideal and $C=R/\km$. Then $\Ass(B)=\{0\}$ and $\Ass(C)=\{\km\}$, so $\Ass(B)\subsetneq \Ass(A)\cup \Ass(C)$.
+    \\
+
+    We can conclude that $\Ass(M\oplus N)=\Ass(M)\cup \Ass(N)$ for any $R$-modules $M$ and $N$.
+\end{lemma}
+\begin{proof}
+    First inclusion is trivial. For the second one, assume $\kp\in \Ass(B)\setminus \Ass(A)$, then there exists $m$ such that $\Ann(m)=\kp$. Notice that the nonzero element of $(m)$ must have annihilator $\kp$ (we have shown this in the proof of the main theorem), so $(m)\cap A=0$ (otherwise, $\kp\in \Ass(A)$). Thus, we can verify that $\kp=\Ann(m+A)$, so $\kp\in \Ass(C)$.
+\end{proof}
+
 \end{document}

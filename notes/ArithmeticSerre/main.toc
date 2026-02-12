@@ -4,4 +4,6 @@
 \contentsline {subsection}{\numberline {3.1}$\mathbb Z_p$ and $\mathbb Q_p$}{6}{subsection.36}%
 \contentsline {subsection}{\numberline {3.2}$p$-adic equations}{10}{subsection.81}%
 \contentsline {subsection}{\numberline {3.3}multiplicative Group of $\mathbb Q_p$}{13}{subsection.108}%
+\contentsline {section}{\numberline {4}Chapter 3: Hilbert Symbol}{16}{section.127}%
+\contentsline {subsection}{\numberline {4.1}Local Property}{16}{subsection.128}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
