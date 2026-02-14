@@ -694,4 +694,45 @@ In this section, we assume $R$ is Noetherian and $M$ is a finitely generated $R$
         \item Primary decomposition is compatible with localization: Let $U$ be a multiplicative set of $R$ and $N=\bigcap_{i=1}^n N_i$ is a minimal primary decomposition, then $U\inv N=\bigcap_{i=1}^n U\inv N_i$ is a minimal primary decomposition of $U\inv N$ as $U\inv R$-module.
     \end{enumerate}
 \end{theorem}
+\begin{proof}
+    First, we show that primary decomposition always exists. 
+    \begin{definition}
+        $N$ is an irreducible submodule of $M$ if $N$ cannot be written as an intersection of two strictly larger submodules.
+    \end{definition}
+    \begin{claim}
+        Any submodule of $M$ can be written as a finite intersection of irreducible submodules.
+    \end{claim}
+    \begin{proof}
+        If not, then we take the maximal element $N$ in the family of submodules that cannot be written as a finite intersection of irreducible submodules. $N$ itself must not be irreducible, so we can write $N=N_1\cap N_2$ where $N_1, N_2$ are strictly larger than $N$. By the maximality of $N$, both $N_1$ and $N_2$ can be written as a finite intersection of irreducible submodules, so $N$ can also be written as a finite intersection of irreducible submodules, contradiction. Thus, any submodule of $M$ can be written as a finite intersection of irreducible submodules.
+    \end{proof}
+    \begin{claim}
+        Any irreducible submodule $N$ of $M$ is primary.
+    \end{claim}
+    \begin{proof}
+        If not, then there exists prime ideals $\kp\neq \kq$ such that $R/\kp\injto M/N$ and $R/\kq\injto M/N$. Let $N_1/N\cong R/\kp, N_2/N\cong R/\kq$ be the preimage of these two embeddings. By orthogonal lemma, $N_1\cap N_2=N$, contradicting the irreducibility of $N$.
+    \end{proof}
+    Therefore, any proper submodule of $M$ can be written as a finite intersection of primary submodules $N=\bigcap_{i=1}^n N_i$ where $N_i$ is $\kp_i$-primary for some prime ideal $\kp_i$ of $R$.
+    \\
+
+    Now, we show the properties of primary decomposition.
+    \begin{enumerate}
+        \item Notice that there is a natural injection from $M/N$ to $\bigoplus_{i=1}^n M/N_i$. Thus, $\Ass(M/N)\subseteq \bigcup_{i=1}^n \Ass(M/N_i)=P$.
+        \item If the intersection is irredundant, then for any $j$, $\bigcap_{i\neq j} N_i$ is strictly larger than $N$. Looking at the following diagram: % https://q.uiver.app/#q=WzAsNCxbMiwwLCJcXGZyYWN7TX17Tn0iXSxbMCwxLCJcXGZyYWN7XFxiaWdjYXBfe2lcXG5lcSBqfU5faX17XFxsZWZ0KFxcYmlnY2FwX3tpXFxuZXEgan1OX2lcXHJpZ2h0KVxcY2FwIE5fan0iXSxbMCwyLCJcXGZyYWN7XFxiaWdjYXBfe2lcXG5lcSBqfU5faStOX2p9e05fan0iXSxbMiwzLCJcXGZyYWN7TX17Tl9qfSJdLFsxLDAsIiIsMCx7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn19fV0sWzIsMSwiXFxzaW0iXSxbMiwzLCIiLDIseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dXQ==
+\[\begin{tikzcd}
+	&& {\frac{M}{N}} \\
+	{\frac{\bigcap_{i\neq j}N_i}{\left(\bigcap_{i\neq j}N_i\right)\cap N_j}} \\
+	{\frac{\bigcap_{i\neq j}N_i+N_j}{N_j}} \\
+	&& {\frac{M}{N_j}}
+	\arrow[hook, from=2-1, to=1-3]
+	\arrow["\wr", from=3-1, to=2-1]
+	\arrow[hook, from=3-1, to=4-3]
+\end{tikzcd}\]
+        We conclude that \[\Ass\left(\frac{\bigcap_{i\neq j}N_i+N_j}{N_j}\right)=\Ass\left(\frac{\bigcap_{i\neq j}N_i}{\left(\bigcap_{i\neq j}N_i\right)\cap N_j}\right)\subseteq \Ass\left(\frac{M}{N_j}\right)=\{\kp_j\}\]
+        Thus, $\{\kp_j\}=\Ass\left(\frac{\bigcap_{i\neq j}N_i}{\left(\bigcap_{i\neq j}N_i\right)\cap N_j}\right)\subseteq \Ass\left(\frac{M}{N}\right)$, so $\kp_j\in \Ass(M/N)$ for all $j$. Therefore, $\Ass(M/N)=P$ as sets.
+    \item The intersection of any two $\kp_i$-primary modules is either $\kp_i$-primary or $0$. So if the intersection is minimal, then $\kp_i$ are pairwise distinct. By (2), $\Ass(M/N)=P$ as sets. But since $\kp_i$ are pairwise distinct, $\Ass(M/N)=P$ as multisets.
+    \item Lastly, $\Ass(-)$ and primes behave well under localization, so primary decomposition is compatible with localization.
+\end{enumerate}
+
+
+\end{proof}
 \end{document}
