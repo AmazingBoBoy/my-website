@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1770507743.18479 "/Users/kai/Documents/VS Code/my-website/lecture note/lecture 1.tex" "lecture 1.pdf" "lecture 1" 1770507745.08811 0
-  "/Users/kai/Documents/VS Code/my-website/lecture note/lecture 1.tex" 1770507742.98809 9557 5fff4c19029d304d59ead8dd33474e7b ""
+["pdflatex"] 1771055483.5378 "/Users/kai/Documents/VS Code/my-website/my informal talk/lecture: sheaf/lecture 1.tex" "lecture 1.pdf" "lecture 1" 1771055487.00124 0
+  "/Users/kai/Documents/VS Code/my-website/my informal talk/lecture: sheaf/lecture 1.tex" 1771055480.00796 9565 016e16441929571c0ceb11ee7c79822b ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcsx1440.tfm" 1136768653 1536 d4501080e094848097ac9de5c88222ce ""
@@ -263,10 +263,10 @@
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1741450574 3345740 46b66fdb0378f7bf5921b5eabf1762b8 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
   "evan.sty" 1770501381.35346 30313 916242e1f96252f5f54ca4e82221c575 ""
-  "lecture 1.aux" 1770507744.99025 6685 3978522b5f99c01f7b2638703c3ffa75 "pdflatex"
-  "lecture 1.out" 1770507744.5667 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "lecture 1.pre" 1770507743.80821 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "lecture 1.tex" 1770507742.98809 9557 5fff4c19029d304d59ead8dd33474e7b ""
+  "lecture 1.aux" 1771055486.80305 6685 fdc36119d159f3d43dca256b778a3546 "pdflatex"
+  "lecture 1.out" 1771055486.07801 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "lecture 1.pre" 1771055484.80667 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "lecture 1.tex" 1771055480.00796 9565 016e16441929571c0ceb11ee7c79822b ""
   (generated)
   "lecture 1.aux"
   "lecture 1.log"

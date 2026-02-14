@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1770596454.47074 "/Users/kai/Documents/VS Code/my-website/my informal talk/lecture: basic field theory/fields.tex" "fields.pdf" "fields" 1770596456.23332 0
-  "/Users/kai/Documents/VS Code/my-website/my informal talk/lecture: basic field theory/fields.tex" 1770596454.24507 3546 34451c05feacb702a018384497d50cd3 ""
+["pdflatex"] 1771055430.59266 "/Users/kai/Documents/VS Code/my-website/my informal talk/lecture: basic field theory/fields.tex" "fields.pdf" "fields" 1771055433.47147 0
+  "/Users/kai/Documents/VS Code/my-website/my informal talk/lecture: basic field theory/fields.tex" 1771055427.27265 3540 42fc3c96c4f3ed9be2bbddadb476394e ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm1440.tfm" 1136768653 1536 3290a75021d32d016616fe527bc9884c ""
@@ -247,11 +247,11 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1769914979 5467155 19efa205003f9ecad95fbbaa6ff24da1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1741450574 3345740 46b66fdb0378f7bf5921b5eabf1762b8 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "evan.sty" 1770596215.62512 30313 916242e1f96252f5f54ca4e82221c575 ""
-  "fields.aux" 1770596456.13809 2461 a28adb6f28d1e9b5a693eb818c6a6114 "pdflatex"
-  "fields.out" 1770596455.87516 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "fields.pre" 1770596455.1081 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "fields.tex" 1770596454.24507 3546 34451c05feacb702a018384497d50cd3 ""
+  "evan.sty" 1771055386.01429 30287 d3a8fc0a0625334dc95b9ae7f54601df ""
+  "fields.aux" 1771055433.30985 2461 25ff30766c2f49e84416aa5e0efcb147 "pdflatex"
+  "fields.out" 1771055432.86427 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "fields.pre" 1771055431.6269 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "fields.tex" 1771055427.27265 3540 42fc3c96c4f3ed9be2bbddadb476394e ""
   (generated)
   "fields.aux"
   "fields.log"

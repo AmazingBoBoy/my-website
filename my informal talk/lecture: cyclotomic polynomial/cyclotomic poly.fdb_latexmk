@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1770596307.41894 "/Users/kai/Documents/VS Code/my-website/my informal talk/lecture: cyclotomic polynomial/cyclotomic poly.tex" "cyclotomic poly.pdf" "cyclotomic poly" 1770596309.07013 0
-  "/Users/kai/Documents/VS Code/my-website/my informal talk/lecture: cyclotomic polynomial/cyclotomic poly.tex" 1770596277.68941 5906 102df8d4bb7f2eff0c4b3b3e74c58358 ""
+["pdflatex"] 1771055446.1396 "/Users/kai/Documents/VS Code/my-website/my informal talk/lecture: cyclotomic polynomial/cyclotomic poly.tex" "cyclotomic poly.pdf" "cyclotomic poly" 1771055449.13524 0
+  "/Users/kai/Documents/VS Code/my-website/my informal talk/lecture: cyclotomic polynomial/cyclotomic poly.tex" 1771055445.90572 5900 d689280ae270d4493adac018a9123173 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm" 1246382020 908 2921f8a10601f252058503cc6570e581 ""
@@ -238,10 +238,10 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1769914979 5467155 19efa205003f9ecad95fbbaa6ff24da1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1741450574 3345740 46b66fdb0378f7bf5921b5eabf1762b8 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "cyclotomic poly.aux" 1770596308.98353 3519 7c4f97da9309b97b24f2f7b081d983cf "pdflatex"
-  "cyclotomic poly.out" 1770596308.73228 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "cyclotomic poly.pre" 1770596308.0157 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "cyclotomic poly.tex" 1770596277.68941 5906 102df8d4bb7f2eff0c4b3b3e74c58358 ""
+  "cyclotomic poly.aux" 1771055448.97668 3519 7c4f97da9309b97b24f2f7b081d983cf "pdflatex"
+  "cyclotomic poly.out" 1771055448.52454 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "cyclotomic poly.pre" 1771055447.20885 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "cyclotomic poly.tex" 1771055445.90572 5900 d689280ae270d4493adac018a9123173 ""
   "evan.sty" 1770596284.03426 30313 916242e1f96252f5f54ca4e82221c575 ""
   (generated)
   "cyclotomic poly.aux"
