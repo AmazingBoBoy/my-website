@@ -1,7 +1,9 @@
 # Fdb version 4
-["pdflatex"] 1770854970.13733 "/Users/kai/Documents/VS Code/my-website/notes/ArithmeticSerre/main.tex" "main.pdf" "main" 1770854972.70709 0
-  "/Users/kai/Documents/VS Code/my-website/notes/ArithmeticSerre/main.tex" 1770854969.90221 27652 e62496511c0d2d4b2734a7e7c362bb18 ""
+["pdflatex"] 1770859510.06295 "/Users/kai/Documents/VS Code/my-website/notes/ArithmeticSerre/main.tex" "main.pdf" "main" 1770859512.65546 0
+  "/Users/kai/Documents/VS Code/my-website/notes/ArithmeticSerre/main.tex" 1770859507.23375 30719 9e3c8f02c042faa41f49c909b515ca54 ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm1440.tfm" 1136768653 1536 3290a75021d32d016616fe527bc9884c ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex9.tfm" 1246382020 996 a18840b13b499c08ac2de96a99eda4bc ""
@@ -44,6 +46,7 @@
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb" 1248133631 36118 fad905eba93cff5bce1e185fe980a177 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb" 1248133631 31764 459c573c03a4949a528c2cc7f557e217 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1248133631 34694 ad62b13721ee8eda1dcc8993c8bd7041 ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb" 1215737283 131078 d96015a2fa5c350129e933ca070b2484 ""
   "/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/local/texlive/2025/texmf-dist/tex/generic/atbegshi/atbegshi.sty" 1575674566 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
   "/usr/local/texlive/2025/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty" 1576625341 40635 c40361e206be584d448876bba8a64a3b ""
@@ -258,11 +261,11 @@
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1741450574 3345740 46b66fdb0378f7bf5921b5eabf1762b8 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
   "evan.sty" 1769916530.47264 29770 b9305cfa1e10857183abaea4b60464cc ""
-  "main.aux" 1770854972.59001 14153 a4b53d4944179bc3cda9ccbccb71c440 "pdflatex"
-  "main.out" 1770854971.61134 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "main.pre" 1770854970.82331 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "main.tex" 1770854969.90221 27652 e62496511c0d2d4b2734a7e7c362bb18 ""
-  "main.toc" 1770854972.59186 810 f6a06cec2120aa36f3c3270d0a6ff85c "pdflatex"
+  "main.aux" 1770859512.53595 15658 17384dc3f3ee9c2b3e372917d22a51f0 "pdflatex"
+  "main.out" 1770859511.39007 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.pre" 1770859510.66185 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.tex" 1770859507.23375 30719 9e3c8f02c042faa41f49c909b515ca54 ""
+  "main.toc" 1770859512.53802 896 ce641cbebf01e83caf9d9caf30e51127 "pdflatex"
   (generated)
   "main.aux"
   "main.log"

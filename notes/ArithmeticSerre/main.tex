@@ -3,7 +3,7 @@
 \usepackage{quiver}
 \usepackage{relsize}
 \newcommand{\PP}{\mathbb{P}}
-
+\newcommand{\legendre}[2]{\left(\frac{#1}{#2}\right)}
 \begin{document}
 \title{Note on \textit{A course in Arithmetic} by J.P. Serre}
 \author{Jiawen Huang}
@@ -427,7 +427,7 @@ Easy to check.
 \end{remark}
 \section{Chapter 3: Hilbert Symbol}
 In this section, $k$ denotes either $\RR$ or $\QQ_p$. 
-\subsection{Local Property}
+\subsection{Local Properties}
 \begin{definition}
     Let $a, b\in k^\times$, we define 
     \[(a,b)=\begin{cases}
@@ -445,14 +445,48 @@ Proof is easy.
 \begin{theorem}
     We give a explicit form of $(a,b)_p=(a,b)$
     \begin{enumerate}
-        \item 
+        \item If $p\neq 2$, write $a=p^nu$ and $b=p^mv$ where $n=v_p(a)$, $m=v_p(b)$ and $u,v\in U$. Then,
+\[(a,b)_p=(-1)^{nm\epsilon(p)} \left(\frac{u}{p}\right)^m \left(\frac{v}{p}\right)^n\] where $\epsilon(n)=\frac{n-1}{2} \pmod 2$. 
+         \item If $p=2$, write $a=2^nu$ and $b=2^mv$ where $n=v_2(a)$, $m=v_2(b)$ and $u,v\in U$. Then,
+\[(a,b)_2=(-1)^{\epsilon(u)\epsilon(v)+n\omega(v)+m\omega(u)}\] where $\epsilon(x)=\frac{x-1}{2} \pmod 2$ and $\omega(x)=\frac{x^2-1}{8} \pmod 2$.
     \end{enumerate}
+This implies that $(a,b)_p$ is bilinear and symmetric.
 \end{theorem}
-$z^2-ux^2-vy^2=0$. if $u$ and $v$ are non square, then $uv$ and $\frac{u}{v}$ are squares from Ruofan Jiang. 
-\\
+\begin{remark}
+    In the proof of this, one step is to show that if $u$ and $v$ are non-square units in $\ZZ_p$, then $(u,v)_p=1$. This is equivalent to saying that the equation $z^2-ux^2-vy^2=0$ has a non-trivial solution in $\ZZ_p$. Professor Jiang provided a unique proof of this step: Consider the equation as $z^2-ux^2+vy^2=0$. If $u$ or $v$ are square, then we are done. Otherwise, $\legendre{u}{p}=\legendre{v}{p}=-1$. So $\legendre{uv}{p}=\legendre{u}{p}\legendre{v}{p}=1$. So $\legendre{\frac{u}{v}}{p}=1$. So can have $z=0$ and $x,y$ such that $\frac{u}{v}x^2=y^2$, giving us a non-trivial solution.
+\end{remark}
 
-Proving quadratic reciprocity using Hilbert symbol. 
+\begin{definition}
+    We define set $V$ to be the set of all primes and $\infty$. For $v\in V$, we define the local field $k_v$ to be $\QQ_p$ if $v=p$ is a prime and $\RR$ if $v=\infty$. We can also define the local Hilbert symbol $(a,b)_v$ for any $a,b\in \QQ^\times$ as the Hilbert symbol of $a,b$ in the local field $k_v$.
+\end{definition}
+\subsection{Global Properties}
+\begin{theorem}
+    If $a,b\in \QQ^\times$, we have $(a,b)_v=1$ for all but finitely many $v\in V$ and \[\prod_{v\in V} (a,b)_v=1\]
+\end{theorem}
+The proof is easy. 
+\begin{remark}
+    This theorem implies the quadratic reciprocity law.
+    Indeed, for any two primes $p$ and $q$, we have $(p,q)_v=1$ for all $v\neq p,q$. And $(p,q)_\infty=1$. $(p,q)_p=\legendre{q}{p}$ and $(p,q)_q=\legendre{p}{q}$ and $(p,q)_2=(-1)^{\epsilon(p)\epsilon(q)}$. So the product formula implies that $\legendre{q}{p}\legendre{p}{q}=(-1)^{\epsilon(p)\epsilon(q)}$, which is exactly the quadratic reciprocity law.
+\end{remark}
+\begin{theorem}
+    let $(a_i)_{i=1}^n$ be a finite family of elements in $\QQ^\times$ and let $\alpha_{i,v}$ be a family of numbers equal to $\pm 1$ for $1\leq i \leq n$ and $v\in V$. Then, the following are equivalent:
+\begin{itemize}
+    \item There exists $x\in \QQ^\times$ such that $(a_i, x)_v=\alpha_{i,v}$ for all $1\leq i \leq n$ and $v\in V$.
+    \item Three conditions hold:
+    \begin{enumerate}
+        \item $\alpha_{i,v}=1$ for all but finitely many $v\in V$ and $1\leq i \leq n$.
+        \item $\prod_{v\in V} \alpha_{i,v}=1$ for all  (fixed) $1\leq i \leq n$.
+        \item For any $v\in V$, there exists $x_v\in \QQ_v^\times$ such that $(a_i,x_v)_v=\alpha_{i,v}$ for all $1\leq i \leq n$.
+    \end{enumerate}
+\end{itemize}
+\end{theorem}
+The proof is easy but a bit technical. An interesting lemma is needed in the proof:
+\begin{lemma}
+    Let $S$ be a finite subset of $V$. Assume $|S|=n$, then $\QQ^n$ is dense in $\prod_{v\in S} \QQ_v$.
+    \\
 
+    This theorem easily follows from the Chinese Remainder Theorem.
+\end{lemma}
 
 
 

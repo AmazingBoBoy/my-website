@@ -5,5 +5,6 @@
 \contentsline {subsection}{\numberline {3.2}$p$-adic equations}{10}{subsection.81}%
 \contentsline {subsection}{\numberline {3.3}multiplicative Group of $\mathbb Q_p$}{13}{subsection.108}%
 \contentsline {section}{\numberline {4}Chapter 3: Hilbert Symbol}{16}{section.127}%
-\contentsline {subsection}{\numberline {4.1}Local Property}{16}{subsection.128}%
+\contentsline {subsection}{\numberline {4.1}Local Properties}{16}{subsection.128}%
+\contentsline {subsection}{\numberline {4.2}Global Properties}{17}{subsection.141}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

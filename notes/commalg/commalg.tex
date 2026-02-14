@@ -3,7 +3,7 @@
 \usepackage{quiver}
 \newcommand{\Ann}{\mathrm{Ann}}
 \newcommand{\Ass}{\mathrm{Ass}}
-\setcounter{secnumdepth}{0}
+
 \usepackage{relsize}
 \begin{document}
 \title{Note on Commutative Algebra}
@@ -169,7 +169,7 @@ Other properties of localization that I think are important:
     Let $M$ and $A$ be $R$-modules, $N$ be an $R[U\inv]$-module, then we have the isomorphism
     \[U\inv R\otimes_R M \cong U\inv M, \]
     \[U\inv (M \otimes_R N)\cong U\inv M\otimes_{U\inv R} N, \]
-    \[U\inv(A\otimes_R M)=U\inv A\otimes_{U\inv R} U\inv M.\]
+    \[U\inv(A\otimes_R M)\cong U\inv A\otimes_{U\inv R} U\inv M.\]
     The first isomorphism tells us $(-)\otimes_R U\inv R$ is exact, that is $U\inv R$ is a flat $R$-module.
     \item Tensor products are associative: for any $R$-module $M$, $R$-$S$-bimodule $N$ and $S$-module $P$, we have the isomorphism
     \[(M \otimes_R N) \otimes_S P \cong M \otimes_R (N \otimes_S P).\]
@@ -312,8 +312,8 @@ If such $n$ does not exist, we say $M$ has infinite length. If $M$ has finite le
 \begin{lemma}
     Let $N$ be a simple $R$-module, then $N \cong R/\km$ for some maximal ideal $\km$ of $R$. In fact, $\km=\Ann(N)$.
 \end{lemma}
-
-\begin{proposition}
+\subsection{Main theorems of finite length modules and rings}
+\begin{theorem}
     Let $R$ be a ring, and $M$ be an $R$-module. $M$ has a finite composition series if and only if $M$ is both Noetherian and Artinian. If $M=M_0\supsetneq M_1 \supsetneq \cdots \supsetneq M_n=0$ has a finite composition series, then 
     \begin{enumerate}
         \item Any strictly descending chain of submodules of $M$ has length at most $n$.
@@ -325,7 +325,7 @@ If such $n$ does not exist, we say $M$ has infinite length. If $M$ has finite le
         \item $M=M_{\km}$ if and only if $M$ is annihilated by some power of $\km$. 
         \item For any submodule $N\subseteq M$, $\ell(M)=\ell(N)+\ell(\frac{M}{N})$. And the composition factors of $M$ is the disjoint union of the composition factors of $N$ and $M/N$ as multisets.
     \end{enumerate}
-\end{proposition}
+\end{theorem}
 \begin{proof}
     If $M$ is Artinian and Noetherian, we can pick a maximal proper submodule $M_1$ of $M$ (by Noetherian condition), then $M/M_1$ is simple. Then, we pick a maximal proper submodule $M_2$ of $M_1$, and so on. We can continue this process to get a composition series. It must be finite because $M$ is Artinian.
     \\
@@ -420,20 +420,22 @@ If such $n$ does not exist, we say $M$ has infinite length. If $M$ has finite le
     \end{proof}
     Finally, we complete the proof. 
 \end{proof}
-\begin{proposition}
-    Here are a few proeprty of Artinian rings:
+With two main theorems, we can state the following corollary regarding the properties of Artinian rings and modules of finite length.
+\begin{corollary}
+    Here are a few properties of Artinian rings:
     \begin{enumerate}
         \item Any quotient of an Artinian ring is Artinian. 
         \item Any localization of an Artinian ring is an Artinian ring.
     \end{enumerate}
-    In module theory, we have the following properties of module of finite length (finitely generated Artinian module over a Noetherian ring):
+    In module theory, we have the following properties of module of finite length (or Artinian if we assume it's finitely generated module over a Noetherian ring):
     \begin{enumerate}
         \item Any submodule of finite length module is of finite length.
         \item Any quotient of finite length module is of finite length.
         \item Any localization of finite length module is of finite length 
         \\($U\inv\frac{M_i}{M_{i+1}}\cong U\inv R/\km_i\cong \frac{U\inv R}{U\inv \km_i}=0$ or a simple module).
     \end{enumerate}
-\end{proposition}
+\end{corollary}
+
 Now, we put this in a geometric setting: 
 \begin{theorem}
     Let $X$ be an affine variety over an algebraically closed field $k$. The following are equivalent:
@@ -461,13 +463,16 @@ Now, we put this in a geometric setting:
 \begin{proof}
     The isomorphism we had for $R$ as $R$-module is actually an isomorphism of rings. The ring structure on $\bigoplus_{i=1}^n R_{\km_i}$ is given by the componentwise multiplication. Beyond that, we need to show the localization of an Artinian ring is Artinian. This is because the localization of an Artinian ring must be Noetherian. Prime ideals of the localized ring correspond to prime ideals of the original ring contained in the maximal ideal we localize at. So in fact, the localized ring has only one prime ideal, which is maximal, so it has Krull dimension $0$. Thus, the localized ring is Artinian.
 \end{proof}
+\subsection{Some special cases}
+In reality, we are mainly interested in the case when $R$ is Noetherian and $M$ is finitely generated. In this case, we have the following corollary:
 \begin{corollary}
     Let $R$ be a Noetherian ring, and let $M$ be a finitely generated $R$-module. The following are equivalent:
     \begin{enumerate}
-        \item $M$ is of finite length.
+        \item $M$ is of finite length as $R$-module.
         \item Some finite product of maximal ideals of $R$ annihilates $M$. (can be repeated)
         \item All primes that contain $\Ann(M)$ are maximal ideals
         \item $R/\Ann(M)$ is Artinian.
+        \item $M$ is Artinian. 
     \end{enumerate}
 \end{corollary}
 \begin{proof}
@@ -478,67 +483,56 @@ Now, we put this in a geometric setting:
     (3) to (4): Trivial. 
     \\
     (4) to (1): Let $S=\frac{R}{\Ann(M)}$. Since $S$ is Artinian, $S$ is of finite length as $S$-module. $M$ is finitely generated as $R$-module, we claim that $M$ is also finitely generated as $S$-module: $\phi: R^n\surjto M$, we can define a map from $S^n$ to $M$ by sending $r_1+\Ann(M), \ldots, r_n+\Ann(M)$ to $\phi(r_1, \ldots, r_n)$. This is well-defined since $\phi(\Ann(M)^n)=0$ and clearly surjective. Thus, $M$ is a quotient of $S^n$. So $M$ is of finite length as $S$-module, so it's also of finite length as $R$-module since any composition factor in $S$-module is also simple as $R$-module.
+    \\
+    (1) is equivalent to (5) is proven by the previous proposition.
 \end{proof}
 \begin{corollary}
     Let $R$ be a Noetherian ring, and let $M$ be a finitely generated $R$-module, $I=\Ann(M)$. Then $M_{\kp}$ is of finite length as $R_{\kp}$-module if and only if $\kp$ is a minimal prime of $I$.
     \\
 
-    This gives us a way to make a module into a module of finite length by localizing at the minimal primes of its annihilator.
+    This gives us a way to make a module into a module of finite length by localizing at the minimal primes of its annihilator. It also gives us a way to detect the minimal primes of an ideal $I$ by letting $M=R/I$. We will see this in the next corollary.
 \end{corollary}
-\begin{proof}
-    If $\kp$ is a minimal prime of $I$, then $\kp_{\kp}$ is the minimal prime of $I_{\kp}$, which is the nilradical of $R_{\kp}$. In fact, $\kp_{\kp}$ is a maximal ideal of $R_{\kp}$. Thus, $\kp_{\kp}^n=0$ for some $n$ and $M_{\kp}$ is annihilated by $\kp_{\kp}^n$ (some finite product of maximal ideals), by the corollary above, $M_{\kp}$ is of finite length as $R_{\kp}$-module.
-    \\
 
-    \begin{lemma}
+
+\begin{proof}
+
+First, we need a lemma: 
+\begin{lemma}
         If $M$ is finitely generated $R$-module, then $\Ann_{U\inv R}(U\inv M)\cong U\inv \Ann_{R}(M)$ as $U\inv R$-modules. 
         \\
 
         This is not ture if $M$ is not finitely generated: take $R=\ZZ$, $M=\frac{\QQ}{\ZZ}$ and $U=\ZZ^\times$, $\Ann(M)=0$ but $U\inv M=0$ so $\Ann(U\inv M)=\QQ$. 
     \end{lemma}
-        With the lemma, we can show the converse. If $M_{\kp}$ is of finite length as $R_{\kp}$-module, then $R_{\kp}/\Ann(M_{\kp})$ is Artinian. $\Ann(M_{\kp})=I_{\kp}$, so $R_{\kp}/I_{\kp}$ is Artinian. Moreover, $R_{\kp}/I_{\kp}$ is a local ring, so it has only one prime/maximal ideal. So $\kp_{\kp}$ is the unique prime ideal of $R_{\kp}$ containing $I_{\kp}$. Thus, $\kp$ is the unique prime ideal of $R$ over $I$ contained in $\kp$, so $\kp$ is a minimal prime of $I$.
+       
+
+    By the corollary above, we know that $M_{\kp}$ is of finite length as $R_{\kp}$-module if and only if $R_{\kp}/\Ann(M_{\kp})$ is Artinian. By the lemma, this is equivalent to $R_{\kp}/I_{\kp}$ is Artinian.
+   If $\kp$ is a minimal prime of $I$, then $\kp_{\kp}$ is the minimal prime of $I_{\kp}$ as well as the only maximal prime of $R_{\kp}$, so it is the only prime of $R_{\kp}$ containing $I_{\kp}$. Thus, $R_{\kp}/I_{\kp}$ is Artinian. 
+   \\
+   
+   Conversely, if $R_{\kp}/I_{\kp}$ is Artinian, then all primes of $R_{\kp}$ containing $I_{\kp}$ are maximal. But $R_{\kp}$ is a local ring with a unique maximal ideal $\kp_{\kp}$, so $\kp_{\kp}$ is the only prime of $R_{\kp}$ containing $I_{\kp}$. So when we delocalize, we can see that $\kp$ is the only prime of $R$ containing $I$ that is contained in $\kp$, so $\kp$ is a minimal prime of $I$.
 \end{proof}
+We can let $M=R/I$ in the previous corollary to get the following result about ideals of Noetherian rings and minimal primes of ideals.
 \begin{corollary}
     Let $I$ be an ideal of a Noetherian ring $R$ and $\kp$ is a prime containing $I$.  Then the following are equivalent:
     \begin{enumerate}
         \item $\kp$ is a minimal prime of $I$.
-        \item $\frac{R_{\kp}}{I_{\kp}}$ is Artinian.
-        \item There eixsts $n$ such that $\kp_{\kp}^n \subseteq I_{\kp}$.
+        \item There exists $n$ such that $\kp_{\kp}^n \subseteq I_{\kp}$, that is $\kp_{\kp}$ is nilpotent in $R_{\kp}/I_{\kp}$.
+        \item $R_{\kp}/I_{\kp}=(R/I)_{\kp}$ is Artinian/finite length as $R_{\kp}$-module.
     \end{enumerate}
 \end{corollary}
 The idea of the proof is the same as the previous corollary.
-\begin{theorem}
-    Let $R$ be a Noetherian ring. $R$ is a finite direct product of integral domains if and only if for any maximal ideal $\km$ of $R$, $R_{\km}$ is an integral domain.
-\end{theorem}
+\begin{remark}
+    In general, $\kp^n\subseteq I$ implies $\kp^n_{\kp}\subseteq I_{\kp}$ which implies $\kp$ is the minimal prime over $I$. But the converse is not true. For example, let $R=k[x,y]$ and $I=(x^2,y^2)$, then $J=(x,y)$ is a minimal prime over $I$ since $(k[x,y]/J)_{J}=k_J=k$ is Artinian, but $(x,y)^n$ is not contained in $I$ for any $n$ since $xy\notin I$. 
+\end{remark}
+
 
 \newpage 
 \section{February 5, 2026: Associated Primes}
 Chapter 3 of Eisenbud's book is about associated primes. It's absolutely horrible and messy in my opinion. I will try to give a more clean and organized presentation of the material in this chapter.
-\\
-
-Before we go into our man theorem, we need several curcial lemmas: 
-\begin{lemma}[Prime Avoidance]
-    Let $R$ be a ring, and $I_1, \ldots, I_n, J$ be ideals of $R$ and suppose $J\subseteq \bigcup_{i=1}^n I_i$. 
-    \begin{enumerate}
-        \item If $R$ contain an infinite fields, then $J\subseteq I_i$ for some $i$.
-        \item If $(I_i)$ has at least $(n-2)$ prime ideals, then $J\subseteq I_i$ for some $i$. In practice, all $I_i$ are prime ideals, so this condition is satisfied.
-    \end{enumerate}
-\end{lemma}
-\begin{proof}
-    (1): Notice that any ideal is a vector subspace of $R$ over the infinite field. So we have $J=\bigcup_{i=1}^n (J\cap I_i)$. where $J\cap I_i$ are subspace of $J$ over the infinite field. 
-    \begin{lemma}
-        Let $V$ be a vector space over $k$, and $V=\bigcup_{i=1}^n W_i$ where $W_i$ are proper subspaces of $V$. Then $|k|\leq n-1$.
-        \\
-
-        \href{https://math.stackexchange.com/a/1165719}{Here is a beautiful proof}. 
-    \end{lemma}
-    Thus, $J\subseteq I_i$ for some $i$.
-    \\
-
-    (2): We proceed by induction on $n$. $n=1$ and $n=2$ are easy. For $n$, we can assume there exists $u_i\notin \bigcup_{j\neq i} I_j$ for all $i$. Assume $I_1$ is a prime, consider $u_1+\prod_{k=2}^n u_k$. It is clearly not contained in $I_1$. And it's not contained in $I_j$ for any $j\neq 1$ since $u_1\notin I_j$. Thus, we get a contradiction. So $J\subseteq I_i$ for some $i$.
-\end{proof}
 \begin{lemma}
     $I$ is an annihilator of some nonzero element $m$ of $M$ if and only if $R/I$ can be embedded into $M$ as $R$-module. $R/I\cong (m)\subseteq M$. 
 \end{lemma}
+\subsection{The main theorem about associated primes including filtration and orthogonal lemma}
 \begin{theorem}
     This is the main result of today: Let $R$ be a Noetherian ring, and $M$ be a finitely generated $R$-module. Then, 
     \begin{enumerate}
@@ -567,7 +561,7 @@ Before we go into our man theorem, we need several curcial lemmas:
         \[0=M_0\subsetneq M_1 \subsetneq M_2 \cdots\]
         By Noetherian condition, this chain must stabilize, so we can get a filtration of $M$ as desired.
     \end{proof}
-    \begin{lemma}
+    \begin{lemma}[Orthogonal lemma]
         If $\kp=\Ann(m)$ for some $m\in M$, then $\kp=\Ann(m')$ for all nonzero $m'\in (m)$. 
         \\
 
@@ -601,20 +595,35 @@ Before we go into our man theorem, we need several curcial lemmas:
 
     (5): for any minimal prime $\kp$ of $\Ann(M)$, we can localize at $\kp$. $\kp_{\kp}$ is the unique prime/maximal ideal of $R_{\kp}$ containing $\Ann(M)_{\kp}=\Ann(M_{\kp})$ since $\kp$ is a minimal prime of $\Ann(M)$. Notice that $M_{\kp}$ is Neotherian because $M$ is finitely generated over a Noetherian ring. And $M_{\kp}$ is nonzero module because $\kp\supseteq \Ann(M)$. Thus, there exists an associated prime $\kp'$ of $M_{\kp}$ by (1). By (4), Any associated prime of $M_{\kp}$ is of the form $\kp_{\kp}$ for some $\kp\in \Ass(M)$ such that $\kp\subseteq \kp$. So $\kp$ is an associated prime of $M$.
 \end{proof}
-\begin{corollary} 
-    The intersection of all associated primes of a Noetherian ring $R$ is exactly the nilradical of $R$.
+\subsection{Corollaries of the main theorem}
+\begin{corollary}[Intersection of associated primes]
+    The intersection of all associated primes of $M$ is the radical of $\Ann(M)$. In particular, the intersection of all associated primes of a Noetherian ring $R$ is exactly the nilradical of $R$.
 \end{corollary}
 \begin{proof}
-    Any prime $\kp$ must contain in $\Ann(R)$ since $\Ann(R)=0$. So any prime is contained a minimal prime of $\Ann(R)=(0)$. So the intersection of all associated primes of $R$ contained the intersection of all minimal primes of $\Ann(R)=(0)$. which contains the intersection of all primes of $R$, which is the nilradical of $R$. On the other hand, any associated prime $\kp$ is a prime ideal, so it contains the nilradical of $R$. Thus, the intersection of all associated primes of $R$ is exactly the nilradical of $R$.
+    For any prime over $\Ann(M)$, it must contain some minimal prime of $\Ann(M)$, which is an associated prime of $M$. Thus, the intersection of all associated primes of $M$ is equal to intersection of all primes over $\Ann(M)$, which is the radical of $\Ann(M)$.
 \end{proof}
-\begin{theorem}
+\begin{corollary}[Union of associated primes]
+    The union of all associated primes of $M$ is the set of zero-divisors on $M$, which is the union of all annihilators of nonzero elements of $M$.
+\end{corollary}
+This is part of the main theorem. 
+
+\begin{remark}
+    If there is only one associated prime of $M$, then the union of all associated primes of $M$ is exactly that associated prime = the set of zero-divisors on $M$ = the radical of $\Ann(M)$. 
+\end{remark}
+
+\begin{corollary}[Ideals made up of zero-divisors]
+    Let $R$ be a Noetherian ring, and $M$ be a finitely generated $R$-module. Let $I$ be an ideal of $R$. If every element of $I$ is a zero-divisor on $M$, then there exists some associated prime $\kp$ of $M$ such that $I\subseteq \kp$, that is $I$ annihilate some nonzero element of $M$.
+\end{corollary}
+This is the direct consequence of the main theorem and the prime avoidance lemma (\href{https://math.stackexchange.com/a/1165719}{Here is a beautiful proof of the prime avoidance lemma}). 
+\begin{theorem}[Localization at associated primes detect zero elements]
     Assume $M$ is an $R$-module over Noetherian ring $R$. Let $m\in M$, 
     $m=0$ if and only if $m_{\kp}=0$ for all $\kp\in \Ass(M)$.
 \end{theorem}
 \begin{proof}
     One direction is trivial. Conversely, if $m\neq 0$, there exists some associated prime $\kp$ of $M$ such that $\Ann(m)\subseteq \kp$. Localizing at $\kp$, we have $(m)_{\kp}$ is a nonzero submodule of $M_{\kp}$ since $\Ann(m)\subseteq \kp$. (or one can see $\Ann(M)_{\kp}=\Ann(M_{\kp})\subseteq \kp_{\kp}\subsetneq R_{\kp}$, if $M_{\kp}=0$, then $\Ann(M_{\kp})=R_{\kp}$) Thus, $m_{\kp}\neq 0$.
 \end{proof}
-Here is another lemma about $\Ass(M)$:
+
+\subsection{Filtration and $\Ass(M)$}
 \begin{lemma}
     \[0\to A\to B\to C\to 0\] is an exact sequence of $R$-modules. Then $\Ass(A)\subseteq \Ass(B)\subseteq \Ass(A)\cup \Ass(C)$. 
     \\
@@ -627,5 +636,61 @@ Here is another lemma about $\Ass(M)$:
 \begin{proof}
     First inclusion is trivial. For the second one, assume $\kp\in \Ass(B)\setminus \Ass(A)$, then there exists $m$ such that $\Ann(m)=\kp$. Notice that the nonzero element of $(m)$ must have annihilator $\kp$ (we have shown this in the proof of the main theorem), so $(m)\cap A=0$ (otherwise, $\kp\in \Ass(A)$). Thus, we can verify that $\kp=\Ann(m+A)$, so $\kp\in \Ass(C)$.
 \end{proof}
+\begin{theorem}
+    For any finitely generated $R$-module $M$, there exists a filtration of $M$:
+    \[0=M_0\subsetneq M_1 \subsetneq M_2 \subsetneq \cdots \subsetneq M_n=M\]
+    such that $M_i/M_{i-1}\cong R/\kp_i$ for some prime ideal $\kp_i$ of $R$. Moreover, $\Ass(M)=\{\kp_1, \ldots, \kp_n\}$.
+\end{theorem}
+This have been proven in the proof of the main theorem.
+\subsection{Preliminary of primary decomposition}
+In this section, we assume $R$ is Noetherian and $M$ is a finitely generated $R$-module. 
+    \begin{definition}
+        Let $R$ be a ring. $N$ is a submodule of $M$. We say $N$ is a primary if $\Ass(M/N)$ has only one element. We also say $N$ is $\kp$-primary if $\Ass(M/N)=\{\kp\}$. 
+        \\
 
+        Think $N$ as $(p^n)\subseteq \ZZ$ in $\ZZ$-module. 
+    \end{definition}
+    \begin{definition}
+        $M$ is $\kp$-coprimary if $\Ass(M)=\{\kp\}$. 
+        \\
+        
+        Think it as $\ZZ/(p^n)$ as $\ZZ$-module. 
+    \end{definition}
+
+\begin{corollary}
+    If $\kp$ is prime ideal of $R$, $N_1, \ldots, N_n$ are $\kp$-primary submodules of $M$, then $\bigcap_{i=1}^n N_i$ is  $\kp$-primary or $0$.
+\end{corollary}
+\begin{proof}
+    There is a natural injection from 
+    \[\frac{M}{\bigcap_{i=1}^n N_i}\injto \bigoplus_{i=1}^n \frac{M}{N_i}.\]
+    Thus, $\Ass\left(\frac{M}{\bigcap_{i=1}^n N_i}\right)\subseteq \bigcup_{i=1}^n \Ass\left(\frac{M}{N_i}\right)=\{\kp\}$. Therefore, $\bigcap_{i=1}^n N_i$ is $\kp$-primary or $0$.
+\end{proof}
+\begin{theorem}
+    Let $\kp$ be a prime ideal of $R$. The following are equivalent:
+    \begin{enumerate}
+        \item $M$ is $\kp$-coprimary.
+        \item $\kp$ is minimal prime of $\Ann(M)$ and every element not in $\kp$ is a nonzero-divisor on $M$.
+        \item The power of $\kp$ annihilates $M$ and every element not in $\kp$ is a nonzero-divisor on $M$. 
+    \end{enumerate}
+    In this case, $\kp=\sqrt{\Ann(M)}$. 
+\end{theorem}
+\begin{proof}
+    (1) to (2): By the theorem we proved before, the minimal prime of $\Ann(M)$ always exists and is an associated prime of $M$. So $\kp$ is a minimal prime of $\Ann(M)$. We have also shown that the union of all associated primes of $M$ is exactly the set of zero-divisors on $M$, so every element not in $\kp$ is a nonzero-divisor on $M$.
+    \\
+
+    (2) to (3): Since every element not in $\kp$ is a nonzero-divisor on $M$, so all the zero-divisors on $M$ are contained in $\kp$. Thus, the union of all associated primes of $M$ is contained in $\kp$. So $\kp$ contains all associated primes of $M$ and $\kp$ is the largest associated prime of $M$. But $\kp$ is also a minimal prime of $\Ann(M)$, so $\kp$ is the only associated prime of $M$. By the theorem we have shown, the intersection of all associated primes of $M$ is the radical of $\Ann(M)$, so $\kp=\sqrt{\Ann(M)}$. Thus, $\kp^n\subseteq \Ann(M)$ for some $n$ (this is nontrivial, the complete statement is that if $R$ is Noetherian, then $I^n\subseteq J \iff I\subseteq \sqrt{J}$).
+    \\
+
+    (3) to (1): Since every element not in $\kp$ is a nonzero-divisor on $M$, so $\Ann(M)\subseteq \kp$. We claim that $\kp$ is the minimal prime of $\Ann(M)$: $\kq$ is a prime over $\Ann(M)$, then $\kp^n\subseteq \kq$. So $\kp\subseteq \kq$. Thus, $\kp$ is the minimal prime of $\Ann(M)$. By the argument in (2), $\kp$ is the only associated prime of $M$, so $M$ is $\kp$-coprimary.
+\end{proof}
+\subsection{Primary decomposition}
+\begin{theorem}
+    Let $M$ be a finitely generated module over a Noetherian ring $R$. Then, any proper ideal $N\subseteq M$ can be written as a finite intersection of primary submodules. Furthermore, if $P=\{\kp_1, \ldots, \kp_n\}$ are prime ideals and we write $N=\bigcap_{i=1}^n N_i$ where $N_i$ is $\kp_i$-primary, then 
+    \begin{enumerate}
+        \item Every associated prime of $M/N$ is one of the $\kp_i$'s, that is $\Ass(M/N)\subseteq P$.
+        \item If the intersection is irredundant (meaning no $M_i$ can be removed), then $\Ass(M/N)=P$ as sets. 
+        \item If the intersection is minimal in the sense that one can't have fewer terms in the intersection, then each associated prime of $M/N$ equals some $\kp_i$ for exactly one index $i$, that is $\kp_i$ are pairwise distinct and $\Ass(M/N)=P$ as multisets.
+        \item Primary decomposition is compatible with localization: Let $U$ be a multiplicative set of $R$ and $N=\bigcap_{i=1}^n N_i$ is a minimal primary decomposition, then $U\inv N=\bigcap_{i=1}^n U\inv N_i$ is a minimal primary decomposition of $U\inv N$ as $U\inv R$-module.
+    \end{enumerate}
+\end{theorem}
 \end{document}
