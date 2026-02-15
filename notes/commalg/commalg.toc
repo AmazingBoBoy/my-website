@@ -12,5 +12,8 @@
 \contentsline {subsection}{\numberline {7.3}Filtration and $\mathrm {Ass}(M)$}{25}{subsection.155}%
 \contentsline {section}{\numberline {8}February 10, 2026: Primary Decomposition}{26}{section.160}%
 \contentsline {subsection}{\numberline {8.1}Preliminary of primary decomposition}{26}{subsection.161}%
-\contentsline {subsection}{\numberline {8.2}Primary decomposition}{27}{subsection.173}%
+\contentsline {subsection}{\numberline {8.2}Primary decomposition}{27}{subsection.175}%
+\contentsline {section}{\numberline {9}February 12, 2026: Monomial ideals and Grobner bases}{29}{section.192}%
+\contentsline {subsection}{\numberline {9.1}Monomial ideals}{29}{subsection.193}%
+\contentsline {subsection}{\numberline {9.2}Monomial Orders}{30}{subsection.213}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
