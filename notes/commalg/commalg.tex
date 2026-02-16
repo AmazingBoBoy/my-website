@@ -1,9 +1,10 @@
 \documentclass[12pt]{scrartcl}
 \usepackage[sexy]{evan}
 \usepackage{quiver}
+
 \newcommand{\Ann}{\mathrm{Ann}}
 \newcommand{\Ass}{\mathrm{Ass}}
-
+\renewcommand\qedsymbol{QED}
 \usepackage{relsize}
 \begin{document}
 \title{Note on Commutative Algebra}
@@ -115,9 +116,11 @@ Today we discuss the Hilbert's Nullstellensatz and the equivalence between the c
 \section{January 27, 2026: Localization and Tensor Products}
 There is a readiness exam today. 
 
-For problem 3, we have a stronger result. For any $R$ and ideals $I$ and $J$, we have an isomorphism
+For problem 3, we have a stronger result. 
+\begin{lemma}
+For any $R$ and ideals $I$ and $J$, we have an isomorphism
 \[\frac{R}{I}\otimes_R \frac{R}{J} \cong \frac{R}{I+J}.\]
-\begin{proof}
+\begin{subproof}
     We will show a more general result: 
     For any ideal $I$, we have the exact sequence
     \[ 0 \to I \to R \to R/I \to 0.\]
@@ -128,9 +131,14 @@ For problem 3, we have a stronger result. For any $R$ and ideals $I$ and $J$, we
     Note that $I(R/J)=IR/J = (I+J)/J$ (an elementary result, informally $I(R/J)$ is just $I/J$, but $I$ may not contain $J$ so we just use $I+J/J$ to avoid confusion), so we have
     \[ \frac{R/J}{I(R/J)} \cong \frac{R}{I+J}.\]
     Combining the two isomorphisms, we get the desired result.
-\end{proof}
-Next, we discuss localization. We essentially invert elements of a multiplicative subset $U \subseteq R$. The key propositions are the following:
-\begin{enumerate}
+\end{subproof}
+
+\end{lemma}
+
+Next, we discuss localization. We essentially invert elements of a multiplicative subset $U \subseteq R$. 
+\begin{proposition}
+    Some key properties of localization:
+    \begin{enumerate}
     \item There is a natural map $\phi: R \to M[U\inv]$ given by $r \mapsto \frac{r}{1}$. 
     \item For any ideal $J\subseteq R[U\inv]$, $I^c=\phi\inv(I)$ is an ideal of $R$ disjoint from $U$. (This is true in general for any ring homomorphism $\phi$.)
     \item For any ideal $I \subseteq R$ disjoint from $U$, the extension $I^e=U\inv I$ is a proper ideal of $R[U\inv]$. (if they are not disjoint, then $1$ is in the $U\inv I$, so it's not proper). 
@@ -145,8 +153,12 @@ Next, we discuss localization. We essentially invert elements of a multiplicativ
 \end{tikzcd}\]
     \end{center}
 \end{enumerate}
-Other properties of localization that I think are important:
-\begin{enumerate}
+\end{proposition}
+
+
+\begin{proposition}
+    Some key properties of localization as a functor:
+    \begin{enumerate}
     \item The universal property of localization: for any $R$-module $M$ and $N$, multiplicative closed set $U$. If $U$ acts invertibly on $N$, then any $R$-module homomorphism $\psi: M \to N$ factors uniquely through $U\inv M$. That is, there exists a unique $R$-module homomorphism $\tilde{\psi}: U\inv M \to N$ such that the following diagram commutes:
     % https://q.uiver.app/#q=WzAsMyxbMCwwLCJNIl0sWzMsMCwiTiJdLFsxLDIsIlVeey0xfU0iXSxbMCwxLCJcXHBzaSJdLFswLDIsIlxccGhpIiwyXSxbMiwxLCJcXHRpbGRle1xccHNpfSIsMl1d
 \[\begin{tikzcd}
@@ -161,9 +173,9 @@ Other properties of localization that I think are important:
     \item Localization commutes with direct sums and direct limits because it's a left adjoint functor. It's left adjoint to the forgetful functor from $R[U\inv]$-modules to $R$-modules, forgetting the inverted elements' action. 
     \item Left adjointness implies that localization is right exact. In fact, localization is an exact functor. 
     \item Exactness implies that localization preserves finite limits and finite colimits. In particular, it preserves kernels, cokernels (quotient of modules), finite intersections (intersetctions= a fiber product=a finite limit) and finite products. Left adjointness implies that it preserves colimits (need not to assume finiteness). In general, left exactness preserves finite limits, right exactness preserves finite colimits. 
-    \begin{proof}
+    \begin{subproof}
         Exactness implies preservation split exact sequences. Thus, this fucntor preserves products and kernels. Any finite limit can be constructed using products and kernels, so it preserves finite limits. Colimit is similar. 
-    \end{proof}
+    \end{subproof}
     
     \item Localization is nice with respect to tensor products: 
     Let $M$ and $A$ be $R$-modules, $N$ be an $R[U\inv]$-module, then we have the isomorphism
@@ -174,10 +186,16 @@ Other properties of localization that I think are important:
     \item Tensor products are associative: for any $R$-module $M$, $R$-$S$-bimodule $N$ and $S$-module $P$, we have the isomorphism
     \[(M \otimes_R N) \otimes_S P \cong M \otimes_R (N \otimes_S P).\]
 \end{enumerate}
-We also discuss some property of tensor products and $\mathrm{Hom}$ functors. 
-\begin{enumerate}
+\end{proposition}
+
+ 
+\begin{proposition}
+Properties of tensor products and $\mathrm{Hom}$ functors:
+    \begin{enumerate}
     \item $(-)\otimes_R M$ is left adjoint to $\mathrm{Hom}_R(M,-)$. Thus, $\mathrm{Hom}_R(M,-)$ is right exact.    \item $h_N(-)=\mathrm{Hom}_R(-,N): \text{R-Mod}^{\text{op}} \to \text{R-Mod}$ is right adjoint to $h_N(-)^{\text{op}}: \text{R-Mod} \to \text{R-Mod}^{\text{op}}$. 
 \end{enumerate}
+\end{proposition}
+
 \newpage 
 \section{January 29, 2026: More on Localization}
 Some multiplicative closed sets that are often used:
@@ -224,7 +242,7 @@ Some multiplicative closed sets that are often used:
     Let $R$ be a ring, and let $Q_i$ be ideals of $R$ such that $Q_i+Q_j=R$ for all $i \neq j$. Then we have the isomorphism
     \[R/\bigcap_{i=1}^n Q_i \cong \bigoplus_{i=1}^n R/Q_i.\]
     Furthermore, one can show that $\bigcap_{i=1}^n Q_i = \prod_{i=1}^n Q_i$.
-    \begin{proof}
+    \begin{subproof}
         We have a natural injection from $R/\bigcap_{i=1}^n Q_i$ to $\bigoplus_{i=1}^n R/Q_i$ given by $r \mapsto (r+Q_1, \ldots, r+Q_n)$. We will show that this map is also surjective by localization.
         \\
         For any maximal ideal $\km$ of $R$, there is at most one $Q_i$ contained in $\km$ since $Q_i+Q_j=R$ for all $i \neq j$. Since $Q_j$ is not contained in $\km$, then the localization of $Q_j$ at $\km$ is the whole localized ring $R_\km$.
@@ -235,7 +253,7 @@ Some multiplicative closed sets that are often used:
         That is, 
         \[R_{\km}/(Q_i)_{\km} \to R_{\km}/(Q_i)_{\km}.\]
         which is clearly an isomorphism. Thus, the localized map is an isomorphism for any maximal ideal $\km$. By the local global principle, the original map is also an isomorphism.
-    \end{proof}
+    \end{subproof}
 \end{example}
 \begin{theorem}
     Let $R$ be a ring, and $S$ be a $R$-algebra and $S$ is flat as an $R$-module. If $M$ and $N$ are $S$-modules, and $M$ is finitely presented as an $R$-module, then we have the isomorphism
@@ -385,16 +403,17 @@ If such $n$ does not exist, we say $M$ has infinite length. If $M$ has finite le
 
     (2) to (3): 
     \begin{claim}
-    $0$ is the product of finitely many maximal ideals. 
-    \end{claim}
-    \begin{proof}
+    $0$ is the product of finitely many maximal ideals.
+    \begin{subproof}
         Let $\SF$ the be family of all ideals that are product of finitely many maximal ideals (can be repeated). $\SF$ is clearly nonempty, thus by Artinian condition, there is a minimal element in $\SF$, say $J$.
         \\
         By the maximality of $J$, for any maximal ideal $\km$, $J\km=J$ and $J\subseteq M$. We also have $J^2\subseteq J$, so $J^2=J$. 
         \\
 
         We claim that $J=0$. If not, let $\SF'$ be the family of all ideals $I$ such that $IJ\neq 0$. Let $I$ be the minimal element of $\SF'$. Thus, $IJ=IJ^2=(IJ)J$. Thus, $IJ=I$ by the minimality of $I$. So there must exists $f\in I$ such that $(f)J\neq 0$. So $I=(f)$. So $(f)J=(f)$. Thus, there eixsts $g\in J$ such that $fg=f$. So $f(1-g)=0$. Since $J$ is contiained in all maximal ideals, $1-g$ is not contained in any maximal ideals, so $1-g$ is invertible. Thus, $f=0$, contradiction. So $J=0$.
-    \end{proof}
+    \end{subproof} 
+    \end{claim}
+    
 
     Thus, we have $0=\km_1\cdots \km_n$ for some maximal ideals $\km_1, \ldots, \km_n$. This implies that for any prime ideal $\kp$, $\kp\subseteq (0)=\km_1\cdots \km_n \subseteq \km_i$ for some $i$. We claim that $\kp\supseteq \km_i$. If not, there eixsts $f_i\in \km_i$ but $f_i\notin \kp$ for all $i$. But $\prod_{i=1}^n f_i \in \km_1\cdots \km_n =0 \subseteq \kp$, so at least one $f_i\in \kp$. Thus, $\kp\supseteq \km_i$ is maximal. Therefore, any prime ideal of $R$ is maximal and there are only finitely many prime ideals of $R$.
     \\
@@ -402,22 +421,24 @@ If such $n$ does not exist, we say $M$ has infinite length. If $M$ has finite le
     We now show that $R$ is Noetherian. Consider $M_i=\frac{\km_1\cdots \km_i}{\km_1\cdots \km_i\km_{i+1}}$ as $R/\km_{i+1}$-vector spaces. 
     \begin{claim}
         $M_i$ is finite-dimensional as $R/\km_{i+1}$-vector space.
-    \end{claim}
-    \begin{proof}
+        \begin{subproof}
         For any subspace of $M_i$, it corresponds to an ideal $I\subseteq R$. Since $R$ is Artinian, any descending chain of subspaces of $M_i$ must stabilize, so $M_i$ is finite-dimensional. Thus, we can construct a $M_i\supseteq M_{i,1} \supseteq \cdots \supseteq M_{i,n_i}=0$ such that $M_{i,j}/M_{i,j+1}\cong R/\km_{i+1}$ for all $j$. This is a finite composition series of $M_i$ as $R$-module, so $M_i$ is of finite length as $R$-module. Putting the composition series of $M_i$ together, we can get a composition series of $R$. Thus, by the previous proposition, $R$ is Noetherian.
-    \end{proof}
+    \end{subproof}
+    \end{claim}
+    
     (3) to (1): Assume $R$ is not of finite length. Consider $\SF$ to be the family of ideals such that $R/I$ is not of finite length as $R$-module. $\SF$ is clearly nonemtpy since $(0) \in \SF$, so there is a maximal element $I$ in $\SF$. 
     \begin{claim}
         $I$ is a prime ideal. 
-    \end{claim}
-    \begin{proof}
+        \begin{subproof}
         if not, then there exisst $ab\in I$ but $a,b\notin I$. Thus, $(I:a) \supsetneq I$ and $(I)+(a) \supsetneq I$. Thus, $\frac{R}{(I:a)}$ and $\frac{R}{I+(a)}$ are both of fintie length. Consider the exact sequence of $R$-modules: 
         \[0 \to \frac{R}{(I:a)} \taking{\times a} \frac{R}{I} \to \frac{R}{I+(a)} \to 0.\]
         Pasting the composition series of $\frac{R}{(I:a)}$ and $\frac{R}{I+(a)}$, we can get a finite composition series of $\frac{R}{I}$, so $\frac{R}{I}$ is of finite length, contradiction. Thus, $I$ is a prime ideal.
         \\
 
         Since $I$ is also maximal ideal. $R/I$ is a field, so $R/I$ is of finite length, contradiction. Thus, $\SF$ is empty and $R$ is of finite length.
-    \end{proof}
+    \end{subproof}
+    \end{claim}
+    
     Finally, we complete the proof. 
 \end{proof}
 With two main theorems, we can state the following corollary regarding the properties of Artinian rings and modules of finite length.
@@ -555,27 +576,30 @@ Chapter 3 of Eisenbud's book is about associated primes. It's absolutely horribl
         If $R$ is Noetherian and $M$ is a finitely generated $R$-module, then there exists a filtration of $M$:
         \[0=M_0\subsetneq M_1 \subsetneq \cdots \subsetneq M_n=M\]
         such that $M_i/M_{i-1}\cong R/\kp_i$ for some prime ideal $\kp_i$ of $R$.
-    \end{lemma}
-    \begin{proof}
+        \begin{subproof}
         Notice that $\Ass(M)$ is nonempty, so we can pick $\kp_1\in \Ass(M)$ such that there exist $R/\kp_1\cong M_1\subseteq M$. Then we can consider $M/M_1$, which is also a finitely generated $R$-module, so we can pick $\kp_2\in \Ass(M/M_1)$ such that there exist $R/\kp_2\cong M_2/M_1\subseteq M/M_1$. Thus, we get an ascending chain of submodules of $M$:
         \[0=M_0\subsetneq M_1 \subsetneq M_2 \cdots\]
         By Noetherian condition, this chain must stabilize, so we can get a filtration of $M$ as desired.
-    \end{proof}
+    \end{subproof}
+    \end{lemma}
+    
     \begin{lemma}[Orthogonal lemma]
         If $\kp=\Ann(m)$ for some $m\in M$, then $\kp=\Ann(m')$ for all nonzero $m'\in (m)$. 
         \\
 
         Furthermore, if $R/\kp_1\cong (m_1)\subseteq M$ and $R/\kp_2\cong (m_2)\subseteq M$, then either $\kp_1=\kp_2$ or $(m_1)\cap (m_2)=0$. In other words, each associated primes correspond to cyclic submodules of $M$ that are orthogonal to each other.
-    \end{lemma}
-    \begin{proof}
+        \begin{subproof}
         The first one is easy. The second follows immediately from the first one: if there exists some nonzero element in $(m_1)\cap (m_2)$, then its annihilator is both $\kp_1$ and $\kp_2$, so $\kp_1=\kp_2$.
-    \end{proof}
+    \end{subproof}
+    \end{lemma}
+    
     \begin{lemma}
         All associated primes $\kp$ of $M$ appear in the filtration of $M$ we just constructed. 
-    \end{lemma}
-    \begin{proof}
+        \begin{subproof}
         Let $\kp$ be an associated prime of $M$ and $N\subseteq M$ be a cyclic submodule such that $N\cong R/\kp$. We have shown that either $\kp=\kp_1$ or $N\cap M_1=0$. For the latter case, we can consider $N\cong \frac{N+M_1}{M_1}\subseteq \frac{M}{M_1}$. We can apply the same argument to $N$ and $M_2/M_1$, and so on. Eventually, we must have $\kp=\kp_i$ for some $i$.
-    \end{proof}
+    \end{subproof}
+    \end{lemma}
+    
     with this lemma, we can show that $\Ass(M)$ is finite since there are only finitely many $\kp_i$ in the filtration of $M$.
     \\
 
@@ -707,16 +731,17 @@ In this case, $\kp=\sqrt{\Ann(M)}$.
     \end{definition}
     \begin{claim}
         Any submodule of $M$ can be written as a finite intersection of irreducible submodules.
-    \end{claim}
-    \begin{proof}
+        \begin{subproof}
         If not, then we take the maximal element $N$ in the family of submodules that cannot be written as a finite intersection of irreducible submodules. $N$ itself must not be irreducible, so we can write $N=N_1\cap N_2$ where $N_1, N_2$ are strictly larger than $N$. By the maximality of $N$, both $N_1$ and $N_2$ can be written as a finite intersection of irreducible submodules, so $N$ can also be written as a finite intersection of irreducible submodules, contradiction. Thus, any submodule of $M$ can be written as a finite intersection of irreducible submodules.
-    \end{proof}
+    \end{subproof}
+    \end{claim}
+
     \begin{claim}
         Any irreducible submodule $N$ of $M$ is primary.
-    \end{claim}
-    \begin{proof}
+        \begin{subproof}
         If not, then there exists prime ideals $\kp\neq \kq$ such that $R/\kp\injto M/N$ and $R/\kq\injto M/N$. Let $N_1/N\cong R/\kp, N_2/N\cong R/\kq$ be the preimage of these two embeddings. By orthogonal lemma, $N_1\cap N_2=N$, contradicting the irreducibility of $N$.
-    \end{proof}
+    \end{subproof}
+    \end{claim}
     Therefore, any proper submodule of $M$ can be written as a finite intersection of primary submodules $N=\bigcap_{i=1}^n N_i$ where $N_i$ is $\kp_i$-primary for some prime ideal $\kp_i$ of $R$.
     \\
 
@@ -754,20 +779,36 @@ In this case, $\kp=\sqrt{\Ann(M)}$.
     A term of a polynomial $f$ is a monomial with nonzero coefficient in the expansion of $f$. For example, the terms of $f=2x^2y+3xy^2+4$ are $2x^2y, 3xy^2, 4$.
 \end{definition}
 \begin{lemma}
-    A polynomial $f\in I=(x^{b_1}, \ldots, x^{b_k})$ if and only if each term of $f$ is in $I$.
+    Let $I=(x^{b_1}, \ldots, x^{b_k})$ be a monomial ideal of $S$. If $f\in I$ if and only if every term of $f$ is in $I$.
 \end{lemma}
 \begin{proof}
     One direction is trivial. For the other direction, if $f\in I$, then we can write $f=\sum_i\sum_j c_{ij}x^{c_{ij}+b_i}$ where $c_{ij}$ are some vectors of nonnegative integers. We write $f$ itself as $f=\sum_l t_l x^{d_l}$ where $d_l$ are some vectors of nonnegative integers. Notice that all the monomials are linearly independent in $k$-vector space, so for each $l$, there must be some $c_{ij}$ such that $d_l=c_{ij}+b_i$, so the term $t_l x^{d_l}$ is in $I$.
 \end{proof}
 \begin{lemma}
-    Let $I=(x^{b_1}, \ldots, x^{b_k})$ be a monomial ideal of $S$. $I$ has a unique minimal generating set consisting of monomials, which is given by the set of all monomials in $I$ that are not divisible by any other monomial in $I$.
+    Any monomial ideal $I$ of $S$ is finitely generated even when $S$ is not Noetherian. 
+\end{lemma}
+This is a direct consequence of Dickson's lemma, which states that any subset of $\ZZ_{\geq 0}^n$ has finitely many minimal elements with respect to the partial order defined by $a\leq b$ if $a_i\leq b_i$ for all $i$.
+
+
+\begin{lemma}
+    Let $I=(x^{b_1}, \ldots, x^{b_k})$ be a monomial ideal of $S$. $I$ has a unique minimal generating set consisting of monomials, it's exactly the set of all minimal elements in $I$ with respect to the partial order defined by $a\leq b$ if $a_i\leq b_i$ for all $i$.
+    \\
+
+    In particular, if $S$ is a finite generating set (must exists by the previous lemma) and its elements are not divisible by each other, then it is the unique minimal generating set of $I$ consisting of monomials. 
 \end{lemma}
 \begin{proof}
     If $(b_1, b_2, \ldots, b_k)$ and $(c_1, c_2, \ldots, c_l)$ are two minimal generating sets of $I$, then for any $b_i$, there exists some $c_j$ such that $x^{b_i}$ is divisible by $x^{c_j}$, so $b_i\geq c_j$ (here we compare the vectors of nonnegative integers entrywise). By the same argument, for any $c_j$, there exists some $b_k$ such that $c_j\geq b_k$. We claim that $i=k$, otherwise we can remove $b_i$ from the generating set $(b_1, b_2, \ldots, b_k)$ and still generate $I$, contradicting minimality. So $b_k=c_j=b_i$ Thus, we can conclude that $(b_1, b_2, \ldots, b_k)=(c_1, c_2, \ldots, c_l)$ as sets.
+    \\
+
+    If $S$ is a finite generating set of $I$, then all the minimal elements with respect to the partial order must be in $S$ (nobody can generate minimal elements except for themselves). Since the elements of $S$ are not divisible by each other, these minimal elements are exactly the elements of $S$. Thus, $S$ is the unique minimal generating set of $I$ consisting of monomials.
 \end{proof}
+\begin{remark}
+    This tells us all the monomials generated by pure powers of variables has the minimal generating set as pure powers of variables themselves. 
+\end{remark}
 \begin{remark}
     From now on, we will always assume that the generating set of a monomial ideal is the unique minimal generating set consisting of monomials.
 \end{remark}
+
 \begin{proposition}
     Here is a few properties of monomial ideals:
     \begin{enumerate}
@@ -780,10 +821,10 @@ In this case, $\kp=\sqrt{\Ann(M)}$.
     (1) is trivial. (2): If $f=\sum c_ix^{t_i}\in \sqrt{I}$, then $f^n=\sum c_i^nx^{nt_i}\in I$ for some $n$. So $nt_i\geq b_j$ for some $j$. So $t_i\geq b_j$ for some $j$, so $f\in I$. Conversely, if $I$ is radical and $b_i$ has some entry greater than $1$. Then we can write $b_i=c_i+d_i$ (for example $(3,0)=(1,0)+(2,0)$), so $x^{c_i}$ is not in $I$ by the minimality of the generating set, but $x^{Mc_i}\in \sqrt{I}$ for some large $M$, contradiction. Thus, each $b_i$ is a vector of $0$'s and $1$'s.
 \end{proof}
 \begin{theorem}
-    A monomial ideal $I=(x^{b_1}, \ldots, x^{b_k})$ is irreducible if and only if  it's generated by pure powers of variables (in minimal generating set), that is $I=(x_{1}^{a_1}, \ldots, x_{n}^{a_k})$ where $a_1, \ldots, a_k$ are some positive integers. 
+    A monomial ideal $I=(x^{b_1}, \ldots, x^{b_k})$ (minimal generating set) is irreducible if and only if  it's generated by pure powers of variables that is $I=(x_{1}^{a_1}, \ldots, x_{n}^{a_k})$ where $a_1, \ldots, a_k$ are some positive integers. 
 \end{theorem}
 \begin{proof}
-    If $I$ is not generated by pure powers of variables, then there exists some generator $x^{b_i}$ such that $b_i$ has at least two nonzero entries. We can write $b_i=c_i+d_i$ (for example $x_1x_2=(1,1)$ can be separated into $x_1=(1,0)$ and $x_2=(0,1)$). Then we can write $I=(x^{b_1}, \ldots, x^{b_k})=(x^{b_1}, \ldots, x^{b_{i-1}}, x^{c_i}, x^{d_i}, x^{b_{i+1}}, \ldots, x^{b_k})\cap (x^{b_1}, \ldots, x^{b_{i-1}}, x^{d_i}, x^{b_{i+1}}, \ldots, x^{b_k})$. These two ideals are both strictly smaller than $I$ by minimality of the generating set, $I$ is not irreducible.
+    If $I$ is not generated by pure powers of variables, then there exists some generator $x^{b_i}$ such that $b_i$ has at least two nonzero entries. We can write $b_i=c_i+d_i$ (for example $x_1x_2=(1,1)$ can be separated into $x_1=(1,0)$ and $x_2=(0,1)$). Then we can write $I=(x^{b_1}, \ldots, x^{b_k})=(x^{b_1}, \ldots, x^{b_{i-1}}, x^{c_i}, x^{d_i}, x^{b_{i+1}}, \ldots, x^{b_k})\cap (x^{b_1}, \ldots, x^{b_{i-1}}, x^{d_i}, x^{b_{i+1}}, \ldots, x^{b_k})$. These two ideals are both strictly larger than $I$ since they have a minimal element $x^{c_i}$ and $x^{d_i}$ respectively that are not in $I$, so, $I$ is not irreducible.
     \\
 
     Conversely, if $I$ is generated by pure powers of variables say $I=(x_{1}^{a_1}, \ldots, x_{n}^{a_k})$. We claim that $I$ is irreducible. If not, then we can write $I=J\cap K$ where $J, K$ are strictly larger than $I$. So there exists some monomial $x^b\in J\sm I$ and some monomial $x^c\in K\sm I$. So $\lcm(x^b, x^c)\in J\cap K=I$. So there exists some $j$ such that $a_j\leq \max(b,c)$. Since $a_j$ only has one nonzero entry, we must have $a_j\leq b$ or $a_j\leq c$. So $x^b\in I$ or $x^c\in I$, contradiction. Thus, $I$ is irreducible.

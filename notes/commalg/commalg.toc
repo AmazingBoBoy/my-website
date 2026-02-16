@@ -2,18 +2,18 @@
 \contentsline {section}{\numberline {2}January 20, 2026: Basis, syzygy, and Hilbert's function theorems}{5}{section.14}%
 \contentsline {section}{\numberline {3}January 22, 2026: Nullstellensatz and equivalence of algebraic varieties and affine algebras}{8}{section.25}%
 \contentsline {section}{\numberline {4}January 27, 2026: Localization and Tensor Products}{8}{section.26}%
-\contentsline {section}{\numberline {5}January 29, 2026: More on Localization}{11}{section.42}%
-\contentsline {section}{\numberline {6}February 3, 2026: Finite Length and Artinian}{15}{section.67}%
-\contentsline {subsection}{\numberline {6.1}Main theorems of finite length modules and rings}{15}{subsection.72}%
-\contentsline {subsection}{\numberline {6.2}Some special cases}{20}{subsection.108}%
-\contentsline {section}{\numberline {7}February 5, 2026: Associated Primes}{22}{section.127}%
-\contentsline {subsection}{\numberline {7.1}The main theorem about associated primes including filtration and orthogonal lemma}{22}{subsection.130}%
-\contentsline {subsection}{\numberline {7.2}Corollaries of the main theorem}{24}{subsection.144}%
-\contentsline {subsection}{\numberline {7.3}Filtration and $\mathrm {Ass}(M)$}{25}{subsection.155}%
-\contentsline {section}{\numberline {8}February 10, 2026: Primary Decomposition}{26}{section.160}%
-\contentsline {subsection}{\numberline {8.1}Preliminary of primary decomposition}{26}{subsection.161}%
-\contentsline {subsection}{\numberline {8.2}Primary decomposition}{27}{subsection.175}%
-\contentsline {section}{\numberline {9}February 12, 2026: Monomial ideals and Grobner bases}{29}{section.192}%
-\contentsline {subsection}{\numberline {9.1}Monomial ideals}{29}{subsection.193}%
-\contentsline {subsection}{\numberline {9.2}Monomial Orders}{30}{subsection.213}%
+\contentsline {section}{\numberline {5}January 29, 2026: More on Localization}{12}{section.50}%
+\contentsline {section}{\numberline {6}February 3, 2026: Finite Length and Artinian}{16}{section.75}%
+\contentsline {subsection}{\numberline {6.1}Main theorems of finite length modules and rings}{16}{subsection.80}%
+\contentsline {subsection}{\numberline {6.2}Some special cases}{21}{subsection.116}%
+\contentsline {section}{\numberline {7}February 5, 2026: Associated Primes}{24}{section.135}%
+\contentsline {subsection}{\numberline {7.1}The main theorem about associated primes including filtration and orthogonal lemma}{24}{subsection.138}%
+\contentsline {subsection}{\numberline {7.2}Corollaries of the main theorem}{26}{subsection.152}%
+\contentsline {subsection}{\numberline {7.3}Filtration and $\mathrm {Ass}(M)$}{27}{subsection.163}%
+\contentsline {section}{\numberline {8}February 10, 2026: Primary Decomposition}{28}{section.168}%
+\contentsline {subsection}{\numberline {8.1}Preliminary of primary decomposition}{28}{subsection.169}%
+\contentsline {subsection}{\numberline {8.2}Primary decomposition}{29}{subsection.183}%
+\contentsline {section}{\numberline {9}February 12, 2026: Monomial ideals and Grobner bases}{31}{section.200}%
+\contentsline {subsection}{\numberline {9.1}Monomial ideals}{31}{subsection.201}%
+\contentsline {subsection}{\numberline {9.2}Monomial Orders}{33}{subsection.225}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
