@@ -2,8 +2,10 @@
 \usepackage[sexy]{evan}
 \usepackage{quiver}
 \usepackage{relsize}
-\newcommand{\PP}{\mathbb{P}}
 \newcommand{\legendre}[2]{\left(\frac{#1}{#2}\right)}
+\newcommand{\disc}{\operatorname{disc}}
+\newcommand{\rad}{\operatorname{rad}}
+\newcommand{\po}{\wh{\oplus}}
 \begin{document}
 \title{Note on \textit{A course in Arithmetic} by J.P. Serre}
 \author{Jiawen Huang}
@@ -56,6 +58,7 @@ Expand this. For each monomial in the expansion $x^{u_1}_1\cdots x^{u_n}_n$, sin
 The key is to consider the Gauss sum: Let $\zeta$ be a primitive $p$-th root of unity in $\ol{\FF_p}$, then define
 \[y=\sum_{x\in \FF_p}\left( \frac{x}{p}\right) \zeta^x\] 
 Then we have $y^2=\left( \frac{-1}{p}\right)p=(-1)^{\frac{p-1}{2}}p$ and $y^{q-1}=\left( \frac{q}{p}\right)$. Combining these two gives the result.
+\newpage
 \section{Meeting 1 on Jan. 28 2026: Overview of the course}
 This is a list of nontrivial results in the first meeting of the course.
 
@@ -63,8 +66,6 @@ This is a list of nontrivial results in the first meeting of the course.
     The finite subgroup of a field's multiplicative group is cyclic.
 \end{theorem}
 This can be easily proven using the structure theorem of finite abelian groups and the fundamental theorem of Algebra. 
-\\
-
 \begin{definition}
     For any prime $p$ or $p=\infty$, we define the 
     \[\norm{x}_p=\begin{cases}
@@ -123,6 +124,7 @@ Use parameterization of this curve.
 
     $f^n=h^n-g^n=\prod (h-\zeta^i g)$ where $\zeta$ is a primitive $n$-th root of unity. Notice that $\gcd(h-\zeta^i g,h-\zeta^j g)=\gcd(g,h)$ for $i\neq j$. So all $h-\zeta^i g$ are coprime to each other. Thus, $h-g=a^n$, $h-\zeta g=b^n$, $z-\zeta^2 g=c^n$ for some non-constant polynomials $a,b,c\in \CC[x]$. We can easily find $p, q,r \in \CC$ such that $(pa)^n+(qb)^n+(rc)^n=0$. This contradicts the minimality of our choice of $f,g,h$.
 \end{proof}
+\newpage
 \section{Chapter 2: $p$-adic numbers}
 \subsection{$\ZZ_p$ and $\QQ_p$}
 Let $A_n=\ZZ/p^n\ZZ$. There is a natural projection map $\phi_n: A_{n}\to A_{n-1}$.
@@ -142,9 +144,9 @@ We can also define the topology on $\ZZ_p$ as the induced topology from the prod
     We will need a lemma from topology. 
     \begin{lemma}
         \textbf{Closed subset of a compact space is compact.}
-    \begin{proof}
+    \begin{subproof}
             If $K$ is compact and $F\subseteq K$ is closed, then for any open covering of $F$, we can add $K\setminus F$ to get an open covering of $K$. So there is a finite subcovering, removing $K\setminus F$ gives a finite subcovering of $F$.
-        \end{proof}
+        \end{subproof}
     \end{lemma}
     Since $\prod A_n$ is compact by Tychonoff's theorem, it suffices to show $\ZZ_p$ is closed in $\prod A_n$. It suffices show that its complement is open. For any $y\notin \ZZ_p$, there exists some $j$ such that $\phi_{j}(y_{j})\neq y_{j-1}$. There exists an open set $U=\prod U_n$ where $U_n=A_n$ for $n\neq j,j-1$, $U_j=\{y_j\}$ and $U_{j-1}=\{y_{j-1}\}$. It's clear that $U$ is an open neighborhood of $y$ and $U\cap \ZZ_p=\emptyset$. So $\ZZ_p$ is closed.
 \end{proof}
@@ -425,6 +427,7 @@ Easy to check.
 \begin{remark}
     For any prime, we conclude that $(\QQ_p^{\times})^2$ is open set in $\QQ_p^{\times}$. If $x=p^{2k}u$ is a square, then there exists $n=4k$ such that the open ball $x+p^{4k}\ZZ_p$ is contained in $(\QQ_p^{\times})^2$ becasue any element in this open ball has even valuation and its unit part is congruent to $u$ mod $p$, which is a square in $\FF_p^{\times}$.
 \end{remark}
+\newpage
 \section{Chapter 3: Hilbert Symbol}
 In this section, $k$ denotes either $\RR$ or $\QQ_p$. 
 \subsection{Local Properties}
@@ -487,7 +490,65 @@ The proof is easy but a bit technical. An interesting lemma is needed in the pro
 
     This theorem easily follows from the Chinese Remainder Theorem.
 \end{lemma}
+\newpage
 
+\section{Chapter 4: Quadratic Forms over $\QQ_p$ and $\QQ$}
+\subsection{Quadratic Forms over arbitrary fields $k$}
+\subsubsection*{Definition}
+We will assume the characteristic of $k$ is not 2 in this section and all vector spaces are finite dimensional over $k$.
+\begin{definition}
+    Let $V$ be a vector space over $k$. A quadratic form on $V$ is a function $Q: V\to k$ such that
+    \begin{enumerate}
+        \item $Q(ax)=a^2Q(x)$ for any $a\in k$ and $x\in V$.
+        \item $(x,y)\mapsto Q(x+y)-Q(x)-Q(y)$ is a bilinear form. 
+    \end{enumerate}
+    We call pair $(V,Q)$ a quadratic space/module over $k$.
+\end{definition}
+\begin{definition}
+    $x.y=\frac{1}{2}(Q(x+y)-Q(x)-Q(y))$ is called the bilinear form associated to $Q$. We can also write $Q(x)=x.x$. This establishes a one-to-one correspondence between quadratic forms and symmetric bilinear forms.
+\end{definition}
+\begin{definition}
+    The morphism between quadratic spaces $(V_1,Q_1)$ and $(V_2,Q_2)$ is a linear map $f: V_1\to V_2$ such that $Q_2(f(x))=Q_1(x)$ for all $x\in V_1$.
+\end{definition}
+\begin{corollary}
+    $f(x).f(y)=x.y$ for any morphism $f$ between quadratic spaces. 
+\end{corollary}
+Next, we will introduce the matrix representation of quadratic forms. Let $V$ be a vector space over $k$ with basis $\{e_1,\ldots,e_n\}$. For any $x=\sum_{i=1}^n x_ie_i$, we have
+\[Q(x)=(\sum_{i=1}^n x_ie_i).(\sum_{j=1}^n x_je_j)=\sum_{i,j} a_{ij}x_ix_j\] where $a_{ij}=e_i.e_j$. Since $e_i.e_j=e_j.e_i$, we have $a_{ij}=a_{ji}$. So we can represent $Q$ by the symmetric matrix $M=(a_{ij})$. Furthermore, we can see that $Q(x)=x^TMx$. In general, $x.y=x^TM y$. 
+\\
 
+Notice that the matrix representation of a quadratic form depends on the choice of basis. If we change the basis by an invertible matrix $P$, then the new matrix representation will be $P^TMP$. So the $\det(M)$ is well-defined up to squares in $k$. We call $\det(M)$ the discriminant of $Q$ and denote it by $\disc(Q)$.
 
+\subsubsection*{Orthgonality}
+\begin{definition}
+    $x$ and $y$ are called orthogonal if $x.y=0$. Let $H\subseteq V$ be a subset, we define $H^0$ be the set of all vectors in $V$ orthogonal to all vectors in $H$, and it's clearly a vector space. We call $H^0$ the orthogonal complement of $H$.
+\end{definition}
+\begin{definition}
+    We define $\rad(V)$ to be $V^0$ when $V$ is the ambient space. 
+\end{definition}
+\begin{remark}
+    If $U\subseteq V$, $\rad(U)$ is not the same as $U^0$ since $U^0$ is the set of vectors in $V$ orthogonal to all vectors in $U$, while $\rad(U)$ is the set of vectors in $U$ orthogonal to all vectors in $U$. In fact, $\rad(U)=U\cap U^0$.
+\end{remark}
+\begin{definition}
+    $(V, Q)$ is called non-degenerate if $\rad(V)=0$.
+\end{definition}
+\begin{lemma}
+    $(V, Q)$ is non-degenerate if and only if the matrix $M$ representing $Q$ is invertible if and only if $\disc(Q)\neq 0$.
+\end{lemma}
+\begin{proof}
+    If $M$ is not invertible, then there exists a non-zero vector $x$ such that $Mx=0$. So $x.y=x^T M y=0$ for any $y\in V$, so $x\in \rad(V)$ and $(V,Q)$ is degenerate. Conversely, if $M$ is invertible, $Mx$ can be anything, so we can always find $x$ such that $z.x=z^T M x\neq 0$ for any non-zero $z$, so $\rad(V)=0$ and $(V,Q)$ is non-degenerate. 
+\end{proof}
+Let $U$ be a subsapce of $(V,Q)$. Let $U^*$ be the dual space of $U$. We can define a linear map $q_U: V\to U^*$ sending $x$ to the linear functional $y\mapsto x.y$. We can check that $\ker(q_U)=U^0$. In particular, if $U=V$, $\ker(q_V)=\rad(V)$. So if $(V,Q)$ is non-degenerate, $q_V$ is an isomorphism from $V$ to $V^*$.
+\begin{definition}
+    Let $U_1\cdots U_n$ be subspaces of $(V,Q)$. We say $V$ is the orthogonal direct sum of $U_1,\ldots,U_n$ if $V=\bigoplus_{i=1}^n U_i$ and $U_i\perp U_j$ for any $i\neq j$. We denote this by $V=U_1\po \cdots \po U_n$.
+    \\
+
+    In this case, we have $Q(x_1+\cdots +x_n)=Q(x_1)+\cdots +Q(x_n)$ for any $x_i\in U_i$.
+\end{definition}
+\begin{theorem}
+    Let $V$ be a quadratic space over $k$ and $U$ be the complement of $\rad(V)$ in $V$, then $V=U\po\rad(V)$. Furthermore, $U$ is non-degenerate and $\rad(V)$ is isotropic (i.e. $Q(x)=0$ for any $x\in \rad(V)$).
+\end{theorem}
+\begin{proof}
+    It's clear that $V=U\po\rad(V)$. Now, we show that $U$ is non-degenerate. For any $u\in \rad(U)\subseteq U\subseteq V$, $u.v=0$ for all $v\in U$. In fact, $u.(v+\rad(V))=0$ for all $v\in U$, that is, $u.v=0$ for all $v\in V$. So $u\in \rad(V)$. So $u=0$, implying $\rad(U)=0$ and $U$ is non-degenerate. Lastly, for any $x\in \rad(V)$, $Q(x)=x.x=0$, so $\rad(V)$ is isotropic.
+\end{proof}
 \end{document}

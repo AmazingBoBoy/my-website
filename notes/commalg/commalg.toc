@@ -13,7 +13,7 @@
 \contentsline {section}{\numberline {8}February 10, 2026: Primary Decomposition}{28}{section.168}%
 \contentsline {subsection}{\numberline {8.1}Preliminary of primary decomposition}{28}{subsection.169}%
 \contentsline {subsection}{\numberline {8.2}Primary decomposition}{29}{subsection.183}%
-\contentsline {section}{\numberline {9}February 12, 2026: Monomial ideals and Grobner bases}{31}{section.200}%
-\contentsline {subsection}{\numberline {9.1}Monomial ideals}{31}{subsection.201}%
-\contentsline {subsection}{\numberline {9.2}Monomial Orders}{33}{subsection.225}%
+\contentsline {section}{\numberline {9}February 12, 2026: Monomial ideals and Grobner bases}{31}{section.202}%
+\contentsline {subsection}{\numberline {9.1}Monomial ideals}{31}{subsection.203}%
+\contentsline {subsection}{\numberline {9.2}Monomial Orders}{33}{subsection.228}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

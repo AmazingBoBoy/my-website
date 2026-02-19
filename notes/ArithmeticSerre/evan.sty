@@ -1,3 +1,5 @@
+
+%Kevin Huang versin 2026-02-14
 % https://github.com/vEnhance/dotfiles/blob/main/texmf/tex/latex/evan/evan.sty %
 %                                                                              %
 %                                                       |  \                   %
@@ -144,6 +146,7 @@
 %Small commands
 \usepackage{amsmath,amssymb}
 \usepackage{iftex}
+\usepackage{quiver}
 \ifevanpkg
   \usepackage[minimal]{yhmath}
   \usepackage{derivative}
@@ -157,6 +160,13 @@
 \newcommand{\wt}{\widetilde}
 \newcommand{\wh}{\widehat}
 \newcommand{\eps}{\varepsilon}
+
+
+\newcommand{\sm}{\setminus}
+\newcommand{\smzero}{\setminus \{0\}}
+\newcommand{\nod}{\{0\}}
+\newcommand{\reto}[1]{\mid_{#1}}
+
 \newcommand{\vocab}[1]{\textbf{\color{blue}\sffamily #1}}
 \providecommand{\alert}{\vocab}
 \providecommand{\half}{\frac{1}{2}}
@@ -189,6 +199,8 @@
 
 %From H113 "Introduction to Abstract Algebra" at UC Berkeley
 \newcommand{\CC}{\mathbb C}
+
+\newcommand{\PP}{\mathbb P}
 \newcommand{\FF}{\mathbb F}
 \newcommand{\NN}{\mathbb N}
 \newcommand{\QQ}{\mathbb Q}
@@ -227,9 +239,25 @@
 \newcommand{\ii}{\item}
 
 % From Math 55 and Math 145 at Harvard
+% \newenvironment{subproof}[1][Proof]{%
+% \begin{proof}[#1] \renewcommand{\qedsymbol}{$\blacksquare$}}%
+% {\end{proof}}
+
+%kevin added start
 \newenvironment{subproof}[1][Proof]{%
-\begin{proof}[#1] \renewcommand{\qedsymbol}{$\blacksquare$}}%
-{\end{proof}}
+  \begin{mdframed}[skipabove=10pt, skipbelow=10pt, innerleftmargin=10pt, innerrightmargin=10pt, linewidth=0.7pt,
+      rightline=true,
+      leftline=true,
+      topline=true,
+      bottomline=true,]
+  \begin{proof}[#1] 
+  \renewcommand{\qedsymbol}{$\blacksquare$}
+}{%
+  \end{proof}
+  \end{mdframed}
+}
+%kevin added end
+
 
 \newcommand{\liff}{\leftrightarrow}
 \newcommand{\lthen}{\rightarrow}
@@ -273,7 +301,7 @@
 \newcommand{\SF}{\mathcal F}
 \newcommand{\SG}{\mathcal G}
 \newcommand{\SH}{\mathcal H}
-\newcommand{\OO}{\mathcal O}
+\newcommand{\SO}{\mathcal O}
 
 \newcommand{\SCA}{\mathscr A}
 \newcommand{\SCB}{\mathscr B}
@@ -351,16 +379,17 @@
   \ifevanauthor
     \title{} % empty title to avoid crashes
     \ifluatex
-      \author{Evan Chen《陳誼廷》}
+      \author{Kevin Huang《黄嘉文》}
     \else
-      \author{Evan Chen}
+      \author{Kevin Huang《黄嘉文》}
     \fi
     \date{\today}
   \fi
   %%fakesection Hyperref
   \ifevanpkg
     \PassOptionsToPackage{svgnames,dvipsnames,table}{xcolor}
-    \usepackage{xcolor}
+    \usepackage[dvipsnames]{xcolor}
+    
     \ifevanbib
       \usepackage[backend=biber,backref=true,style=alphabetic]{biblatex}
       \DeclareFieldFormat{labelalpha}{\textbf{\small #1}} % citation ID's in small-bold
@@ -415,7 +444,7 @@
       {}{}
 
     \mdfdefinestyle{mdbluebox}{%
-      roundcorner=10pt,
+      roundcorner=1pt,
       linewidth=1pt,
       skipabove=12pt,
       innerbottommargin=9pt,
@@ -430,6 +459,82 @@
       headpunct={\\[3pt]},
       postheadspace={0pt}
     ]{thmbluebox}
+
+%kevin added start
+    \mdfdefinestyle{mdyellowbox}{%
+      roundcorner=1pt,
+      linewidth=1pt,
+      skipabove=12pt,
+      innerbottommargin=9pt,
+      skipbelow=2pt,
+      linecolor=yellow,
+      nobreak=true,
+      backgroundcolor=Yellow!10,
+    }
+    \declaretheoremstyle[
+      headfont=\sffamily\bfseries\color{RawSienna},
+      mdframed={style=mdyellowbox},
+      headpunct={\\[3pt]},
+      postheadspace={0pt}
+    ]{thmyellowbox}
+%kevin added end
+
+%kevin added start
+    \mdfdefinestyle{mdgreennbox}{%
+      roundcorner=1pt,
+      linewidth=1pt,
+      skipabove=12pt,
+      innerbottommargin=9pt,
+      skipbelow=2pt,
+      linecolor=LimeGreen,
+      nobreak=true,
+      backgroundcolor=LimeGreen!10,
+    }
+    \declaretheoremstyle[
+      headfont=\sffamily\bfseries\color{ForestGreen!70!black},
+      mdframed={style=mdgreennbox},
+      headpunct={\\[3pt]},
+      postheadspace={0pt}
+    ]{thmgreennbox}
+%kevin added end
+
+%kevin added start
+    \mdfdefinestyle{mdreddbox}{%
+      roundcorner=1pt,
+      linewidth=1pt,
+      skipabove=12pt,
+      innerbottommargin=9pt,
+      skipbelow=2pt,
+      linecolor=BrickRed,
+      nobreak=true,
+      backgroundcolor=BrickRed!10,
+    }
+    \declaretheoremstyle[
+      headfont=\sffamily\bfseries\color{Red!70!black},
+      mdframed={style=mdreddbox},
+      headpunct={\\[3pt]},
+      postheadspace={0pt}
+    ]{thmreddbox}
+%kevin added end
+
+%kevin added start
+    \mdfdefinestyle{mdpinkbox}{%
+      roundcorner=1pt,
+      linewidth=1pt,
+      skipabove=12pt,
+      innerbottommargin=9pt,
+      skipbelow=2pt,
+      linecolor=VioletRed,
+      nobreak=true,
+      backgroundcolor=VioletRed!10,
+    }
+    \declaretheoremstyle[
+      headfont=\sffamily\bfseries\color{CarnationPink!95!black},
+      mdframed={style=mdpinkbox},
+      headpunct={\\[3pt]},
+      postheadspace={0pt}
+    ]{thmpinkbox}
+%kevin added end
 
     \mdfdefinestyle{mdredbox}{%
       linewidth=0.5pt,
@@ -470,7 +575,26 @@
       mdframed={style=mdgreenbox},
       headpunct={ --- },
     ]{thmgreenbox}
-
+%
+%kevin added start
+\mdfdefinestyle{mddeffbox}{%
+      skipabove=8pt,
+      skipbelow=0pt,
+      linewidth=2pt,
+      rightline=false,
+      leftline=true,
+      topline=false,
+      bottomline=false,
+      linecolor=blue!40!black,
+    }
+    \declaretheoremstyle[
+      headfont=\bfseries\sffamily\color{blue!40!black},
+      bodyfont=\normalfont,
+      spaceabove=2pt,
+      spacebelow=1pt,
+      mdframed={style=mddeffbox},
+    ]{thmdeffbox}
+%kevin added end
     \mdfdefinestyle{mdblackbox}{%
       skipabove=8pt,
       linewidth=3pt,
@@ -521,14 +645,20 @@
       \else
         \declaretheorem[style=thmbluebox,name=Theorem]{theorem}
       \fi
-      \declaretheorem[style=thmbluebox,name=Lemma,sibling=theorem]{lemma}
-      \declaretheorem[style=thmbluebox,name=Proposition,sibling=theorem]{proposition}
-      \declaretheorem[style=thmbluebox,name=Corollary,sibling=theorem]{corollary}
+      \declaretheorem[style=thmyellowbox,name=Lemma,sibling=theorem]{lemma}
+      %kevin added start
+      \declaretheorem[style=thmpinkbox,name=Application,sibling=theorem]{application}
+      %kevin added end
+      \declaretheorem[style=thmreddbox,name=Proposition,sibling=theorem]{proposition}
+      \declaretheorem[style=thmgreennbox,name=Corollary,sibling=theorem]{corollary}
       \declaretheorem[style=thmbluebox,name=Assumption,sibling=theorem]{assume}
       \declaretheorem[style=thmbluebox,name=Theorem,numbered=no]{theorem*}
-      \declaretheorem[style=thmbluebox,name=Lemma,numbered=no]{lemma*}
-      \declaretheorem[style=thmbluebox,name=Proposition,numbered=no]{proposition*}
-      \declaretheorem[style=thmbluebox,name=Corollary,numbered=no]{corollary*}
+      \declaretheorem[style=thmyellowbox,name=Lemma,numbered=no]{lemma*}
+      %kevin added start
+      \declaretheorem[style=thmpinkbox,name=Application,numbered=no]{application*}
+      %kevin added end
+      \declaretheorem[style=thmreddbox,name=Proposition,numbered=no]{proposition*}
+      \declaretheorem[style=thmgreennbox,name=Corollary,numbered=no]{corollary*}
       \declaretheorem[style=thmbluebox,name=Assumption,numbered=no]{assume*}
     \else
       \ifevansecthm
@@ -537,11 +667,17 @@
         \declaretheorem[name=Theorem]{theorem}
       \fi
       \declaretheorem[name=Lemma,sibling=theorem]{lemma}
+      %kevin added start
+      \declaretheorem[name=Application,sibling=theorem]{application}
+      %kevin added end
       \declaretheorem[name=Proposition,sibling=theorem]{proposition}
       \declaretheorem[name=Corollary,sibling=theorem]{corollary}
       \declaretheorem[name=Assumption,sibling=theorem]{assume}
       \declaretheorem[name=Theorem,numbered=no]{theorem*}
       \declaretheorem[name=Lemma,numbered=no]{lemma*}
+      %kevin added start
+      \declaretheorem[name=Application,numbered=no]{application*}
+      %kevin added end
       \declaretheorem[name=Proposition,numbered=no]{proposition*}
       \declaretheorem[name=Corollary,numbered=no]{corollary*}
       \declaretheorem[name=Assumption,numbered=no]{assume*}
@@ -591,8 +727,8 @@
     \declaretheorem[style=basehead,name=Answer,numbered=no]{answer*}
     \declaretheorem[style=basehead,name=Conjecture,sibling=theorem]{conjecture}
     \declaretheorem[style=basehead,name=Conjecture,numbered=no]{conjecture*}
-    \declaretheorem[style=basehead,name=Definition,sibling=theorem]{definition}
-    \declaretheorem[style=basehead,name=Definition,numbered=no]{definition*}
+    \declaretheorem[style=thmdeffbox,name=Definition,sibling=theorem]{definition}
+    \declaretheorem[style=thmdeffbox,name=Definition,numbered=no]{definition*}
     \declaretheorem[style=basehead,name=Exercise,sibling=theorem]{exercise}
     \declaretheorem[style=basehead,name=Exercise,numbered=no]{exercise*}
     \declaretheorem[style=basehead,name=Fact,sibling=theorem]{fact}
