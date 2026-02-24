@@ -6,14 +6,18 @@
 \contentsline {section}{\numberline {6}February 3, 2026: Finite Length and Artinian}{16}{section.75}%
 \contentsline {subsection}{\numberline {6.1}Main theorems of finite length modules and rings}{16}{subsection.80}%
 \contentsline {subsection}{\numberline {6.2}Some special cases}{21}{subsection.116}%
-\contentsline {section}{\numberline {7}February 5, 2026: Associated Primes}{24}{section.135}%
-\contentsline {subsection}{\numberline {7.1}The main theorem about associated primes including filtration and orthogonal lemma}{24}{subsection.138}%
-\contentsline {subsection}{\numberline {7.2}Corollaries of the main theorem}{26}{subsection.152}%
-\contentsline {subsection}{\numberline {7.3}Filtration and $\mathrm {Ass}(M)$}{27}{subsection.163}%
-\contentsline {section}{\numberline {8}February 10, 2026: Primary Decomposition}{28}{section.168}%
-\contentsline {subsection}{\numberline {8.1}Preliminary of primary decomposition}{28}{subsection.169}%
-\contentsline {subsection}{\numberline {8.2}Primary decomposition}{29}{subsection.183}%
-\contentsline {section}{\numberline {9}February 12, 2026: Monomial ideals and Grobner bases}{31}{section.202}%
-\contentsline {subsection}{\numberline {9.1}Monomial ideals}{31}{subsection.203}%
-\contentsline {subsection}{\numberline {9.2}Monomial Orders}{33}{subsection.228}%
+\contentsline {subsection}{\numberline {6.3}Examples}{23}{subsection.133}%
+\contentsline {section}{\numberline {7}February 5, 2026: Associated Primes}{24}{section.138}%
+\contentsline {subsection}{\numberline {7.1}The main theorem about associated primes including filtration and orthogonal lemma}{24}{subsection.141}%
+\contentsline {subsection}{\numberline {7.2}Corollaries of the main theorem}{26}{subsection.155}%
+\contentsline {subsection}{\numberline {7.3}Filtration and $\mathrm {Ass}(M)$}{27}{subsection.166}%
+\contentsline {section}{\numberline {8}February 10, 2026: Primary Decomposition}{28}{section.173}%
+\contentsline {subsection}{\numberline {8.1}Preliminary of primary decomposition}{28}{subsection.174}%
+\contentsline {subsection}{\numberline {8.2}Primary decomposition}{30}{subsection.190}%
+\contentsline {section}{\numberline {9}February 12, 2026: Monomial ideals}{32}{section.209}%
+\contentsline {subsection}{\numberline {9.1}Monomial ideals}{32}{subsection.210}%
+\contentsline {subsection}{\numberline {9.2}Monomial submodule}{34}{subsection.235}%
+\contentsline {subsection}{\numberline {9.3}Monomial Orders}{35}{subsection.246}%
+\contentsline {section}{\numberline {10}February 17, 2026: Grobner bases and division algorithm}{37}{section.266}%
+\contentsline {section}{\numberline {11}February 19, 2026: Buchberger's algorithm}{38}{section.277}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

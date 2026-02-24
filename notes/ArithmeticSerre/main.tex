@@ -6,6 +6,7 @@
 \newcommand{\disc}{\operatorname{disc}}
 \newcommand{\rad}{\operatorname{rad}}
 \newcommand{\po}{\wh{\oplus}}
+\renewcommand\qedsymbol{$\mathfrak{Q.E.D.}$}
 \begin{document}
 \title{Note on \textit{A course in Arithmetic} by J.P. Serre}
 \author{Jiawen Huang}
@@ -551,4 +552,142 @@ Let $U$ be a subsapce of $(V,Q)$. Let $U^*$ be the dual space of $U$. We can def
 \begin{proof}
     It's clear that $V=U\po\rad(V)$. Now, we show that $U$ is non-degenerate. For any $u\in \rad(U)\subseteq U\subseteq V$, $u.v=0$ for all $v\in U$. In fact, $u.(v+\rad(V))=0$ for all $v\in U$, that is, $u.v=0$ for all $v\in V$. So $u\in \rad(V)$. So $u=0$, implying $\rad(U)=0$ and $U$ is non-degenerate. Lastly, for any $x\in \rad(V)$, $Q(x)=x.x=0$, so $\rad(V)$ is isotropic.
 \end{proof}
+\begin{proposition}
+    Let $(V,Q)$ be a quadratic space over $k$. Then, 
+    \begin{enumerate}
+        \item All metric morphisms from $(V,Q)$ to a quadratic space $(V',Q')$ are injective.
+        \item For any subspace $U$ of $V$, we have 
+        \[U^{00}=U\,, \dim(U)+\dim(U^0)=\dim(V)\,,\rad(U)=\rad(U^0)=U\cap U^0\]
+        \item For any subspace $U$ of $V$, $U$ is non-degenerate if and only if $U^0$ is non-degenerate. In this case, we have $V=U\po U^0$.
+        \item If $V$ is the orthogonal direct sum of two subspaces $U$ and $W$, both $U$ and $W$ are non-degenerate. 
+        \item Any non-degenerate subsapce $U$ of $V$ has a non-degenerate complement $W$ such that $V=U\po W$.
+    \end{enumerate}
+\end{proposition}
+\begin{proof}
+    \begin{enumerate}
+        \item $f(x).f(y)=x.y$ for any morphism $f$ between quadratic spaces. So if $f(x)=0$, then $x.y=0$ for all $y\in V$, so $x\in \rad(V)$. If $(V,Q)$ is non-degenerate, $\rad(V)=0$, so $x=0$. So $f$ is injective.
+        \item Since $V$ is non-degenerate, we have a isomorphism $q_V: V\to V^*$. Therefore, we have surjection from $V$ to $U^*$ sending $x$ to $y\mapsto x.y$. The kernel of this surjection is $U^0$. This gives us an exact sequence of $k$-vector spaces: 
+        \[0\to U^0\to V\to U^* \to 0\]
+        Therefore, $\dim(U)+\dim(U^0)=\dim(V)$. 
+        \\
+
+        Since $U\subseteq U^{00}$, and $\dim(U)=\dim(U^{00})$, we have $U=U^{00}$.
+        \\
+
+        For any $x\in \rad(U)$, $x\in U$ for sure. And $x.y=0$ for any $y\in U$, so $x\in U^0$. Conversely, if $x\in U\cap U^0$, then for any $y\in U$, $x.y=0$, so $x\in \rad(U)$. So $\rad(U)=U\cap U^0=U^{00}\cap U^{0}=\rad(U^0)$.
+        \item follows from (2).
+        \item If $V=U\po W$, then $W\subseteq U^0$ and $\dim(W)=\dim(V)-\dim(U)=\dim(U^0)$. So $W=U^0$ And $U^0\cap U=\{0\}$ implies $U^0$ and $U$ are non-degenerate.
+        \item follows from (3).
+    \end{enumerate}
+\end{proof}
+\subsubsection*{isotropic vectors}
+\begin{definition}
+    An element $x\in V$ is called isotropic if $Q(x)=x.x=0$. A subspace $U$ of $V$ is called isotropic if $Q(x)=0$ for any $x\in U$. 
+\end{definition}
+\begin{lemma}
+    The following are equivalent:
+    \begin{enumerate}
+        \item $U$ is isotropic. 
+        \item $U\subseteq U^0$.
+        \item $Q\reto{U}=0$
+    \end{enumerate}
+\end{lemma}
+\begin{proof}
+    (1) to (2):$0=(x+y).(x+y)=x.x+2x.y+y.y=2x.y$ for any $x,y\in U$. The rest is trivial. 
+\end{proof}
+\begin{definition}
+    A quadratic module is having a basis formed by two isotropic vectors $x$ and $y$ such that $x.y\neq 0$ is called a hyperbolic plane. 
+    \\
+
+    Evidently, we can assume $x.y=1$ by scaling $y$. And the matrix representation of a hyperbolic plane is $\begin{pmatrix}
+        0 & 1
+        \\
+        1 & 0
+    \end{pmatrix}$.
+    \\
+
+    In particular, a hyperbolic plane is non-degenerate. 
+\end{definition}
+\begin{theorem}
+    If $x$ is an isotropic vector of a non-degenerate quadratic space $(V,Q)$, then there exists a hyperbolic plane $H$ containing $x$. 
+\end{theorem}
+\begin{proof}
+    Since $V$ is non-degenerate, there exists $y\in V$ such that $x.y=1$. Our goal is to find $z$ such that $z.z=0$ and $z.x\neq 0 $ ($z$ and $x$ are not linear dependent). We may try $z=ax+by$ and solve for $a$ and $b$. At the end, we find that $z=2y-(y.y)x$ works.
+\end{proof}
+The trick that replacing $y$ with a linear combination of $x$ and $y$ to find an isotropic vector is very common in the theory of quadratic forms. We conclude as follows:
+\begin{lemma}[Linear Replacing Trick]
+    Given $x,y\in V$. If $x$ is an isotropic vector ($x.x=0$) and $x.y\neq 0$, then there exists $z=y-\frac{y.y}{2}x\in V$ such that $z.z=0$ and $z.x=x.y\neq 0$. 
+\end{lemma}
+\begin{corollary}
+    If nondegenerate quadratic space $(V,Q)$ contains an isotropic vector, then $Q(V)=k$ that is, $Q$ is surjective.
+\end{corollary}
+\begin{proof}
+    It suffices to show that $Q$ is surjective on a hyperbolic plane. Let $H$ be a hyperbolic plane with basis $x,y$ such that $x.y=1$. For any $a\in k$, we have $Q(x+\frac{a}{2}y)=a$. 
+\end{proof}
+\subsubsection*{Orthgonal Basis}
+A basis $(e_1,\ldots,e_n)$ of $V$ is called orthogonal if $e_i.e_j=0$ for any $i\neq j$. and $e_i.e_i=a_i$ for some $a_i\in k$. In this case, the matrix representation of $Q$ is diagonal: 
+\[\begin{pmatrix}
+    a_1 & 0 & \cdots & 0
+    \\
+    0 & a_2 & \cdots & 0
+    \\
+    \vdots & \vdots & \ddots & \vdots
+    \\
+    0 & 0 & \cdots & a_n
+\end{pmatrix}\]
+\begin{theorem}
+    Every quadratic space $(V,Q)$ over $k$ has an orthogonal basis.
+\end{theorem}
+\begin{proof}
+    We will prove this by induction on $\dim(V)$. If $\dim(V)=0$, trivial. If $\dim(V)=1$, any non-zero vector is an orthogonal basis. If $\dim(V)>1$, we can decompose $V=\rad(V)\po U$ where $U$ is non-degenerate. 
+   \\
+
+   Next, $\rad(V)$ is isotropic, so any basis of $\rad(V)$ is an orthogonal basis of $\rad(V)$. So if $\rad(V)\neq 0$, we can find an orthogonal basis of $\rad(V)$ and $U$ by induction and get an orthogonal basis of $V$. If $\rad(V)=0$ and $V$ is nondegenerate, we can find $x$ such that $x.x\neq 0$. Consider the orthogonal complement of $x$, $H$. $H$ is non-degenerate because $H\cap kx=\nod$. So by proposition above, $V=kx\po H$. We can find an orthogonal basis of $H$ by induction and get an orthogonal basis of $V$ by adding $x$ to the basis of $H$.
+\end{proof}
+We have a stronger result on orthogonal bases if $V$ is non-degenerate. 
+\begin{remark}
+    In practice, we often want to find an orthogonal basis related (or contain) a given vector. 
+    \begin{enumerate}
+        \item Assume $(V,Q)$ is non-degenerate. If $x\in V$ such that $x.x\neq 0$, then we can find an orthogonal basis of $V$ containing $x$. This is very easy, just consider the orthogonal complement $H$ of $x$. We have $V=kx\po H$. 
+        \item Assume $(V,Q)$ is non-degenerate. If $x\in V$ such that $x.x=0$, then we can find a hyperbolic plane $H$ containing $x$. $x$ can't be contained in any orthogonal basis since $x$ is isotropic. But considering its hyperbolic plane $H$ (which is always degenerate) is very useful. 
+        \item Assume $(V,Q)$ is degenerate. Then any isotropic vector $x$ is contained in $\rad(V)$, and any basis of $\rad(V)$ is an orthogonal basis of $\rad(V)$. So we can find an orthogonal basis of $\rad(V)$ and extend it to an orthogonal basis of $V$.
+    \end{enumerate}
+    
+\end{remark}
+\begin{definition}
+    Two orthogonal bases 
+    \[e=(e_1,\ldots,e_n)\text{ and }f=(f_1,\ldots,f_n)\] of $V$ are called contiguous if they have an element in commone, that is, there exists $1\leq i,j \leq n$ such that $e_i=f_j$.
+\end{definition}
+\begin{theorem}
+    Let $(V,Q)$ be a nondegenerate quadratic space of dimension $\geq 3$. Then, any two orthogonal bases of $V$ are connected by a chain of contiguous orthogonal bases.
+\end{theorem}
+We omit the proof of this theorem, which is a bit technical. 
+\subsubsection*{Witt's Theorem}
+Given two nondegenerate quadratic spaces $(V_1,Q_1)$ and $(V_2,Q_2)$. Let $U$ be a subspace of $V_1$ and $s: U\to V_2$ be a morphism of quadratic spaces. We want to extend $s$ as large as possible. That is, we want to find a morphism $s': U' \to V_2$ where $U\subseteq U'\subseteq V_1$ and $s'\reto{U}=s$. 
+\\
+Next, let's investigate the case when $U$ is degenerate. 
+\begin{lemma}
+    If $U$ is degenerate, then we can extend injective morphism $s: U\to V_2$ to an injective morphism $s': U' \to V_2$ where $U$ is a hyperplane of $U'$. 
+\end{lemma}
+\begin{proof}
+    Since $U$ is degenerate, $\rad(U)\neq 0$. We can find an orthogonal basis of $U$, ($e_1, \ldots, e_r, e_{r+1}, \ldots, e_n$) where $e_{1}, \ldots, e_r$ are isotropic vectors. Our goal is to add a proper vector $e_0\notin U$ into our basis to get $U'$. The natural idea is to consider the hyperbolic plane $H$ with basis $e_0$ and $e_1$. So we pick $e_0$ such that $e_0.e_0=0$ and $e_0.e_1=1$. 
+    \\
+
+    Next, we need to define the image of $e_0$ under $s'$, and we need to make sure it's compatible with quadratic forms. So let's look at what we need in order to make $s'$ a morphism of quadratic spaces. For any $x\in U$, we can write $x=u+ce_0$ where $u\in U$ and $c\in k$. We have 
+    \[Q_2(s'(x))=Q_2(s'(u)+cS'(e_0))=s(u).s(u)+cs(u)s'(e_0)+c^2s'(e_0).s'(e_0)\]
+    This need to be the same as 
+    \[Q_1(x)=u.u+2cu.e_0+c^2e_0.e_0\]
+    Since $e_0.e_0=0$, we wish to have $s'(e_0).s'(e_0)=0$. And $u.u=s(u).s(u)$ since $s$ is a morphism of quadratic spaces. So all we need is $s(u).s'(e_0)=u.e_0$ for any $u\in U$. 
+    \\
+
+    This is not easy. The idea is that we can consider $u.e_0$ as a linear function $l(u)=u.e_0$ on $U$. $s(u).s'(e_0)$ is also a linear function $l'(s(u))=s(u).s'(e_0)$ on $s(U)$. So wish there exists $s'(e_0)$ such that $l(u)=l'(s(u))$ for any $u\in U$. So we need to find $l'=l\circ s^{-1}$, which is a linear function on $s(U)$. Since $V_2$ is non-degenerate, there is a surjection from $V_2$ to the dual space of $s(U)$ sending $v$ to the linear functional $s(u)\mapsto v.s(u)$. So we can find $s'(e_0)$ such that $u.e_0=l(u)=l'(s(u))=s(u).s'(e_0)$ for any $u\in U$. 
+    \\
+
+    But this $s'(e_0)$ may not satisfy $s'(e_0).s'(e_0)=0$ but we know that $s'(e_0).s'(e_1)=e_0.e_1=1$. So we can apply the linear replacing trick to get a isotropic element, that is, we replace $s'(e_0)$ with $s'(e_0)-\frac{s'(e_0).s'(e_0)}{2}f(e_1)$. We're done. 
+\end{proof}
+With the lemma above, we can easily extend $s$ to a morphism defined on a non-degenerate subspace $U'$ containing $U$ by keeping extending $s$ until we get a non-degenerate subspace. So we can assume $U$ is non-degenerate. Can we extend $s$ even more if $U$ is non-degenerate? The answer is yes, and this is the content of Witt's theorem.
+\begin{theorem}[Witt's Theorem]
+    If $U$ is non-degenerate, then we can extend injective morphism $s: U\to V_2$ to an isomorphism $s': V_1 \to V_2$.
+\end{theorem}
+
 \end{document}

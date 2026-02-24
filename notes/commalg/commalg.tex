@@ -4,7 +4,8 @@
 
 \newcommand{\Ann}{\mathrm{Ann}}
 \newcommand{\Ass}{\mathrm{Ass}}
-\renewcommand\qedsymbol{QED}
+\newcommand{\Lt}{\mathrm{Lt}}
+\renewcommand\qedsymbol{$\mathfrak{Q.E.D.}$}
 \usepackage{relsize}
 \begin{document}
 \title{Note on Commutative Algebra}
@@ -67,7 +68,7 @@ We discuss the history of Commutative Algebra and three of the four big theorems
     where each $F_i$ is a finitely generated graded free $R$-module and the maps are graded homomorphisms (preserves graded structure), is exact.
 \end{theorem}
 Proof is omitted. 
-\begin{theorem}[Hilber's function theorem]
+\begin{theorem}[Hilbert's function theorem]
     Let $M$ be a finitely generated graded module over the polynomial ring $R=k[x_1, \ldots, x_n]$. Then there exists a polynomial $P(t) \in \QQ[t]$ such that for all sufficiently large $d$, we have $\dim_k M_d =H_M(d) = P(d)$.
 \end{theorem}
 We will present two proofs of this theorem.
@@ -542,9 +543,15 @@ We can let $M=R/I$ in the previous corollary to get the following result about i
     \end{enumerate}
 \end{corollary}
 The idea of the proof is the same as the previous corollary.
-\begin{remark}
-    In general, $\kp^n\subseteq I$ implies $\kp^n_{\kp}\subseteq I_{\kp}$ which implies $\kp$ is the minimal prime over $I$. But the converse is not true. For example, let $R=k[x,y]$ and $I=(x^2,y^2)$, then $J=(x,y)$ is a minimal prime over $I$ since $(k[x,y]/J)_{J}=k_J=k$ is Artinian, but $(x,y)^n$ is not contained in $I$ for any $n$ since $xy\notin I$. 
-\end{remark}
+
+\subsection{Examples}
+\begin{example}
+    Any finite (in terms of cardinality) ring/module is Artinian and has finite length. This is trivial. Examples can be $\ZZ/n\ZZ$ for any positive integer $n$. 
+\end{example}
+\begin{example}
+    $R=k[x,y]/(x,y)^2$ is Artinian Ring and finite length as $R$-module. 
+\end{example}
+
 
 
 \newpage 
@@ -621,7 +628,13 @@ Chapter 3 of Eisenbud's book is about associated primes. It's absolutely horribl
 \end{proof}
 \subsection{Corollaries of the main theorem}
 \begin{corollary}[Intersection of associated primes]
-    The intersection of all associated primes of $M$ is the radical of $\Ann(M)$. In particular, the intersection of all associated primes of a Noetherian ring $R$ is exactly the nilradical of $R$.
+    The intersection of all associated primes of $M$ is the radical of $\Ann(M)$. 
+    \\
+
+    In particular, the intersection of all associated primes of a Noetherian ring $R$ is exactly the nilradical of $R$.
+    \\
+
+    The intersection of all associated primes of $I$ is $\sqrt{I}$
 \end{corollary}
 \begin{proof}
     For any prime over $\Ann(M)$, it must contain some minimal prime of $\Ann(M)$, which is an associated prime of $M$. Thus, the intersection of all associated primes of $M$ is equal to intersection of all primes over $\Ann(M)$, which is the radical of $\Ann(M)$.
@@ -666,6 +679,18 @@ This is the direct consequence of the main theorem and the prime avoidance lemma
     such that $M_i/M_{i-1}\cong R/\kp_i$ for some prime ideal $\kp_i$ of $R$. Moreover, $\Ass(M)=\{\kp_1, \ldots, \kp_n\}$.
 \end{theorem}
 This have been proven in the proof of the main theorem.
+\begin{lemma}
+    Let $I$ be an ideal of $R$ and $J=\Ann(f+I)=(I:f)$ be an annihilator of some nonzero element in $R/I$. Thus, $\Ass(R/J)\subseteq \Ass(R/I)$.
+    \\
+
+    The general version is that if $J$ is an annihilator of some nonzero element in $M$, then $\Ass(R/J)\subseteq \Ass(M)$. 
+    \\
+
+    In short, the associated primes of annihilators of nonzero elements are also the associated primes of the module.
+\end{lemma}
+\begin{proof}
+    Since $J$ is an annihilator of some nonzero element in $R/I$, $R/J$ can be embedded into $R/I$ as $R$-module. Thus, any associated prime of $R/J$ is also an associated prime of $R/I$.
+\end{proof}
 \section{February 10, 2026: Primary Decomposition}
 \subsection{Preliminary of primary decomposition}
 In this section, we assume $R$ is Noetherian and $M$ is a finitely generated $R$-module. 
@@ -710,10 +735,17 @@ In this case, $\kp=\sqrt{\Ann(M)}$.
 \end{proof}
 \begin{corollary}
     If the radical of $I$ is a maximal ideal $\km$, then $I$ is $\km$-primary. This is especially useful in monomial ideals.  
-\end{corollary}
-\begin{proof}
+    \begin{subproof}
    $\sqrt{I}$ is the intersection of all associated primes of $R/I$, so $\km$ is contained in all the associated primes of $R/I$. But $\km$ is maximal, so $\km$ is the only associated prime of $R/I$, so $I$ is $\km$-primary.
-\end{proof}
+\end{subproof}
+\end{corollary}
+\begin{corollary}
+    $I$ is a $\kp$-coprimary ideal if and only if for any $ab\in I$, either $a\in I$ or $b^n\in I$ for some $n$.
+    \\
+
+    This is more practical when we do actual computations. 
+\end{corollary}
+
 \subsection{Primary decomposition}
 \begin{theorem}
     Let $M$ be a finitely generated module over a Noetherian ring $R$. Then, any proper ideal $N\subseteq M$ can be written as a finite intersection of primary submodules. Furthermore, if $P=\{\kp_1, \ldots, \kp_n\}$ are prime ideals and we write $N=\bigcap_{i=1}^n N_i$ where $N_i$ is $\kp_i$-primary, then 
@@ -766,8 +798,9 @@ In this case, $\kp=\sqrt{\Ann(M)}$.
 \begin{remark}
     Primary decomposition is not unique. For example in $k[x,y]$, we have $(x)\cap (x^2,y)=(x)\cap (x^2,xy, y^2)=(x^2,xy)$.
 \end{remark}
+\newpage
 \end{proof}
-\section{February 12, 2026: Monomial ideals and Grobner bases}
+\section{February 12, 2026: Monomial ideals}
 \subsection{Monomial ideals}
 \begin{definition}
     Let $S=R[x_1, \ldots, x_n]$ be a polynomial ring. A monomial ideal of $S$ is an ideal generated by monomials. We will just write $x^a$ to represent monomial $x_1^{a_1}\cdots x_n^{a_n}$ where $a=(a_1, \ldots, a_n)$ is a vector of nonnegative integers. 
@@ -834,10 +867,143 @@ This is a direct consequence of Dickson's lemma, which states that any subset of
     Conversely, if $I$ is generated by pure powers of variables say $I=(x_{1}^{a_1}, \ldots, x_{n}^{a_k})$. We claim that $I$ is irreducible. If not, then we can write $I=J\cap K$ where $J, K$ are strictly larger than $I$. So there exists some monomial $x^b\in J\sm I$ and some monomial $x^c\in K\sm I$. So $\lcm(x^b, x^c)\in J\cap K=I$. So there exists some $j$ such that $a_j\leq \max(b,c)$. Since $a_j$ only has one nonzero entry, we must have $a_j\leq b$ or $a_j\leq c$. So $x^b\in I$ or $x^c\in I$, contradiction. Thus, $I$ is irreducible.
 \end{proof}
 This gives us a way to find the irreducible decomposition of a monomial ideal, which is also a primary decomposition since irreducible monomial ideals are primary. 
+\subsection{Monomial submodule}
+\begin{definition}
+    Let $F$ be a free $S$-module with basis $e_1, \ldots, e_m$. A monomial submodule of $F$ is a submodule generated by monomials of the form $x^a e_i$ where $x^a$ is a monomial of $S$ and $1\leq i\leq m$. 
+\end{definition}
+It's easy to see that $M\cong \bigoplus I_ie_i\subseteq \bigoplus Se_i\cong F$ where $I_i$ are some monomial ideals of $S$. So most results in the previous subsection can be easily generalized to monomial submodules. 
+\subsubsection*{Hilbert's Functions}
+The Hilbert's function of a monomial submodule $M$ of $F$ is defined as $H_M(d)=\dim_k M_d$ where $M_d$ is the degree $d$ part of $M$. This is very easy to compute. 
+\\
 
+Given a monomial submodule $M\subseteq F$, we can write $M=\bigoplus I_ie_i$ where $I_i$ are some monomial ideals of $S$. It suffices to compute the Hilbert's function of each $\frac{S^n}{\bigoplus I_ie_i}\cong \bigoplus \frac{S}{I_i}$. So we can just compute the Hilbert's function of $S/I$ where $I$ is a monomial ideal. If $I=(x^{b_1}, \ldots, x^{b_k})$ is the minimal generating set of $I$, we may take $n=x^{b_k}$ out and write $I=(I',n)$ where $I'=(x^{b_1}, \ldots, x^{b_{k-1}})$. Then we have the following exact sequence:
+\[0\to \frac{S}{(I':n)}\xrightarrow{\cdot n} \frac{S}{I'}\to \frac{S}{I}\to 0.\]
+Notice that $I'$ and $(I':n)=\left(\frac{x^{b_i}}{\gcd(x^{b_i},n): 0\leq i\leq k-1}\right)$ are both monomial ideals, so we can compute their Hilbert's functions inductively. Thus, $H_{S/I}(d)=H_{S/I'}(d)-H_{S/(I':n)}(d-\deg(n))$. We can compute $H_{S/I}(d)$ inductively on the number of generators of $I$.
+\subsubsection*{Syzygies of monomial submodules}
+\begin{definition}
+    Let $M$ be a submodule of $F$ and $G=(m_1, \ldots, m_k)$ be a generating set of $M$. so we have a surjection $\varphi: S^k\to M$ defined by $\varphi(e_i)=m_i$. The syzygies of $M$ with respect to $G$ is defined as $\ker(\varphi)$, which is a submodule of $S^k$.
+\end{definition}
+The syzygies of monomial submodules are also very easy to compute. Let $M$ be a monomial submodule of $F$ and $G=(m_1, \ldots, m_k)$ be the minimal generating set of $M$ consisting of monomials where $m_i$ are monomials of the form $x^a e_j$. We define $m_{ij}=\frac{m_i}{\gcd(m_i, m_j)}$ for $1\leq i, j\leq k$. ($\gcd(m_i, m_j)$ is $0$ if $m_i$ and $m_j$ involve different basis element in $F$)
+\begin{theorem}
+    The syzygies of $M$ with respect to $G$ is generated by the following elements:
+    \[\sigma_{ij}=m_{ij}e_i-m_{ji}e_j\]
+    for all $1\leq i, j\leq k$.
+\end{theorem}
+\begin{proof}
+    It's clear that $\sigma_{ij}\in \ker(\varphi)$ for all $i, j$. We claim that $\sigma_{ij}$ generate $\ker(\varphi)$. 
+    \begin{claim}
+        Let $n$ be a monomial of $F$. Let \[(\ker(\varphi))_n:=\{a\in \ker(\varphi)\mid \text{for any term } f\text{ of } a, \, \varphi(f) \text{ is a scalar multiple of }n\}\]. 
+        Then, \[\ker(\varphi)=\bigoplus_{n\in F} (\ker(\varphi))_n\]
+        ranging over all monomials of $F$.
+    \end{claim}
+    With the claim, we can show that for any $a\in \ker(\varphi)$, we can write $a=\sum_{n\in F} a_n$ where $a_n\in (\ker(\varphi))_n$. It suffices to show $a_n$ is generated by $\sigma_{ij}$. We can do this by induction on the number of terms of $a_n$. If $a_n$ has only one term, then $a_n=0$ since $\varphi(a_n)=0$. If $a_n$ has more than one term, there must to nonzero terms say $t_ie_i$ and $t_je_j$ of $a_n$. So we can substract $a_n$ by $c\sigma_{ij}$ where $c\in k$ results in an element of $\ker(\varphi)$ with fewer terms, so we can apply induction hypothesis to finish the proof.
+\end{proof}
 \subsection{Monomial Orders}
+\begin{definition}
+    A monomial order on $S$ is a total order on the set of monomials of $S$ such that 
+    \begin{enumerate}
+        \item $1< m$ for any monomial $m$ of $S$.
+        \item If $m_1> m_2$ and for any monomial $p\geq 1$ of $S$, then $pm_1> pm_2>m_2$.
+    \end{enumerate}
+\end{definition}
+\begin{example}[Lexcicographic order]
+    We say $x^a>x^b$ if the leftmost nonzero entry of $a-b$ is positive. For example, in $k[x,y,z]$, we have $x^2y> xy^8$ since the leftmost nonzero entry of $(2,1,0)-(1,2,8)$ is positive. We essentially priotize the first variable, then the second variable, and so on.
+\end{example}
+\begin{example}[Homogeneous lexicographic order]
+    We say $x^a>x^b$ if $\deg(x^a)>\deg(x^b)$ or $\deg(x^a)=\deg(x^b)$ and the leftmost nonzero entry of $a-b$ is positive. For example, in $k[x,y,z]$, we have $x^2y< xy^8$ since $\deg(x^2y)=3<\deg(xy^8)=9$.
+\end{example}
+\begin{example}[Reverse lexicographic order]
+    We say $x^a>x^b$ if $\deg(x^a)>\deg(x^b)$ or $\deg(x^a)=\deg(x^b)$ and the rightmost nonzero entry of $a-b$ is negative. Here, we try to avoid late variables as much as possible. For example, $y^4>x^2yz$. 
+    \\
 
+    Notice that reverse lexicographic order is very different from homogeneous lexicographic order. For example, in $k[x,y, z]$, we have $xz>_{hlex}y^2$ but $y^2>_{rlex} xz$.
+\end{example}
+\begin{lemma}
+    Any monomial order on $S$ is Artinian, that is, there is no infinite decreasing sequence of monomials or any nonempty set of monomials has a minimal element with respect to the monomial order.
+\end{lemma}
+\begin{definition}
+    For any nonzero polynomial $f$, we define the leading term of $f$ with respect to a monomial order as the largest term of $f$ with respect to the monomial order. We denote it by $\Lt(f)$.
+\end{definition}
+\begin{proposition}
+    Properties of these monomial orders:
+    \begin{enumerate}
+        \item For lexicographic order, if $\Lt(f)\in k[x_s, \ldots, x_{r}]$, then $f\in k[x_s, \ldots, x_{r}]$. 
+        \item For homogeneous lexicographic order, if $f$ is homogeneous and $\Lt(f)\in k[x_s, \ldots, x_{r}]$, then $f\in k[x_s, \ldots, x_{r}]$.
+        \item For reverse lexicographic order, if $\Lt(f)\in (x_s, \ldots, x_{r})$ and $f$ is homogeneous, then $f\in (x_s, \ldots, x_{r})$.
+    \end{enumerate}
+\end{proposition}
+\section{February 17, 2026: Grobner bases and division algorithm}
+Let $I$ be an ideal of $S$. Let $G=\{g_1, \ldots, g_k\}$ be a subset of $I$. We say $G$ is a Grobner basis of $I$ with respect to a monomial order if 
+\[\sum_{i=1}^k \left( \Lt(g_i) \right) = \left( \Lt(f) \mid f\in I \right). \]
+that is, the ideal generated by the leading terms of $g_i$'s is the same as the ideal generated by the leading terms of all elements in $I$.
+\begin{lemma}
+    If $G$ is a Grobner basis of $I$, then $G$ generates $I$.
+\end{lemma}
+\begin{proof}
+    This is trivial because if you can generate all the leading terms of $I$ by $G$, then you can generate all the elements of $I$ by $G$.
+\end{proof}
+\begin{corollary}
+    If $N\subseteq M$ are ideals of $S$. $N=M$ if and only if $\Lt(M)=\Lt(N)$. Furthermore, if $f\in S$ is a nonzero element, then $f\in N$ if and only if $\Lt(N+(f))= \Lt(N)$. 
+\end{corollary}
+\begin{corollary}[Hilbert's basis theorem]
+    $S=k[x_1, \ldots, x_n]$ is also Noetherian.
+    \begin{subproof}
+        For any ideal $I$ of $S$, consider $\Lt(I)$ as a monomial ideal of $S$. $\Lt(I)$ is finitely generated by some monomials, so we can find some $g_1, \ldots, g_k\in I$ such that $\Lt(g_1), \ldots, \Lt(g_k)$ generate $\Lt(I)$. So $G=\{g_1, \ldots, g_k\}$ is a Grobner basis of $I$, so $G$ generates $I$. Thus, $I$ is finitely generated. Therefore, $S$ is Noetherian.
+    \end{subproof}
+\end{corollary}
 
+Next, we define the dvision algorithm. 
+\begin{definition}
+    Let $I$ be an ideal of $S$ and $G=\{g_1, \ldots, g_k\}$ be a subset of $I$. For any $f\in S$, we can write $f=\sum_{i=1}^k f_ug_u+ r$ where $\Lt(f)\geq \Lt(f_ug_u)$ for all $i$ and $\Lt(r)\notin \left( \Lt(g_1), \ldots, \Lt(g_k)\right)$. We call $r$ the remainder of $f$ with respect to $G$ and denote it by $r_G(f)$.
+\end{definition}
+\begin{proof}
+    This divison exists: For any $f\in S$, we can find its maximal terms with respect to the monomial order $m$ that is didvisible by some $\Lt(g_i)$ and do $f-\frac{m}{\Lt(g_i)}g_i$. Repeat this process. This process must terminate since the monomial order is Artinian. Thus, we can write $f=\sum_{i=1}^k f_ug_u+ r$ where $\Lt(f)\geq \Lt(f_ug_u)$ for all $i$ and $\Lt(r)\notin \left( \Lt(g_1), \ldots, \Lt(g_k)\right)$.
+\end{proof}
+\begin{corollary}
+    Let $I$ be an ideal genertaed by $g_1, \ldots, g_k$. Then, the monomials that are not in $\left( \Lt(g_1), \ldots, \Lt(g_k)\right)$ form a $k$-basis of $S/I$.
+\end{corollary}
+\section{February 19, 2026: Buchberger's algorithm}
+The motivation is that we want to find a Grobner basis of an ideal $I$ given some generating set $G=\{g_1, \ldots, g_k\}$ of $I$. So we wish the leading terms of $g_i$'s can generate all the leading terms of $I$. But this is not always the case. So we may need to add some elements to $G$ to make it a Grobner basis. To do this, we need to make sure we can generate some smaller leading terms of $I$ that are not generated by $\Lt(g_i)$. This motivates us to define 
+\[\delta_{ij} = \frac{\lcm(\Lt(g_i), \Lt(g_j))}{\Lt(g_i)}g_j - \frac{\lcm(\Lt(g_i), \Lt(g_j))}{\Lt(g_j)}g_i=m_{ij}g_j-m_{ji}g_i\]
+for $i<j$ to cnacel the leading terms of $g_i$ and $g_j$ and generate some smaller leading terms of $I$. 
+\\
 
+Next, we need to check whether $\delta_{ij}$ can be generated by $G$ or not, we do this by using the division algorithm 
+\[\delta_{ij} = q_1g_1 + \cdots + q_kg_k + r_{ij}\]
+where $r_{ij}$ is the remainder of $\delta_{ij}$ with respect to $G$. If $r_{ij}=0$, then $\delta_{ij}$ can be generated by $G$, so we don't need to add any element to $G$. If $r_{ij}\neq 0$, then $\delta_{ij}$ cannot be generated by $G$, so we need to add $r_{ij}$ to $G$ to generate $\delta_{ij}$. But when do we get a Grobner basis? Will the process of adding $r_{ij}$'s terminate? Buchberger's criterion gives us the answer to these questions.
+\begin{theorem}[Buchberger's Criterion]
+    $h_{ij}=0$ for all $i<j$ if and only if $G$ is a Grobner basis of $I$.
+\end{theorem}
+\begin{proof}
+    One direction is trivial. Conversely, if $h_{ij}=0$ for all $i<j$, we claim that $\Lt(I)=\left( \Lt(g_1), \ldots, \Lt(g_k)\right)$. If not, then there exists some $f\in I$ such that $\Lt(f)\notin J=\left( \Lt(g_1), \ldots, \Lt(g_k)\right)$. We can write $f=\sum_{i=1}^k f_ig_i$. For each $i$, we define $m_i:=\Lt(f_ig_i)=\Lt(f_i)\Lt(g_i)$. Let $m$ be the maximal element of $m_i$'s with respect to the monomial order. And assume $m_1= m_2= \cdots = m_s=m$ (they are equal in monomial order but different expression: they may have different scalar). 
+    \begin{claim}
+        $\sum_{i=1}^s f_ig_i=0$ and $s\geq 2$. 
+        \begin{subproof}
+            if not, then $\Lt\left(\sum_{i=1}^s f_ig_i\right)=m\in J$, a contradiction.
+        \end{subproof}
+    \end{claim}
+    Now, we may take $f$ such that $s$ is minimal. $m=m_1=\Lt(f_1)\Lt(g_1)$ is divisible by $\lcm(\Lt(g_1), \Lt(g_2))=m_{12}\Lt(g_1)$, so $\Lt(f_1)$ is divisible by $m_{12}$ So we may write \[f'=f-\frac{\Lt(f_1)}{m_{12}}\delta_{12}=f'-\sum q_ig_i\in I. \]
+    Notice that $q_ig_i$ has leading term less than $\lcm(\Lt(g_1), \Lt(g_2))$ so $f'$ has $s$ doesn't change in principle, but $\Lt(f_1g_1)$ is replaced by something times $\Lt(g_2)$, so $s$ is strictly smaller than before, contradicting the minimality of $s$. Thus, $\Lt(I)=\left( \Lt(g_1), \ldots, \Lt(g_k)\right)$, so $G$ is a Grobner basis of $I$.
+\end{proof}
+\begin{remark}
+    This criterion gives us an algorithm to find a Grobner basis of $I$ given some generating set $G$ of $I$. We keep adding $r_{ij}$'s to $G$ until we get a Grobner basis. This is called Buchberger's algorithm. 
+    \\
 
+    This process must terminate by Hilbert's basis theorem. 
+\end{remark}
+\begin{remark}
+    In practice, this algorithm is easier than it looks. 
+    \\
+    First, if $\Lt(g_i)$ and $\Lt(g_j)$ are relatively prime, then we can always ensure that $r_{ij}=0$. (simple algebraic manipulation). 
+    \\
+    Second, if $g_i$ and $g_j$ are monomials, then $r_{ij}=0$. 
+    \\
+    Lastly, we can choose a good monomial order to make the algorithm faster. 
+\end{remark}
+\begin{theorem}
+    Let $P_>\subseteq \ZZ^n $ be the set of all $m-n$ such that $x^m> x^n$ with respect to a monomial order. Then, $P_>$ is a positive cone of $\ZZ^n$ in the sense that 
+    \begin{center}
+        If $a, b\in P_>$, $p, q\in \QQ$ and $pa+bq\in \ZZ^n$, then $pa+bq\in P_>$.
+    \end{center}
+\end{theorem}
 \end{document}
