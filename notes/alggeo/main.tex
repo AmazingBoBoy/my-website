@@ -679,6 +679,45 @@ This is clearly a sheaf by the local nature of the definition. But we still need
     
     Conversely, if we have $\phi\in \SO_Y(L_1)$, then for any $p\in L_1$, there exists an open neighborhood $V_p$ of $p$ in $X$ and $\psi_p\in \SO_X(V_p)$ such that $\psi_p\reto{V_p\cap L_1}=\phi\reto{V_p\cap L_1}$. We may further assume $V_p\subseteq U$. So we can assume $\psi_p\in \SO_X(V_p)=\SO_U(V_p)$. So $\psi_p$ is locally a rational function, which means that for any $p\in L_2$, there exists $U_p=V_p\cap L_2$ an open neighborhood of $p$ in $L_2$ and $f,g\in O_U(V_p)$ ($g\neq 0$ on $U_p$) such that $\phi\reto{U_P}=\psi_p\reto{U_p}=\frac{f}{g}\reto{U_p}$. Thus, $\phi\reto{U_p}=\frac{f}{g}\reto{U_p}$, which is a regular function on $L_2$. We're done. 
 \end{proof}
+\begin{proposition}
+    Propositions of closed subprevariety $Y\subseteq X$:
+    \begin{enumerate}
+        \item $i:Y\to X$ is a morphism of ringed spaces.
+        \item If morphism of ringed space $f:Z\to X$ has image contained in $Y$, then $f$ can be considered as a morphism of ringed spaces from $Z$ to $Y$. (regular functions on $Y$ is )
+    \end{enumerate}
+\end{proposition}
+\subsubsection*{Product of Prevarieties}
+Let $X$ and $Y$ be two prevarieties. we can define the product of $X$ adn $Y$ by gluing the products of affine open sets in $X$ and $Y$. More precisely, let $\{X_i\}_{i=1}^m$ and $\{Y_j\}_{j=1}^n$ be finite affine open covers of $X$ and $Y$ respectively. Then we can glue the affine varieties $X_i\times Y_j$ together to get a prevariety, which is defined to be the product of $X$ and $Y$. We denote it by $X\times Y$. This product is independent of the choice of affine open covers of $X$ and $Y$ because we can verify its universal property of product in the category of prevarieties. We omit the details here.
 
-
+\subsection{Algebraic Varieties}
+As we have seen in the example of affine line with double origin, prevarieties can be somewhat pathological. So we need to impose some extra conditions to get rid of those pathologies. similar to our restriction on manifolds, we need to impose some extra conditions on prevarieties to get algebraic varieties. The condition is separatedness, which is the analogue of Hausdorff condition in topology. 
+\begin{definition}
+    A prevariety $X$ is called a variety if the diagonal $\Delta_X=\{(x,x)\in X\times X\mid x\in X\}$ is a closed subset of $X\times X$ where $X\times X$ is the product in category of prevarieties.
+\end{definition}
+\begin{example}
+    All affine varieties are varieties because the diagonal is closed in the product of affine varieties.
+\end{example}
+\begin{example}
+    The open and closed subprevarieties of a variety are also varieties. 
+\end{example}
+\begin{example}
+    The projective line $\PP^1$ is a variety.
+\end{example}
+\begin{example}
+    The affine line $\ell$ with double origin is not a variety. $\Delta_\ell$ doesn't contain the point $(0_1, 0_2)$ so it's not closed in $\ell_2\times \ell_1$.
+\end{example}
+\begin{proposition}
+    Assume $f,g$ are morphisms of ringed spaces $f:X\to Y$ where $Y$ are varieties, then
+    \begin{enumerate}
+        \item The graph $\Gamma_f=\{(x,f(x))\in X\times Y\mid x\in X\}$ is a closed subset of $X\times Y$.
+        \item The set $\{x\in X\mid f(x)=g(x)\}$ is a closed subset of $X$.
+    \end{enumerate}
+\end{proposition}
+\begin{proposition}
+    
+    \begin{enumerate}
+        \item $X\times Y$ is a variety if $X$ and $Y$ are varieties.
+        \item The intersection of two affine open sets in a variety is an affine open set. 
+    \end{enumerate}
+\end{proposition}
 \end{document}

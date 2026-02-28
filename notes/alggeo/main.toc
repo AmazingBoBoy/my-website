@@ -24,4 +24,5 @@
 \contentsline {subsection}{\numberline {8.1}Constructing Prevarieties}{20}{subsection.125}%
 \contentsline {subsection}{\numberline {8.2}Morphism of Prevarieties}{23}{subsection.145}%
 \contentsline {subsection}{\numberline {8.3}Producing Prevarieties}{26}{subsection.158}%
+\contentsline {subsection}{\numberline {8.4}Algebraic Varieties}{27}{subsection.168}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

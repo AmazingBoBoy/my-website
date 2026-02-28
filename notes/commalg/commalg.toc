@@ -17,7 +17,11 @@
 \contentsline {section}{\numberline {9}February 12, 2026: Monomial ideals}{32}{section.209}%
 \contentsline {subsection}{\numberline {9.1}Monomial ideals}{32}{subsection.210}%
 \contentsline {subsection}{\numberline {9.2}Monomial submodule}{34}{subsection.235}%
-\contentsline {subsection}{\numberline {9.3}Monomial Orders}{35}{subsection.246}%
-\contentsline {section}{\numberline {10}February 17, 2026: Grobner bases and division algorithm}{37}{section.266}%
-\contentsline {section}{\numberline {11}February 19, 2026: Buchberger's algorithm}{38}{section.277}%
+\contentsline {subsection}{\numberline {9.3}Monomial Orders}{35}{subsection.239}%
+\contentsline {section}{\numberline {10}February 17, 2026: Grobner bases and division algorithm}{36}{section.261}%
+\contentsline {section}{\numberline {11}February 19, 2026: Buchberger's algorithm}{37}{section.272}%
+\contentsline {section}{\numberline {12}Feb 25, 2026: Exam 1}{39}{section.281}%
+\contentsline {section}{\numberline {13}Feb 27, 2026: Syzygies}{40}{section.282}%
+\contentsline {subsection}{\numberline {13.1}Syzygies of monomial submodules}{40}{subsection.283}%
+\contentsline {subsection}{\numberline {13.2}Schreyer Theorem}{40}{subsection.290}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
