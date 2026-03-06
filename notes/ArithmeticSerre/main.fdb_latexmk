@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1771956441.06213 "/Users/kai/Documents/VS Code/my-website/notes/ArithmeticSerre/main.tex" "main.pdf" "main" 1771956444.13797 0
-  "/Users/kai/Documents/VS Code/my-website/notes/ArithmeticSerre/main.tex" 1771956437.57905 45380 0327880f5f5196c663f3f48cb11966c7 ""
+["pdflatex"] 1772429862.52792 "/Users/kai/Documents/VS Code/my-website/notes/ArithmeticSerre/main.tex" "main.pdf" "main" 1772429865.83237 0
+  "/Users/kai/Documents/VS Code/my-website/notes/ArithmeticSerre/main.tex" 1772429862.29138 54187 61ba1548b007f2b629f25a083ee0ba20 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm1440.tfm" 1136768653 1536 3290a75021d32d016616fe527bc9884c ""
@@ -265,12 +265,12 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1769914979 5467155 19efa205003f9ecad95fbbaa6ff24da1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1741450574 3345740 46b66fdb0378f7bf5921b5eabf1762b8 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "evan.sty" 1771954953.18226 33230 bd70cd57b072cc0a930011c165838285 ""
-  "main.aux" 1771956444.00648 22458 a98bf9fdd16d9a1da94912f509e93391 "pdflatex"
-  "main.out" 1771956442.39625 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "main.pre" 1771956441.83403 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "main.tex" 1771956437.57905 45380 0327880f5f5196c663f3f48cb11966c7 ""
-  "main.toc" 1771956444.00893 1124 a6d6dfdf6ee75e0dcc66b8cd0bb51535 "pdflatex"
+  "evan.sty" 1772000119.48049 33230 bd70cd57b072cc0a930011c165838285 ""
+  "main.aux" 1772429865.69216 25072 4865910ae7d4c1918b3fe3d76506914f "pdflatex"
+  "main.out" 1772429863.90509 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.pre" 1772429863.33895 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.tex" 1772429862.29138 54187 61ba1548b007f2b629f25a083ee0ba20 ""
+  "main.toc" 1772429865.69497 1124 a6d6dfdf6ee75e0dcc66b8cd0bb51535 "pdflatex"
   (generated)
   "main.aux"
   "main.log"

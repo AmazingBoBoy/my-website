@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1772265540.37126 "/Users/kai/Documents/VS Code/my-website/notes/commalg/commalg.tex" "commalg.pdf" "commalg" 1772265544.01677 0
-  "/Users/kai/Documents/VS Code/my-website/notes/commalg/commalg.tex" 1772265536.36181 85366 5dc3fd0d19e8110e3994f63b8e037f79 ""
+["pdflatex"] 1772491062.72202 "/Users/kai/Documents/VS Code/my-website/notes/commalg/commalg.tex" "commalg.pdf" "commalg" 1772491066.53947 0
+  "/Users/kai/Documents/VS Code/my-website/notes/commalg/commalg.tex" 1772491058.63304 89121 58c8e166c4db9e7c8428eae58b8e499e ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcsx1440.tfm" 1136768653 1536 d4501080e094848097ac9de5c88222ce ""
@@ -275,11 +275,11 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1769914979 5467155 19efa205003f9ecad95fbbaa6ff24da1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1741450574 3345740 46b66fdb0378f7bf5921b5eabf1762b8 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "commalg.aux" 1772265543.87562 36919 29ff3972f7f27a8161f5d49d5d8fea2c "pdflatex"
-  "commalg.out" 1772265541.66974 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "commalg.pre" 1772265541.12002 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "commalg.tex" 1772265536.36181 85366 5dc3fd0d19e8110e3994f63b8e037f79 ""
-  "commalg.toc" 1772265543.88005 2651 b8df24dc6de5e7e75b67ea6c576ce7fb "pdflatex"
+  "commalg.aux" 1772491066.39617 38321 54d741a89f6ad7505c2fccaa9572ad1f "pdflatex"
+  "commalg.out" 1772491064.05064 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "commalg.pre" 1772491063.48814 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "commalg.tex" 1772491058.63304 89121 58c8e166c4db9e7c8428eae58b8e499e ""
+  "commalg.toc" 1772491066.40084 2750 c1d6626732aa3bce5060bc96f16a46d1 "pdflatex"
   "evan.sty" 1771924591.90352 33229 2a03d378d013d19b2638a73879641a2b ""
   "ss.png" 1769916530.48147 105043 fc0e8087d2e8051da94b66f07ca401ad ""
   (generated)

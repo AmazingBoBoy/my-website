@@ -709,5 +709,102 @@ With the lemma above, we can easily extend $s$ to a morphism defined on a non-de
 \begin{corollary}
     Two isomorphic subspace of a non-degenerate quadratic space have isomorphic orthogonal complements. That is $U_1^0\cong U_2^0$ if $U_1\cong U_2$.
 \end{corollary}
+\subsubsection*{Translation}
+Let $f(x)=x^TAx$ be a quadratic form on $k^n$ where $A$ is an $n\times n$  symmetric matrix. 
+\begin{definition}
+    Two quadratic forms $f$ and $g$ are called equivalent if their corresponding quadratic spaces are isomorphic. We denote it by $f\sim g$.
+    \\
+
+    $f+g$ is the quadratic form on $k^{n+m}$ defined by $(f+g)(x,y)=f(x)+g(y)$ for any $x\in k^n$ and $y\in k^m$. This is just the orthogonal direct sum of the quadratic spaces corresponding to $f$ and $g$.
+    \\
+
+    $f-g$ is defined to be $f+(-g)$ where $-g$ is the quadratic form defined by $(-g)(y)=-g(y)$ for any $y\in k^m$.
+\end{definition}
+\begin{definition}
+    A form $f$ in two variables is called hyperbolic if 
+    \[f\sim xy\sim x^2-y^2\]
+\end{definition}
+\begin{definition}
+    We say $f$ represents $a\in k$ if there exists $x\in k^n\smzero $ such that $f(x)=a$. 
+\end{definition}
+\begin{proposition}
+    If $f$ is nondegenerate and represents $0$, then one has $f\sim f_2+g$ where $f_2$ is a hyperbolic form in two variables and $g$ is a quadratic form in $n-2$ variables. Moreover, $f$ represents all elements in $k$.
+\end{proposition}
+This is the direct translation of the theorem that if a non-degenerate quadratic space contains an isotropic vector, then it contains a hyperbolic plane and is surjective. Notice that hyperbolic plane is nondegenerate so $f\sim f_2+g$. 
+\begin{proposition}
+    Let $g$ be a non-degenerate quadratic form in $n-1$ variables. And $a\in k^*$. The follows are equivalent:
+\begin{enumerate}
+    \item $g$ represents $a$. 
+    \item $g\sim h+aX^2$ for some quadratic form $h$ in $n-2$ variables.
+    \item $f=g-aX^2$ represents $0$. 
+\end{enumerate}
+\end{proposition}
+\begin{proof}
+    (2) to (1): Just let $X=1$ and the rest variables be zero.
+    \\
+
+    (1) to (2): Let $x$ be a non-zero vector such that $g(x)=a\neq 0$. Consider $L=kx$ and its orthogonal complement $L^0$. $L$ is non-degenerate since $x$ is non-isotropic. So we have $g\sim h+aX^2$ where $h$ is the quadratic form corresponding to $L^0$.
+    \\
+
+    (1) to (3): Just let $X=1$. 
+    \\
+
+    (3) to (1): If $f$ represents $0$, we can find a non-zero vector $y$ such that $f(y)=g(y)-aY^2=0$. So $g(y)=aY^2$. If $Y=0$, then $g(y)=0$, then $g$ represents all elements in $k$ since $g$ is non-degenerate. So we can assume $Y\neq 0$. So $g(\frac{y}{Y})=a$, so $g$ represents $a$.
+\end{proof}
+\begin{proposition}
+    Let $f$ and $g$ be two non-degenerate quadratic forms in $n\geq 1$ variables. The follows are equivalent:
+    \begin{enumerate}
+        \item $f-g$ represents $0$. 
+        \item There exists $a\in k^*$ such that $f$ represents $a$ and $g$ represents $a$.
+        \item There exists $a\in k^*$ such that $f-aX^2$ represents $0$ and $g-aX^2$ represents $0$.
+    \end{enumerate}
+\end{proposition}
+\begin{proof}
+    $(2)\iff (3)$ is just the previous proposition. (2) to (1) is trivial. (1) to (2): If $f-g$ represents $0$, we can find a non-zero vector $x=x_1\po x2$ such that $f(x_1)=g(x_2)=a\in k^*$. If $x_1$ and $x_2$ are nonzero, then we are done. Otherwise, say $x_1$ is zero, then $g$ represents $0$, so $g$ represents all elements in $k$. So we can find $v\in k^n$ such that $f(v)=a=\neq 0$ and $g$ can always represent $a$.
+\end{proof}
+\begin{theorem}
+    Let $f$ be a quadratic form in $n$ variables. There exists $a_1$, $\ldots$, $a_n\in k$ such that $f\sim a_1X_1^2+\cdots +a_nX_n^2$.
+\end{theorem}
+This is just the translation of the theorem that every quadratic space has an orthogonal basis.
+\begin{theorem}
+    Let $f=g+h$ and $f'=g'+h'$. If $f\sim f'$ and $g\sim g'$, then $h\sim h'$.
+\end{theorem}
+This is just the translation of Witt's theorem.
+\begin{corollary}
+    If $f$ is nondegenerate, then $f\sim g_1+\cdots g_m+h$ where $g_i$ is a hyperbolic form in two variables and $h$ does not represent $0$. Moreover, $h$ is unique up to equivalence. And the number $m$ is the dimension of the maximal isotropic subspace of the quadratic space corresponding to $f$ called the Witt index of $f$.
+\end{corollary}
+\begin{proof}
+    Existence is clear. Uniqueness follows from Witt's theorem. If $f\sim g_1+\cdots +g_m+h$ where $g_i$ is a hyperbolic form in two variables and $h$ does not represent $0$, then we can easily construct an isotropic subspace of dimension $m$ by taking the span of the first basis vector of each hyperbolic plane. Next, we show that $m$ is the maximal dimension of isotropic subspace. We will do this by induction on dimension of $f$. If $\dim(f)=0,1,2$, trivial. 
+    \\
+
+    Assume $V$ is the maximal isotropic subspace of the quadratic space corresponding to $f$. And $F$ is the quadratic space of $f$. Let $f\sim g_1+\cdots +g_m+h$ where $g_i$ is a hyperbolic form in two variables and $h$ does not represent $0$. Let $W$ be the subspace of $F$ corresponding to $g_2+\cdots +g_m+h$. Notice that 
+    \[\dim(W)+\dim(V)=\dim(W+V)+\dim(W\cap V)\]
+    So 
+    \[\dim(V)=\dim(W+V)+\dim(W\cap V)-\dim(W)\]
+    Notice that $W\cap V$ is the isotropic subspace of $W$, so $\dim(W\cap V)\leq m-1$. And $W\oplus V$ is an isotropic subspace of $F$. If $W+ V=F$, then the isotropic subspace $H$ of $g_1$ must be contained in $V$, which is impossible since $H$ is nondegenerate. So $W+V\neq F$, so $\dim(W\oplus V)\leq \dim(F)-1$. So we have
+    \[\dim(V)\leq \dim(F)-1+m-1-\dim(F)+2=m\]
+    So $m$ is the maximal dimension of isotropic subspace.
+\end{proof}
+\subsubsection*{Quadratic forms over $\FF_q$}
+$\FF_q$ is a finite field with $q$ elements where $q$ is a power of an odd prime. 
+\begin{theorem}
+    Let $f$ be a quadratic form over $\FF_q$ of rank $n$. 
+    \begin{enumerate}
+        \item If $n\geq 2$, $f$ represents all elements in $\FF_q^\times$
+        \item If $n\geq 3$, $f$ represents $0$ and thus all elements in $\FF_q$.
+    \end{enumerate}
+\end{theorem}
+\begin{proof}
+    Let $f=\sum a_iX_i^2$ be the diagonalization of $f$. If $n\geq 3$, by Chevalley-Warning theorem, $f$ represents $0$. Given a quadratic form $f$ in two variables, say $ax^2+by^2$, for any $c\in \FF_q^\times$, we can consider $ax^2+by^2-cz^2$ as a quadratic form in three variables. By the first part, it represents $0$, so there exists $x,y,z$ such that $ax^2+by^2-cz^2=0$. So $f-cz^2$ represents $0$, by proposition above, $f$ represents $c$. 
+\end{proof}
+\begin{theorem}
+    Every non-degenerate quadratic form $f$ over $\FF_q$ is equivalent to either $X_1^2+\cdots +X_n^2$ or $X_1^2+X_2^2+\cdots +aX_n^2$ depending on whether the discriminant is a square or not.
+\end{theorem}
+\begin{proof}
+    We will show it by induction. It's clear when $n=1$. When $n\geq 2$, we know that $f$ must represent $1$ by the previous theorem. So $f\sim g+X^2$ for some quadratic form $g$ in $n-1$ variables. By induction, $g$ is equivalent to either $X_1^2+\cdots +X_{n-1}^2$ or $X_1^2+X_2^2+\cdots +aX_{n-1}^2$. So $f$ is equivalent to either $X_1^2+\cdots +X_n^2$ or $X_1^2+X_2^2+\cdots +aX_n^2$.
+\end{proof}
+\begin{corollary}
+    There are exactly two non-degenerate quadratic forms over $\FF_q$ of rank $n\geq 1$ up to equivalence.
+\end{corollary}
 
 \end{document}

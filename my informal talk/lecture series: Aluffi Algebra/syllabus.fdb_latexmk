@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1771485631.38225 "/Users/kai/Documents/VS Code/my-website/my informal talk/lecture series: Aluffi Algebra/syllabus.tex" "syllabus.pdf" "syllabus" 1771485634.21246 0
-  "/Users/kai/Documents/VS Code/my-website/my informal talk/lecture series: Aluffi Algebra/syllabus.tex" 1771485627.9311 4730 2cf494adda1693d63e5bc2158b5012cf ""
+["pdflatex"] 1772776401.51731 "/Users/kai/Documents/VS Code/my-website/my informal talk/lecture series: Aluffi Algebra/syllabus.tex" "syllabus.pdf" "syllabus" 1772776403.1716 0
+  "/Users/kai/Documents/VS Code/my-website/my informal talk/lecture series: Aluffi Algebra/syllabus.tex" 1772776399.47424 4720 7a864a6c0fb006f545d7ec72cb3929e0 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcsx1728.tfm" 1136768653 1536 3798fc0a8654306b0c2beb77e66c51f7 ""
@@ -253,10 +253,10 @@
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1741450574 3345740 46b66fdb0378f7bf5921b5eabf1762b8 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
   "evan.sty" 1770596365.19445 30313 916242e1f96252f5f54ca4e82221c575 ""
-  "syllabus.aux" 1771485634.06344 1665 57487d801aa184a59595b8dbe8761cac "pdflatex"
-  "syllabus.out" 1771485633.67594 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "syllabus.pre" 1771485632.41867 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "syllabus.tex" 1771485627.9311 4730 2cf494adda1693d63e5bc2158b5012cf ""
+  "syllabus.aux" 1772776403.07665 1665 fb51871e1f30c936eb83d64d70c7339d "pdflatex"
+  "syllabus.out" 1772776402.83823 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "syllabus.pre" 1772776402.1194 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "syllabus.tex" 1772776399.47424 4720 7a864a6c0fb006f545d7ec72cb3929e0 ""
   (generated)
   "syllabus.aux"
   "syllabus.log"
