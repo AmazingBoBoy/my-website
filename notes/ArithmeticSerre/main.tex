@@ -806,5 +806,92 @@ $\FF_q$ is a finite field with $q$ elements where $q$ is a power of an odd prime
 \begin{corollary}
     There are exactly two non-degenerate quadratic forms over $\FF_q$ of rank $n\geq 1$ up to equivalence.
 \end{corollary}
+\subsection{Quadratic forms over $\QQ_p$}
+In this subsection, $k$ is the field of $p$-adic numbers $\QQ_p$ or $\RR$. We further assume all quadratic forms $(V,Q)$ are non-degenerate.
+\subsubsection*{Two invariants under different orthogonal bases}
+For any non-degenerate quadratic space $(V,Q)$, we can find an orthogonal basis $e_1,\ldots,e_n$ of $V$ such that $e_i.e_i=a_i\in k^*$. We can define two invariants of $(V,Q)$ as follows:
+\\
 
+The first one is \[d(Q)=a_1\cdots a_n\in k^*/{k^*}^2\], which is the determinant of the matrix of the quadratic form. This is independent of the choice of orthogonal basis up to squares.  
+\\
+
+The second one is \[\varepsilon(Q)=\prod_{i<j}(a_i,a_j)\], where $(a,b)$ is the Hilbert symbol. 
+\begin{claim}
+    $\varepsilon(Q)$ is independent of the choice of orthogonal basis.
+\end{claim}
+\begin{proof}
+    When rank is $1$, trivial. When rank is $2$, $\varepsilon(Q)=(a_1,a_2)=1$ if and only if $z^2-a_1x^2-a_2y^2=0$ has a non-zero solution, which is equivalent to $a_1x^2-a_2y^2$ represents $1$. This is independent of the choice of orthogonal basis. When rank is $\geq 3$, for any two orthogonal bases $e_1,\ldots,e_n$ and $f_1,\ldots,f_n$, we can find a chain of contiguous orthogonal bases connecting them. So we just need to check that $\varepsilon(Q)$ is invariant under replacing one basis vector with another. This is easy to check by direct calculation.
+\end{proof}
+
+\subsubsection*{Representation of elements in $k$ by a quadratic form}
+\begin{theorem}
+    Over $\QQ_p$, $f$ represents $0$ if and only if 
+    \begin{enumerate}
+        \item $n=2$, $d=-1$
+        \item $n=3$, $(-1,d)=\varepsilon$
+        \item $n\geq 4$ and either $d\neq 1$ or $d=1$ and $(-1,-1)=\varepsilon$
+        \item $n\geq 5$. 
+    \end{enumerate}
+    $f$ represents $a\in k^*$ if and only if 
+    \begin{enumerate}
+        \item $n=1$ and $a=d$
+        \item $n=2$ and $(a,-d)=\varepsilon$
+        \item $n=3$ and either $a\neq d$ or $(-1, -d)=\varepsilon$
+        \item $n\geq 4$. 
+    \end{enumerate}
+\end{theorem}
+The proof is technical and we will not give it here. 
+\subsection{Classification of Quadratic Forms over $\QQ_p$}
+\begin{theorem}
+    $f\sim g$ if and only if $\rank(f)=\rank(g)$, $d(f)=d(g)$ and $\varepsilon(f)=\varepsilon(g)$.
+\end{theorem}
+This is easy by induction. 
+\\
+
+However, if we are given the rank, determinant and $\varepsilon$-invariant of a quadratic form, does it exist? 
+\begin{theorem}
+    Over $\QQ_p$, let $n\geq 1$, $d\in k^*/{k^*}^2$ and $\varepsilon\in \{\pm 1\}$. There exists a non-degenerate quadratic form $f$ of rank $n$ such that $d(f)=d$ and $\varepsilon(f)=\varepsilon$ if and only if 
+    \begin{enumerate}
+        \item $n=1$ and $\varepsilon=1$.
+        \item $n=2$ and $d\neq -1$
+        \item $n=2$ and $\varepsilon=1$
+        \item $n\geq 3$. 
+    \end{enumerate}
+\end{theorem}
+\subsection{The real case}
+\begin{theorem}
+    Every non-degenerate quadratic form over $\RR$ is equivalent to $X_1^2+\cdots +X_p^2-X_{p+1}^2-\cdots -X_{p+q}^2$ for some $p,q\geq 0$ such that $p+q=n$. And each pair $(p,q)$ corresponds to a unique equivalence class of non-degenerate quadratic forms over $\RR$ of rank $n$.
+\end{theorem}
+\begin{proof}
+    We can easily show $f$ is equivalent to $a_1X_1^2+\cdots +a_nX_n^2$ where $a_i\in \{\pm 1\}$. Let $p$ be the number of $a_i$'s that are $1$, and $q$ be the number of $a_i$'s that are $-1$. For any $f$, its \textbf{positive definite subspace} is an invariant under isomorphism, so $p$ is an invariant. $(p,q)$ corresponds to a unique equivalence class of non-degenerate quadratic forms over $\RR$ of rank $n$ since we can easily check that $X_1^2+\cdots +X_p^2-X_{p+1}^2-\cdots -X_{p+q}^2$ is not equivalent to $X_1^2+\cdots +X_{p'}^2-X_{p'+1}^2-\cdots -X_{p'+q'}^2$ if $(p,q)\neq (p',q')$.
+\end{proof}
+
+\subsection{Quadratic Form over $\QQ$}
+\begin{theorem}[Hasse-Minkowski Theorem]
+    Two non-degenerate quadratic forms over $\QQ$ are equivalent if and only if they are equivalent over $\QQ_p$ for any prime $p$ and over $\RR$.
+\end{theorem}
+\begin{corollary}
+    $a\in \QQ^\times$. $f$ represents $a$ over $\QQ$ if and only if it represents $a$ over $\QQ_p$ for any prime $p$ and over $\RR$.
+\end{corollary}
+\begin{corollary}
+    A quadratic form $f$ over $\QQ$ represents $0$ if the rank is greater than $5$ and it's indefinite over $\RR$ (represents $0$ over $\RR$).
+\end{corollary}
+\begin{corollary}
+    $n$ is a positive integer that is not in the form of $4^a(8b-1)$ for some integers $a$ and $b$ if and only if $n$ can be represented as a sum of three squares. (Remark: $n=4^a(8b-1)$ is equivalent of saying $-n$ is a square in $\QQ_2$, this explains this weird phenomenon).
+    \\
+
+    Any positive integer can be represented as a sum of four squares.
+    \\
+
+    Any positive integer can be represented as a sum of three triangular numbers.
+\end{corollary}
+\begin{theorem}[Classification of quadratic forms over $\QQ$]
+    Two non-degenerate quadratic forms $f$ and $g$ over $\QQ$ are equivalent if and only if they are equivalent over $\QQ_p$ for any prime $p$ and over $\RR$. 
+\end{theorem}
+\begin{proof}
+    $n=0$ is trivial. Assume $n\geq 1$. If $f$ and $g$ are equivalent in all $\QQ_p$ and $\RR$, by the Hasse-Minkowski theorem, they both represent a nonzero element $a\in \QQ^\times$. So $f\sim f'+aX^2$ and $g\sim g'+aX^2$. Since $f\sim g$ in all $\QQ_p$ and $\RR$, we have $f'\sim g'$ in all $\QQ_p$ and $\RR$ by Witt's theorem. So $f'\sim g'$ by induction, so $f\sim g$.
+\end{proof}
+\begin{remark}
+    We can also find all the equivalence classes of non-degenerate quadratic forms over $\QQ$ of rank $n$ by finding all the possible invariants (rank, determinant and $\varepsilon$-invariant, signature) of a quadratic form over $\QQ$ and then checking the existence of a quadratic form with given invariants. 
+\end{remark}
 \end{document}

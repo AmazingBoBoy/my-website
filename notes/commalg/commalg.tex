@@ -5,6 +5,7 @@
 \newcommand{\Ann}{\mathrm{Ann}}
 \newcommand{\Ass}{\mathrm{Ass}}
 \newcommand{\Lt}{\mathrm{Lt}}
+\renewcommand\AA{\mathbb{A}}
 \renewcommand\qedsymbol{$\mathfrak{Q.E.D.}$}
 \usepackage{relsize}
 \begin{document}
@@ -16,10 +17,11 @@
 \newpage
 \section*{Acknowledgement}
 \begin{enumerate}
-    \item This note is basically a copy of Eisenbud's Commutative Algebra with a View Toward Algebraic Geometry, with some additional explanations and examples from Eisenbud's lectures and my own understanding.
+\item This note is basically a copy of Eisenbud's Commutative Algebra with a View Toward Algebraic Geometry, with some additional explanations and examples from Eisenbud's lectures and my own understanding.
 \item This latex style is made by Evan Chen. 
 \item In this note, all rings $R$ are commutative with unity unless otherwise specified.
 \item When we use the language of category theory, we are in $R$-modules categories unless otherwise specified.
+\item We assume the Axiom of Choice/Zorn's Lemma. 
 \end{enumerate}
 
 \newpage 
@@ -1071,4 +1073,246 @@ There is a really subtle detial in the proof: when we write $\sigma=\sum c_{ij}\
 
     Since the map from free module to $M$ is completely determined by the images of the basis elements, which are homogeneous elements of $M$. So we can make all the maps in the free resolution to be graded maps.
 \end{proof}
+\newpage
+\section{March 5, 2026: The Cayley-Hamilton Theorem and Nakayama's Lemma}
+\subsection{Cayley-Hamilton Theorem}
+\begin{theorem}[Cayley-Hamilton Theorem]
+    Let $R$ be a ring, $I\subseteq R$ be an ideal and $M$ be a finitely generated $R$-module and $\phi$ be a module endomorphism of $M$ such that $\phi(M)\subseteq IM$. Then, there exists some monic polynomial $f(t)=t^n+p_1t^{n-1}+\cdots+p_n\in R[t]$ such that $f(\phi)=0$ as an endomorphism of $M$ and $p_i\in I^i$ for all $i$.
+\end{theorem}
+\begin{proof}
+    Let $m_1, \ldots, m_k$ be a generating set of $M$. We can write $\phi(m_i)=\sum_{j=1}^k r_{ij}m_j$ where $r_{ij}\in I$. We can consider $M$ as a module over $R[t]$ where $t$ acts on $M$ by $\phi$. So we have $t m_i=\sum_{j=1}^k r_{ij}m_j$. so we can write 
+    \[(t\textbf{1}-A)m=0 \]
+    where $A=(r_{ij})$ is a matrix with entries in $I$ and $m$ is the column vector of $m_i$'s. multiplying both sides by the cofactor of $\id t-A$, we get
+    \[\det(t\textbf{1}-A)m=0.\]
+    So we can take $f(t)=\det(t\textbf{1}-A)$, which is a monic polynomial of degree $k$ with coefficients in $I^i$ for the $i$-th coefficient, and we have $f(\phi)=0$ as an endomorphism of $M$.
+\end{proof}
+\begin{corollary}
+    Let $R$ be a ring and $M$ be a finitely generated $R$-module.
+    \begin{enumerate}
+        \item If $\alpha$ is a surjective endomorphism of $M$, then $\alpha$ is an automorphism of $M$.
+        \item If $M\cong R^n$, then any set of $n$ generators of $M$ is a basis of $M$. In particular, the rank of a finitely generated free module is well-defined.
+    \end{enumerate}
+\end{corollary}
+\begin{proof}
+    \begin{enumerate}
+        \item Consider $M$ as a $R[t]$ module where $t$ acts on $M$ by $\alpha$. Consider the ideal $I=(t)$. Since $\alpha$ is surjective, we have $tM=M=IM$. So we can apply the Cayley-Hamilton theorem w.r.t $\phi=\id$ and $I=(t)$, we get some monic polynomial $f(t)=t^n+p_1t^{n-1}+\cdots+p_n\in R[t]$ such that $f(\id)=0$ as an endomorphism of $M$ and $p_i\in (t)^i$ for all $i$. So we have $\id=-p_1\id-\cdots-p_n\id=-p_1-\cdots-p_n=t(q(t))$ since $p_i\in (t)^i$ for all $i$. So $\alpha$ is isomorphism of $M$.
+        \item Given any set of $n$ generators of $M$, we can construct $f: R^n\surjto M$. Since $M\cong R^n$, there is an isomorphism $g: M\taking{\sim} R^n$. So $h=f\circ g: M\to M$ is a surjective endomorphism of $M$. By the first part, $h$ is an automorphism of $M$, so $f$ is an isomorphism, so the set of $n$ generators of $M$ is a basis of $M$. 
+        \item It suffices to show that if $R^n\cong R^m$, then $n=m$. If $m>n$, then we can find $n$ elements of $M$ that generate $M$, adding $m-n$ $0$'s, we get $m$ generators of $M$. By (2), these $m$ generators form a basis of $M$, but $0$ is never a basis element, so we get a contradiction. So $m=n$. 
+        \item Alternatively, if $R^n\cong R^m$, then $R/\km\otimes R^n\cong R/\km\otimes R^m$ for any maximal ideal $\km$ of $R$. So $k^n\cong k^m$ where $k=R/\km$, so $n=m$.
+    \end{enumerate}
+\end{proof}
+\subsection{Nakayama's Lemma}
+\begin{definition}
+    The Jacobson radical of a ring $R$ is defined as the intersection of all maximal ideals of $R$. We denote it by $J(R)$. 
+\end{definition}
+\begin{definition}
+    A ring $R$ is called local if $R$ has a unique maximal ideal. We denote the unique maximal ideal of a local ring $R$ by $\km_R=\km=J(R)$. 
+\end{definition}
+\begin{lemma}
+    A ring is a local ring if and only if the nonunits of $R$ form an ideal of $R$. In this case, the nonunits of $R$ is exactly the unique maximal ideal of $R$.
+\end{lemma}
+\begin{lemma}[Nakayama's Lemma]
+    Let $R$ be a local ring and $M$ be a finitely generated $R$-module. 
+    \begin{enumerate}
+        \item $M=\km M\iff M=0$.
+        \item $m_1, \ldots, m_k\in M$ generate $M$ if and only if their images in $M/\km M$ generate $M/\km M$ as a vector space over $R/\km$. 
+    \end{enumerate}
+\end{lemma}
+\begin{proof}
+    \begin{enumerate}
+        \item If $M=\km M$, we apply the Cayley-Hamilton theorem to the identity map of $M$ with respect to the ideal $\km$, we get some monic polynomial $f(t)=t^n+p_1t^{n-1}+\cdots+p_n\in R[t]$ such that $f(\id)=0$ as an endomorphism of $M$ and $p_i\in \km^i$ for all $i$. Notice that $f(\id)=1+r$ where $r\in \km$, so $f(\id)\notin M$ and is a unit. So $M=0$.
+        \item Let $N=(m_1, \ldots, m_k)$ be the submodule of $M$ generated by $m_1, \ldots, m_k$. Consider the right exact sequence:
+        \[N\taking{f} M\to \coker(f) \to 0.\]
+        Tensoring by $R/\km$, we get right exact sequence: 
+        \[N/\km N\taking{\bar{f}} M/\km M\to \coker(f)/\km \coker(f) \to 0.\]
+        where $f(m+IN)=m+IM$ for any $m\in N$. Since the images of $m_1, \ldots, m_k$ in $M/\km M$ generate $M/\km M$, $\bar{f}$ is surjective, so $\coker(f)/\km \coker(f)=0$. By the first part, $\coker(f)=0$, so $f$ is surjective, so $m_1, \ldots, m_k$ generate $M$.
+    \end{enumerate}
+\end{proof}
+\subsection{Main proposition about finite extensions in rings}
+\begin{proposition}
+    Let $R$ be a ring and $J\subseteq R[x]$ be an ideal. Let $S=R[x]/J$. 
+    \begin{enumerate}
+        \item $S$ is finitely generated as an $R$-module if and only if there exists some monic polynomial $f(x)\in R[x]$ such that $f(x)\in J$. 
+        \item $S$ is a finitely generated free $R$-module if and only if $J$ is generated by some monic polynomial $p(x)\in R[x]$.
+    \end{enumerate}
+\end{proposition}
+\begin{proof}
+    \begin{enumerate}
+        \item One direction is trivial. Conversely, if $S$ is finitely generated as an $R$-module. Let $s$ be the image of $x$ in $R[x]\surjto S$. Apply the Cayley-Hamilton theorem to the the map $\times s$ and $I=R$, we get a monic polynomial $f(x)\in R[x]$ such that $f(s)=0$ as an endomorphism of $S$, so $f(s) 1=0$ in $S$, so $f(s)=0$ in $S$. Hence, $f(x)\in J$. 
+        \item If $J$ is generated by some monic polynomial $p(x)=x^n+p_{n-1}x^{n-1}+\cdots+p_0\in R[x]$, then we claim that $1$, $s$, $\ldots$, $s^{n-1}$ form a basis of $S$ as an $R$-module where $s$ is the image of $x$. It's clear that they generate $S$. If $f_0+f_1s+\cdots+f_{n-1}s^{n-1}=0$ for some $f_i\in R$, then $f_0+f_1x+\cdots+f_{n-1}x^{n-1}\in J$ is divisible by $p(x)$, so $f_i=0$ for all $i$. Thus, $1$, $s$, $\ldots$, $s^{n-1}$ form a basis of $S$ as an $R$-module. Conversely, $S$ is a finitely generated free $R$-module of rank $n$. By the first part, there exists a monic polynomial $f(x)\in R[x]$ of degree $n$ such that $f(s)=0$ where $s$ is the image of $x$. So $1$, $s$, $\ldots$, $s^{n-1}$ generate $S$. By corollary 4.2 (2), $1$, $s$, $\ldots$, $s^{n-1}$ form a basis of $S$ as an $R$-module. So $f(x)\in J$. We claim that $J$ is generated by $f(x)$. If not, then there exists some $g(x)\in J$ such that $g(x)$ is not divisible by $f(x)$. We can write $g(x)=q(x)f(x)+r(x)$ where $\deg(r)<\deg(f)$. Since $g(x)\in J$ and $q(x)f(x)\in J$, we have $r(x)\in J$. Let $r(x)=r_0+r_1x+\cdots + r_{m}x^{m}$ where $r_i\in R$ and $m=\deg(r(x))<\deg(f)=n$, so $r(s)=r_0+r_1s+\cdots + r_{m}s^{m}=0$ in $S$. Since $1$, $s$, $\ldots$, $s^{n-1}$ form a basis of $S$ as an $R$-module, we have $r_i=0$ for all $i$, so $r(x)=0$, so $g(x)$ is divisible by $f(x)$, a contradiction. Thus, $J$ is generated by $f(x)$.
+    \end{enumerate}
+\end{proof}
+\newpage
+\section{March 10, 2026: Integral Extension, Normal Domains and 4 Theorems}
+Integral extension is a generalization of finite extension in field theory to ring theory. 
+\subsection{Integral extensions}
+\begin{definition}
+    Let $R\subseteq S$ be an extension of rings. An element $s\in S$ is called integral over $R$ if there exists some monic polynomial $f(x)\in R[x]$ such that $f(s)=0$ in $S$. We say $S$ is integral over $R$ if every element of $S$ is integral over $R$.
+\end{definition}
+\begin{theorem}
+    Let $S=R[x_1, \ldots, x_k]$ be a finitely generated $R$-algebra. Then,
+    The following are equivalent: 
+    \begin{enumerate}
+        \item $S$ is finitely generated as an $R$-module.
+        \item $S$ is integral over $R$.
+        \item $x_1, \ldots, x_k$ are integral over $R$.
+    \end{enumerate}
+\end{theorem}
+\begin{proof}
+    (1) to (2): for any $s\in S$, we can consider $s$ as an endomorphism of $S$ by multiplication. Since $S$ is finitely generated as an $R$-module, we can apply the Cayley-Hamilton theorem to get some monic polynomial $f(x)\in R[x]$ such that $f(s)=0$ as an endomorphism of $S$, so $f(s)1=0$ in $S$, so $f(s)=0$ in $S$. Thus, $s$ is integral over $R$. So $S$ is integral over $R$.
+    \\
+    (2) to (3) is trivial.
+    \\
+    (3) to (1): We will prove it by induction on the number of generators $k$. If $k=0$, then $S=R$ is finitely generated as an $R$-module. If $k>0$, since $x_k$ is integral over $R$, it's integral over $R[x_1, \ldots, x_{k-1}]=S'$ as well. So $S=\frac{S'[t]}{J}$ for some ideal $J$ of $S'[t]$. Notice that $x_k$ is the image of $t$ is integral over $S'$, so there exists some monic polynomial $f(t)\in S'[t]$ such that $f(x_k)=0$ in $S$. So $f(t)\in J$. By the previous proposition, $S$ is finitely generated as an $S'$-module. 
+    \begin{lemma}
+        Let $R\subseteq S\subseteq T$ be an extension of rings. If $S$ is finitely generated as an $R$-module and $T$ is finitely generated as an $S$-module, then $T$ is finitely generated as an $R$-module.
+        \begin{subproof}
+            Just find the generators. 
+        \end{subproof}
+    \end{lemma}
+    So $S$ is finitely generated as an $R$-module. 
+\end{proof}
+\begin{remark}
+    The sums and products of two integral elements are integral. So the set of all integral elements over $R$ in $S$ form a subring of $S$ containing $R$, which is called the integral closure of $R$ in $S$.
+\end{remark}
+\begin{theorem}[Transitivity of integral extensions]
+    Let $R\subseteq S\subseteq T$ be an extension of rings. Integral extension and finite extension are transitive. 
+\end{theorem}
+\begin{proof}
+    We have shown the transitivity of finite extension in the previous lemma. Now we show the transitivity of integral extension. For any $t\in T$, since $T$ is integral over $S$, there exists some monic polynomial $f(x)=x^n+a_{n-1}x^{n-1}+\cdots+a_0\in S[x]$ such that $f(t)=0$ in $T$. Consider $R[a_0, \ldots, a_{n-1}]$, which is a finitely generated $R$-algebra. So $R[a_0, \ldots, a_{n-1}, t]$ is a finite extension of $R[a_0, \ldots, a_{n-1}]$ therefore a finite extension of $R$. So $t$ is integral over $R$. Thus, $T$ is integral over $R$.
+\end{proof}
+\begin{proposition}
+    Given an integral extension $R \subseteq R'$, they are nice in the following sense:
+    \begin{enumerate}
+        \item For any ideal $I$ of $R'$, $R/(I\cap R)\to R'/I$ is an integral extension.
+        \item For any multiplicative closed subset $S$, $S\inv R\subseteq S\inv R'$ is an integral extension.
+        \item $R[x]\subseteq R'[x]$ is an integral extension.
+    \end{enumerate}
+\end{proposition}
+Proof is easy by checking the definitions.
+
+\subsection{Normal Domains}
+\begin{definition}
+    An integral domain $R$ is called normal if $R$ is integrally closed in its field of fractions.
+\end{definition}
+\begin{lemma}
+    All UFDs are normal domains.
+\end{lemma}
+This is easy to show.
+\\
+
+Goemetrically, normal domains correspond to varieties without cusps. 
+\begin{example}
+    Let $R=\CC[x]$, corresponding to $X=\AA^1$. $R$ is UFD so $R$ is normal. We can understand this geometrically: given $f\in \CC(x)$. If $f$ is integral over $\CC[x]$, then $f$ can't have poles because of the integral relations. So $f$ is a regular function on $\AA^1$, so $f\in \CC[x]$.
+\end{example}
+\begin{example}
+    Let $X=V(y^2-x^2-x^3)\subseteq \AA^2$ and $R=\CC[x,y]/(y^2-x^2-x^3)$ be the coordinate ring of $X$. We claim that $R$ is not normal. Consider $f=\frac{y}{x}\in \text{Frac}(R)$. We have $f^2=\frac{y^2}{x^2}=\frac{x^2+x^3}{x^2}=1+x\in R$, so $f$ is integral over $R$. But $f\notin R$. So $R$ is not normal. Geometrically, $f=\frac{y}{x}$ is not continuous at the origin ($\pm 1$ depends on the branch), but we can make it continuous by squaring it. 
+    \begin{center}
+           \includegraphics{diagram1-4.pdf}
+    \end{center}
+    What if we take the integral closure of $R$ in $\text{Frac}(R)$? It must contain $f=\frac{y}{x}$. Let $\ol{R}=R[f]$, which is a subring of $\text{Frac}(R)$. We claim that $\ol{R}$ is the integral closure of $R$ in $\text{Frac}(R)$. Notice that $\ol{R}\cong \CC[t]$ where $t$ is the image of $f$. So $\ol{R}$ is a UFD, so $\ol{R}$ is normal. So $\ol{R}$ is integrally closed in $\text{Frac}(\ol{R})=\text{Frac}(R)$. The affine space of $\ol{R}$ is $\AA^1$, which is the normalization of $X$. So we see that taking integral closure can somehow remove the singularity of the variety.
+\end{example}
+\begin{proposition}
+    Let $R$ be an integral domain, $R\subseteq R'$ be a ring extension, $K$ be the field of fractions of $R$, and $S$ be a multiplicative closed subset of $R$.
+    \begin{enumerate}
+        \item If $\ol{R}$ is the integral closure of $R$ in $R'$, then $S\inv \ol{R}$ is the integral closure of $S\inv R$ in $S\inv R'$. In particular, if $R$ is normal, then $S\inv R$ is normal.
+        \item If $R_{\km}$ is normal for all maximal ideals $\km$ of $R$, then $R$ is normal.
+        \item If $R$ is normal, then $R[x]$ is normal. 
+    \end{enumerate}
+\end{proposition}
+\begin{proposition}
+   Let $R\subseteq R'$ be an extension of integral domains. If $R$ is integrally closed in $R'$, then for any monic $f,g\in R'[x]$ such that $fg\in R[x]$, we have $f, g\in R[x]$. In particular, if $R$ is normal, then for any monic $f,g\in \text{Frac}(R)[x]$ such that $fg\in R[x]$, we have $f, g\in R[x]$ (Guass Lemma). 
+\end{proposition}
+\begin{lemma}
+    Let $R\subseteq R'$ be an integral extension of integral domains. If $R$ is normal, then 
+    \begin{enumerate}
+        \item For any $a\in R'$, its minimal polynomial over $K=\text{Frac}(R)$ has coefficients in $R$.
+        \item If $a\in PR'$ for some prime ideal $P$ of $R$, then all the non-leading coefficients of the minimal polynomial of $a$ over $K$ are in $P$.
+    \end{enumerate}
+\end{lemma}
+This lemma gives us a way to determine whether an element in $R'$ is integral over $R$ by looking at its minimal polynomial over $K$. 
+\begin{example}
+    Consider $d$ a nonzero square-free integer. We can use this lemma to the integral closure of $\ZZ$ in $\QQ(\sqrt{d})$. We can show that the integral closure of $\ZZ$ in $\QQ(\sqrt{d})$ is $\ZZ[\frac{1+\sqrt{d}}{2}]$ if $d\equiv 1\mod 4$ and $\ZZ[\sqrt{d}]$ otherwise.
+\end{example}
+\subsection{Four Theorems}
+For any morphism of affine varieties $f: X\to Y$, we have the corresponding morphism of coordinate rings $f^*: \CC[Y]\to \CC[X]$. It's easy to see that if $f$ is surjective, then $f^*$ is injective. Similarly, if $f^*$ is surjective, then $f$ is injective. However, when $f^*$ is injective, $f$ may not be surjective in general. For example, consider the inclusion from $k[x]$ to $k[x,y]/(xy)$, which corresponds to the morphism from $V(xy)$ to $\AA^1$ given by $(x,y)\mapsto x$. This morphism is not surjective since the image does not contain $0$, but the corresponding morphism of coordinate rings is injective. So we need some extra condition to guarantee that $f^*$ is injective implies $f$ is surjective. The extra condition turns out to be the integrality of $f^*$.
+\\
+
+\begin{theorem}[Lying Over]
+    Let $R\subseteq R'$ be an integral extension of rings. Then for any prime ideal $P$ of $R$, there exists some prime ideal $P'$ of $R'$ such that $P'\cap R=P$.
+\end{theorem}
+Given a integral extension from $i: \SO(Y)$ to $\SO(X)$, we have a morphism $\pi: X\to Y$. For any maximal ideal $\km$ of $\SO(Y)$, which corresponds to a point $Y'\in Y$, there exists some prime ideal $\kp'$ of $\SO(X)$ such that $\kp'\cap \SO(Y)=\km$. Geometrically, this is saying that there exists some closed subset $X'=V(\kp)$ of $X$ that maps to $y$. So $\pi$ is surjective.
+\[\begin{tikzcd}
+	{\mathcal{O}(X)} && {\mathcal{O}(Y)} && X && Y \\
+	\\
+	{\frac{\mathcal{O}(X)}{\kp'}=\mathcal{O}(X')} && {\frac{\mathcal{O}(Y)}{\km}=\mathcal{O}(Y')} && {X'} && {Y'}
+	\arrow[two heads, from=1-1, to=3-1]
+	\arrow["{i}"', from=1-3, to=1-1]
+	\arrow[two heads, from=1-3, to=3-3]
+	\arrow["\pi", from=1-5, to=1-7]
+	\arrow[from=3-3, to=3-1]
+	\arrow[hook, from=3-5, to=1-5]
+	\arrow[from=3-5, to=3-7]
+	\arrow[hook, from=3-7, to=1-7]
+\end{tikzcd}\]
+\begin{example}
+    Consider $R=k[x]$ and $R'=\frac{k[x,y]}{(x^2-y^2)}$. 
+    \begin{center}
+        \includegraphics[scale=0.7]{diagram1-1.pdf}
+    \end{center}
+\end{example}
+\begin{example}
+    Consider $R=k[x]$ and $R'=\frac{k[x,y]}{(xy-1)}$.
+    \begin{center}
+        \includegraphics[scale=0.7]{diagram1-2.pdf}
+    \end{center}
+    Notice that the preimage of point $Q$ is empty, that is, there is no prime ideal of $R'$ that contracts to the maximal ideal corresponding to $Q$. This is because $R\subseteq R'$ is not an integral extension.
+\end{example}
+\begin{theorem}[Incomparability]
+    Let $R\subseteq R'$ be an integral extension of rings and $P$ be a prime ideal of $R$. If $P'\subseteq Q'$ are two prime ideals of $R'$ such that $P'\cap R=Q'\cap R=P$, then $P'=Q'$.
+\end{theorem}
+\begin{example}
+    Consider $R=k[x]$ and $R'=\frac{k[x,y]}{(xy)}$. 
+    \begin{center}
+        \includegraphics[scale=0.7]{diagram1-3.pdf}
+    \end{center}
+    Notice that the preimage of point $Q$ contains infinitely many points and the whole y-Axis. This is not allowed by the incomparability theorem. So $R\subseteq R'$ is not an integral extension.
+\end{example}
+\begin{corollary}
+    Let $R\subseteq R'$ be an integral extension of rings. 
+    \begin{enumerate}
+        \item If $R$ and $R'$ are integral domains, then $R$ is a field if and only if $R'$ is a field.
+        \item A prime ideal $P'$ of $R'$ is maximal if and only if $P'\cap R$ is maximal in $R$.
+        \item If $R$ and $R'$ are integral domains, then the field of fractions of $R'$ is algebraic over the field of fractions of $R$. In this case, any nonzero ideal of $R'$ contracts to a nonzero ideal of $R$.
+    \end{enumerate}
+For (2), it's saying that only points can map to points under a morphism of varieties induced by an integral extension. 
+\\
+For (3), given the integral extension $R\subseteq R'$, we have the corresponding surjective morphism of varieties $\pi: \Spec(R')\surjto \Spec(R)$. Since $R$ and $R'$ are integral domains, $\Spec(R)$ and $\Spec(R')$ are irreducible. Nonzero ideal of $R'$ corresponds to a proper closed subset of $\Spec(R')$. So this is saying that any proper closed subset of $\Spec(R')$ maps to a proper closed subset of $\Spec(R)$ under $\pi$. This is true because $\Spec(R)$ and $\Spec(R')$ are irreducible and have the same kurll dimension. And any proper closed subset of an irreducible variety has smaller dimension, so it can't map to the whole $\Spec(R)$ by diemnsion argument. 
+\end{corollary}
+\begin{theorem}[Going Up]
+    Let $R\subseteq R'$ be an integral extension of rings and $P\subseteq Q$ be two prime ideals of $R$. If $P'\subseteq R'$ is a prime ideal such that $P'\cap R=P$, then there exists some prime ideal $Q'\subseteq R'$ such that $P'\subseteq Q'$ and $Q'\cap R=Q$.
+\end{theorem}
+\begin{example}
+    Consider $R=k[x]$ and $R'=\frac{k[x,y]}{(xy-1)\cap(x,y)}$. 
+    \begin{center}
+        \includegraphics[scale=0.7]{diagram1-5.pdf}
+    \end{center}
+   Notice that this ring extension satisfys the incomparability and lying over theorems, but it does not satisfy the going up theorem: Given $P\subseteq Q$ in $R$ and $P'\subseteq R'$ such that $P'\cap R=P$, there is no prime ideal $Q'\subseteq R'$ such that $P'\subseteq Q'$ and $Q'\cap R=Q$, that is, there is no point in $P'$ that maps to point $Q$. We can more or less understand this geometrically: the fibers(preimages) of the morphism $\pi: \Spec(R')\to \Spec(R)$ should be sorta of continuous: a seqeunce of point in $R$ that converges to $Q$ should have preimages in $R'$ that converge to some point in the fiber of $Q$. 
+\end{example}
+\begin{theorem}[Going Down]
+    Let $R\subseteq R'$ be an integral extension of rings and $R$ is normal domains and $R'$ is integral domains. If $P\subseteq Q$ are two prime ideals of $R$ and $Q'\subseteq R'$ is a prime ideal such that $Q'\cap R=Q$, then there exists some prime ideal $P'\subseteq R'$ such that $P'\subseteq Q'$ and $P'\cap R=P$.
+\end{theorem}
+\begin{remark}
+    The going down theorem is not true if $R$ is not normal or if $R'$ is not integral domain. If $R'$ is not integral domain, say $R'=\frac{k[x,y]}{(x,y)\cap (y-1)}$, we can consider it as a line and a point not on the line. And $R=k[x]$. $R\subseteq R'$ is an integral extension. If we take $p=(0)$, $Q=(x)$ and $Q'=(x,y)$, then there is no prime ideal $P'\subseteq R'$ such that $P'\subseteq Q'$ and $P'\cap R=P$. This tells us $R'$ has to be irreducible/integral. 
+\end{remark}
+To summarize, the four theorems are saying that given an integral extension $R\subseteq R'$, we have a surjective morphism $\pi: \Spec(R')\surjto \Spec(R)$, and the fibers of $\pi$ well-behave in the sense that they are nonempty, finite, and sort of continuous. This implies the following theorem: 
+\begin{theorem}
+    If $R\to R'$ is an integral extension of rings, then $\dim(R)=\dim(R')$.
+\end{theorem}
+
+
+
+
+
+
 \end{document}

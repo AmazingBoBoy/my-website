@@ -1,6 +1,31 @@
 # Fdb version 4
-["pdflatex"] 1772491062.72202 "/Users/kai/Documents/VS Code/my-website/notes/commalg/commalg.tex" "commalg.pdf" "commalg" 1772491066.53947 0
-  "/Users/kai/Documents/VS Code/my-website/notes/commalg/commalg.tex" 1772491058.63304 89121 58c8e166c4db9e7c8428eae58b8e499e ""
+["cusdep asy pdf diagram1-1"] 0 "diagram1-1.asy" "diagram1-1.pdf" "diagram1-1" 1773622235.77754 -1
+  "diagram1-1.asy" 1773618315.34976 3071 6e2a2fbd6485b98fcee623b3f5a744c2 ""
+  (generated)
+  "diagram1-1.pdf"
+  (rewritten before read)
+["cusdep asy pdf diagram1-2"] 1773615621.64945 "diagram1-2.asy" "diagram1-2.pdf" "diagram1-2" 1773622235.77751 0
+  "diagram1-2.asy" 1773618315.35357 3046 5bac037273d647c773620dc4c18f13d7 ""
+  (generated)
+  "diagram1-2.pdf"
+  (rewritten before read)
+["cusdep asy pdf diagram1-3"] 1773615961.85278 "diagram1-3.asy" "diagram1-3.pdf" "diagram1-3" 1773622235.77748 0
+  "diagram1-3.asy" 1773618315.35553 2941 cb4fc3682c4e2a372b88dd393dcf24b8 ""
+  (generated)
+  "diagram1-3.pdf"
+  (rewritten before read)
+["cusdep asy pdf diagram1-4"] 1773612390.47707 "diagram1-4.asy" "diagram1-4.pdf" "diagram1-4" 1773622235.77745 0
+  "diagram1-4.asy" 1773618315.59796 2956 b43ef6d60ac9cf8d4c6c3884c09d23ae ""
+  (generated)
+  "diagram1-4.pdf"
+  (rewritten before read)
+["cusdep asy pdf diagram1-5"] 1773618316.03799 "diagram1-5.asy" "diagram1-5.pdf" "diagram1-5" 1773622235.77739 0
+  "diagram1-5.asy" 1773618315.60013 3253 cf99c75633d7bc444a15b49c09cd842a ""
+  (generated)
+  "diagram1-5.pdf"
+  (rewritten before read)
+["pdflatex"] 1773622228.09003 "/Users/kai/Documents/VS Code/my-website/notes/commalg/commalg.tex" "commalg.pdf" "commalg" 1773622235.77757 0
+  "/Users/kai/Documents/VS Code/my-website/notes/commalg/commalg.tex" 1773622219.84531 110474 5405d0d334ea6085f6432ee08574ce81 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcsx1440.tfm" 1136768653 1536 d4501080e094848097ac9de5c88222ce ""
@@ -15,6 +40,8 @@
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm" 1246382020 940 228d6584342e91276bf566bcf9716b83 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx6.tfm" 1136768653 1344 8a0be4fe4d376203000810ad4dc81558 ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm" 1136768653 1332 1fde11373e221473104d6cc5993f046e ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmcsc10.tfm" 1136768653 1300 63a6111ee6274895728663cf4b4e7e81 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmex10.tfm" 1136768653 992 662f679a0b3d2d53c1b94050fdaa3f50 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm" 1136768653 1528 abec98dbc43e172678c11b3b9031252a ""
@@ -44,15 +71,18 @@
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1248133631 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb" 1248133631 36741 fa121aac0049305630cf160b86157ee4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb" 1248133631 37166 8ab3487cbe3ab49ebce74c29ea2418db ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1248133631 36281 c355509802a035cadc5f15869451dcee ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1248133631 35469 70d41d2b9ea31d5d813066df7c99281c ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1248133631 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb" 1248133631 32734 69e00a6b65cedb993666e42eedb3d48f ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1248133631 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1248133631 32726 0a1aea6fcd6468ee2cf64d891f5c43c8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb" 1248133631 24393 3b7eb51a67a0a62aec5849271bdb9c2e ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb" 1248133631 28902 2f5c04fd2884d1878057baa5aad22765 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb" 1248133631 32587 1788b0c1c5b39540c96f5e42ccd6dae8 ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1248133631 32716 08e384dc442464e7285e891af9f45947 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1248133631 32626 4f5c1b83753b1dd3a97d1b399a005b4b ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb" 1248133631 37944 359e864bd06cde3b1cf57bb20757fb06 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb" 1248133631 36118 fad905eba93cff5bce1e185fe980a177 ""
@@ -275,12 +305,17 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1769914979 5467155 19efa205003f9ecad95fbbaa6ff24da1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1741450574 3345740 46b66fdb0378f7bf5921b5eabf1762b8 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "commalg.aux" 1772491066.39617 38321 54d741a89f6ad7505c2fccaa9572ad1f "pdflatex"
-  "commalg.out" 1772491064.05064 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "commalg.pre" 1772491063.48814 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "commalg.tex" 1772491058.63304 89121 58c8e166c4db9e7c8428eae58b8e499e ""
-  "commalg.toc" 1772491066.40084 2750 c1d6626732aa3bce5060bc96f16a46d1 "pdflatex"
-  "evan.sty" 1771924591.90352 33229 2a03d378d013d19b2638a73879641a2b ""
+  "commalg.aux" 1773622235.50707 49534 fa562de849bdd0869bd83e8efa2a0fd9 "pdflatex"
+  "commalg.out" 1773622230.38172 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "commalg.pre" 1773622229.40066 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "commalg.tex" 1773622219.84531 110474 5405d0d334ea6085f6432ee08574ce81 ""
+  "commalg.toc" 1773622235.51712 3541 cefe147f507e58bb3203c6db1a83ab8b "pdflatex"
+  "diagram1-1.pdf" 1773615328.71326 46226 0df3e350ef2de14e5f94e77fa1fceb62 "cusdep asy pdf diagram1-1"
+  "diagram1-2.pdf" 1773615622.88798 19685 a0bb838524d82caf19bf8af2159a2e66 "cusdep asy pdf diagram1-2"
+  "diagram1-3.pdf" 1773615963.16075 29878 c2496f8f9397f2feb1811d4218a002c6 "cusdep asy pdf diagram1-3"
+  "diagram1-4.pdf" 1773612392.56603 29754 47514f84c079d1ddd8e8c95648529814 "cusdep asy pdf diagram1-4"
+  "diagram1-5.pdf" 1773618317.24571 21860 40f1fa23e8b5b87b1cf5931038500794 "cusdep asy pdf diagram1-5"
+  "evan.sty" 1772839671.97072 33238 35fc26d56d981228dbd4ca2e1cfc64ff ""
   "ss.png" 1769916530.48147 105043 fc0e8087d2e8051da94b66f07ca401ad ""
   (generated)
   "commalg.aux"

@@ -1,0 +1,155 @@
+\documentclass[12pt]{article}
+\usepackage[sexy]{evan}
+
+\begin{document}
+\begin{center}
+    
+
+\begin{asy}
+ /* Geogebra to Asymptote conversion, documentation at artofproblemsolving.com/Wiki go to User:Azjps/geogebra */
+import graph; usepackage("amsmath"); usepackage("amssymb"); size(9.517959399689884cm); 
+real labelscalefactor = 0.5; /* changes label-to-point distance */
+pen dps = linewidth(0.7) + fontsize(10); defaultpen(dps); /* default pen style */ 
+pen dotstyle = black; /* point style */ 
+real xmin = -5.182831594104163, xmax = 26.54369973819545, ymin = -5.198710617556231, ymax = 14.704796974288627;  /* image dimensions */
+
+ /* draw figures */
+draw((2.,12.)--(10.,4.), linewidth(1.2)); 
+draw((10.,12.)--(2.,4.), linewidth(1.2)); 
+draw((0.,2.)--(12.,2.), linewidth(1.2)); 
+draw((4.,10.)--(4.,2.), linewidth(1.2)); 
+label("$V(x^2-y^2)$",(7.802647717954124,8.977576841022728),SE*labelscalefactor); 
+label("$\mathbb{A}^1$",(7.093833345025178,3.2220041328396705),SE*labelscalefactor); 
+ /* dots and labels */
+dot((4.,2.),linewidth(3.pt) + dotstyle); 
+label("$P$", (4.116812978723606,2.1729588609048274), NE * labelscalefactor); 
+dot((4.,10.),linewidth(3.pt) + dotstyle); 
+label("$P_1'$", (2.954357407120135,9.714743788868834), NE * labelscalefactor); 
+dot((4.,6.),linewidth(3.pt) + dotstyle); 
+label("$P_2'$", (2.926004832202977,6.170671924224094), NE * labelscalefactor); 
+clip((xmin,ymin)--(xmin,ymax)--(xmax,ymax)--(xmax,ymin)--cycle); 
+ /* end of picture */
+\end{asy}
+\end{center}
+
+\begin{center}
+\begin{asy}
+ /* Geogebra to Asymptote conversion, documentation at artofproblemsolving.com/Wiki go to User:Azjps/geogebra */
+import graph; size(9.517959399689882cm); 
+real labelscalefactor = 0.5; /* changes label-to-point distance */
+pen dps = linewidth(0.7) + fontsize(10); defaultpen(dps); /* default pen style */ 
+pen dotstyle = black; /* point style */ 
+real xmin = -5.182831594104162, xmax = 26.54369973819545, ymin = -5.198710617556231, ymax = 14.704796974288627;  /* image dimensions */
+
+ /* draw figures */
+pair f1 (real t) {return (t,1/t+6);} 
+draw(graph(f1,-3.,-0.3), linewidth(1.2)); 
+pair f2 (real t) {return (t,1/t+6);} 
+draw(graph(f2,0.3,3.), linewidth(1.2)); 
+draw((-4.,0.)--(4.,0.), linewidth(1.2)); 
+draw((-2.011241809984711,5.502794743508439)--(-2.,0.), linewidth(1.2)); 
+draw((0.,10.)--(0.,0.), linewidth(1.2)+dashed); 
+ /* dots and labels */
+dot((-2.,0.),linewidth(3.pt) + dotstyle); 
+label("$P$", (-1.8939329037138528,0.15992604178661537), NE * labelscalefactor); 
+dot((-2.011241809984711,5.502794743508439),linewidth(3.pt) + dotstyle); 
+label("$P'$", (-1.8939329037138528,5.660325575715252), NE * labelscalefactor); 
+dot((0.,0.),linewidth(3.pt) + dotstyle); 
+label("$Q$", (0.11909991540435326,0.15992604178661537), NE * labelscalefactor); 
+clip((xmin,ymin)--(xmin,ymax)--(xmax,ymax)--(xmax,ymin)--cycle); 
+ /* end of picture */
+\end{asy}
+\end{center}
+
+\begin{center}
+\begin{asy}
+ /* Geogebra to Asymptote conversion, documentation at artofproblemsolving.com/Wiki go to User:Azjps/geogebra */
+import graph; usepackage("amsmath"); usepackage("amssymb"); size(9.517959399689884cm); 
+real labelscalefactor = 0.5; /* changes label-to-point distance */
+pen dps = linewidth(0.7) + fontsize(10); defaultpen(dps); /* default pen style */ 
+pen dotstyle = black; /* point style */ 
+real xmin = -5.182831594104161, xmax = 26.543699738195453, ymin = -5.198710617556231, ymax = 14.704796974288627;  /* image dimensions */
+
+ /* draw figures */
+draw((-4.,0.)--(4.,0.), linewidth(1.2)); 
+
+draw((0.,10.536968461466413)--(0.,0.), linewidth(1.2)+ dashed); 
+draw((-4.247760268279495,5.502794743508439)--(4.386120156350376,5.502794743508439), linewidth(2.)); 
+draw((0.,10.536968461466413)--(0.,2.4390149923935436), linewidth(2.8)); 
+label("$V(xy)$",(1.451670936510772,7.134659471407463),SE*labelscalefactor); 
+label("$\mathbb{A}^1$",(1.5934338110965613,1.32238161339009),SE*labelscalefactor); 
+ /* dots and labels */
+
+dot((0.,0.),linewidth(3.pt) + dotstyle); 
+label("$P$", (0.11909991540435406,0.15992604178661537), NE * labelscalefactor); 
+clip((xmin,ymin)--(xmin,ymax)--(xmax,ymax)--(xmax,ymin)--cycle); 
+ /* end of picture */ 
+\end{asy}
+\end{center}
+
+\begin{center}
+    \begin{asy}
+         /* Geogebra to Asymptote conversion, documentation at artofproblemsolving.com/Wiki go to User:Azjps/geogebra */
+import contour; import graph; size(5.cm); 
+real labelscalefactor = 0.5; /* changes label-to-point distance */
+pen dps = linewidth(0.7) + fontsize(7); defaultpen(dps); /* default pen style */ 
+pen dotstyle = black; /* point style */ 
+real xmin = -2.5, xmax = 2.5, ymin = -2.5, ymax = 2.5;  /* image dimensions */
+
+ /* draw figures */
+real implicitf1 (real x, real y) { return 1.0*y^2-1.0*x^2-1.0*x^3; } 
+draw(contour(implicitf1, (-1.7,-1.7), (1.7,1.7), new real[]{0}, 500), linewidth(1.2)); 
+fill(shift((0.,2.)) * rotate(90) * scale(0.10583333333333333) * ((1,0)--expi(2*pi/3)--expi(4*pi/3)--cycle)); /* special point */
+draw((0.,2.)--(0.,-2.), linewidth(1.2)); 
+fill(shift((2.,0.)) * scale(0.10583333333333333) * ((1,0)--expi(2*pi/3)--expi(4*pi/3)--cycle)); /* special point */
+draw((-2.,0.)--(2.,0.), linewidth(1.2)); 
+ /* dots and labels */
+dot((0.,0.),linewidth(5) + dotstyle); 
+label("$Y$", (0.05863277836566511,2.096821882277555), NE * labelscalefactor); 
+label("$X$", (2.0655950238321843,0.08985963681102677), NE * labelscalefactor); 
+clip((xmin,ymin)--(xmin,ymax)--(xmax,ymax)--(xmax,ymin)--cycle); 
+ /* end of picture */
+    \end{asy}
+\end{center}
+
+\begin{center}
+\begin{asy}
+     /* Geogebra to Asymptote conversion, documentation at artofproblemsolving.com/Wiki go to User:Azjps/geogebra */
+import graph; usepackage("amsmath"); size(8.cm); 
+real labelscalefactor = 0.5; /* changes label-to-point distance */
+pen dps = linewidth(0.7) + fontsize(10); defaultpen(dps); /* default pen style */ 
+pen dotstyle = black; /* point style */ 
+real xmin = -4., xmax = 4., ymin = -4., ymax = 4.;  /* image dimensions */
+
+ /* draw figures */
+pair hyperbolaLeft1 (real t) {return (1.*(1+t^2)/(1-t^2),1.*2*t/(1-t^2));} pair hyperbolaRight1 (real t) {return (1.*(-1-t^2)/(1-t^2),1.*(-2)*t/(1-t^2));} 
+draw(shift((0.,0.))*rotate(-135.)*graph(hyperbolaLeft1,-0.5,0.5), linewidth(2.)); draw(shift((0.,0.))*rotate(-135.)*graph(hyperbolaRight1,-0.5,0.5), linewidth(2.)); /* hyperbola construction */
+draw((-3.,-3.)--(3.,-3.), linewidth(2.)); 
+label("P",(-2.2029440803316813,-2.576105137017645),SE*labelscalefactor); 
+label("P'",(-2.0531707784311948,0.1947009481413678),SE*labelscalefactor); 
+fill(shift((0.,-2.)) * rotate(270) * scale(0.10583333333333333) * ((1,0)--expi(2*pi/3)--expi(4*pi/3)--cycle)); /* special point */
+draw((-0.0012765423945294877,-0.6140748821212629)--(0.,-2.), linewidth(1.2)); 
+label("$\pi$",(0.19342875007610297,-0.8986441557321886),SE*labelscalefactor); 
+ /* dots and labels */
+dot((0.,0.),dotstyle); 
+
+dot((0.,-3.),linewidth(4.pt) + dotstyle); 
+label("$Q$", (0.05863277836566511,-2.8756517408186193), NE * labelscalefactor); 
+clip((xmin,ymin)--(xmin,ymax)--(xmax,ymax)--(xmax,ymin)--cycle); 
+ /* end of picture */
+\end{asy}
+\end{center}
+\end{document}
+            
+
+
+
+
+\begin{comment}
+https://web.evanchen.cc/static/geometry_en.pdf
+
+https://asymptote.sourceforge.io/asymptote_tutorial.pdf
+
+
+\end{comment}
+    

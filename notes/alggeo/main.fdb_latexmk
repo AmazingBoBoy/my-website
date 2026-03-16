@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1772167954.15829 "/Users/kai/Documents/VS Code/my-website/notes/alggeo/main.tex" "main.pdf" "main" 1772167956.88863 0
-  "/Users/kai/Documents/VS Code/my-website/notes/alggeo/main.tex" 1772167950.9895 66975 2fcc5c3179f09b247a9fbb8d2f1bc3c7 ""
+["pdflatex"] 1773526033.43116 "/Users/kai/Documents/VS Code/my-website/notes/alggeo/main.tex" "main.pdf" "main" 1773526038.30164 0
+  "/Users/kai/Documents/VS Code/my-website/notes/alggeo/main.tex" 1773526033.1571 68569 d15d35a6740bdad815bc4bcba72ef908 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1136768653 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
@@ -277,11 +277,11 @@
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1741450574 3345740 46b66fdb0378f7bf5921b5eabf1762b8 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
   "evan.sty" 1771133854.03271 33229 2a03d378d013d19b2638a73879641a2b ""
-  "main.aux" 1772167956.75985 23815 0bc7f3c1e3b31b2c241b1b7604b8ef7e "pdflatex"
-  "main.out" 1772167955.4745 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "main.pre" 1772167954.90053 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "main.tex" 1772167950.9895 66975 2fcc5c3179f09b247a9fbb8d2f1bc3c7 ""
-  "main.toc" 1772167956.76327 2404 cb738dc84eb892163f33d081d3eb3de4 "pdflatex"
+  "main.aux" 1773526038.07794 23816 eb3e2a6614ce8197f95ff8732be31514 "pdflatex"
+  "main.out" 1773526035.73342 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.pre" 1773526034.74797 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.tex" 1773526033.1571 68569 d15d35a6740bdad815bc4bcba72ef908 ""
+  "main.toc" 1773526038.08364 2404 7adcfe4f3b9b7edd6af616f78ac5e552 "pdflatex"
   (generated)
   "main.aux"
   "main.log"

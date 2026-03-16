@@ -1,28 +1,36 @@
-\contentsline {section}{\numberline {1}January 17, 2026: A theorem in Invariant Theory}{4}{section.7}%
-\contentsline {section}{\numberline {2}January 20, 2026: Basis, syzygy, and Hilbert's function theorems}{5}{section.14}%
-\contentsline {section}{\numberline {3}January 22, 2026: Nullstellensatz and equivalence of affine varieties and affine algebras}{8}{section.25}%
-\contentsline {section}{\numberline {4}January 27, 2026: Localization and Tensor Products}{9}{section.26}%
-\contentsline {section}{\numberline {5}January 29, 2026: More on Localization}{13}{section.50}%
-\contentsline {section}{\numberline {6}February 3, 2026: Finite Length and Artinian}{17}{section.75}%
-\contentsline {subsection}{\numberline {6.1}Main theorems of finite length modules and rings}{17}{subsection.80}%
-\contentsline {subsection}{\numberline {6.2}Some special cases}{22}{subsection.116}%
-\contentsline {subsection}{\numberline {6.3}Examples}{24}{subsection.133}%
-\contentsline {section}{\numberline {7}February 5, 2026: Associated Primes}{25}{section.138}%
-\contentsline {subsection}{\numberline {7.1}The main theorem about associated primes including filtration and orthogonal lemma}{25}{subsection.141}%
-\contentsline {subsection}{\numberline {7.2}Corollaries of the main theorem}{27}{subsection.155}%
-\contentsline {subsection}{\numberline {7.3}Filtration and $\mathrm {Ass}(M)$}{28}{subsection.166}%
-\contentsline {section}{\numberline {8}February 10, 2026: Primary Decomposition}{29}{section.173}%
-\contentsline {subsection}{\numberline {8.1}Preliminary of primary decomposition}{29}{subsection.174}%
-\contentsline {subsection}{\numberline {8.2}Primary decomposition}{31}{subsection.190}%
-\contentsline {section}{\numberline {9}February 12, 2026: Monomial ideals}{33}{section.209}%
-\contentsline {subsection}{\numberline {9.1}Monomial ideals}{33}{subsection.210}%
-\contentsline {subsection}{\numberline {9.2}Monomial submodule}{35}{subsection.235}%
-\contentsline {subsection}{\numberline {9.3}Monomial Orders}{36}{subsection.239}%
-\contentsline {section}{\numberline {10}February 17, 2026: Grobner bases and division algorithm}{37}{section.261}%
-\contentsline {section}{\numberline {11}February 19, 2026: Buchberger's algorithm}{38}{section.272}%
-\contentsline {section}{\numberline {12}February 25, 2026: Exam 1}{40}{section.281}%
-\contentsline {section}{\numberline {13}February 27, 2026: Syzygies}{41}{section.282}%
-\contentsline {subsection}{\numberline {13.1}Syzygies of monomial submodules}{41}{subsection.283}%
-\contentsline {subsection}{\numberline {13.2}Schreyer Theorem}{41}{subsection.290}%
-\contentsline {subsection}{\numberline {13.3}Hilbert's Syzygy Theorem}{43}{subsection.299}%
+\contentsline {section}{\numberline {1}January 17, 2026: A theorem in Invariant Theory}{5}{section.8}%
+\contentsline {section}{\numberline {2}January 20, 2026: Basis, syzygy, and Hilbert's function theorems}{6}{section.15}%
+\contentsline {section}{\numberline {3}January 22, 2026: Nullstellensatz and equivalence of affine varieties and affine algebras}{9}{section.26}%
+\contentsline {section}{\numberline {4}January 27, 2026: Localization and Tensor Products}{10}{section.27}%
+\contentsline {section}{\numberline {5}January 29, 2026: More on Localization}{14}{section.51}%
+\contentsline {section}{\numberline {6}February 3, 2026: Finite Length and Artinian}{18}{section.76}%
+\contentsline {subsection}{\numberline {6.1}Main theorems of finite length modules and rings}{18}{subsection.81}%
+\contentsline {subsection}{\numberline {6.2}Some special cases}{23}{subsection.117}%
+\contentsline {subsection}{\numberline {6.3}Examples}{25}{subsection.134}%
+\contentsline {section}{\numberline {7}February 5, 2026: Associated Primes}{26}{section.139}%
+\contentsline {subsection}{\numberline {7.1}The main theorem about associated primes including filtration and orthogonal lemma}{26}{subsection.142}%
+\contentsline {subsection}{\numberline {7.2}Corollaries of the main theorem}{28}{subsection.156}%
+\contentsline {subsection}{\numberline {7.3}Filtration and $\mathrm {Ass}(M)$}{29}{subsection.167}%
+\contentsline {section}{\numberline {8}February 10, 2026: Primary Decomposition}{30}{section.174}%
+\contentsline {subsection}{\numberline {8.1}Preliminary of primary decomposition}{30}{subsection.175}%
+\contentsline {subsection}{\numberline {8.2}Primary decomposition}{32}{subsection.191}%
+\contentsline {section}{\numberline {9}February 12, 2026: Monomial ideals}{34}{section.210}%
+\contentsline {subsection}{\numberline {9.1}Monomial ideals}{34}{subsection.211}%
+\contentsline {subsection}{\numberline {9.2}Monomial submodule}{36}{subsection.236}%
+\contentsline {subsection}{\numberline {9.3}Monomial Orders}{37}{subsection.240}%
+\contentsline {section}{\numberline {10}February 17, 2026: Grobner bases and division algorithm}{38}{section.262}%
+\contentsline {section}{\numberline {11}February 19, 2026: Buchberger's algorithm}{39}{section.273}%
+\contentsline {section}{\numberline {12}February 25, 2026: Exam 1}{41}{section.282}%
+\contentsline {section}{\numberline {13}February 27, 2026: Syzygies}{42}{section.283}%
+\contentsline {subsection}{\numberline {13.1}Syzygies of monomial submodules}{42}{subsection.284}%
+\contentsline {subsection}{\numberline {13.2}Schreyer Theorem}{42}{subsection.291}%
+\contentsline {subsection}{\numberline {13.3}Hilbert's Syzygy Theorem}{44}{subsection.300}%
+\contentsline {section}{\numberline {14}March 5, 2026: The Cayley-Hamilton Theorem and Nakayama's Lemma}{45}{section.305}%
+\contentsline {subsection}{\numberline {14.1}Cayley-Hamilton Theorem}{45}{subsection.306}%
+\contentsline {subsection}{\numberline {14.2}Nakayama's Lemma}{46}{subsection.317}%
+\contentsline {subsection}{\numberline {14.3}Main proposition about finite extensions in rings}{46}{subsection.330}%
+\contentsline {section}{\numberline {15}March 10, 2026: Integral Extension, Normal Domains and 4 Theorems}{48}{section.337}%
+\contentsline {subsection}{\numberline {15.1}Integral extensions}{48}{subsection.338}%
+\contentsline {subsection}{\numberline {15.2}Normal Domains}{49}{subsection.357}%
+\contentsline {subsection}{\numberline {15.3}Four Theorems}{51}{subsection.379}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

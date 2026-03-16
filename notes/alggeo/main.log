@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  26 FEB 2026 20:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  14 MAR 2026 15:07
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1325,37 +1325,38 @@ Package mdframed Info: mdframed detected package amsthm
 (mdframed)              on input line 377.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 387.
+(mdframed)              on input line 407.
 
 
 [17]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 421.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 429.
+(mdframed)              on input line 441.
 
 
 [18]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 449.
+
 
 [19]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 486.
+(mdframed)              on input line 506.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 489.
+(mdframed)              on input line 509.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 492.
+(mdframed)              on input line 512.
 
-Underfull \hbox (badness 10000) in paragraph at lines 492--494
+Underfull \hbox (badness 10000) in paragraph at lines 512--514
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 495--497
+Underfull \hbox (badness 10000) in paragraph at lines 515--517
 
  []
 
@@ -1363,35 +1364,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 495--497
 
 [20]
 
-LaTeX Font Warning: Command \huge invalid in math mode on input line 528.
+LaTeX Font Warning: Command \huge invalid in math mode on input line 548.
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 546.
+(mdframed)              on input line 566.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 549.
+(mdframed)              on input line 569.
 
 
 [21]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 560.
+(mdframed)              on input line 580.
 
-Underfull \hbox (badness 10000) in paragraph at lines 560--562
+Underfull \hbox (badness 10000) in paragraph at lines 580--582
 
  []
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 567.
+(mdframed)              on input line 587.
 
-Underfull \hbox (badness 10000) in paragraph at lines 567--569
+Underfull \hbox (badness 10000) in paragraph at lines 587--589
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 570--572
+Underfull \hbox (badness 10000) in paragraph at lines 590--592
 
  []
 
@@ -1400,32 +1401,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 570--572
 [22]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 584.
+(mdframed)              on input line 604.
 
-Underfull \hbox (badness 10000) in paragraph at lines 584--586
+Underfull \hbox (badness 10000) in paragraph at lines 604--606
 
  []
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 592.
+(mdframed)              on input line 612.
 
-Underfull \hbox (badness 10000) in paragraph at lines 592--594
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 598--600
+Underfull \hbox (badness 10000) in paragraph at lines 612--614
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 601--603
+Underfull \hbox (badness 10000) in paragraph at lines 618--620
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 605--608
+Underfull \hbox (badness 10000) in paragraph at lines 621--623
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 625--628
 
  []
 
@@ -1434,79 +1435,79 @@ Underfull \hbox (badness 10000) in paragraph at lines 605--608
 [23]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 617.
+(mdframed)              on input line 637.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 624.
+(mdframed)              on input line 644.
 
 
 [24]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 638.
+(mdframed)              on input line 658.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 641.
+(mdframed)              on input line 661.
 
-Underfull \hbox (badness 10000) in paragraph at lines 643--645
+Underfull \hbox (badness 10000) in paragraph at lines 663--665
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 646--648
+Underfull \hbox (badness 10000) in paragraph at lines 666--668
 
  []
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 653.
+(mdframed)              on input line 673.
 
 
 [25]
-Underfull \hbox (badness 10000) in paragraph at lines 663--666
+Underfull \hbox (badness 10000) in paragraph at lines 683--686
 
  []
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 669.
-Package hyperref Info: bookmark level for unknown claim defaults to 0 on input line 669.
+(mdframed)              on input line 689.
+Package hyperref Info: bookmark level for unknown claim defaults to 0 on input line 689.
 
-Underfull \hbox (badness 10000) in paragraph at lines 672--679
+Underfull \hbox (badness 10000) in paragraph at lines 692--699
 
  []
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 683.
-Package hyperref Info: bookmark level for unknown proposition defaults to 0 on input line 683.
+(mdframed)              on input line 703.
+Package hyperref Info: bookmark level for unknown proposition defaults to 0 on input line 703.
 
 
 [26]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 695.
+(mdframed)              on input line 715.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 698.
+(mdframed)              on input line 718.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 701.
+(mdframed)              on input line 721.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 704.
+(mdframed)              on input line 724.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 707.
+(mdframed)              on input line 727.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 710.
+(mdframed)              on input line 730.
 
 
 [27]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 717.
+(mdframed)              on input line 737.
 
 
 [28] (./main.aux)
@@ -1518,18 +1519,18 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 40298 strings out of 473190
- 849285 string characters out of 5715801
+ 40407 strings out of 473190
+ 852099 string characters out of 5715801
  1419484 words of memory out of 5000000
- 62448 multiletter control sequences out of 15000+600000
+ 62555 multiletter control sequences out of 15000+600000
  586348 words of font info for 233 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  154i,21n,149p,10977b,1482s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsx1728.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/yhmath/yhcmex.pfb>
-Output written on main.pdf (28 pages, 385979 bytes).
+Output written on main.pdf (28 pages, 387686 bytes).
 PDF statistics:
- 617 PDF objects out of 1000 (max. 8388607)
- 517 compressed objects within 6 object streams
- 215 named destinations out of 1000 (max. 500000)
+ 623 PDF objects out of 1000 (max. 8388607)
+ 523 compressed objects within 6 object streams
+ 217 named destinations out of 1000 (max. 500000)
  49477 words of extra memory for PDF output out of 51595 (max. 10000000)
 

@@ -9,4 +9,8 @@
 \contentsline {subsection}{\numberline {4.2}Global Properties}{19}{subsection.141}%
 \contentsline {section}{\numberline {5}Chapter 4: Quadratic Forms over $\mathbb Q_p$ and $\mathbb Q$}{21}{section.153}%
 \contentsline {subsection}{\numberline {5.1}Quadratic Forms over arbitrary fields $k$}{21}{subsection.154}%
+\contentsline {subsection}{\numberline {5.2}Quadratic forms over $\mathbb Q_p$}{32}{subsection.262}%
+\contentsline {subsection}{\numberline {5.3}Classification of Quadratic Forms over $\mathbb Q_p$}{33}{subsection.277}%
+\contentsline {subsection}{\numberline {5.4}The real case}{34}{subsection.286}%
+\contentsline {subsection}{\numberline {5.5}Quadratic Form over $\mathbb Q$}{34}{subsection.289}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
