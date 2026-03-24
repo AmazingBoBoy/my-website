@@ -479,8 +479,8 @@ INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
 INPUT ./commalg.toc
 INPUT ./commalg.toc
 INPUT commalg.toc
-OUTPUT commalg.toc
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
+OUTPUT commalg.toc
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcsx1728.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/ueuf.fd
@@ -555,6 +555,11 @@ INPUT ./diagram1-5.pdf
 INPUT ./diagram1-5.pdf
 INPUT ./diagram1-5.pdf
 INPUT ./diagram1-5.pdf
+INPUT ./diagram1-6.pdf
+INPUT ./diagram1-6.pdf
+INPUT ./diagram1-6.pdf
+INPUT ./diagram1-6.pdf
+INPUT ./diagram1-6.pdf
 INPUT commalg.aux
 INPUT ./commalg.out
 INPUT ./commalg.out

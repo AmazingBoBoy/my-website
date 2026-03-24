@@ -1,31 +1,36 @@
 # Fdb version 4
-["cusdep asy pdf diagram1-1"] 1773615247.47584 "diagram1-1.asy" "diagram1-1.pdf" "diagram1-1" 1773618315.73739 0
-  "diagram1-1.asy" 1773618315.34976 3071 6e2a2fbd6485b98fcee623b3f5a744c2 "pdflatex"
+["cusdep asy pdf diagram1-1"] 1773646536.21807 "diagram1-1.asy" "diagram1-1.pdf" "diagram1-1" 1773646670.66342 0
+  "diagram1-1.asy" 1773646670.26448 3071 6e2a2fbd6485b98fcee623b3f5a744c2 "pdflatex"
   (generated)
   "diagram1-1.pdf"
   (rewritten before read)
-["cusdep asy pdf diagram1-2"] 1773615615.91686 "diagram1-2.asy" "diagram1-2.pdf" "diagram1-2" 1773618315.73732 0
-  "diagram1-2.asy" 1773618315.35357 3046 5bac037273d647c773620dc4c18f13d7 "pdflatex"
+["cusdep asy pdf diagram1-2"] 1773646535.0289 "diagram1-2.asy" "diagram1-2.pdf" "diagram1-2" 1773646670.66334 0
+  "diagram1-2.asy" 1773646670.26842 3046 5bac037273d647c773620dc4c18f13d7 "pdflatex"
   (generated)
   "diagram1-2.pdf"
   (rewritten before read)
-["cusdep asy pdf diagram1-3"] 1773615886.94113 "diagram1-3.asy" "diagram1-3.pdf" "diagram1-3" 1773618315.73724 0
-  "diagram1-3.asy" 1773618315.35553 2941 cb4fc3682c4e2a372b88dd393dcf24b8 "pdflatex"
+["cusdep asy pdf diagram1-3"] 1773646533.83702 "diagram1-3.asy" "diagram1-3.pdf" "diagram1-3" 1773646670.66327 0
+  "diagram1-3.asy" 1773646670.27074 2941 cb4fc3682c4e2a372b88dd393dcf24b8 "pdflatex"
   (generated)
   "diagram1-3.pdf"
   (rewritten before read)
-["cusdep asy pdf diagram1-4"] 1773612383.82707 "diagram1-4.asy" "diagram1-4.pdf" "diagram1-4" 1773618315.73716 0
-  "diagram1-4.asy" 1773618315.59796 2956 b43ef6d60ac9cf8d4c6c3884c09d23ae "pdflatex"
+["cusdep asy pdf diagram1-4"] 1773646531.78189 "diagram1-4.asy" "diagram1-4.pdf" "diagram1-4" 1773646670.6632 0
+  "diagram1-4.asy" 1773646670.5186 2956 b43ef6d60ac9cf8d4c6c3884c09d23ae "pdflatex"
   (generated)
   "diagram1-4.pdf"
   (rewritten before read)
-["cusdep asy pdf diagram1-5"] 1773618310.4221 "diagram1-5.asy" "diagram1-5.pdf" "diagram1-5" 1773618315.73699 0
-  "diagram1-5.asy" 1773618315.60013 3253 cf99c75633d7bc444a15b49c09cd842a "pdflatex"
+["cusdep asy pdf diagram1-5"] 1773646530.59462 "diagram1-5.asy" "diagram1-5.pdf" "diagram1-5" 1773646670.66311 0
+  "diagram1-5.asy" 1773646670.52078 3253 cf99c75633d7bc444a15b49c09cd842a "pdflatex"
   (generated)
   "diagram1-5.pdf"
   (rewritten before read)
-["pdflatex"] 1773618313.72241 "/Users/kai/Documents/VS Code/my-website/notes/commalg/diagram1.tex" "diagram1.pdf" "diagram1" 1773618315.73746 0
-  "/Users/kai/Documents/VS Code/my-website/notes/commalg/diagram1.tex" 1773618308.31622 7237 e25ca113d16bef8bd35d503f9d7a16ea ""
+["cusdep asy pdf diagram1-6"] 1773646665.5534 "diagram1-6.asy" "diagram1-6.pdf" "diagram1-6" 1773646670.66296 0
+  "diagram1-6.asy" 1773646670.52893 2980 ebf408db604d817e257c367f3537cd68 "pdflatex"
+  (generated)
+  "diagram1-6.pdf"
+  (rewritten before read)
+["pdflatex"] 1773646668.6449 "/Users/kai/Documents/VS Code/my-website/notes/commalg/diagram1.tex" "diagram1.pdf" "diagram1" 1773646670.66348 0
+  "/Users/kai/Documents/VS Code/my-website/notes/commalg/diagram1.tex" 1773646663.43521 8576 26eda70778070531db5e156aaf091318 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1136768653 1288 655e228510b4c2a1abe905c368440826 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1248133631 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
@@ -229,15 +234,16 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1769914979 5467155 19efa205003f9ecad95fbbaa6ff24da1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1741450574 3345740 46b66fdb0378f7bf5921b5eabf1762b8 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "diagram1-1.pdf" 1773615328.71326 46226 0df3e350ef2de14e5f94e77fa1fceb62 "cusdep asy pdf diagram1-1"
-  "diagram1-2.pdf" 1773615622.88798 19685 a0bb838524d82caf19bf8af2159a2e66 "cusdep asy pdf diagram1-2"
-  "diagram1-3.pdf" 1773615963.16075 29878 c2496f8f9397f2feb1811d4218a002c6 "cusdep asy pdf diagram1-3"
-  "diagram1-4.pdf" 1773612392.56603 29754 47514f84c079d1ddd8e8c95648529814 "cusdep asy pdf diagram1-4"
-  "diagram1-5.pdf" 1773618311.7527 21861 ddd5f51e1e6a2e93898c977a762a9bce "cusdep asy pdf diagram1-5"
-  "diagram1.aux" 1773618315.61277 197 9209e434b99e0c0ad729210ef66e554a "pdflatex"
-  "diagram1.out" 1773618315.29287 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "diagram1.pre" 1773618315.60787 205 b39a32f1694771a1433adac1ed949c9e "pdflatex"
-  "diagram1.tex" 1773618308.31622 7237 e25ca113d16bef8bd35d503f9d7a16ea ""
+  "diagram1-1.pdf" 1773646537.41957 46226 76e8515664a8af13473705009b85466b "cusdep asy pdf diagram1-1"
+  "diagram1-2.pdf" 1773646536.21237 19685 7d18b1e4e39cf13546c5ddd78e7de8df "cusdep asy pdf diagram1-2"
+  "diagram1-3.pdf" 1773646535.02374 29878 9da70a4e8e00514dd4f5694adfba129d "cusdep asy pdf diagram1-3"
+  "diagram1-4.pdf" 1773646533.82946 29754 95e32aae9fb6ac8c879a0cfb0202f0bc "cusdep asy pdf diagram1-4"
+  "diagram1-5.pdf" 1773646531.77727 21861 35b122b833ca39b08b629bf2607d7646 "cusdep asy pdf diagram1-5"
+  "diagram1-6.pdf" 1773646666.85873 18462 bb01d0ad6e73eb1b5e305bfeb4b1db1f "cusdep asy pdf diagram1-6"
+  "diagram1.aux" 1773646670.53587 197 9209e434b99e0c0ad729210ef66e554a "pdflatex"
+  "diagram1.out" 1773646670.20623 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "diagram1.pre" 1773646670.53031 246 311ab3c029b1913fa0ba40416fbf52ed "pdflatex"
+  "diagram1.tex" 1773646663.43521 8576 26eda70778070531db5e156aaf091318 ""
   "evan.sty" 1772839671.97072 33238 35fc26d56d981228dbd4ca2e1cfc64ff ""
   (generated)
   "diagram1-1.asy"
@@ -245,6 +251,7 @@
   "diagram1-3.asy"
   "diagram1-4.asy"
   "diagram1-5.asy"
+  "diagram1-6.asy"
   "diagram1.aux"
   "diagram1.log"
   "diagram1.out"

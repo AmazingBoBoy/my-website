@@ -319,10 +319,11 @@ Let $X\subseteq \A^n$ be an algebraic set.
     \subsection{Ringed Space and Affine Varieties}
     \item A ringed space is a topological space $X$ equiped with a sheaf of rings $\cO_X$ on $X$. The sheaf $\cO_X$ is called the structure sheaf of the ringed space $(X,\cO_X)$.
     \item If $U$ is an open set of a ringed space $(X,\cO_X)$, then $(U,\cO_{X\mid U})$ is also a ringed space where $\cO_{X\mid U}$ is the restriction of $\cO_X$ on $U$, which is also a sheaf. ($\cO_{X\mid U}(V):=\cO_x(V)$ for all open set $V\subseteq U$)
-    \item An affine variety $(Y, \SO_Y)$ is a ringed space that is \textbf{isomorphic as ringed space} to $(X,\cO_X)$ for some algebraic set $X$ with Zariski's topology and $\cO_X$ is the sheaf of regular functions on $X$. We actually can have a more explicit description of the regular functions on open sets of $U\subseteq Y$ based on the isomorphism of ringed spaces.
-    \begin{center}
-        $\phi: U\to k$ is a regular function on $U$ if for any $p\in U$, there exists an open neighborhood $p\in U_p\subseteq U$ and $g,h\in \SO_Y(Y)$ such that, $\phi\reto{U_p}=\frac{g}{h}$ and $h(x)\neq 0$ for all $x\in U_p$.
-    \end{center}
+    \item An affine variety $(Y, \SO_Y)$ is a ringed space that is \textbf{isomorphic as ringed space} to $(X,\cO_X)$ for some algebraic set $X$ with Zariski's topology and $\cO_X$ is the sheaf of regular functions on $X$. We actually can have a more explicit description of the regular functions on open sets of $U\subseteq Y$ based on the isomorphism of ringed spaces. 
+    \\
+
+    $\phi: U\to k$ is a regular function on $U$ if for any $p\in U$, there exists an open neighborhood $p\in U_p\subseteq U$ and $g,h\in \SO_Y(Y)$ such that, $\phi\reto{U_p}=\frac{g}{h}$ and $h(x)\neq 0$ for all $x\in U_p$.
+    
     \item Well, what is the morphism of ringed space? 
     \item First of all, ringed spaces are topological spaces so we need the morphism to be some kind of continuous map $f$ from $X$ to $Y$. 
     \item Next, we need $f$ to preserve the sheaf structure or compatible with the sheaf functor. 
@@ -630,7 +631,7 @@ The construction of ringed space structure on the glued space is similar to the 
     \\
 \end{proof}
 There is another proof I learned from Jerry Yang. 
-\begin{proof} Assume we have shown $\hom(X,\A^1)=\SO_X(X)$. Consider $Y=\A^m=\A^1\times \A^1 \times \cdots \times \A^1$. For any $f: X\to \A^m$, one has $f=(f_1, \ldots, f_m)$ where $f_i:X\to \A^1$ is a morphism of ringed spaces. So $f_i\in \SO_X(X)$ for each $i$. Conversely, for any $f_1, \ldots, f_m\in \SO_X(X)$, we haev morphism $f_i: X\to \A^1$ for each $i$. By the universal property of product, we have a morphism $f:X\to \A^m$ defined by $f(x)=(f_1(x), \ldots, f_m(x))$. 
+\begin{proof}[Alternative Proof] Assume we have shown $\hom(X,\A^1)=\SO_X(X)$. Consider $Y=\A^m=\A^1\times \A^1 \times \cdots \times \A^1$. For any $f: X\to \A^m$, one has $f=(f_1, \ldots, f_m)$ where $f_i:X\to \A^1$ is a morphism of ringed spaces. So $f_i\in \SO_X(X)$ for each $i$. Conversely, for any $f_1, \ldots, f_m\in \SO_X(X)$, we haev morphism $f_i: X\to \A^1$ for each $i$. By the universal property of product, we have a morphism $f:X\to \A^m$ defined by $f(x)=(f_1(x), \ldots, f_m(x))$. 
 \end{proof}
 
 \begin{example}

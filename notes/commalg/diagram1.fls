@@ -418,6 +418,11 @@ INPUT ./diagram1-5.pdf
 INPUT ./diagram1-5.pdf
 INPUT ./diagram1-5.pdf
 INPUT ./diagram1-5.pdf
+OUTPUT diagram1-6.asy
+INPUT ./diagram1-6.pdf
+INPUT ./diagram1-6.pdf
+INPUT ./diagram1-6.pdf
+INPUT ./diagram1-6.pdf
 INPUT diagram1.aux
 INPUT ./diagram1.out
 INPUT ./diagram1.out

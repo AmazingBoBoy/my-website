@@ -1217,12 +1217,21 @@ Goemetrically, normal domains correspond to varieties without cusps.
     \begin{enumerate}
         \item If $\ol{R}$ is the integral closure of $R$ in $R'$, then $S\inv \ol{R}$ is the integral closure of $S\inv R$ in $S\inv R'$. In particular, if $R$ is normal, then $S\inv R$ is normal.
         \item If $R_{\km}$ is normal for all maximal ideals $\km$ of $R$, then $R$ is normal.
-        \item If $R$ is normal, then $R[x]$ is normal. 
+        \item If $R$ is normal, then $R[x]$ is normal. In fact, $R[x]$ is very closed to UFD, any monic irreducible polynomial in $R[x]$ is prime. 
     \end{enumerate}
+
 \end{proposition}
+\begin{proof}
+    We give a proof for (3): if $R$ is normal, then $R[x]$ is normal. Let $K=\text{Frac}(R)$. Let $f/g$ be an element in $K(x)$ that is integral over $R[x]$, therefore integral over $K[x]$. Since $K[x]$ is normal, $f/g\in K[x]$. So we can write $p(x)=f/g=a_0+a_1x+\cdots + a_nx^n$ where $a_i\in K$. Since $h$ is integral over $R[x]$, $R[x,h]=R[a_0, a_1, \ldots, a_n,x]$ is integral over $R[x]$. So $R[x]/(x)\subseteq R[a_0, a_1, \ldots, a_n,x]/(x)=R[a_0, a_1, \ldots, a_n]$ is integral. Since $R[x]/(x)\cong R$ is normal, $a_0, a_1, \ldots, a_n\in R$, so $f/g\in R[x]$. Thus, $R[x]$ is normal.
+\end{proof}
 \begin{proposition}
-   Let $R\subseteq R'$ be an extension of integral domains. If $R$ is integrally closed in $R'$, then for any monic $f,g\in R'[x]$ such that $fg\in R[x]$, we have $f, g\in R[x]$. In particular, if $R$ is normal, then for any monic $f,g\in \text{Frac}(R)[x]$ such that $fg\in R[x]$, we have $f, g\in R[x]$ (Guass Lemma). 
+   Let $R\subseteq R'$ be an extension of integral domains. If $R$ is integrally closed in $R'$, then for any monic $f,g\in R'[x]$ such that $fg\in R[x]$, we have $f, g\in R[x]$. 
+   \\
+   In particular, if $R$ is normal, then for any monic $f,g\in \text{Frac}(R)[x]$ such that $fg\in R[x]$, we have $f, g\in R[x]$ (Gauss Lemma). 
 \end{proposition}
+\begin{proof}
+    Since $R$ is integral domain, $fg\in R[x]$ has finitely many roots in the algebraic closure of $K$ of $R'$. Since $fg$ is monic over $R$, we can adjoint all the roots $r_1, \ldots, r_n\in K$ of $fg$ to $R$ to get $S=R[r_1, \ldots, r_n]$. Notcie that any coefficient of $f$ and $g$ is the combination of $r_1, \ldots, r_n$ and is in $R'\subseteq K$, all the coefficients of $f$ and $g$ are integral over $R$. Since $R$ is integrally closed in $R'$, all the coefficients of $f$ and $g$ are in $R$, so $f, g\in R[x]$. 
+\end{proof}
 \begin{lemma}
     Let $R\subseteq R'$ be an integral extension of integral domains. If $R$ is normal, then 
     \begin{enumerate}
@@ -1230,7 +1239,16 @@ Goemetrically, normal domains correspond to varieties without cusps.
         \item If $a\in PR'$ for some prime ideal $P$ of $R$, then all the non-leading coefficients of the minimal polynomial of $a$ over $K$ are in $P$.
     \end{enumerate}
 \end{lemma}
-This lemma gives us a way to determine whether an element in $R'$ is integral over $R$ by looking at its minimal polynomial over $K$. 
+\begin{proof}[Proof of the lemma]
+    \begin{enumerate}
+        \item Let the monic minimal polynomial of $a$ over $K$ be $m$. And $a$ is integral over $R$, so there exists some monic polynomial $f\in R[x]$ such that $f(a)=0$. So $m$ divides $f$ in $K[x]$. Since both $m$ and $f$ are monic and $f/m\cdot m=f$, by the previous proposition, both $m$ and $f/m$ have coefficients in $R$. So $m$ has coefficients in $R$.
+        \item Let $m(x)=x^n+a_{n-1}x^{n-1}+\cdots + a_0$ be the monic minimal polynomial of $a$ over $K$. If $a\in PR'$, then $\times a: R'\to R'$ is a map of $R$-modules such that $\times a(R')\subseteq PR'$. So we can apply the Cayley-Hamilton theorem to $\times a$ and $I=P$, we get some monic polynomial $f(x)=x^n+p_{n-1}x^{n-1}+\cdots + p_0\in R[x]$ such that $f(a)=0$ as an endomorphism of $R'$ and $p_i\in P$, so $f(a)1=0$ in $R'$, so $f(a)=0$ in $R'$. So there exists $h(x)\in R[x]$ such that $f(x)=h(x)m(x)$. Consider mod $P$, we have $\ol{x}^n=\ol{h}\ol{m}$ in $(R/P)[x]$. Since $R/P[x]$ is integral domain, $\ol{m}$ must be $\ol{x}^n$, so all the non-leading coefficients of $m$ are in $P$.
+    \end{enumerate}
+\end{proof}
+\begin{remark}
+    This lemma gives us a way to determine whether an element $a$ is integral over $R$ by looking at the coefficients of its minimal polynomial over $K$. 
+\end{remark}
+
 \begin{example}
     Consider $d$ a nonzero square-free integer. We can use this lemma to the integral closure of $\ZZ$ in $\QQ(\sqrt{d})$. We can show that the integral closure of $\ZZ$ in $\QQ(\sqrt{d})$ is $\ZZ[\frac{1+\sqrt{d}}{2}]$ if $d\equiv 1\mod 4$ and $\ZZ[\sqrt{d}]$ otherwise.
 \end{example}
@@ -1241,7 +1259,19 @@ For any morphism of affine varieties $f: X\to Y$, we have the corresponding morp
 \begin{theorem}[Lying Over]
     Let $R\subseteq R'$ be an integral extension of rings. Then for any prime ideal $P$ of $R$, there exists some prime ideal $P'$ of $R'$ such that $P'\cap R=P$.
 \end{theorem}
-Given a integral extension from $i: \SO(Y)$ to $\SO(X)$, we have a morphism $\pi: X\to Y$. For any maximal ideal $\km$ of $\SO(Y)$, which corresponds to a point $Y'\in Y$, there exists some prime ideal $\kp'$ of $\SO(X)$ such that $\kp'\cap \SO(Y)=\km$. Geometrically, this is saying that there exists some closed subset $X'=V(\kp)$ of $X$ that maps to $y$. So $\pi$ is surjective.
+\begin{proof}
+    We will show a stronger result: 
+    \begin{lemma}
+        let $R\subseteq R'$ be an arbitary extension of rings and $P$ be a prime ideal of $R$. There exists $P'\subseteq R'$ such that $P'\cap R=P$ if and only if $PR'\cap R=P$. 
+        \begin{subproof}[Subproof of the lemma]
+            One direction is trivial. Conversely, if $PR'\cap R=P$, let $S=R\sm P$. So $S\cap PR'=\emptyset$. So we can localize at $S$ and $PR'$ becomes a proper ideal of $S\inv R'$. So there exists a maximal ideal $\km$ of $S\inv R'$ containing $S\inv PR'$. So there exists $P'$ of $R'$ such that $P'\cap S$ and $PR'\subseteq P'$. So $P=RP'\cap R\subseteq P'\cap R$. On the other hand, $P'\cap S=\emptyset$, so $P'\cap R\subseteq P$. So $P'\cap R=P$.
+        \end{subproof}
+        
+    \end{lemma}
+    When $R\subseteq R'$ is an integral extension, when for any prime $P\subseteq R$, $P\subseteq PR'\cap R$ is always true. For any $a\in PR'\cap R$, by Cayley-Hamilton theorem, there exists some monic polynomial $f(x)=x^n+p_{n-1}x^{n-1}+\cdots + p_0\in R[x]$ such that $f(a)=0$ and $p_i\in P$. Since $a\in R$, $a^n=-p_{n-1}a^{n-1}-\cdots - p_0\in P$, so $a\in P$. So $PR'\cap R=P$. Thus, we can apply the lemma to get some prime ideal $P'$ of $R'$ such that $P'\cap R=P$.
+\end{proof}
+\begin{remark}
+    Given a integral extension from $i: \SO(Y)$ to $\SO(X)$, we have a morphism $\pi: X\to Y$. For any maximal ideal $\km$ of $\SO(Y)$, which corresponds to a point $Y'\in Y$, there exists some prime ideal $\kp'$ of $\SO(X)$ such that $\kp'\cap \SO(Y)=\km$. Geometrically, this is saying that there exists some closed subset $X'=V(\kp)$ of $X$ that maps to $y$. So $\pi$ is surjective.
 \[\begin{tikzcd}
 	{\mathcal{O}(X)} && {\mathcal{O}(Y)} && X && Y \\
 	\\
@@ -1255,6 +1285,8 @@ Given a integral extension from $i: \SO(Y)$ to $\SO(X)$, we have a morphism $\pi
 	\arrow[from=3-5, to=3-7]
 	\arrow[hook, from=3-7, to=1-7]
 \end{tikzcd}\]
+\end{remark}
+
 \begin{example}
     Consider $R=k[x]$ and $R'=\frac{k[x,y]}{(x^2-y^2)}$. 
     \begin{center}
@@ -1271,6 +1303,9 @@ Given a integral extension from $i: \SO(Y)$ to $\SO(X)$, we have a morphism $\pi
 \begin{theorem}[Incomparability]
     Let $R\subseteq R'$ be an integral extension of rings and $P$ be a prime ideal of $R$. If $P'\subseteq Q'$ are two prime ideals of $R'$ such that $P'\cap R=Q'\cap R=P$, then $P'=Q'$.
 \end{theorem}
+\begin{proof}
+    Consider the integral extension $R/P\subseteq R'/P'$. Notice that $Q'/P'$ is a prime ideal of $R'/P'$ that contracts to the zero ideal of $R/P$. We want to show $Q'\P'=0$. Let $a+P'\in Q'/P'$. Since $R/P\subseteq R'/P'$ is an integral extension, there exists some monic polynomial $f(x)=x^n+p_{n-1}x^{n-1}+\cdots + p_0\in (R/P)[x]$ such that $f(a+P')=0$ in $R'/P'$. Since $R/P[x]$ is integral domain, we may assume $p_0\neq 0$. Notice that $p_0=-\ol{a}^n-p_{n-1}\ol{a}^{n-1}-\cdots - p_1\ol{a}\in Q'/P'$, so $p_0\in Q'/P'\cap R/P=0$, so $f(x)=x$. So $a+P=0$ in $R'/P'$, so $a\in P'$. Thus, $Q'/P'=0$, so $Q'=P'$.
+\end{proof}
 \begin{example}
     Consider $R=k[x]$ and $R'=\frac{k[x,y]}{(xy)}$. 
     \begin{center}
@@ -1292,6 +1327,7 @@ For (3), given the integral extension $R\subseteq R'$, we have the corresponding
 \begin{theorem}[Going Up]
     Let $R\subseteq R'$ be an integral extension of rings and $P\subseteq Q$ be two prime ideals of $R$. If $P'\subseteq R'$ is a prime ideal such that $P'\cap R=P$, then there exists some prime ideal $Q'\subseteq R'$ such that $P'\subseteq Q'$ and $Q'\cap R=Q$.
 \end{theorem}
+This is a direct consequence of the lying over. 
 \begin{example}
     Consider $R=k[x]$ and $R'=\frac{k[x,y]}{(xy-1)\cap(x,y)}$. 
     \begin{center}
@@ -1304,15 +1340,55 @@ For (3), given the integral extension $R\subseteq R'$, we have the corresponding
 \end{theorem}
 \begin{remark}
     The going down theorem is not true if $R$ is not normal or if $R'$ is not integral domain. If $R'$ is not integral domain, say $R'=\frac{k[x,y]}{(x,y)\cap (y-1)}$, we can consider it as a line and a point not on the line. And $R=k[x]$. $R\subseteq R'$ is an integral extension. If we take $p=(0)$, $Q=(x)$ and $Q'=(x,y)$, then there is no prime ideal $P'\subseteq R'$ such that $P'\subseteq Q'$ and $P'\cap R=P$. This tells us $R'$ has to be irreducible/integral. 
+    \begin{center}
+        \includegraphics[scale=0.7]{diagram1-6.pdf}
+    \end{center}
+    The fact that $R$ has to be normal is a bit more subtle. We omit the counterexample here. 
 \end{remark}
 To summarize, the four theorems are saying that given an integral extension $R\subseteq R'$, we have a surjective morphism $\pi: \Spec(R')\surjto \Spec(R)$, and the fibers of $\pi$ well-behave in the sense that they are nonempty, finite, and sort of continuous. This implies the following theorem: 
 \begin{theorem}
     If $R\to R'$ is an integral extension of rings, then $\dim(R)=\dim(R')$.
 \end{theorem}
+This is a direct consequence of the lying over and incomparability theorems.
 
 
+\subsection{Some Special cases}
+\begin{theorem}
+    Let $R$ be a graded domain, then the integral closure of $R$ in its field of fractions is also a graded ring.
+\end{theorem}
+\begin{theorem}
+    Let $\Gamma$ be a finitely generated semigroup in $\NN^n$ and $R=k[\Gamma]$ be the semigroup ring of $\Gamma$. Then the integral closure of $R$ in its field of fractions is $k[\overline{\Gamma}]$ where $\overline{\Gamma}=\RR_{\geq 0}\Gamma\cap \NN^n$. 
+\end{theorem}
+\subsection{Noether normalization and Nullstellensatz}
+\begin{theorem}[Noether normalization]
+    Let $R$ be a finitely generated algebra over a field $k$. Then there exists some algebraically independent elements $x_1, \ldots, x_d\in R$ such that $R$ is a finite extension of $k[x_1, \ldots, x_d]$. 
+\end{theorem}
+\begin{theorem}[Algberaic Nullstellensatz]
+    Let $k$ be a field and $S$ be a finitely generated $k$-algebra. If $S$ is a field, then $S$ is a finite extension of $k$.
+\end{theorem}
+\begin{proof}
+    By the Noether normalization, there exists some algebraically independent elements $x_1, \ldots, x_d\in S$ such that $S$ is a finite extension of $k[x_1, \ldots, x_d]$. Since $S$ is a field, $k[x_1, \ldots, x_d]$ is a field as well, so $d=0$. So $S$ is a finite extension of $k$. 
+\end{proof}
+\begin{theorem}[Weak Nullstellensatz]
+    Let $k$ be an algebraically closed field and $\km$ be a maximal ideal of $k[x_1, \ldots, x_n]$. Then there exists some point $p=(a_1, \ldots, a_n)\in k^n$ such that $\km=(x_1-a_1, \ldots, x_n-a_n)$.
+\end{theorem}
+Consider $R=k[x_1, \ldots, x_n]/\km$ is a field and a finitely generated $k$-algebra, so by Noether normalization, there exists a polynomial ring $k[y_1, \ldots, y_d]$ such that $R$ is a finite extension of $k[y_1, \ldots, y_d]$. Since $R$ is a field, $k[y_1, \ldots, y_d]$ is a field as well, so $d=0$. So $R$ is a finite extension of $k$, so $R=k$. So $\km=(x_1-a_1, \ldots, x_n-a_n)$ for some $a_i\in k$.
+\begin{theorem}[Strong Nullstellensatz]
+    Let $k$ be an algebraically closed field and $I$ be an ideal of $k[x_1, \ldots, x_n]$. Then $\sqrt{I}=I(V(I))$.
+\end{theorem}
+\begin{proof}
+\begin{lemma}
+    For any ideal $I$ of $R=k[x_1, \ldots, x_n]$, \[\sqrt{I}=\bigcap_{\km\supseteq I}\km\] where $\km$ runs through all the maximal ideals of $k[x_1, \ldots, x_n]$ containing $I$.
+    \begin{subproof}
+        One direction is trivial. Conversely, if $f\notin \sqrt{I}$, we want to show that there exists some maximal ideal $\km$ of $k[x_1, \ldots, x_n]$ such that $I\subseteq \km$ and $f\notin \km$. So localize at $S=\{f^n: n\geq 0\}$, we get $S\inv I$ is a proper ideal of $S\inv k[x_1, \ldots, x_n]$. So there exists some maximal ideal $\km'$ of $S\inv k[x_1, \ldots, x_n]$ containing $S\inv I$. So there exists some prime ideal (not necessarily maximal) $\km$ of $k[x_1, \ldots, x_n]$ such that $\km\cap S=\emptyset$ and $\km\supseteq I$. We want to show that $\km$ is maximal. 
+        \\
 
-
-
-
+        Consider the extension $k\to R/\km \to R_f/\km_f$ (inclusion due to the fact that $R$ is integral domain). Notice that $R_f/\km_f$ is a field and it's a finitely generated $k$-algebra, so by the algebraic Nullstellensatz, $k\to R_f/\km_f$ is a finite extension. Therefore, $K\to R/\km$ is integral extension. So $R/\km$ is a field, so $\km$ is maximal.
+    \end{subproof}
+   
+\end{lemma} Given the lemma, we can show that if $f\not\in \sqrt{I}$, then there exists some maximal ideal $\km$ of $k[x_1, \ldots, x_n]$ such that $I\subseteq \km$ and $f\notin \km$, so there exists some point $p\in V(I)$ such that $f(p)\neq 0$, so $f\notin I(V(I))$. The converse is trivial. 
+\end{proof}
+\begin{remark}
+    The idea of the proof is that every algebraic set is a union of points, so we just need to show that every radical ideal is an intersection of maximal ideals.Therefore, we conclude the correspondence between algebraic sets and radical ideals.
+\end{remark}
 \end{document}

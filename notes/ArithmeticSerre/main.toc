@@ -13,4 +13,7 @@
 \contentsline {subsection}{\numberline {5.3}Classification of Quadratic Forms over $\mathbb Q_p$}{33}{subsection.277}%
 \contentsline {subsection}{\numberline {5.4}The real case}{34}{subsection.286}%
 \contentsline {subsection}{\numberline {5.5}Quadratic Form over $\mathbb Q$}{34}{subsection.289}%
+\contentsline {section}{\numberline {6}The Theorem on Arithmetic Progressions}{36}{section.304}%
+\contentsline {subsection}{\numberline {6.1}Characters of finite abelian groups}{36}{subsection.305}%
+\contentsline {subsection}{\numberline {6.2}Dirichlet Series}{37}{subsection.318}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

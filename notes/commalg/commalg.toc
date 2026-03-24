@@ -32,5 +32,7 @@
 \contentsline {section}{\numberline {15}March 10, 2026: Integral Extension, Normal Domains and 4 Theorems}{48}{section.337}%
 \contentsline {subsection}{\numberline {15.1}Integral extensions}{48}{subsection.338}%
 \contentsline {subsection}{\numberline {15.2}Normal Domains}{49}{subsection.357}%
-\contentsline {subsection}{\numberline {15.3}Four Theorems}{51}{subsection.379}%
+\contentsline {subsection}{\numberline {15.3}Four Theorems}{52}{subsection.383}%
+\contentsline {subsection}{\numberline {15.4}Some Special cases}{56}{subsection.413}%
+\contentsline {subsection}{\numberline {15.5}Noether normalization and Nullstellensatz}{56}{subsection.418}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
