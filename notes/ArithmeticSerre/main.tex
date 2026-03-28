@@ -2,6 +2,7 @@
 \usepackage[sexy]{evan}
 \usepackage{quiver}
 \usepackage{relsize}
+\usepackage{hyperref}
 \newcommand{\legendre}[2]{\left(\frac{#1}{#2}\right)}
 \newcommand{\disc}{\operatorname{disc}}
 \newcommand{\rad}{\operatorname{rad}}
@@ -957,7 +958,7 @@ However, if we are given the rank, determinant and $\varepsilon$-invariant of a 
     Consider $g(z)=e^{\lambda_1 z}f(z)=a_1+\sum_{n=2}^\infty a_ne^{-(\lambda_n-\lambda_1)z}$. When $n$ approaches to infinity, $g(z)$ approaches to $a_1$. So if $f(z)$ is identically zero, then $a_1=0$. We can apply the same argument to show that $a_2=0$. By induction, we can show that $a_n=0$ for any $n$. The converse is trivial.
 \end{proof}
 \subsubsection*{Dirichlet Series with positive coefficients}
-\begin{proposition}
+\begin{proposition}\label{prop:6.10}
     Asssume $a_n\neq 0$ are real numbers. Suppose $f$ converges for $\Re(z)>c$ and $f$ can be extended analytically to a neighborhood of $c$ and $f(c)\neq 0$. Then $f(z)$ converges for $\Re(z)>c-\varepsilon$ for some $\varepsilon>0$.
 \end{proposition}
 \subsubsection*{Ordinary Dirichlet Series}
@@ -969,5 +970,82 @@ However, if we are given the rank, determinant and $\varepsilon$-invariant of a 
         \item If the parital sums of $a_n$ are bounded, then $f(z)$ converges for $\Re(z)>0$.
     \end{enumerate}
 \end{proposition}
+\subsection{Zeta function and $L$ functions}
+\begin{lemma}
+    Let $f$ be a bounded multiplicative function. The Dirichlet series 
+    \[\sum_{n=1}^\infty \frac{f(n)}{n^s}\] converges absolutely for $\Re(s)>1$. And it's equal to \[\prod_p\left(1+\frac{f(p)}{p^{-s}}+\frac{f(p^2)}{p^{-2s}}+\cdots\right)\]where the product is taken over all primes.
+    \\
 
+    If $f$ is completely multiplicative, it is equal to \[\prod_p\left(1-\frac{f(p)}{p^s}\right)^{-1}\] where the product is taken over all primes.
+\end{lemma}
+\subsubsection*{Zeta Function}
+\begin{proposition}
+    Let $\zeta(s)=\sum_{n=1}^\infty \frac{1}{n^s}$. 
+    \begin{enumerate}
+        \item $\zeta(s)$ is homomorphic and $\neq 0$ for $\Re(s)>1$.
+        \item $\zeta(s)=\frac{1}{s-1}+\phi(s)$ where $\phi(s)$ is holomorphic for $\Re(s)>0$.
+    \end{enumerate}
+\end{proposition}
+\begin{proof}
+    First, we notice that $\zeta(s)$ converges for $\Re(s)>1$, so $\zeta(s)$ is holomorphic for $\Re(s)>1$. Next, 
+    \[\zeta(s)=\prod_p\left(1-\frac{1}{p^s}\right)^{-1}.\]
+    when $\Re(s)>1$. So $|1-p^{-s}|<|1|$. So $|(1-p^{-s})^{-1}|>1$. So $\zeta(s)\neq 0$. 
+    \\
+
+    Third, when $\Re(s)>1$, we can write $\frac{1}{s-1}=\int_{1}^\infty t^{-s}dt=\sum_{n=1}^\infty\int_{n}^{n+1}t^{-s}dt$.
+    Therefore, wehn $\Re(s)>1$, we have 
+    \[\zeta(s)=\frac{1}{s-1}+\sum_{n=1}^\infty\left(\frac{1}{n^s}-\int_{n}^{n+1}t^{-s}dt\right)=\frac{1}{s-1}+\sum_{n=1}^\infty\left(\int_{n}^{n+1}(n^{-s}-t^{-s})dt\right)\]
+    Let $phi_n(s)=\int_{n}^{n+1}(n^{-s}-t^{-s})dt$, and it's clearly holomorphic for $\Re(s)>0$. Moreover, $|\phi_n(s)|\leq \frac{|s|}{n^{x+1}}$ where $x=\Re(s)$. So $\sum_{n=1}^\infty \phi_n(s)$ converges uniformly on any compact subset of $\{s: \Re(s)>0\}$, so $\phi(s)=\sum_{n=1}^\infty \phi_n(s)$ is holomorphic for $\Re(s)>0$.
+\end{proof}
+\begin{corollary}
+    $\zeta(s)$ has a simple pole at $s=1$. 
+\end{corollary}
+\begin{corollary}
+    When $s\to 1$, $\sum_p p^{-s}\sim \log(\frac{1}{s-1})$.
+\end{corollary}
+\begin{proof}
+    Notice that $\zeta(s)\sim \frac{1}{s-1}$. So it suffcies to show that \[\sum_p p^{-s}\sim \log(\zeta(s))\]. 
+    Notice that $\zeta(s)=\prod_p\left(1-\frac{1}{p^s}\right)^{-1}$. So 
+    \[\log(\zeta(s))=-\sum_p \log(1-p^{-s})=\sum_p \sum_k \frac{1}{k}(p^{-s})^k=\sum_p p^{-s}+ \text{something converges}\]
+
+\end{proof}
+\subsubsection*{The $L$-functions}
+\begin{definition}
+    Let $\chi$ be a character mod $m$, 
+    \[L(s,\chi)=\sum_{n=1}^\infty \frac{\chi(n)}{n^s}\]
+\end{definition}
+\begin{proposition}
+    For $\chi=1$, one has 
+    \[L(s,1)=F(s)\zeta(s)\]
+    where \[F(s)=\prod_{p|m}\left(1-\frac{1}{p^s}\right).\]
+    In particular, $L(s,1)$ can be extended anaytically to $\Re(s)>0$ and has a simple pole at $s=1$.
+    
+\end{proposition}
+\begin{proposition}
+    For $\chi\neq 1$, $L(s,\chi)$ is holomorphic on $\Re(s)>0$. And when $\Re(s)>1$, we have 
+    \[L(s,\chi)=\prod_{p\in P}\frac{1}{1-\frac{\chi(p)}{p^s}}\]
+\end{proposition}
+\begin{definition}
+    \[\zeta_m(s):=\prod_{\chi}L(s,\chi)\]
+    over all characters mod $m$. 
+\end{definition}
+\begin{proposition}
+    $\zeta_m$ is a Dirichlet series with positive coefficients.
+    \begin{enumerate}
+        \item It converges for $\Re(s)>1$. 
+        \item One has 
+        \[\zeta_m(s)=\prod_{p\nmid m}\frac{1}{(1-\frac{1}{p^{f(s)s}})^{g(p)}}\]
+        where $f(p)$ is the order of $p$ in $(\ZZ/m\ZZ)^\times$ and $g(p)=\frac{\phi(m)}{f(p)}$.
+    \end{enumerate}
+\end{proposition}
+\begin{theorem}
+    $L(1,\chi)\neq 0$ for all $\chi\neq 1$. Consequently, $\zeta_m(s)$ has a simple pole at $s=1$.
+\end{theorem}
+\begin{proof}
+    Assume $L(1,\chi)=0$ for some nontrivial $\chi$. Then $\zeta_m(s)$ is holomorphic at $s=1$. Let $r$ be the supreme of the real numbers such that $\zeta_m(s)$ converges for $\Re(s)>r$. We claim that $r=0$. By \hyperref[prop:6.10]{proposition~6.10}, $r>1$ since $\zeta_m(s)$ is a positive Dirichlet series. Notice that all $L(s,\chi)$ can be extended analytically to $\Re(s)>0$ except for $1$, so $\zeta_m(s)$ can be extended analytically to $\Re(s)>0$. So by \hyperref[prop:6.10]{proposition~6.10}, $r=0$. So $\zeta_m(s)$ converges for $\Re(s)>0$. 
+    \\
+
+    However, if we expand $\zeta_m(s)$ as a Dirichlet series, we can clearly see that the series diverges at $s=\frac{1}{\phi(m)}$. Contradiction. So $L(1,\chi)\neq 0$ for all $\chi\neq 1$. Thus, $\zeta_m(s)$ has a simple pole at $s=1$.
+
+\end{proof}
 \end{document}
