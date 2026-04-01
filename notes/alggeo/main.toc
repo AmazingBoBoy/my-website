@@ -1,28 +1,32 @@
-\contentsline {section}{\numberline {1}Disclaimer}{2}{section.2}%
-\contentsline {section}{\numberline {2}Preliminaries}{3}{section.3}%
-\contentsline {subsection}{\numberline {2.1}Basic abstract algebra}{3}{subsection.4}%
-\contentsline {subsection}{\numberline {2.2}Affine Space and Affine Algebraic Sets}{3}{subsection.5}%
-\contentsline {section}{\numberline {3}Hilbert's Nullstellensatz}{4}{section.10}%
-\contentsline {section}{\numberline {4}Regular Function on Closed Set}{5}{section.21}%
-\contentsline {subsection}{\numberline {4.1}Coordinate Rings}{5}{subsection.22}%
-\contentsline {subsection}{\numberline {4.2}Algebraic Subset of $X$}{5}{subsection.25}%
-\contentsline {section}{\numberline {5}Zariski's Topology}{6}{section.30}%
-\contentsline {subsection}{\numberline {5.1}Basic Definitions}{6}{subsection.31}%
-\contentsline {subsection}{\numberline {5.2}Connectedness}{6}{subsection.34}%
-\contentsline {subsection}{\numberline {5.3}Irreducibility}{6}{subsection.38}%
-\contentsline {subsection}{\numberline {5.4}Noetherian Topological Space}{7}{subsection.47}%
-\contentsline {subsection}{\numberline {5.5}Regular Function on Zariski's Open Set}{8}{subsection.58}%
-\contentsline {subsection}{\numberline {5.6}Regular function on principal open set}{9}{subsection.69}%
-\contentsline {section}{\numberline {6}Presheaf and Sheaf}{12}{section.82}%
-\contentsline {subsection}{\numberline {6.1}Presheaf and Sheaf}{12}{subsection.83}%
-\contentsline {subsection}{\numberline {6.2}Stalks and germs}{13}{subsection.94}%
-\contentsline {section}{\numberline {7}Ringed Spaces and its morphisms}{15}{section.103}%
-\contentsline {subsection}{\numberline {7.1}Ringed Space and Affine Varieties}{15}{subsection.104}%
-\contentsline {subsection}{\numberline {7.2}Product of affine Varieties}{17}{subsection.118}%
-\contentsline {subsection}{\numberline {7.3}Some strange affine varieties}{18}{subsection.121}%
-\contentsline {section}{\numberline {8}Prevarieties and Varieties}{20}{section.126}%
-\contentsline {subsection}{\numberline {8.1}Constructing Prevarieties}{20}{subsection.127}%
-\contentsline {subsection}{\numberline {8.2}Morphism of Prevarieties}{23}{subsection.147}%
-\contentsline {subsection}{\numberline {8.3}Producing Prevarieties}{26}{subsection.160}%
-\contentsline {subsection}{\numberline {8.4}Algebraic Varieties}{27}{subsection.170}%
+\contentsline {section}{\numberline {1}Disclaimer}{3}{section.2}%
+\contentsline {section}{\numberline {2}Preliminaries}{4}{section.3}%
+\contentsline {subsection}{\numberline {2.1}Basic abstract algebra}{4}{subsection.4}%
+\contentsline {subsection}{\numberline {2.2}Affine Space and Affine Algebraic Sets}{4}{subsection.5}%
+\contentsline {section}{\numberline {3}Hilbert's Nullstellensatz}{5}{section.10}%
+\contentsline {section}{\numberline {4}Regular Function on Closed Set}{6}{section.21}%
+\contentsline {subsection}{\numberline {4.1}Coordinate Rings}{6}{subsection.22}%
+\contentsline {subsection}{\numberline {4.2}Algebraic Subset of $X$}{6}{subsection.25}%
+\contentsline {section}{\numberline {5}Zariski's Topology}{7}{section.30}%
+\contentsline {subsection}{\numberline {5.1}Basic Definitions}{7}{subsection.31}%
+\contentsline {subsection}{\numberline {5.2}Connectedness}{7}{subsection.34}%
+\contentsline {subsection}{\numberline {5.3}Irreducibility}{7}{subsection.38}%
+\contentsline {subsection}{\numberline {5.4}Noetherian Topological Space}{8}{subsection.47}%
+\contentsline {subsection}{\numberline {5.5}Regular Function on Zariski's Open Set}{9}{subsection.58}%
+\contentsline {subsection}{\numberline {5.6}Regular function on principal open set}{10}{subsection.69}%
+\contentsline {section}{\numberline {6}Presheaf and Sheaf}{13}{section.82}%
+\contentsline {subsection}{\numberline {6.1}Presheaf and Sheaf}{13}{subsection.83}%
+\contentsline {subsection}{\numberline {6.2}Stalks and germs}{14}{subsection.94}%
+\contentsline {section}{\numberline {7}Ringed Spaces and its morphisms}{16}{section.103}%
+\contentsline {subsection}{\numberline {7.1}Ringed Space and Affine Varieties}{16}{subsection.104}%
+\contentsline {subsection}{\numberline {7.2}Product of affine Varieties}{18}{subsection.118}%
+\contentsline {subsection}{\numberline {7.3}Some strange affine varieties}{19}{subsection.121}%
+\contentsline {section}{\numberline {8}Prevarieties and Varieties}{21}{section.126}%
+\contentsline {subsection}{\numberline {8.1}Constructing Prevarieties}{21}{subsection.127}%
+\contentsline {subsection}{\numberline {8.2}Morphism of Prevarieties}{24}{subsection.147}%
+\contentsline {subsection}{\numberline {8.3}Producing Prevarieties}{27}{subsection.160}%
+\contentsline {subsection}{\numberline {8.4}Algebraic Varieties}{28}{subsection.170}%
+\contentsline {section}{\numberline {9}Projective Varieties: Topology}{30}{section.189}%
+\contentsline {subsection}{\numberline {9.1}Definition}{30}{subsection.190}%
+\contentsline {subsection}{\numberline {9.2}Projective Varieties}{30}{subsection.193}%
+\contentsline {subsection}{\numberline {9.3}Homogenization and dehomogenization}{32}{subsection.220}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

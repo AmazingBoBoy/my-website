@@ -941,7 +941,7 @@ However, if we are given the rank, determinant and $\varepsilon$-invariant of a 
     \[(1-\chi(y))\sum_{x\in G}\chi(x) = 0.\]
     Since $\chi(y)\neq 1$, we have $\sum_{x\in G}\chi(x) = 0$.
 \end{proof}
-\begin{proposition}
+\begin{proposition}\label{prop:6.6}
     Let $a$ be a non-zero square free integer. Let $m=4|a|$. Then there exists a unique character $\chi_a$ of $(\ZZ/m\ZZ)^\times$ such that $\chi_a(p)=(a/p)$ for any odd prime $p$ not dividing $a$, where $(a/p)$ is the Legendre symbol. Moreover, $\chi_a^2=1$ and $\chi_a\neq 1$ if $a\neq 1$. 
 \end{proposition}
 \subsection{Dirichlet Series}
@@ -1005,7 +1005,7 @@ However, if we are given the rank, determinant and $\varepsilon$-invariant of a 
 \end{corollary}
 \begin{proof}
     Notice that $\zeta(s)\sim \frac{1}{s-1}$. So it suffcies to show that \[\sum_p p^{-s}\sim \log(\zeta(s))\]. 
-    Notice that $\zeta(s)=\prod_p\left(1-\frac{1}{p^s}\right)^{-1}$. So 
+    Notice that $\zeta(s)=\prod_p\left(1-\frac{1}{p^s}\right)^{-1}$. We $s\to 1$ close enough, we have $|1-p^{-s}|<1$. So we can expand $\log(\zeta(s))$ (the principal branch) as follows:
     \[\log(\zeta(s))=-\sum_p \log(1-p^{-s})=\sum_p \sum_k \frac{1}{k}(p^{-s})^k=\sum_p p^{-s}+ \text{something converges}\]
 
 \end{proof}
@@ -1046,6 +1046,45 @@ However, if we are given the rank, determinant and $\varepsilon$-invariant of a 
     \\
 
     However, if we expand $\zeta_m(s)$ as a Dirichlet series, we can clearly see that the series diverges at $s=\frac{1}{\phi(m)}$. Contradiction. So $L(1,\chi)\neq 0$ for all $\chi\neq 1$. Thus, $\zeta_m(s)$ has a simple pole at $s=1$.
+\end{proof}
+\subsection{Density and Dirichlet}
+We know that $\sum_p \frac{1}{p^s}\sim \log(\frac{1}{s-1})$ when $s\to 1$. Let $A$ be a subset of primes. 
+\begin{definition}
+    The Density of $A$ is defined as 
+    \[\lim_{s\to 1}\frac{\sum_{p\in A}p^{-s}}{\sum_p p^{-s}}\] 
+\end{definition}
+\begin{theorem}
+    Let $m\geq 1$ be an integer and $a$ be an integer coprime to $m$.  Let $P_a$ be the set of primes that are congruent to $a$ mod $m$. Then the density of $P_a$ is $\frac{1}{\phi(m)}$. Therefore, there are infinitely many primes that are congruent to $a$ mod $m$.
+\end{theorem}
+\begin{proof}
+    To detect wich prime $p\equiv a \pmod m$, we can use the character formula stated before. Let $\wh{G(m)}$ be the group of characters of $(\ZZ/m\ZZ)^\times$. We have \[\sum_{\chi\in \wh{G(m)}}\chi(p a\inv)=\begin{cases} \phi(m) & a\equiv p \pmod m 
+        \\
+        0 & a\not\equiv p \pmod m
+        \end{cases}\]
+    So we have 
+    \[\sum_{p\in P_a}p^{-s}=\frac{1}{\phi(m)}\sum_p \sum_{\chi\in \wh{G(m)}} \chi(p a\inv)p^{-s}=\frac{1}{\phi(m)} \sum_{\chi\in \wh{G(m)}} \chi(a\inv) \sum_p \frac{\chi(p)}{p^s}\]
+    Let $f_\chi=\sum_p \frac{\chi(p)}{p^s}$.
+    \\
+
+    \textbf{Case 1: $\chi=1$.} We have $f_\chi\sim \log(\frac{1}{s-1})$ when $s\to 1$.
+    \\
+
+    \textbf{Case 2: $\chi\neq 1$.} \begin{claim}
+        $f_\chi$ is bounded when $s\to 1$.
+        \begin{subproof}
+            Notice that $L(s,\chi)=\sum_{n=1}^\infty \frac{\chi(n)}{n^s}=\prod_{p} (\sum_{n=0}^{\infty} \frac{\chi(p)^n}{p^{ns}})$. When $\Re(s)>1$, we have $L(s,\chi)=\prod_p (1-\frac{\chi(p)}{p^s})^{-1}$. we can take $\log(-)$ both sides (this $\log(-)$ is defined to be the principalbranch such that $\log(1)=0$) to get 
+            \[\log(L(s,\chi))=\sum_p \log((1-\frac{\chi(p)}{p^s})^{-1})=\sum_p \sum_{n=1}^\infty \frac{\chi(p)^n}{n p^{ns}}\]\[=f_\chi+ \text{something converges}.\] So $f_\chi$ is bounded when $s\to 1$ since $L(s,\chi)$ is holomorphic and nonzero at $s=1$. 
+        \end{subproof} 
+    \end{claim}
+    Therefore, \[\sum_{p\in P_a}p^{-s}\sim \frac{1}{\phi(m)} f_{\chi=1}\sim \frac{1}{\phi(m)} \log(\frac{1}{s-1})\] when $s\to 1$. So the density of $P_a$ is $\frac{1}{\phi(m)}$.
+
 
 \end{proof}
+\begin{corollary}
+    Let $a\in \ZZ$ that is square free. The set of primes $p$ such that $(a/p)=1$ has density $\frac{1}{2}$. 
+    \\
+    
+    Therefore, if $x^2-a=0 \pmod p$ has a solution in almost all primes $p$, then $a$ is a perfect square.
+\end{corollary}
+Use \hyperref[prop:6.6]{proposition~6.6}. 
 \end{document}

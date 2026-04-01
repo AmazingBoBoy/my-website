@@ -546,16 +546,6 @@ We can let $M=R/I$ in the previous corollary to get the following result about i
 \end{corollary}
 The idea of the proof is the same as the previous corollary.
 
-\subsection{Examples}
-\begin{example}
-    Any finite (in terms of cardinality) ring/module is Artinian and has finite length. This is trivial. Examples can be $\ZZ/n\ZZ$ for any positive integer $n$. 
-\end{example}
-\begin{example}
-    $R=k[x,y]/(x,y)^2$ is Artinian Ring and finite length as $R$-module. 
-\end{example}
-
-
-
 \newpage 
 \section{February 5, 2026: Associated Primes}
 Chapter 3 of Eisenbud's book is about associated primes. It's absolutely horrible and messy in my opinion. I will try to give a more clean and organized presentation of the material in this chapter.
@@ -1391,4 +1381,49 @@ Consider $R=k[x_1, \ldots, x_n]/\km$ is a field and a finitely generated $k$-alg
 \begin{remark}
     The idea of the proof is that every algebraic set is a union of points, so we just need to show that every radical ideal is an intersection of maximal ideals.Therefore, we conclude the correspondence between algebraic sets and radical ideals.
 \end{remark}
+\newpage 
+\section{March 12, 2026: Artin-Rees lemma and Krull's intersection theorem}
+\subsection{Artin-Rees lemma}
+\begin{definition}
+    Given an ideal $I\subseteq R$. A sequence of $R$-modules $M=M_0\supseteq M_1\supseteq M_2\supseteq \cdots$ is called an $I$-filtration of $M$ if $IM_n\subseteq M_{n+1}$ for all $n\geq 0$.
+    \\
+
+    An $I$-filtration $M=M_0\supseteq M_1\supseteq M_2\supseteq \cdots$ is called $I$-stable if there exists some $n_0\geq 0$ such that $IM_n=M_{n+1}$ for all $n\geq n_0$.
+\end{definition}
+\begin{definition}
+    A blowup algebra of $I$ in $R$ is the graded ring 
+    \[B_IR=\bigoplus_{n\geq 0}I^n=R\oplus I\oplus I^2\oplus \cdots\cong R[tI]\subseteq R[t]\]
+    \\
+
+    Let $\mathcal{J} :M=M_0\supseteq M_1\supseteq M_2\supseteq \cdots$ be an $I$-filtration of $M$. We can define the blowup module of $\mathcal{J}$ as the graded $B_I(R)$-module: 
+    \[B_{\mathcal{J}}M=\bigoplus_{n\geq 0}M_n=M\oplus M_1\oplus M_2\oplus \cdots\]
+\end{definition}
+
+    We may also define the associated graded ring with respect to $I$ as
+    \[gr_IR=R/I\oplus I/I^2\oplus I^2/I^3\oplus \cdots\]
+    We can easily see that $gr_IR\cong B_IR/IB_IR$. Similarly, we can define the associated graded module with respect to $\mathcal{J}$ as
+    \[gr_{\mathcal{J}}M=M/M_1\oplus M_1/M_2\oplus M_2/M_3\oplus \cdots\]
+
+\begin{proposition}
+    This is our main proposition: Let $M$ be a finitely generated $R$-module and $\mathcal{J}: M=M_0\supseteq M_1\supseteq M_2\supseteq \cdots$ be an $I$-filtration of $M$. $B_{\mathcal{J}}M$ is a finitely generated $B_IR$-module if and only if $\mathcal{J}$ is $I$-stable.
+\end{proposition}
+\begin{proof}
+    If $\mathcal{J}$ is $I$-stable, then we can easily generate $B_{\mathcal{J}}M$ by the generators of $M_0\oplus M_1\oplus \cdots \oplus M_{n_0}$. Conversely, if $B_{\mathcal{J}}M$ is a finitely generated $B_IR$-module, then we can find finitely many homogeneous elements that generate $B_{\mathcal{J}}M$ as a $B_IR$-module. So there must exists some $n$ such that all the generators are in $M_0\oplus M_1\oplus \cdots \oplus M_n$. Therefore, for any $M_{n+i}$ with $i\geq 0$, we can write any element in $M_{n+i}$ as a combination of the generators, so $M_{n+i}=I^iM_{n}$ for all $i>0$. So $\mathcal{J}$ is $I$-stable.
+\end{proof}
+\begin{theorem}[Artin-Rees lemma]
+    Let $R$ be a Noetherian ring, $I$ be an ideal of $R$. If $M$ is a finitely generated $R$-module and $\mathcal{J}: M=M_0\supseteq M_1\supseteq M_2\supseteq \cdots$ is $I$-stable, then for any submodule $N\subseteq M$, the filtration $\mathcal{J}': N\cap M_0\supseteq N\cap M_1\supseteq N\cap M_2\supseteq \cdots$ is also $I$-stable. 
+\end{theorem}
+\begin{proof}
+    Since $\mathcal{J}$ is $I$-stable, $B_{\mathcal{J}}M$ is a finitely generated $B_IR$-module. Since $R$ is Noetherian, $B_IR\subseteq R[t]$ is Noetherian. So $B_{\mathcal{J}}M$ is a Noetherian module, so any submodule of $B_{\mathcal{J}}M$ is finitely generated. In particular, $B_{\mathcal{J}'}N$ is a finitely generated $B_IR$-module, so $\mathcal{J}'$ is $I$-stable.
+\end{proof}
+\subsection{Krull's Intersection Theorem}
+\begin{theorem}[Krull's intersection theorem]
+    Let $I\subseteq R$ be an ideal of a Noetherian ring $R$ and $M$ be a finitely generated $R$-module. Then tehre exists $r\in I$ such that \[(1-r)(\bigcap_{n\geq 0}I^nM)=0\].
+    In particular, if $R$ is local or integral domain, and $I$ is a proper ideal, then $\bigcap_{n\geq 0}I^nM=0$.
+\end{theorem}
+This is a direct consequence of the Artin-Rees lemma.
+\begin{corollary}
+    Let $R$ be a Noetherian ring and $I$ be a proper ideal of $R$. If $gr_IR$ is an integral domain, then $R$ is an integral domain as well.
+\end{corollary}
+For the proof, refer to Eisenbud's Commutative Algebra book, Corollary 5.5. 
 \end{document}

@@ -17,4 +17,5 @@
 \contentsline {subsection}{\numberline {6.1}Characters of finite abelian groups}{36}{subsection.305}%
 \contentsline {subsection}{\numberline {6.2}Dirichlet Series}{37}{subsection.318}%
 \contentsline {subsection}{\numberline {6.3}Zeta function and $L$ functions}{38}{subsection.333}%
+\contentsline {subsection}{\numberline {6.4}Density and Dirichlet}{41}{subsection.360}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
