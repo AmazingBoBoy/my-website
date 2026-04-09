@@ -2,20 +2,20 @@
 \contentsline {section}{\numberline {2}Meeting 1 on Jan. 28 2026: Overview of the course}{5}{section.13}%
 \contentsline {section}{\numberline {3}Chapter 2: $p$-adic numbers}{7}{section.35}%
 \contentsline {subsection}{\numberline {3.1}$\mathbb Z_p$ and $\mathbb Q_p$}{7}{subsection.36}%
-\contentsline {subsection}{\numberline {3.2}$p$-adic equations}{11}{subsection.81}%
-\contentsline {subsection}{\numberline {3.3}multiplicative Group of $\mathbb Q_p$}{14}{subsection.108}%
-\contentsline {section}{\numberline {4}Chapter 3: Hilbert Symbol}{18}{section.127}%
-\contentsline {subsection}{\numberline {4.1}Local Properties}{18}{subsection.128}%
-\contentsline {subsection}{\numberline {4.2}Global Properties}{19}{subsection.141}%
-\contentsline {section}{\numberline {5}Chapter 4: Quadratic Forms over $\mathbb Q_p$ and $\mathbb Q$}{21}{section.153}%
-\contentsline {subsection}{\numberline {5.1}Quadratic Forms over arbitrary fields $k$}{21}{subsection.154}%
-\contentsline {subsection}{\numberline {5.2}Quadratic forms over $\mathbb Q_p$}{32}{subsection.262}%
-\contentsline {subsection}{\numberline {5.3}Classification of Quadratic Forms over $\mathbb Q_p$}{33}{subsection.277}%
-\contentsline {subsection}{\numberline {5.4}The real case}{34}{subsection.286}%
-\contentsline {subsection}{\numberline {5.5}Quadratic Form over $\mathbb Q$}{34}{subsection.289}%
-\contentsline {section}{\numberline {6}The Theorem on Arithmetic Progressions}{36}{section.304}%
-\contentsline {subsection}{\numberline {6.1}Characters of finite abelian groups}{36}{subsection.305}%
-\contentsline {subsection}{\numberline {6.2}Dirichlet Series}{37}{subsection.318}%
-\contentsline {subsection}{\numberline {6.3}Zeta function and $L$ functions}{38}{subsection.333}%
-\contentsline {subsection}{\numberline {6.4}Density and Dirichlet}{41}{subsection.360}%
+\contentsline {subsection}{\numberline {3.2}$p$-adic equations}{11}{subsection.82}%
+\contentsline {subsection}{\numberline {3.3}multiplicative Group of $\mathbb Q_p$}{14}{subsection.109}%
+\contentsline {section}{\numberline {4}Chapter 3: Hilbert Symbol}{18}{section.128}%
+\contentsline {subsection}{\numberline {4.1}Local Properties}{18}{subsection.129}%
+\contentsline {subsection}{\numberline {4.2}Global Properties}{19}{subsection.142}%
+\contentsline {section}{\numberline {5}Chapter 4: Quadratic Forms over $\mathbb Q_p$ and $\mathbb Q$}{21}{section.154}%
+\contentsline {subsection}{\numberline {5.1}Quadratic Forms over arbitrary fields $k$}{21}{subsection.155}%
+\contentsline {subsection}{\numberline {5.2}Quadratic forms over $\mathbb Q_p$}{32}{subsection.263}%
+\contentsline {subsection}{\numberline {5.3}Classification of Quadratic Forms over $\mathbb Q_p$}{33}{subsection.278}%
+\contentsline {subsection}{\numberline {5.4}The real case}{34}{subsection.287}%
+\contentsline {subsection}{\numberline {5.5}Quadratic Form over $\mathbb Q$}{34}{subsection.290}%
+\contentsline {section}{\numberline {6}The Theorem on Arithmetic Progressions}{36}{section.305}%
+\contentsline {subsection}{\numberline {6.1}Characters of finite abelian groups}{36}{subsection.306}%
+\contentsline {subsection}{\numberline {6.2}Dirichlet Series}{37}{subsection.319}%
+\contentsline {subsection}{\numberline {6.3}Zeta function and $L$ functions}{38}{subsection.334}%
+\contentsline {subsection}{\numberline {6.4}Density and Dirichlet}{41}{subsection.361}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

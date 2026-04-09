@@ -5,6 +5,8 @@
 \newcommand{\Ann}{\mathrm{Ann}}
 \newcommand{\Ass}{\mathrm{Ass}}
 \newcommand{\Lt}{\mathrm{Lt}}
+\newcommand{\Ht}{\mathrm{ht}}
+\newcommand{\codim}{\mathrm{codim}}
 \renewcommand\AA{\mathbb{A}}
 \renewcommand\qedsymbol{$\mathfrak{Q.E.D.}$}
 \usepackage{relsize}
@@ -147,6 +149,10 @@ Next, we discuss localization. We essentially invert elements of a multiplicativ
     \item For any ideal $I \subseteq R$ disjoint from $U$, the extension $I^e=U\inv I$ is a proper ideal of $R[U\inv]$. (if they are not disjoint, then $1$ is in the $U\inv I$, so it's not proper). 
     \item For any $J\subseteq R[U\inv]$, we have $J=(J^c)^e$. 
     \item However, the $(I^e)^c\neq I$, even if $I\cap S=\emptyset$. Example: let $U=\{1,x,x^2,\ldots \}$ and $R=\CC[x,y]$, $(xy)^e=(y)$ in $R[U\inv]$ and $((xy)^e)^c= (y)$ in $R$. The correct statement is \[(I^e)^c= \{ r \in R: \exists u \in U, ur \in I\}=\sum_{u\in U} (I:u)\supseteq (I:U)\supseteq I\]. If $I$ is prime, then $(I^e)^c=I$.
+    \item $(I^e)^c=I$ if and only if the natural map $R/I \to R[U\inv]/I^e$ is injective.
+    \begin{subproof}
+        Conisder $R\to U\inv R\to U\inv R/I^e$. The kernel of the composition is $(I^e)^c$. So $(I^e)^c=I$ if and only if the kernel of the composition is $I$, which is equivalent to the injectivity of the induced map $R/I \to U\inv R/I^e$.
+    \end{subproof}
     \item This gives us the following bijection of prime ideals between $R$ and $R[U\inv]$: 
     \begin{center}
         \[\begin{tikzcd}[sep=scriptsize]
@@ -181,10 +187,9 @@ Next, we discuss localization. We essentially invert elements of a multiplicativ
     \end{subproof}
     
     \item Localization is nice with respect to tensor products: 
-    Let $M$ and $A$ be $R$-modules, $N$ be an $R[U\inv]$-module, then we have the isomorphism
+    Let $M$ and $N$ be $R$-modules, $N$ be an $R[U\inv]$-module, then we have the isomorphism
     \[U\inv R\otimes_R M \cong U\inv M, \]
-    \[U\inv (M \otimes_R N)\cong U\inv M\otimes_{U\inv R} N, \]
-    \[U\inv(A\otimes_R M)\cong U\inv A\otimes_{U\inv R} U\inv M.\]
+    \[U\inv(N\otimes_R M)\cong U\inv N\otimes_{U\inv R} U\inv M.\]
     The first isomorphism tells us $(-)\otimes_R U\inv R$ is exact, that is $U\inv R$ is a flat $R$-module.
     \item Tensor products are associative: for any $R$-module $M$, $R$-$S$-bimodule $N$ and $S$-module $P$, we have the isomorphism
     \[(M \otimes_R N) \otimes_S P \cong M \otimes_R (N \otimes_S P).\]
@@ -259,7 +264,7 @@ Some multiplicative closed sets that are often used:
     \end{subproof}
 \end{example}
 \begin{theorem}
-    Let $R$ be a ring, and $S$ be a $R$-algebra and $S$ is flat as an $R$-module. If $M$ and $N$ are $S$-modules, and $M$ is finitely presented as an $R$-module, then we have the isomorphism
+    Let $R$ be a ring, and $S$ be a $R$-algebra and $S$ is flat as an $R$-module. If $M$ and $N$ are $R$-modules, and $M$ is finitely presented as an $R$-module, then we have the isomorphism
 \[S\otimes_R\mathrm{Hom}_R(M,N) \cong \mathrm{Hom}_S(M\otimes_R S,N\otimes_R S).\]
 
 \end{theorem}
@@ -545,6 +550,35 @@ We can let $M=R/I$ in the previous corollary to get the following result about i
     \end{enumerate}
 \end{corollary}
 The idea of the proof is the same as the previous corollary.
+\begin{remark}
+    If $\kp^n\subseteq I\subseteq \kp$ for some $n$, then $\kp$ is a minimal prime of $I$. But the converse is not true: take $R=k[x,y]$ and $I=(xy)$. The primary decomposition of $I$ is $(x)\cap (y)$. So the minimal primes of $I$ are $(x)$ and $(y)$, but there is no $n$ such that $(x)^n\subseteq (xy)$ since $x^n$ is not divisible by $y$ for any $n$.
+    \\
+
+    This is true when $(R,\kp)$ is a local Noetherian ring: if $\kp$ is minimal over $I$, then $R/I$ has only one prime ideal $\kp/I$ and it's maximal. So $R/I$ is Artinian, so $\kp^n\subseteq I$ for some $n$.
+\end{remark}
+\subsection{Local Rings}
+\begin{definition}
+    A ring $R$ is called local if it has a unique maximal ideal.
+\end{definition}
+\begin{proposition}
+    A ring $R$ is local if and only if the set of nonunits of $R$ forms an ideal. In this case, the set of nonunits is the unique maximal ideal of $R$.
+\end{proposition}
+\begin{proposition}
+    Let $(R,\km)$ be a local ring. Then $R_{\km}\cong R$ as $R$-modules. 
+\end{proposition}
+\begin{example}
+    $R_{\kp}$ is always a local ring for any prime ideal $\kp$ of $R$. 
+\end{example}
+\begin{example}
+    A crucial example: Let $R$ be a ring and $\km$ be a maximal ideal of $R$. Let $n$ be an positive integer. Then $R/\km^n$ is a local Artinian ring. 
+    \begin{subproof}
+        Let prime $\kp\supseteq \km^n$, we claim that $\kp=\km$. For any $a\in \km$, $a^n\in \km^n\subseteq \kp$, so $a\in \kp$. Thus, $\km\subseteq \kp$. Since $\km$ is maximal, $\kp=\km$. So $\km$ is the only prime ideal/maximal ideal containing $\km^n$, so $R/\km^n$ is Artinian and local. 
+    \end{subproof}
+    Moreover, $(R/\km^n)_{\km} \cong R/\km^n$. 
+\end{example}
+\begin{example}
+    Let $R$ be a ring and $\km$ be a maximal ideal of $R$. Then the completion of $R$ at $\km$, denoted as $\hat{R}$, is a local ring. We will show this in the completion chapter.
+\end{example}
 
 \newpage 
 \section{February 5, 2026: Associated Primes}
@@ -554,7 +588,7 @@ Chapter 3 of Eisenbud's book is about associated primes. It's absolutely horribl
 \end{lemma}
 \subsection{The main theorem about associated primes including filtration and orthogonal lemma}
 \begin{theorem}
-    This is the main result of today: Let $R$ be a Noetherian ring, and $M$ be a finitely generated $R$-module. Then, 
+    This is the main result of today: Let $R$ be a Noetherian ring, and $M$ be a finitely generated nonzero $R$-module. Then, 
     \begin{enumerate}
         \item $\Ass(M)$ is nonempty
         \item $\Ass(M)$ is finite
@@ -639,15 +673,27 @@ This is part of the main theorem.
 \begin{remark}
     If there is only one associated prime of $M$, then the union of all associated primes of $M$ is exactly that associated prime = the set of zero-divisors on $M$ = the radical of $\Ann(M)$. 
 \end{remark}
+\begin{corollary}[Localization at associated primes detect zero elements]
+    Assume $M$ is an $R$-module over Noetherian ring $R$. 
+    \begin{center}
+        $M=0$ if and only if $M_{\kp}=0$ for all $\kp\in \Ass(M)$.
+    \end{center}
+\end{corollary}
+\begin{proof}
+    One direction is trivial. Conversely, if $M\neq 0$, there must be an associated prime $\kp=\Ann(m)$ of $M$ for some nonzero element $m\in M$. Notice that $\Ann(M) \subseteq \Ann(m)=\kp$, so $M_{\kp}\neq 0$.
+\end{proof}
 
-\begin{corollary}[Ideals made up of zero-divisors]
+\subsection{Prime Avoidance lemmas}
+\begin{lemma}[Union of prime]
+    Let $R$ be a ring and $I, \kp_1, \ldots, \kp_n$ be ideals of $R$. If $I\subseteq \bigcup_{i=1}^n \kp_i$, then there exists some $i$ such that $I\subseteq \kp_i$.
+\end{lemma}
+\begin{lemma}[Product in prime]
+    If $\kp$ is a prime ideal of $R$ and $I_i$ are ideals of $R$ such that $I_1I_2\cdots I_n\subseteq \kp$, then there exists some $i$ such that $I_i\subseteq \kp$.
+\end{lemma}
+\begin{corollary}
     Let $R$ be a Noetherian ring, and $M$ be a finitely generated $R$-module. Let $I$ be an ideal of $R$. If every element of $I$ is a zero-divisor on $M$, then there exists some associated prime $\kp$ of $M$ such that $I\subseteq \kp$, that is $I$ annihilate some nonzero element of $M$.
 \end{corollary}
-This is the direct consequence of the main theorem and the prime avoidance lemma (\href{https://math.stackexchange.com/a/1165719}{Here is a beautiful proof of the prime avoidance lemma}). 
-\begin{theorem}[Localization at associated primes detect zero elements]
-    Assume $M$ is an $R$-module over Noetherian ring $R$. Let $m\in M$, 
-    $m=0$ if and only if $m_{\kp}=0$ for all $\kp\in \Ass(M)$.
-\end{theorem}
+This is the direct consequence of the main theorem and the prime avoidance lemma: 
 \begin{proof}
     One direction is trivial. Conversely, if $m\neq 0$, there exists some associated prime $\kp$ of $M$ such that $\Ann(m)\subseteq \kp$. Localizing at $\kp$, we have $(m)_{\kp}$ is a nonzero submodule of $M_{\kp}$ since $\Ann(m)\subseteq \kp$. (or one can see $\Ann(M)_{\kp}=\Ann(M_{\kp})\subseteq \kp_{\kp}\subsetneq R_{\kp}$, if $M_{\kp}=0$, then $\Ann(M_{\kp})=R_{\kp}$) Thus, $m_{\kp}\neq 0$.
 \end{proof}
@@ -1095,6 +1141,9 @@ There is a really subtle detial in the proof: when we write $\sigma=\sum c_{ij}\
 \begin{definition}
     The Jacobson radical of a ring $R$ is defined as the intersection of all maximal ideals of $R$. We denote it by $J(R)$. 
 \end{definition}
+\begin{lemma}
+    $J(R)=\{r\in R\mid 1-sr \text{ is a unit for all } s\in R\}$
+\end{lemma}
 \begin{definition}
     A ring $R$ is called local if $R$ has a unique maximal ideal. We denote the unique maximal ideal of a local ring $R$ by $\km_R=\km=J(R)$. 
 \end{definition}
@@ -1105,18 +1154,23 @@ There is a really subtle detial in the proof: when we write $\sigma=\sum c_{ij}\
     Let $R$ be a local ring and $M$ be a finitely generated $R$-module. 
     \begin{enumerate}
         \item $M=\km M\iff M=0$.
+        \item If $N$ is a submodule of $M$ such that $M=N+\km M$, then $M=N$.
         \item $m_1, \ldots, m_k\in M$ generate $M$ if and only if their images in $M/\km M$ generate $M/\km M$ as a vector space over $R/\km$. 
     \end{enumerate}
+    If $R$ is not local, we can replace $\km$ by the Jacobson radical $J(R)$ and the same statements still hold.
 \end{lemma}
 \begin{proof}
     \begin{enumerate}
         \item If $M=\km M$, we apply the Cayley-Hamilton theorem to the identity map of $M$ with respect to the ideal $\km$, we get some monic polynomial $f(t)=t^n+p_1t^{n-1}+\cdots+p_n\in R[t]$ such that $f(\id)=0$ as an endomorphism of $M$ and $p_i\in \km^i$ for all $i$. Notice that $f(\id)=1+r$ where $r\in \km$, so $f(\id)\notin M$ and is a unit. So $M=0$.
-        \item Let $N=(m_1, \ldots, m_k)$ be the submodule of $M$ generated by $m_1, \ldots, m_k$. Consider the right exact sequence:
-        \[N\taking{f} M\to \coker(f) \to 0.\]
-        Tensoring by $R/\km$, we get right exact sequence: 
-        \[N/\km N\taking{\bar{f}} M/\km M\to \coker(f)/\km \coker(f) \to 0.\]
-        where $f(m+IN)=m+IM$ for any $m\in N$. Since the images of $m_1, \ldots, m_k$ in $M/\km M$ generate $M/\km M$, $\bar{f}$ is surjective, so $\coker(f)/\km \coker(f)=0$. By the first part, $\coker(f)=0$, so $f$ is surjective, so $m_1, \ldots, m_k$ generate $M$.
+        \item $M/N=\km (M/N)$. By the first part, $M/N=0$, so $M=N$, so $m_1, \ldots, m_k$ generate $M$.
+        \item we can see that $M=N+\km M$ where $N$ is the submodule of $M$ generated by $m_1, \ldots, m_k$. By the second part, $M=N$. 
     \end{enumerate}
+\end{proof}
+\begin{corollary}
+    If $M$ and $N$ is finitely generated $R$-modules and $M\otimes_R N=0$, then $\Ann(M)+\Ann(N)=R$. In particular, if $R$ is a local ring, then either $M=0$ or $N=0$.
+\end{corollary}
+\begin{proof}
+    We can localize at all the prime ideal. So it suffices to show that if $R$ is a local ring and $M\otimes_R N=0$, then either $M=0$ or $N=0$. Assume $M\neq 0$, by Nakayama, $\frac{M}{PM}$ is a nonzero $R/P$ vector space. So there is a surjection from $M$ to $\frac{M}{PM}$ to  $R/P$. Therefore, there is a sujrection from $0=M\otimes N \to (R/P)\otimes N =\frac{N}{PN}$. Thus, $\frac{N}{PN}=0$. By Nakayama, $N=0$. 
 \end{proof}
 \subsection{Main proposition about finite extensions in rings}
 \begin{proposition}
@@ -1399,10 +1453,7 @@ Consider $R=k[x_1, \ldots, x_n]/\km$ is a field and a finitely generated $k$-alg
     \[B_{\mathcal{J}}M=\bigoplus_{n\geq 0}M_n=M\oplus M_1\oplus M_2\oplus \cdots\]
 \end{definition}
 
-    We may also define the associated graded ring with respect to $I$ as
-    \[gr_IR=R/I\oplus I/I^2\oplus I^2/I^3\oplus \cdots\]
-    We can easily see that $gr_IR\cong B_IR/IB_IR$. Similarly, we can define the associated graded module with respect to $\mathcal{J}$ as
-    \[gr_{\mathcal{J}}M=M/M_1\oplus M_1/M_2\oplus M_2/M_3\oplus \cdots\]
+    
 
 \begin{proposition}
     This is our main proposition: Let $M$ be a finitely generated $R$-module and $\mathcal{J}: M=M_0\supseteq M_1\supseteq M_2\supseteq \cdots$ be an $I$-filtration of $M$. $B_{\mathcal{J}}M$ is a finitely generated $B_IR$-module if and only if $\mathcal{J}$ is $I$-stable.
@@ -1410,8 +1461,14 @@ Consider $R=k[x_1, \ldots, x_n]/\km$ is a field and a finitely generated $k$-alg
 \begin{proof}
     If $\mathcal{J}$ is $I$-stable, then we can easily generate $B_{\mathcal{J}}M$ by the generators of $M_0\oplus M_1\oplus \cdots \oplus M_{n_0}$. Conversely, if $B_{\mathcal{J}}M$ is a finitely generated $B_IR$-module, then we can find finitely many homogeneous elements that generate $B_{\mathcal{J}}M$ as a $B_IR$-module. So there must exists some $n$ such that all the generators are in $M_0\oplus M_1\oplus \cdots \oplus M_n$. Therefore, for any $M_{n+i}$ with $i\geq 0$, we can write any element in $M_{n+i}$ as a combination of the generators, so $M_{n+i}=I^iM_{n}$ for all $i>0$. So $\mathcal{J}$ is $I$-stable.
 \end{proof}
+\begin{example}
+    Let $\mathcal{J}:M\supseteq IM\supseteq I^2M\supseteq \cdots$ be the $I$-adic filtration of $M$. $\mathcal{J}$ is manifestly $I$-stable by definition, so $B_{\mathcal{J}}M$ is a finitely generated $B_IR$-module. 
+\end{example}
 \begin{theorem}[Artin-Rees lemma]
     Let $R$ be a Noetherian ring, $I$ be an ideal of $R$. If $M$ is a finitely generated $R$-module and $\mathcal{J}: M=M_0\supseteq M_1\supseteq M_2\supseteq \cdots$ is $I$-stable, then for any submodule $N\subseteq M$, the filtration $\mathcal{J}': N\cap M_0\supseteq N\cap M_1\supseteq N\cap M_2\supseteq \cdots$ is also $I$-stable. 
+    \\
+
+    The $I$-stable $\mathcal{J}$ is usually given by $M\supseteq IM\supseteq I^2M\supseteq \cdots$ which is manifestly $I$-stable. 
 \end{theorem}
 \begin{proof}
     Since $\mathcal{J}$ is $I$-stable, $B_{\mathcal{J}}M$ is a finitely generated $B_IR$-module. Since $R$ is Noetherian, $B_IR\subseteq R[t]$ is Noetherian. So $B_{\mathcal{J}}M$ is a Noetherian module, so any submodule of $B_{\mathcal{J}}M$ is finitely generated. In particular, $B_{\mathcal{J}'}N$ is a finitely generated $B_IR$-module, so $\mathcal{J}'$ is $I$-stable.
@@ -1426,4 +1483,308 @@ This is a direct consequence of the Artin-Rees lemma.
     Let $R$ be a Noetherian ring and $I$ be a proper ideal of $R$. If $gr_IR$ is an integral domain, then $R$ is an integral domain as well.
 \end{corollary}
 For the proof, refer to Eisenbud's Commutative Algebra book, Corollary 5.5. 
+\subsection{Associated graded ring}
+\begin{definition}
+    We define the associated graded ring with respect to $I$ as
+    \[gr_IR=R/I\oplus I/I^2\oplus I^2/I^3\oplus \cdots\]
+    We can easily see that $gr_IR\cong B_IR/IB_IR$. 
+    \\
+    
+    Similarly, we can define the associated graded module with respect to $\mathcal{J}: M=M_0\supseteq M_1\supseteq M_2\supseteq \cdots$ as
+    \[gr_{\mathcal{J}}M=M/M_1\oplus M_1/M_2\oplus M_2/M_3\oplus \cdots\]
+    This is clearly a graded module over $gr_IR$.
+\end{definition}
+\begin{theorem}
+    Let $I$ be an ideal of a Noetherian ring $R$ and $M$ is a finitely generated $R$-module. Let $\mathcal{M}: M=M_0\supseteq M_1\supseteq M_2\supseteq \cdots$ be an $I$-filtration of $M$. If  $\mathcal{M}$ is $I$-stable, then $gr_{\mathcal{M}}M$ is a finitely generated $gr_IR$-module. 
+\end{theorem}
+\begin{proof}
+    If $\mathcal{M}$ is $I$-stable, then we can easily generate $gr_{\mathcal{M}}M$ by the generators of $M_0/ M_1\oplus M_1/M_2\oplus \cdots \oplus M_{n_0}/M_{n_0+1}$ which are finitely many since $M$ is finitely generated.
+\end{proof}
+\begin{proposition}
+    If $R$ is Noetherian, then $B_IR$ and $gr_IR$ are Noetherian as well.
+\end{proposition}
+\begin{proof}
+    Since $R$ is Noetherian, $R[t]$ is Noetherian, so any subring of $R[t]$ is Noetherian as well. So $B_IR\subseteq R[t]$ is Noetherian. Since $gr_IR\cong B_IR/IB_IR$, $gr_IR$ is Noetherian as well.
+\end{proof}
+\begin{definition}
+    Given $f\in M$, we can define the intial form of $f$ with respect to $\mathcal{M}$ as the image of $f$ in $M_n/M_{n+1}$ where $n$ is the largest integer such that $f\in M_n$. We denote the initial form of $f$ by $Lt(f)$. $Lt(f)=0$ if $f\in \bigcap_{n\geq 0}M_n$.
+    \\
+
+    $Lt(M)=:\langle Lt(f): f\in M\rangle$ is the $gr_IR$-submodule of $gr_{\mathcal{M}}M$ generated by the initial forms of all the elements in $M$.
+\end{definition}
+\begin{lemma}
+    Let $R$ be a Noetherian local ring and $I$ be a proper ideal of $R$. If $gr_IR$ is an integral domain, then $R$ is an integral domain as well.
+\end{lemma}
+\begin{proof}
+    Let $f, g\in R$ such that $fg=0$. So $Lt(f)Lt(g)=Lt(fg)=0$ in $gr_IR$. SO $Lt(f)=0$ or $Lt(g)=0$. WLOG, $Lt(f)=0$, so $f\in I^n$ for all $n\geq 0$. So $f\in \bigcap_{n\geq 0}I^n=0$. So $R$ is an integral domain.
+\end{proof}
+\newpage
+\section{March 31, 2026: Completion}
+\subsection{Basic definitions}
+\begin{definition}
+    Let $R$ be a ring and $I$ be an ideal of $R$. We define the $I$-adic completion of $R$ as the inverse limit of the system $\{R/I^n\}_{n\geq 0}$, denoted by $\wh{R}_I$. Oftentime, $I$ is taken to be a maximal ideal $\km$. 
+    \\
+
+    More generally, given an $I$-filtration $\mathcal{J}: M=M_0\supseteq M_1\supseteq M_2\supseteq \cdots$ of an $R$-module $M$, we can define the completion of $M$ with respect to $\mathcal{J}$ as the inverse limit of the system $\{M/M_n\}_{n\geq 0}$, denoted by $\wh{M}_{\mathcal{J}}$.
+\end{definition}
+\begin{definition}
+    Given $I\subseteq R$. We define 
+    $\wh{I}_n:=\ker(\wh{R}_I\to R/I^n)$. We denote $\wh{I}=\wh{I}_1$ for simplicity. We can easily see that $I^n\wh{R}_I\subseteq \wh{I}^n\subseteq \wh{I}_n$ for all $n\geq 0$. They are equal when $R$ is Noetherian (we will show this later).
+\end{definition}
+\begin{proposition}
+    When $I$ is a maximal ideal $\km$, $\wh{R}_{\km}$ is a local ring with maximal ideal $\wh{\km}:=\ker(\wh{R}_{\km}\to R/\km)$.
+\end{proposition}
+\begin{proof}
+    For any $g\notin \wh{\km}$, we claim that $g$ is a unit. Since $g\notin \wh{\km}$, then image of $g$ in $R/\km^n$ is not in $\km/\km^n$. Since $R/\km^n$ is a local ring with maximal ideal $\km/\km^n$, the image of $g$ in $R/\km^n$ is a unit for all $n\geq 0$. So we can find some $h_n\in R/\km^n$ such that $h_ng=1$ in $R/\km^n$. $h_n$ are compatible since units are unique. So we get some element $h=(h_n)_{n\geq 0}\in \wh{R}_{\km}$ such that $hg=1$, so $g$ is a unit. Therefore, all the nonunit form an ideal $\wh{\km}$, so $\wh{R}_{\km}$ is a local ring with maximal ideal $\wh{\km}$.
+\end{proof}
+\begin{corollary}
+    Let $\km$ be the maximal ideal of $R$. Then $\wh{R}_{\km}$ is the same as the completion of $R_{\km}$ at its maximal ideal $\km_{\km}$.
+\end{corollary}
+\begin{proof}
+    Notice that $R/\km^n \cong (R/\km^n)_{\km}\cong R_{\km}/\km_{\km}^n$ since everything outside $\km$ is unit. So they have the same completion. 
+\end{proof}
+\begin{proposition}
+    When $I=\km$ is a maximal ideal, the map $R\to \wh{R}_{\km}$ factors through $R_{\km}$. Moreover, we have the following maps:
+    \[R\to R_{\km} \to \wh{R}_{\km} \to \cdots \to R/\km^n\to R/\km^{n-1}\to \cdots\to R/\km\]
+    This corresponds to maps of varieties//schemes. 
+\end{proposition}
+\begin{definition}
+    $R$ is complete with respect to $I^n$ if the natural map $R\to \wh{R}_I$ is an isomorphism. When $I=\km$ is a maximal ideal, we say $R$ is a complete local ring. 
+    \\
+
+    When $R$ is complete, then 
+    \[\bigcap_{n=1}^{\infty} I^n=\ker(R\to \wh{R}_I)=0\]
+    \\
+
+    More generally, given an $I$-filtration $\mathcal{J}: M=M_0\supseteq M_1\supseteq M_2\supseteq \cdots$ of an $R$-module $M$, we say $M$ is complete with respect to $\mathcal{J}$ if the natural map $M\to \wh{M}_{\mathcal{J}}$ is an isomorphism. And we have 
+\[\bigcap_{n=1}^{\infty} M_n=\ker(M\to \wh{M}_{\mathcal{J}})=0\]
+\end{definition}
+\begin{example}
+    Let $R$ be a ring and $I$ be an ideal of $R$. Then $\wh{R}_I$ is complete with respect to the filtration $\{\wh{I}_n\}_{n\geq 0}$. This is due to the fact that $\wh{R}_I/\wh{I}_n\cong R/I^n$ for all $n\geq 0$.
+\end{example}
+\subsection{The Topology of the completion}
+\begin{definition}
+    Given a complete (thus separated) ring $R$ with respect to the filtration $\{I_n\}_{n\geq 0}$,
+    We define $d(x,y)=\inf\{c^{-n}: x-y\in I_n\}$ for any $x, y\in R$ and $c\in \ZZ_{>1}$. We can easily check that $d$ is a metric on $R$. We can define the absolute value of $x\in R$ as $|x|=d(x, 0)$. So $d(x,y)=|x-y|$ for any $x, y\in R$.
+\end{definition}
+\begin{remark}
+    Separatedness ensures that $d(x,y)=0$ if and only if $x=y$. 
+\end{remark}
+\begin{proposition}
+    The metric topology on a complete ring $R$ is complete (in the sense of metric spaces).
+\end{proposition}
+\begin{proof}
+    Given a cauchy seqeunce $(x_n)$, by the condition, it must be eventually a constant in $R/I_n$ for all $n\geq 1$, say the constant equal to $a_n\in R/I_n$. Notice that $a_n$ are compatible, so we get $a=(a_1, a_2, \ldots)\in \wh{R}_I$. Since $R$ is complete, we can find some $x\in R$ such that $x$ corresponds to $a$ under the isomorphism $ \phi: R\to \wh{R}_I$. We claim that $x_n\to x$ as $n\to \infty$ in $R$. Given any $k\geq 0$, there exists some $N(k)$ such that for any $n\geq N(k)$, $x_n$ is constant in $R/I_k$. $x_n-x\in I_k$ for all $n\geq N(k)$, so $d(x_n, x)\leq c^{-k}$ for all $n\geq N(k)$. So $x_n\to x$ as $n\to \infty$.
+\end{proof}
+\begin{lemma}
+    This is a ultrametric, that is, $d(x,z)\leq \max\{d(x,y), d(y,z)\}$ for any $x, y, z\in R$. Therefore, a seqeunce $(a_n)$ in $R$ converges if and only if $d(a_n, a_{n+1})\to 0$ as $n\to \infty$. Similarly, a series $\sum_{n=1}^{\infty}a_n$ converges if and only if $d(a_n, 0)=|a_n|\to 0$ as $n\to \infty$.
+\end{lemma}
+\begin{proposition}
+    Let $R$ be a complete ring with respect to the ideals $I^n$ for $n\geq 0$, then $U=\{1+a\mid a\in I\}$ are units. 
+\end{proposition}
+\begin{proof}
+    If $a\in I$, then $b_n=1-a+a^2-a^3+\cdots+ (-1)^na^n$ converges. $(1+a)b_n=1+a^{n+1}$, so $(1+a)b_n\to 1$ as $n\to \infty$. So $1+a$ is a unit.
+\end{proof}
+\begin{corollary}
+    Let $R$ be a local ring with maximal ideal $\km$. $R[[x_1, \ldots, x_n]]$ is the a complete local ring with respect to the ideals $(x_1, \ldots, x_n)^n$ (this is the completion of $R[x_1, \ldots, x_n]$ with respect to the $(x_1, \ldots, x_n)$).  $R[[x_1, \ldots, x_n]]$ is a local ring with maximal ideal $\km R[[x_1, \ldots, x_n]]+(x_1, \ldots, x_n)$.
+\end{corollary}
+\begin{proof}
+    If $f\notin \km R[[x_1, \ldots, x_n]]+(x_1, \ldots, x_n)$, then the constant term of $f$ is a unit in $R$, so $f(0)\inv f$ is a unit by the previous proposition, so $f$ is a unit. So $\km R[[x_1, \ldots, x_n]]+(x_1, \ldots, x_n)$ is the unique maximal ideal of $R[[x_1, \ldots, x_n]]$.
+\end{proof}
+\begin{proposition}
+    $R$ is dense in $\wh{R}_I$ with respect to the metric topology.
+\end{proposition}
+\begin{proof}
+    Any element in $\wh{R}_I$ is of the form $a=(a_n)_{n\geq 0}$ where $a_n\in R/I^n$ and $a_n$ are compatible. We can find some $x_n\in R$ such that $x_n\equiv a_n \mod I^n$ for all $n\geq 0$. So $d(x_n, a)\leq c^{-n}$ for all $n\geq 0$, so $x_n\to a$ as $n\to \infty$. Therefore, $R$ is dense in $\wh{R}_I$.
+\end{proof}
+\subsection{Completion and associated graded ring}
+\begin{theorem}[Analogy of Grobner basis]
+    Let $R$ be a ring complete with respect to a filtration $\{I_n\}_{n\geq 0}$. Let $gr(R)$ be the associated graded ring with respect to $\{I_n\}_{n\geq 0}$. Suppose $Lt(I)$ is generated by the initial forms of some elements $f_1, \ldots, f_m\in I$. Then $I$ is generated by $f_1, \ldots, f_m$.
+\end{theorem}
+\begin{proof}
+    For any $f\in I$, we can write $Lt(f)=\sum_{i=1}^m G_i Lt(f_i)$ with $G_i$ to be homogeneous elements in $gr(R)$. 
+    \\
+
+    We can find $g_i\in R$ such that $Lt(g_i)=G_i$. Consider $f-\sum_{i=1}^mg_if_i$. We can easily check that $Lt(f-\sum_{i=1}^mg_if_i)<Lt(f)$, that is $f-\sum_{i=1}^mg_if_i\in I_{n+1}$ where $n$ is the largest integer such that $f\in I_n$. We can repeat this process and get 
+    \[f-\sum_{i=1}^m g_i^{(1)} f_i-\sum_{i=1}^m g_i^{(2)} f_i-\cdots =f-\sum_{k=1}^{N}\sum_{i=1}^m g_i^{(k)} f_i=f-\sum_{i=1}^m f_i \sum_{k=1}^N g_i^{(k)} \]
+    Notice that $\sum_{k=1}^N g_i^{(k)}$ converges as $N\to \infty$ since $g_i^{(k)}\in I_k$ for all $k\geq 1$. So we can find some $g_i'\in R$ such that $g_i'=\sum_{k=1}^{\infty} g_i^{(k)}$. So $f-\sum_{i=1}^m f_ig_i'=0$, so $f\in (f_1, \ldots, f_m)$.
+\end{proof}
+\subsection{Main Theorem 1}
+\begin{theorem}
+    Let $R$ be a Noetherian ring and let $I$ be an ideal of $R$. Let $\wh{R}=\wh{R}_I$ be the $I$-adic completion of $R$. 
+    \begin{enumerate}
+        \item $\wh{R}$ is a Noetherian ring. 
+        \item $I^n\wh{R}=\wh{I}^n=\wh{I}_n$ for all $n\geq 0$ where $\wh{I}_n=\ker(\wh{R}\to R/I^n)$ and $\wh{I}=\wh{I}_1$. Thus, $\wh{R}$ is complete with respect to ideals $\wh{I}^n$ for $n\geq 0$.
+    \end{enumerate}
+\end{theorem}
+\begin{proof}
+    By definition, $gr_IR\cong gr_{\wh{I}_n}\wh{R}$. Since $R$ is Noetherian, $gr_IR$ is Noetherian as well, so $gr_{\wh{I}_n}\wh{R}$ is Noetherian as well. 
+    \begin{enumerate}
+        \item For any $J\subseteq \wh{R}$, $Lt(J)$ is an ideal of $gr_{\wh{I}_n}\wh{R}$, so $Lt(J)$ is finitely generated since $gr_{\wh{I}_n}\wh{R}$ is Noetherian. So we can find some $f_1, \ldots, f_m\in J$ such that $Lt(J)=(Lt(f_1), \ldots, Lt(f_m))$. By the analogy of Grobner basis theorem, $J=(f_1, \ldots, f_m)$, so $J$ is finitely generated. Therefore, $\wh{R}$ is Noetherian.
+        \item Notice that $Lt(\wh{I}_n)$ in $gr_{\wh{I}_n}\wh{R}$ gives us all element of degree $\geq n$. It suffices to show that $Lt(I^n\wh{R})$ also gives us all element of degree $\geq n$. This follows from the following commutative diagram:
+        % https://q.uiver.app/#q=WzAsNCxbMCwwLCJSIl0sWzIsMCwiXFx3aHtSfSJdLFswLDIsImdyX0lSIl0sWzIsMiwiZ3Jfe1xcd2h7SX1fbn1cXHdoe1J9Il0sWzAsMiwiTHQoLSkiXSxbMCwxXSxbMSwzLCJMdCgtKSIsMl0sWzIsMywiXFxzaW0iXV0=
+\[\begin{tikzcd}
+	R && {\wh{R}} \\
+	\\
+	{gr_IR} && {gr_{\wh{I}_n}\wh{R}}
+	\arrow[from=1-1, to=1-3]
+	\arrow["{Lt(-)}", from=1-1, to=3-1]
+	\arrow["{Lt(-)}"', from=1-3, to=3-3]
+	\arrow["\sim", from=3-1, to=3-3]
+\end{tikzcd}\]
+    \end{enumerate}
+\end{proof}
+\subsection{Main Theorem 2}
+\begin{theorem}
+    Let $R$ be a Noetherian ring and let $I$ be an ideal of $R$. Let $\wh{R}=\wh{R}_I$ be the $I$-adic completion of $R$. 
+    \begin{enumerate}
+        \item If $M$ is a finitely generated $R$-module, then the natural map 
+        \[\wh{R}\otimes_R M \to \varprojlim M/I^nM\]
+        is an isomorphism.
+        \item If $M$ is a finitely generated $R$-module, then $\varprojlim M/I^nM$ is a finitely generated $\wh{R}$-module.
+        \item $\wh{R}$ is flat over $R$.
+    \end{enumerate}
+\end{theorem}
+\begin{proof}
+    We need three crucial lemmas:
+    \begin{lemma}
+        $\varprojlim A_n\oplus B_n=\varprojlim A_n\oplus \varprojlim B_n$ for any inverse system $\{A_n\}_{n\geq 0}$ and $\{B_n\}_{n\geq 0}$.
+    \end{lemma}
+    \begin{lemma}
+        Let $\mathcal{J}_1: m_0\supseteq m_1\supseteq m_2\supseteq \cdots$ and $\mathcal{J}_2: n_0\supseteq n_1\supseteq n_2\supseteq \cdots$ be two $I$-filtrations of ideals of $R$. If for each $n_j$, there exists some $m_i$ such that $m_i\subseteq n_j$ and for each $m_i$, there exists some $n_j$ such that $n_j\subseteq m_i$, then $\wh{R}_{\mathcal{J}_1}\cong \wh{R}_{\mathcal{J}_2}$.
+        \begin{subproof}[Proof of the lemma]
+            We can easily construct a map from $\wh{R}_{\mathcal{J}_1}$ to $\wh{R}_{\mathcal{J}_2}$ and a map from $\wh{R}_{\mathcal{J}_2}$ to $\wh{R}_{\mathcal{J}_1}$ using the condition. We can check that they are inverses of each other, so $\wh{R}_{\mathcal{J}_1}\cong \wh{R}_{\mathcal{J}_2}$.
+        \end{subproof}
+    \end{lemma}
+    \begin{lemma}
+        Let $R$ be a Noetherian ring and $I$ be an ideal of $R$. If 
+        \[0\to A \to B \to C\to 0\]
+        is an exact sequence of $R$-modules, then 
+        \[0\to \varprojlim A/I^nA \to \varprojlim B/I^nB \to \varprojlim C/I^nC\to 0\]
+        is also an exact sequence.
+        \begin{subproof}[Proof of the lemma]
+            First, we show that $\varprojlim B/I^nB \to \varprojlim C/I^nC$ is surjective. Given any $(c_n)\in \varprojlim C/I^nC$, we can inductively find some $b_n\in B$ such that $b_n$ maps to $c_n$ in $C/I^nC$ and $b_{n+1}-b_n\in I^nB$: it suffices to show that we can go up once. Given $b_1, \ldots, b_n$, we want to find $b_{n+1}$. First, we can find an arbitary $b_{n+1}'$ that maps to $c_{n+1}$ in $C/I^{n+1}C$. Notice that $b_{n+1}'-b_n$ maps to $c_{n+1}-c_n=0$ in $C/I^nC$, so we can find some $a\in A/I^nA$ such that $b_{n+1}'-b_n$ maps to the image of $a$ in $B/I^nB$. Since $A/I^{n+1}A\to A/I^nA$ is surjective, we can find some $\tilde{a}\in A/I^{n+1}A$ that maps to $a$. Let $b_{n+1}=b_{n+1}'-\tilde{a}$, then $b_{n+1}$ maps to $c_{n+1}$ in $C/I^{n+1}C$ and $b_{n+1}-b_n=b_{n+1}'-b_n-\tilde{a}\in I^nB$. So we can find some $(b_n)\in \varprojlim B/I^nB$ that maps to $(c_n)\in \varprojlim C/I^nC$, so $\varprojlim B/I^nB \to \varprojlim C/I^nC$ is surjective.
+            \\
+
+            It remains to show that $0\to \varprojlim A/I^nA \to \varprojlim B/I^nB \to \varprojlim C/I^nC\to 0$ is (left) exact. We notice that the limit of 
+            \[0\to A/(A\cap I^jB)\to B/I^jB\to C/I^jC\to 0\] is an exact seqeunce for all $j\geq 0$. And we can easily show that 
+            \[ 0\to \varprojlim A/(A\cap I^jB)\to \varprojlim B/I^jB\to \varprojlim C/I^jC\to 0\] is exact. 
+            \\
+
+            Therefore, it suffcies to show 
+            \[\varprojlim A/I^nA \cong \varprojlim A/(A\cap I^nB)\]
+            By the lemma above, it suffices to show that for each $A\cap I^nB$, there exists some $I^mA$ such that $I^mA\subseteq A\cap I^nB$ and for each $I^nA$, there exists some $A\cap I^mB$ such that $A\cap I^mB\subseteq I^nA$. The first condition is trivial since $I^nA\subseteq A\cap I^nB$. For the second condition, since $\mathcal{J}:IB\supseteq I^2B\supseteq I^3B\supseteq \cdots$ is an $I$-stable filtration of $B$, by the Artin-Rees lemma, there exists some $n_0\geq 0$ such that $I^nB\cap A=I^{n-n_0}(I^{n_0}B\cap A)$ for all $n\geq n_0$. So for any $I^nA$, we have $A\cap I^{n+n_0}B =I^n(A\cap I^{n_0}B)\subseteq I^nA$. Therefore, we are done. 
+        \end{subproof}
+    \end{lemma}
+    it's clear that the natural map $\phi: \wh{R}\times M \to varprojlim M/I^nM$ by $(\wh{r}, m)\mapsto r(m,m,\cdots) $ is a bilinear map of $R$-modules, so we get a map $\phi: \wh{R}\otimes_R M \to \varprojlim M/I^nM$. We want to show that $\phi$ is an isomorphism.
+    \\
+
+    For any finitely generated $R$-module $M$, we can find some presentation $R^m\to R^n\to M\to 0$. The statements are clearly true for $G=R^m$ and $F=R^n$.
+    % https://q.uiver.app/#q=WzAsMTAsWzAsMCwiXFx3aHtHfSJdLFsxLDAsIlxcd2h7Rn0iXSxbMiwwLCJcXHdoe019Il0sWzAsMiwiXFx3aHtSfVxcb3RpbWVzX1IgRyJdLFsxLDIsIlxcd2h7Un1cXG90aW1lc19SIEYiXSxbMiwyLCJcXHdoe1J9XFxvdGltZXNfUiBNIl0sWzMsMCwiMCJdLFszLDIsIjAiXSxbNCwwLCIwIl0sWzQsMiwiMCJdLFszLDAsIlxcd3IiXSxbNCwxLCJcXHdyIl0sWzAsMV0sWzMsNF0sWzQsNV0sWzEsMl0sWzIsNl0sWzUsN10sWzcsOV0sWzYsOF0sWzcsNiwiXFx3ciJdLFs5LDgsIlxcd3IiXSxbNSwyLCJcXHBoaSJdXQ==
+\[\begin{tikzcd}
+	{\wh{G}} & {\wh{F}} & {\wh{M}} & 0 & 0 \\
+	\\
+	{\wh{R}\otimes_R G} & {\wh{R}\otimes_R F} & {\wh{R}\otimes_R M} & 0 & 0
+	\arrow[from=1-1, to=1-2]
+	\arrow[from=1-2, to=1-3]
+	\arrow[from=1-3, to=1-4]
+	\arrow[from=1-4, to=1-5]
+	\arrow["\wr", from=3-1, to=1-1]
+	\arrow[from=3-1, to=3-2]
+	\arrow["\wr", from=3-2, to=1-2]
+	\arrow[from=3-2, to=3-3]
+	\arrow["\phi", from=3-3, to=1-3]
+	\arrow[from=3-3, to=3-4]
+	\arrow["\wr", from=3-4, to=1-4]
+	\arrow[from=3-4, to=3-5]
+	\arrow["\wr", from=3-5, to=1-5]
+\end{tikzcd}\]
+We can easily see that the diagram commutes and is exact. By the five lemma, $\phi: \wh{R}\otimes_R M \to \varprojlim M/I^nM$ is an isomorphism. Therefore, we are done.
+\\
+
+For flatness, it suffices to show that $I\otimes \wh{R}\to \wh{R}$ is injective for finitely generated ideals $I$ of $R$. This is clear from the lemma and part (1). 
+\end{proof}
+\begin{corollary}
+    If $M$ is finitely generated $R$-module and $R$ is Noetherian, let $\wh{R}$ be the $I$-adic completion of $R$ and $\wh{M}=\varprojlim M/I^nM$ be the $I$-adic completion of $M$. Then 
+    \[\frac{M}{I^nM}\cong \frac{\wh{M}}{\wh{I}^n\wh{M}}\]
+\end{corollary}
+\begin{proof}
+    Notice that 
+    \[\frac{M}{I^nM}\cong M\otimes_R \frac{R}{I^n}\cong M\otimes_R \frac{\wh{R}}{\wh{I}^n}\cong M\otimes_R (\wh{R}\otimes_{\wh{R}} \frac{\wh{R}}{\wh{I}^n})\]
+    By the associativity of tensor product, we have
+    \[=(M\otimes_R \wh{R})\otimes_{\wh{R}} \frac{\wh{R}}{\wh{I}^n}=\frac{\wh{M}}{\wh{I}^n\wh{M}}\]
+\end{proof}
+
+
+\section{April 2, 2026: Dimension Theory-Zero Dimension}
+My definition is a bit different from the one in Eisenbud's book, but they are equivalent.
+\\
+
+In this note, we assume the dimension of all rings and modules are finite.
+\begin{definition}
+    Let $R$ be a ring. The krull dimension of $R$ is the supremum of the lengths of all chains of prime ideals in $R$ and is denoted by $\dim(R)$. 
+    \\
+
+    Let $\kp$ be a prime ideal of $R$. The height of $\kp$ is the supremum of the lengths of all chains of prime ideals in $R$ that end with $\kp$ and is denoted by $\Ht(\kp)$.
+    \\
+
+    Let $I$ be an ideal of $R$. $\Ht(I):=\sup\{\Ht(\kp): \kp\text{ is a prime ideal of }R\text{ that contains }I\}$.
+    \\
+
+    Let $M$ be an $R$-module. $\dim(M):=\dim(R/\Ann(M))$ where $\Ann(M)=\{r\in R: rm=0\text{ for all }m\in M\}$ is the annihilator of $M$. $\codim(M):=\Ht(\Ann(M))$.
+\end{definition}
+\begin{definition}
+    Let $X$ be an affine varieties over an algebraically closed field $k$. The dimension of $X$ is the supreme of the lengths of all chains of irreducible closed subsets in $X$.
+\end{definition}
+
+\begin{theorem}
+    If $R$ is Noetherian, then $\dim(R)=0$ if and only if $R$ is Artinian.
+    \\
+
+    An affine variety has dimension zero if and only if it is a finite set of points.
+\end{theorem}
+This is just a rephrase of the fact that a Noetherian ring is Artinian if and only if all prime ideals are maximal.
+\begin{theorem}
+    Let $\phi:: R\to S$ be a map of rings such that $S$ is integral over $\phi(R)$. Let $I$ be an ideal of $S$, then $\dim(S/I)=\dim(R/\phi\inv(I))$. In particular, $\dim(S)=\dim(R/\ker(\phi))$.
+\end{theorem}
+\begin{proof}
+    Notice that $R/\phi\inv(I)\to S/I$ is an integral extension, so we can apply the going up and incomparability theorems to get a bijection between the chains of prime ideals in $R/\phi\inv(I)$ and the chains of prime ideals in $S/I$. Therefore, $\dim(S/I)=\dim(R/\phi\inv(I))$.
+\end{proof}
+\begin{theorem}
+    Let $\pi:X\to Y$ be a morphism of affine varieties. We say $\pi$ is a finite map if the corresponding map $\phi: \SO(Y)\to \SO(X)$ make $\SO(X)$ a finite $\SO(Y)$-module. 
+    \begin{enumerate}
+        \item Let $Y'\subseteq Y$ be a closed subset. Then $\dim(Y)=\dim(\pi\inv(Y'))$. In particular, the fiber of a finite map is finite. 
+        \item Finite maps are closed maps, that is, the image of a closed subset under a finite map is closed.
+    \end{enumerate}
+\end{theorem}
+\begin{proof}
+    \begin{enumerate}
+        \item $\pi\inv(Y')$ is a closed subset of $X$ since $\pi$ is a morphism. Notice that the the kernel of the map from $\SO(Y)$ to $\SO(\pi\inv(Y'))$ is the ideal of $Y'$, so $\SO(\pi\inv(Y'))$ is integral over $\SO(Y)/I(Y')$. So we can apply the previous theorem to get $\dim(\pi\inv(Y'))=\dim(Y')$.
+        
+        % https://q.uiver.app/#q=WzAsOCxbMiwyLCJZIl0sWzEsMiwiWCJdLFsyLDAsIlknIl0sWzAsMiwiWCc9XFxwaVxcaW52KFknKSJdLFs1LDIsIlxcU08oWCkiXSxbNiwyLCJcXFNPKFkpIl0sWzQsMiwiXFxTTyhYJykiXSxbNiwwLCJcXFNPKFknKSJdLFsxLDAsIlxccGkiXSxbMiwwLCIiLDIseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dLFszLDIsIlxcd3R7XFxwaX0iLDJdLFszLDEsIiIsMCx7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn19fV0sWzUsNCwiXFxwaGkiXSxbNCw2LCIiLDAseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJlcGkifX19XSxbNSw3LCIiLDIseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJlcGkifX19XSxbNyw2LCJcXHd0e1xccGhpfSIsMix7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn19fV1d
+\[\begin{tikzcd}
+	&& {Y'} &&&& {\SO(Y')} \\
+	\\
+	{X'=\pi\inv(Y')} & X & Y && {\SO(X')} & {\SO(X)} & {\SO(Y)}
+	\arrow[hook, from=1-3, to=3-3]
+	\arrow["{\wt{\phi}}"', hook, from=1-7, to=3-5]
+	\arrow["{\wt{\pi}}"', from=3-1, to=1-3]
+	\arrow[hook, from=3-1, to=3-2]
+	\arrow["\pi", from=3-2, to=3-3]
+	\arrow[two heads, from=3-6, to=3-5]
+	\arrow[two heads, from=3-7, to=1-7]
+	\arrow["\phi", from=3-7, to=3-6]
+\end{tikzcd}\]
+\item Let $X'$ be a closed subset of $X$. We can consider the map $\psi$ from $\SO(Y)$ to $\SO(X')$. Let the kernel of $\psi$ be $I$. Then we get a map integral inclusion $\wt{\phi}$ from $\SO(Y)/I$ to $\SO(X')$. Let $Y'$ be the closed subset of $Y$ defined by $I$. We get an induced morpshim of affine varieties $\wt{\pi}$ from $X'=\pi\inv(Y')$ to $Y'$. Notice that $\wt{\pi}$ makes $\SO(X')$ a finite $\SO(Y)/I$-module, so $\wt{\pi}$ is surjection. So $\pi(X')=\wt{\pi}(X')=Y'$, so $\pi(X')$ is closed.
+    \end{enumerate}
+\end{proof}
+
+
+
+
 \end{document}
+
+%the primary decompostion of $I$ is sorta of unqiue: in the sense that if p is the minimal prime of $I$, then the p-primary component of $I$ is unique.
+
+%3 HW problem are  important 
+%ht(p)=ht(p^c) in localization. 

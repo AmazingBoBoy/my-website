@@ -560,6 +560,11 @@ INPUT ./diagram1-6.pdf
 INPUT ./diagram1-6.pdf
 INPUT ./diagram1-6.pdf
 INPUT ./diagram1-6.pdf
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/vf/public/yhmath/yhcmex10.vf
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/yhmath/yrcmex10.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/vf/public/yhmath/yhcmex10.vf
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/yhmath/yrcmex10.tfm
 INPUT commalg.aux
 INPUT ./commalg.out
 INPUT ./commalg.out
@@ -591,3 +596,4 @@ INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msa
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsx1728.pfb
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/yhmath/yhcmex.pfb

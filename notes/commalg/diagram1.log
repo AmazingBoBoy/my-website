@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  16 MAR 2026 00:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  7 APR 2026 14:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -141,6 +141,12 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Please type a command or say `\end')
 *
 (Please type a command or say `\end')
+*\usepackage{amssymb}
+
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
 *\newbox\ASYbox
 \ASYbox=\box54
 
@@ -215,7 +221,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 
 *
 (Please type a command or say `\end')
-*\setbox\ASYbox=\hbox{$\pi$}
+*\setbox\ASYbox=\hbox{$V(x^2-y^2)$}
 LaTeX Font Info:    Calculating math sizes for size <10.0375> on input line 0.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 0.
 (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -228,16 +234,9 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 *
 (Please type a command or say `\end')
 *\immediate\write16{>dim(\the\wd\ASYbox)dim}
->dim(6.05905pt)dim
+>dim(48.00462pt)dim
 
 *\immediate\write16{>dim(\the\ht\ASYbox)dim}
->dim(4.30554pt)dim
+>dim(8.14003pt)dim
 
-*\immediate\write16{>dim(\the\dp\ASYbox)dim}
->dim(0.0pt)dim
-
-*\fontsize{10.0375}{12.045}\selectfont%
-
-*
-(Please type a command or say `\end')
-*\use
+*\immediate\write16{>dim(\the\dp\ASYb
