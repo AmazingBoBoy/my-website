@@ -304,7 +304,8 @@ Some multiplicative closed sets that are often used:
     \arrow[from=4-3, to=5-3]
 \end{tikzcd}\]
 By five lemma, $\alpha_M$ is an isomorphism.
-    
+
+
 \end{proof}
 \begin{application}[Eisenbud's Exercise 2.13]
     If $C$ is finitely presented, then the short exact sequence
@@ -494,7 +495,7 @@ Now, we put this in a geometric setting:
 \end{proof}
 \subsection{Some special cases}
 In reality, we are mainly interested in the case when $R$ is Noetherian and $M$ is finitely generated. In this case, we have the following corollary:
-\begin{corollary}
+\begin{corollary}[More useful characterization of modules of finite length]
     Let $R$ be a Noetherian ring, and let $M$ be a finitely generated $R$-module. The following are equivalent:
     \begin{enumerate}
         \item $M$ is of finite length as $R$-module.
@@ -697,6 +698,7 @@ This is the direct consequence of the main theorem and the prime avoidance lemma
 \begin{proof}
     One direction is trivial. Conversely, if $m\neq 0$, there exists some associated prime $\kp$ of $M$ such that $\Ann(m)\subseteq \kp$. Localizing at $\kp$, we have $(m)_{\kp}$ is a nonzero submodule of $M_{\kp}$ since $\Ann(m)\subseteq \kp$. (or one can see $\Ann(M)_{\kp}=\Ann(M_{\kp})\subseteq \kp_{\kp}\subsetneq R_{\kp}$, if $M_{\kp}=0$, then $\Ann(M_{\kp})=R_{\kp}$) Thus, $m_{\kp}\neq 0$.
 \end{proof}
+  
 
 \subsection{Filtration and $\Ass(M)$}
 \begin{lemma}
@@ -805,7 +807,6 @@ In this case, $\kp=\sqrt{\Ann(M)}$.
         If not, then we take the maximal element $N$ in the family of submodules that cannot be written as a finite intersection of irreducible submodules. $N$ itself must not be irreducible, so we can write $N=N_1\cap N_2$ where $N_1, N_2$ are strictly larger than $N$. By the maximality of $N$, both $N_1$ and $N_2$ can be written as a finite intersection of irreducible submodules, so $N$ can also be written as a finite intersection of irreducible submodules, contradiction. Thus, any submodule of $M$ can be written as a finite intersection of irreducible submodules.
     \end{subproof}
     \end{claim}
-
     \begin{claim}
         Any irreducible submodule $N$ of $M$ is primary.
         \begin{subproof}
@@ -833,8 +834,15 @@ In this case, $\kp=\sqrt{\Ann(M)}$.
     \item The intersection of any two $\kp_i$-primary modules is either $\kp_i$-primary or $0$. So if the intersection is minimal, then $\kp_i$ are pairwise distinct. By (2), $\Ass(M/N)=P$ as sets. But since $\kp_i$ are pairwise distinct, $\Ass(M/N)=P$ as multisets.
     \item Lastly, $\Ass(-)$ and primes behave well under localization, so primary decomposition is compatible with localization.
 \end{enumerate}
+
 \begin{remark}
     Primary decomposition is not unique. For example in $k[x,y]$, we have $(x)\cap (x^2,y)=(x)\cap (x^2,xy, y^2)=(x^2,xy)$.
+    \\
+
+    However, let $I=\bigcap_{i=1}^n Q_i$ be a minimal primary decomposition of $I$ where $Q_i$ is $\kp_i$-primary. Let $\kp_1$ be the minimal prime of $I$, then $Q_1$ is the unique $\kp_1$-primary component of $I$. 
+    \begin{subproof}
+        We can localize at $\kp_1$. $I_{\kp_1}=\bigcap_{i=1}^n (Q_i)_{\kp_1}=(Q_1)_{\kp_1}$. Since $Q_1$ is $\kp_1$-primary, $R\sm \kp_1$ are all nonzero-divisors of $R/{Q_1}$, so we have $R/{Q_1}\injto (R/{Q_1})_{\kp_1}$. Thus, $Q_1=((Q_1)_{\kp_1})^c=(I_{\kp_1})^c$, where $(-)^c$ is the contraction of ideals under localization. So $Q_1$ is the unique $\kp_1$-primary component of $I$.
+    \end{subproof}
 \end{remark}
 \newpage
 \end{proof}
@@ -1484,6 +1492,10 @@ This is a direct consequence of the Artin-Rees lemma.
 \end{corollary}
 For the proof, refer to Eisenbud's Commutative Algebra book, Corollary 5.5. 
 \subsection{Associated graded ring}
+
+
+
+
 \begin{definition}
     We define the associated graded ring with respect to $I$ as
     \[gr_IR=R/I\oplus I/I^2\oplus I^2/I^3\oplus \cdots\]
@@ -1725,7 +1737,7 @@ In this note, we assume the dimension of all rings and modules are finite.
     Let $R$ be a ring. The krull dimension of $R$ is the supremum of the lengths of all chains of prime ideals in $R$ and is denoted by $\dim(R)$. 
     \\
 
-    Let $\kp$ be a prime ideal of $R$. The height of $\kp$ is the supremum of the lengths of all chains of prime ideals in $R$ that end with $\kp$ and is denoted by $\Ht(\kp)$.
+    Let $\kp$ be a prime ideal of $R$. The height of $\kp$ is the supremum of the lengths of all chains of prime ideals in $R$ that end with $\kp$ and is denoted by $\Ht(\kp)$. it easy to see that $\Ht(\kp)=\dim(R_{\kp})$ where $R_{\kp}$ is the localization of $R$ at $\kp$.
     \\
 
     Let $I$ be an ideal of $R$. $\Ht(I):=\sup\{\Ht(\kp): \kp\text{ is a prime ideal of }R\text{ that contains }I\}$.
@@ -1750,6 +1762,7 @@ This is just a rephrase of the fact that a Noetherian ring is Artinian if and on
 \begin{proof}
     Notice that $R/\phi\inv(I)\to S/I$ is an integral extension, so we can apply the going up and incomparability theorems to get a bijection between the chains of prime ideals in $R/\phi\inv(I)$ and the chains of prime ideals in $S/I$. Therefore, $\dim(S/I)=\dim(R/\phi\inv(I))$.
 \end{proof}
+
 \begin{theorem}
     Let $\pi:X\to Y$ be a morphism of affine varieties. We say $\pi$ is a finite map if the corresponding map $\phi: \SO(Y)\to \SO(X)$ make $\SO(X)$ a finite $\SO(Y)$-module. 
     \begin{enumerate}
@@ -1778,6 +1791,7 @@ This is just a rephrase of the fact that a Noetherian ring is Artinian if and on
 \item Let $X'$ be a closed subset of $X$. We can consider the map $\psi$ from $\SO(Y)$ to $\SO(X')$. Let the kernel of $\psi$ be $I$. Then we get a map integral inclusion $\wt{\phi}$ from $\SO(Y)/I$ to $\SO(X')$. Let $Y'$ be the closed subset of $Y$ defined by $I$. We get an induced morpshim of affine varieties $\wt{\pi}$ from $X'=\pi\inv(Y')$ to $Y'$. Notice that $\wt{\pi}$ makes $\SO(X')$ a finite $\SO(Y)/I$-module, so $\wt{\pi}$ is surjection. So $\pi(X')=\wt{\pi}(X')=Y'$, so $\pi(X')$ is closed.
     \end{enumerate}
 \end{proof}
+
 
 
 

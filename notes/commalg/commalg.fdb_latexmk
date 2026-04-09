@@ -1,36 +1,36 @@
 # Fdb version 4
-["cusdep asy pdf diagram1-1"] 1775597237.78418 "diagram1-1.asy" "diagram1-1.pdf" "diagram1-1" 1775699188.72298 0
+["cusdep asy pdf diagram1-1"] 0 "diagram1-1.asy" "diagram1-1.pdf" "diagram1-1" 1775714553.24222 -1
   "diagram1-1.asy" 1773646670.26448 3071 6e2a2fbd6485b98fcee623b3f5a744c2 ""
   (generated)
   "diagram1-1.pdf"
   (rewritten before read)
-["cusdep asy pdf diagram1-2"] 1775597236.50249 "diagram1-2.asy" "diagram1-2.pdf" "diagram1-2" 1775699188.72295 0
+["cusdep asy pdf diagram1-2"] 0 "diagram1-2.asy" "diagram1-2.pdf" "diagram1-2" 1775714553.24219 -1
   "diagram1-2.asy" 1773646670.26842 3046 5bac037273d647c773620dc4c18f13d7 ""
   (generated)
   "diagram1-2.pdf"
   (rewritten before read)
-["cusdep asy pdf diagram1-3"] 1775597235.279 "diagram1-3.asy" "diagram1-3.pdf" "diagram1-3" 1775699188.72292 0
+["cusdep asy pdf diagram1-3"] 0 "diagram1-3.asy" "diagram1-3.pdf" "diagram1-3" 1775714553.2421 -1
   "diagram1-3.asy" 1773646670.27074 2941 cb4fc3682c4e2a372b88dd393dcf24b8 ""
   (generated)
   "diagram1-3.pdf"
   (rewritten before read)
-["cusdep asy pdf diagram1-4"] 1775597233.24178 "diagram1-4.asy" "diagram1-4.pdf" "diagram1-4" 1775699188.72289 0
+["cusdep asy pdf diagram1-4"] 0 "diagram1-4.asy" "diagram1-4.pdf" "diagram1-4" 1775714553.24206 -1
   "diagram1-4.asy" 1773646670.5186 2956 b43ef6d60ac9cf8d4c6c3884c09d23ae ""
   (generated)
   "diagram1-4.pdf"
   (rewritten before read)
-["cusdep asy pdf diagram1-5"] 1775597231.83718 "diagram1-5.asy" "diagram1-5.pdf" "diagram1-5" 1775699188.72286 0
+["cusdep asy pdf diagram1-5"] 0 "diagram1-5.asy" "diagram1-5.pdf" "diagram1-5" 1775714553.24202 -1
   "diagram1-5.asy" 1773646670.52078 3253 cf99c75633d7bc444a15b49c09cd842a ""
   (generated)
   "diagram1-5.pdf"
   (rewritten before read)
-["cusdep asy pdf diagram1-6"] 0 "diagram1-6.asy" "diagram1-6.pdf" "diagram1-6" 1775699188.7228 -1
+["cusdep asy pdf diagram1-6"] 0 "diagram1-6.asy" "diagram1-6.pdf" "diagram1-6" 1775714553.24192 -1
   "diagram1-6.asy" 1773646670.52893 2980 ebf408db604d817e257c367f3537cd68 ""
   (generated)
   "diagram1-6.pdf"
   (rewritten before read)
-["pdflatex"] 1775699178.93741 "/Users/kai/Documents/VS Code/my-website/notes/commalg/commalg.tex" "commalg.pdf" "commalg" 1775699188.72302 0
-  "/Users/kai/Documents/VS Code/my-website/notes/commalg/commalg.tex" 1775699168.57813 148854 3ff11743461e978febdbbe5f0d5c8cd9 ""
+["pdflatex"] 1775714543.18761 "/Users/kai/Documents/VS Code/my-website/notes/commalg/commalg.tex" "commalg.pdf" "commalg" 1775714553.24225 0
+  "/Users/kai/Documents/VS Code/my-website/notes/commalg/commalg.tex" 1775714532.09415 149668 340e43241f6cd99413cc18b18a0fdaef ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcsx1440.tfm" 1136768653 1536 d4501080e094848097ac9de5c88222ce ""
@@ -313,11 +313,11 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1769914979 5467155 19efa205003f9ecad95fbbaa6ff24da1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1741450574 3345740 46b66fdb0378f7bf5921b5eabf1762b8 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "commalg.aux" 1775699188.41922 69073 63e0231dbd423bbb40dcfff62861f455 "pdflatex"
-  "commalg.out" 1775699181.23863 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "commalg.pre" 1775699180.22666 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "commalg.tex" 1775699168.57813 148854 3ff11743461e978febdbbe5f0d5c8cd9 ""
-  "commalg.toc" 1775699188.43154 4867 fcab2eefaa64fa7f796755809b4fc7a1 "pdflatex"
+  "commalg.aux" 1775714552.91658 69195 066bb272f1c58be629197b1b4389ed2c "pdflatex"
+  "commalg.out" 1775714545.50544 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "commalg.pre" 1775714544.51673 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "commalg.tex" 1775714532.09415 149668 340e43241f6cd99413cc18b18a0fdaef ""
+  "commalg.toc" 1775714552.93015 4867 fcab2eefaa64fa7f796755809b4fc7a1 "pdflatex"
   "diagram1-1.pdf" 1775597239.11232 46225 7bcee843489070b7f92cef16d15d72ab "cusdep asy pdf diagram1-1"
   "diagram1-2.pdf" 1775597237.77725 19686 ffe00e5e9562126ef50d504ea9dad658 "cusdep asy pdf diagram1-2"
   "diagram1-3.pdf" 1775597236.49747 29878 a4464e5d1f6abdc4bb7c6c9f3d6caf42 "cusdep asy pdf diagram1-3"

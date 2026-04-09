@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  13 FEB 2026 23:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  8 APR 2026 19:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1238,29 +1238,29 @@ LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <15> not available
 {/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 35.
-Package hyperref Info: bookmark level for unknown example defaults to 0 on input line 35.
+(mdframed)              on input line 37.
+Package hyperref Info: bookmark level for unknown example defaults to 0 on input line 37.
 
-Underfull \hbox (badness 10000) in paragraph at lines 35--37
-
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 41.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 50.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 53.
-
-Underfull \hbox (badness 10000) in paragraph at lines 59--62
+Underfull \hbox (badness 10000) in paragraph at lines 37--39
 
  []
 
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 43.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 52.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 55.
 
-Underfull \hbox (badness 10000) in paragraph at lines 69--74
+Underfull \hbox (badness 10000) in paragraph at lines 61--64
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--76
 
  []
 
@@ -1268,19 +1268,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 69--74
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <12.50015> not available
-(Font)              size <12> substituted on input line 76.
+(Font)              size <12> substituted on input line 78.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <12.50015> not available
-(Font)              size <12> substituted on input line 76.
+(Font)              size <12> substituted on input line 78.
 
 [2]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 78.
-Package hyperref Info: bookmark level for unknown lemma defaults to 0 on input line 78.
+(mdframed)              on input line 80.
+Package hyperref Info: bookmark level for unknown lemma defaults to 0 on input line 80.
 
-Underfull \hbox (badness 10000) in paragraph at lines 84--86
+Underfull \hbox (badness 10000) in paragraph at lines 86--88
 
  []
 
@@ -1289,9 +1289,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 84--86
 [3]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 89.
+(mdframed)              on input line 91.
 
-Underfull \hbox (badness 10000) in paragraph at lines 89--91
+Underfull \hbox (badness 10000) in paragraph at lines 91--93
 
  []
 

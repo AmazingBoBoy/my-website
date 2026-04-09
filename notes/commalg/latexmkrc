@@ -4,5 +4,5 @@ sub asy {
     return system("asy '$_[0]'");
 }
 
-$pdflatex = 'pdflatex -interaction=nonstopmode -shell-escape %O %S';
+$pdflatex = 'pdflatex -interaction=nonstopmode -shell-escape -synctex=1 %O %S';
 
